@@ -11,6 +11,17 @@ class pm_View_Helper_RenderSmallTools extends Zend_View_Helper_Abstract
     /**
      * Render small tools bar
      *
+     *      array (
+     *          array (
+     *              'title' => string,
+     *              'description' => string,
+     *              'class' => string,
+     *              'controller' => string,
+     *              'action' => string,
+     *              'link' => string,
+     *          ),
+     *      )
+     * 
      * @param array $tools
      * @return string
      */

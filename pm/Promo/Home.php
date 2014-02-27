@@ -6,7 +6,7 @@
  * @deprecated
  * @package Plesk_Modules
  */
-abstract class pm_Promo_Home extends pm_Promo_AdminHome 
+abstract class pm_Promo_Home extends pm_Promo_AdminHome implements pm_Hook_Interface
 {
 
 }

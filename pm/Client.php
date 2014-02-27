@@ -60,4 +60,12 @@ class pm_Client
      */
     public function getProperty($name) { }
 
+    /**
+     * Check if client can access to domain with provided identity
+     *
+     * @param int $domainId
+     * @return bool
+     */
+    public function hasAccessToDomain($domainId) { }
+
 }

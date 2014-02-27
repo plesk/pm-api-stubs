@@ -27,4 +27,16 @@ class pm_ApiCli
      */
     public static function call($command, $args = [], $result = 1) { }
 
+    /**
+     * Execute privileged CLI utility
+     *
+     * @param string $command
+     * @param array $args
+     * @param int $result
+     * @param bool $contextPriority
+     * @return array|int|string
+     * @throws pm_Exception
+     */
+    public static function callSbin($command, $args = [], $result = 1, $contextPriority = true) { }
+
 }

@@ -26,9 +26,10 @@ class pm_Locale
      * Translate message by key according to current locale
      *
      * @param string $key
+     * @param array $params
      * @return string
      */
-    public static function lmsg($key) { }
+    public static function lmsg($key, $params = []) { }
 
     /**
      * Check if key exists in translations

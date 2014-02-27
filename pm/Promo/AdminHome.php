@@ -5,10 +5,12 @@
  *
  * @package Plesk_Modules
  */
-abstract class pm_Promo_AdminHome extends Promo_Hideable 
+abstract class pm_Promo_AdminHome extends Promo_Hideable implements pm_Hook_Interface
 {
 
     /**
+     * Module identity
+     *
      * @var string
      */
     protected $_moduleId;
@@ -24,9 +26,10 @@ abstract class pm_Promo_AdminHome extends Promo_Hideable
      * Retrieve translated message from locale file
      *
      * @param string $key
+     * @param array $params
      * @return string
      */
-    public function lmsg($key) { }
+    public function lmsg($key, $params = []) { }
 
     /**
      * Check if block is active

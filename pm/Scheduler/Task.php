@@ -52,6 +52,15 @@ class pm_Scheduler_Task
 
     /**
      * Schedules task to be executed at specified moment
+     *
+     *      array(
+     *          'minute' => '*',
+     *          'hour' => '*',
+     *          'dom' => '*',
+     *          'month' => '*',
+     *          'dow' => '*',
+     *      )
+     *
      * @param array $schedule Associated array with keys minute, hour, dom, month, dow
      */
     public function setSchedule($schedule) { }

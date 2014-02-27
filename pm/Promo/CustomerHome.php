@@ -1,19 +1,25 @@
 <?php
 // Copyright 1999-2014. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
- * Promo block for admin home page
+ * Promo block for customer (on Websites&Domains page)
  *
  * @package Plesk_Modules
  */
-abstract class pm_Promo_CustomerHome extends Promo_CustomerHideable 
+abstract class pm_Promo_CustomerHome extends Promo_CustomerHideable implements pm_Hook_Interface
 {
 
     /**
+     * Module identity
+     *
      * @var string
      */
     protected $_moduleId;
 
-    /** @var integer */
+    /**
+     * Client identity
+     *
+     * @var int
+     */
     protected $_clientId;
 
     /**
@@ -27,9 +33,10 @@ abstract class pm_Promo_CustomerHome extends Promo_CustomerHideable
      * Retrieve translated message from locale file
      *
      * @param string $key
+     * @param array $params
      * @return string
      */
-    public function lmsg($key) { }
+    public function lmsg($key, $params = []) { }
 
     /**
      * Check if block is active

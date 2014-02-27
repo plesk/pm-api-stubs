@@ -9,6 +9,13 @@ class pm_Session
 {
 
     /**
+     * Check if session is initialized or not
+     *
+     * @return bool
+     */
+    public static function isExist() { }
+
+    /**
      * Retrieve panel client for current session
      *
      * @return pm_Client

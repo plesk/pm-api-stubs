@@ -5,7 +5,7 @@
  *
  * @package Plesk_Modules
  */
-abstract class pm_FileManager_Action 
+abstract class pm_FileManager_Action implements pm_Hook_Interface
 {
 
     /**
@@ -17,6 +17,21 @@ abstract class pm_FileManager_Action
 
     /**
      * File or directory item
+     *
+     *      array (
+     *          'name' => 'hello.txt',
+     *          'modificationTimestamp' => '1380276799',
+     *          'modificationDate' => 'Sep 27, 2013 05:13 PM',
+     *          'size' => '8192',
+     *          'formatedSize' => '8.0 KB',
+     *          'user' => 'user_ifvbjsgcdk',
+     *          'group' => 'psacln',
+     *          'filePerms' => 'rw- r-- r-- ',
+     *          'isDirectory' => false,
+     *          'icon' => '/theme/icons/16/plesk/file-txt.png',
+     *          'isReadonly' => false,
+     *          'currentDir' => '/httpdocs',
+     *      )
      *
      * @var array
      */
@@ -34,9 +49,10 @@ abstract class pm_FileManager_Action
      * Retrieve translated message from locale file
      *
      * @param string $key
+     * @params array $params
      * @return string
      */
-    public function lmsg($key) { }
+    public function lmsg($key, $params = []) { }
 
     /**
      * Retrieve name for action

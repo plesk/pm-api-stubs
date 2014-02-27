@@ -8,12 +8,6 @@
 class pm_Scheduler 
 {
 
-    /**
-     * Class for regular task representation
-     * @var string
-     */
-    protected $_schedulerTask = 'pm_Scheduler_Task';
-
     
     public static $EVERY_MIN = [];
 

@@ -11,6 +11,17 @@ class pm_View_Helper_RenderTools extends Zend_View_Helper_Abstract
     /**
      * Render tools
      *
+     *      array (
+     *          array (
+     *              'icon' => string,
+     *              'title' => string,
+     *              'description' => string,
+     *              'controller' => string,
+     *              'action' => string,
+     *              'link' => string,
+     *          ),
+     *      )
+     *
      * @param array $tools
      * @return string
      */

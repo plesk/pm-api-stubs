@@ -1,37 +1,40 @@
 <?php
 // Copyright 1999-2014. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
+ * Abstract class for all extensions controllers
+ *
+ * @see Zend_Controller_Action
  * @package Plesk_Modules
  */
 abstract class pm_Controller_Action extends Zend_Controller_Action 
 {
 
     /**
-     * Currently logged in user
-     *
-     * @var User_Client
-     */
-    protected $_user;
-
-    /**
      * Action status
      *
-     * @var CommonPanel_Controller_Action_Status
+     * @var pm_View_Status
      */
     protected $_status;
 
-    
-    public function init() { }
+    /**
+     * Access level restrictions. Possible values: 'admin', 'reseller', 'client'
+     *
+     * @var string|array
+     */
+    protected $_accessLevel = [];
 
-    
-    public function postDispatch() { }
+    /**
+     * Initialize controller
+     */
+    public function init() { }
 
     /**
      * Translate message by key according to current locale
      *
      * @param string $key
+     * @param array $params
      * @return string
      */
-    public static function lmsg($key) { }
+    public static function lmsg($key, $params = []) { }
 
 }

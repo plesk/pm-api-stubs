@@ -21,6 +21,13 @@ class pm_Context
     public static function reset() { }
 
     /**
+     * Check if module context is initialized or not
+     *
+     * @return bool
+     */
+    public static function isInitialized() { }
+
+    /**
      * Retrieve module identity
      *
      * @return string
@@ -56,9 +63,18 @@ class pm_Context
     public static function getBaseUrl() { }
 
     /**
+     * Retrieve URL for controller action
+     *
+     * @param string $controller
+     * @param string $action
+     * @return string
+     */
+    public static function getActionUrl($controller, $action = 'index') { }
+
+    /**
      * Retrieve information about module from registry
      *
-     * @return string
+     * @return Zend_Db_Table_Row
      */
     public static function getModuleInfo() { }
 

@@ -4,7 +4,6 @@
  * Helper for prepending URL with base URL
  *
  * @package Plesk_Modules
- * @ignore
  */
 class pm_View_Helper_BaseUrl extends Zend_View_Helper_Abstract 
 {
@@ -19,6 +18,12 @@ class pm_View_Helper_BaseUrl extends Zend_View_Helper_Abstract
 
     /**
      * Prepare URL for specified controller/action in context of module
+     *
+     *      array (
+     *          'controller' => string,
+     *          'action' => string,
+     *          'link' => string,
+     *      )
      *
      * @param array $params
      * @return string

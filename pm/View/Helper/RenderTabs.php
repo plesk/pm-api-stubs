@@ -11,6 +11,16 @@ class pm_View_Helper_RenderTabs extends Zend_View_Helper_Abstract
     /**
      * Render tabs
      *
+     *      array (
+     *          array (
+     *              'title' => string,
+     *              'active' => bool,
+     *              'controller' => string,
+     *              'action' => string,
+     *              'link' => string,
+     *          ),
+     *      )
+     *
      * @param array $tabs
      * @return string
      */

@@ -16,6 +16,13 @@ class pm_Locale
     public static function getCode() { }
 
     /**
+     * Set current locale code
+     *
+     * @param string $localeCode
+     */
+    public static function setCode($localeCode) { }
+
+    /**
      * Translate message by key according to current locale
      *
      * @param string $key
@@ -30,5 +37,13 @@ class pm_Locale
      * @return bool
      */
     public static function keyExists($key) { }
+
+    /**
+     * Set translation from array
+     *
+     * @param string $localeCode
+     * @param array $messages
+     */
+    public static function setTranslation($localeCode, $messages) { }
 
 }

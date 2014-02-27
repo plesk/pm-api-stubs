@@ -9,24 +9,10 @@ class pm_Scheduler
 {
 
     /**
-     * @internal
-     * @var string
-     */
-    protected $_user = 'root';
-
-    /**
      * Class for regular task representation
      * @var string
      */
     protected $_schedulerTask = 'pm_Scheduler_Task';
-
-    /**
-     * If true then listTasks returns all tasks
-     * If false then listTasks returns only tasks of current module
-     * @internal
-     * @var bool
-     */
-    protected $_manageAllTasks = false;
 
     
     public static $EVERY_MIN = [];
@@ -61,6 +47,11 @@ class pm_Scheduler
     public static function getInstance() { }
 
     /**
+     * Reset the singleton instance
+     */
+    public static function resetInstance() { }
+
+    /**
      * List all tasks of current module
      * @return pm_Scheduler_Task[]
      */
@@ -78,21 +69,6 @@ class pm_Scheduler
      * @param pm_Scheduler_Task $task
      */
     public function putTask($task) { }
-
-    /**
-     * @internal
-     * @param SchedulerStamp $schedulerStamp
-     * @param array $schedule
-     */
-    protected function _prepareSchedule($schedulerStamp, $schedule) { }
-
-    /**
-     * @internal
-     * @param string $cmd
-     * @param string $moduleId
-     * @return array
-     */
-    protected function _prepareCmd($cmd, $moduleId) { }
 
     /**
      * Remove task from scheduler

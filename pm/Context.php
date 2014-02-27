@@ -16,6 +16,11 @@ class pm_Context
     public static function init($moduleId) { }
 
     /**
+     * Reset module context
+     */
+    public static function reset() { }
+
+    /**
      * Retrieve module identity
      *
      * @return string

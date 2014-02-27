@@ -16,11 +16,4 @@ class pm_View_Helper_RenderSmallTools extends Zend_View_Helper_Abstract
      */
     public function renderSmallTools($tools) { }
 
-    /**
-     * @internal
-     * @param array $tools
-     * @return array
-     */
-    public function getSmallTools($tools) { }
-
 }

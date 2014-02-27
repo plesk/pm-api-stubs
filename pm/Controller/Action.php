@@ -9,7 +9,7 @@ abstract class pm_Controller_Action extends Zend_Controller_Action
     /**
      * Currently logged in user
      *
-     * @var UserClient
+     * @var User_Client
      */
     protected $_user;
 

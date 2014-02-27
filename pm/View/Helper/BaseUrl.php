@@ -4,7 +4,7 @@
  * Helper for prepending URL with base URL
  *
  * @package Plesk_Modules
- * @internal
+ * @ignore
  */
 class pm_View_Helper_BaseUrl extends Zend_View_Helper_Abstract 
 {

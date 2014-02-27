@@ -9,14 +9,6 @@ class pm_Client
 {
 
     /**
-     * Create new panel client wrapper
-     *
-     * @internal
-     * @param Client $client
-     */
-    public function __construct($client) { }
-
-    /**
      * Retrieve client by known id
      *
      * @param int $clientId

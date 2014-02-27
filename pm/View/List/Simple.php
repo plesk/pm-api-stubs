@@ -13,17 +13,6 @@ class pm_View_List_Simple extends CommonPanel_View_List_Abstract
     const ITEMS_UNLIMITED = 100000;
 
     /**
-     * @internal
-     * @var bool
-     */
-    protected $_postponeSetup = true;
-
-    /**
-     * @var string name of class implements Zend_Paginator_Adapter_Interface
-     */
-    protected $_paginatorAdapterName = 'CommonPanel_View_List_Paginator_Array';
-
-    /**
      * Create list
      * @param Zend_View $view
      * @param Zend_Controller_Request_Abstract $request
@@ -38,24 +27,10 @@ class pm_View_List_Simple extends CommonPanel_View_List_Abstract
     public function setColumns($columns) { }
 
     /**
-     * Get list columns
-     * @internal
-     * @return array
-     */
-    public function getColumns() { }
-
-    /**
      * Set list data from associated array
      * @param array $data
      */
     public function setData($data) { }
-
-    /**
-     * Get list data
-     * @internal
-     * @return array
-     */
-    protected function _getDataProvider() { }
 
     /**
      * Fetch list data
@@ -70,30 +45,10 @@ class pm_View_List_Simple extends CommonPanel_View_List_Abstract
     public function setDataUrl($params) { }
 
     /**
-     * Get data URL params
-     * @internal
-     * @return array
-     */
-    public function getDataUrl() { }
-
-    /**
      * Set list tools from associated array
      * @param array $tools
      */
     public function setTools($tools) { }
-
-    /**
-     * Get list tools
-     * @internal
-     * @return array
-     */
-    public function getTools() { }
-
-    /**
-     * Setup translation engine
-     * @internal
-     */
-    protected function _setupTranslator() { }
 
     /**
      * Translate message by key according to current locale

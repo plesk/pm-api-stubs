@@ -29,4 +29,11 @@ class pm_Session
      */
     public static function getImpersonatedClientId() { }
 
+    /**
+     * Retrieve domain which context is current
+     *
+     * @return pm_Domain
+     */
+    public static function getCurrentDomain() { }
+
 }

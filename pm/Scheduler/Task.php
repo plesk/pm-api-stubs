@@ -21,22 +21,28 @@ class pm_Scheduler_Task
     public function getId() { }
 
     /**
-     * @internal
-     * @param string $taskId
-     */
-    public function setId($taskId) { }
-
-    /**
-     * Return commang to be executed
+     * Return command to be executed
      * @return string
      */
     public function getCmd() { }
 
     /**
-     * Set commang to be executed
+     * Set command to be executed
      * @param string $cmd
      */
     public function setCmd($cmd) { }
+
+    /**
+     * Return arguments of command to be executed
+     * @return array
+     */
+    public function getArguments() { }
+
+    /**
+     * Set arguments of command to be executed
+     * @param array $arguments
+     */
+    public function setArguments($arguments) { }
 
     /**
      * Return schedule of task in associated array format
@@ -55,13 +61,5 @@ class pm_Scheduler_Task
      * @return string
      */
     public function getModuleId() { }
-
-    /**
-     * Hide module php interpreter call and script full path for module-specific tasks and detect task owner module.
-     * @internal
-     * @param $cmd string Task command
-     * @return string Shortened command.
-     */
-    protected function _prepareCmd($cmd) { }
 
 }

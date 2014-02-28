@@ -24,6 +24,8 @@ abstract class pm_Hook_CustomButtons implements pm_Hook_Interface
 
     const PLACE_DOMAIN = 8;
 
+    const PLACE_DOMAIN_PROPERTIES = 9;
+
     /**
      * Retrieve the list of buttons
      *

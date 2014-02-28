@@ -12,41 +12,41 @@ abstract class pm_Hook_ContentInclude implements pm_Hook_Interface
      * Init routines generating content using other APIs (e.g. pm_View_Status)
      *
      */
-    public static function init() { }
+    public function init() { }
 
     /**
      * Retrieve key-value array which will be encoded into JSON and added to HTML head tag as JavaScript block
      *
      * @return array
      */
-    public static function getJsConfig() { }
+    public function getJsConfig() { }
 
     /**
      * Retrieve JavaScript code which will be added to HTML head tag
      *
      * @return string
      */
-    public static function getJsContent() { }
+    public function getJsContent() { }
 
     /**
      * Retrieve JavaScript code which will be added to HTML head tag and fired after DOMReady event
      *
      * @return string
      */
-    public static function getJsOnReadyContent() { }
+    public function getJsOnReadyContent() { }
 
     /**
      * Retrieve additional HTML content which will be added to HTML head tag
      *
      * @return string
      */
-    public static function getHeadContent() { }
+    public function getHeadContent() { }
 
     /**
      * Retrieve additional HTML content which will be added to HTML body tag
      *
      * @return string
      */
-    public static function getBodyContent() { }
+    public function getBodyContent() { }
 
 }

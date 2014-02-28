@@ -18,6 +18,11 @@ abstract class pm_Hook_Auth implements pm_Hook_Interface
     abstract public function auth($login, $password);
 
     /**
+     * Handle session destroy event
+     */
+    public function destroy() { }
+
+    /**
      * Check if hook is enabled or not
      *
      * @return bool

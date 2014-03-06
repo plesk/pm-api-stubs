@@ -29,4 +29,11 @@ abstract class pm_Hook_Auth implements pm_Hook_Interface
      */
     public function isEnabled() { }
 
+    /**
+     * If is true, then if the authentication fails, the next hook in the chain, if one exists, will not be executed.
+     *
+     * @return bool
+     */
+    public function breakChainOnFailure() { }
+
 }

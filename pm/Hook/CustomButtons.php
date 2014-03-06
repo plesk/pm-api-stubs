@@ -36,12 +36,14 @@ abstract class pm_Hook_CustomButtons implements pm_Hook_Interface
      *              'description' => 'Description for example button',
      *              'icon' => pm_Context::getBaseUrl() . 'images/icon.png',
      *              'link' => pm_Context::getBaseUrl() . 'index.php/index/index',
+     *              'newWindow' => false,
+     *              'contextParams' => true,
      *          ),
      *          ...
      *      )
      *
      * @return array
      */
-    abstract public static function getButtons();
+    abstract public function getButtons();
 
 }

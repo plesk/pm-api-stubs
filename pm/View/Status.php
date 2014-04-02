@@ -18,30 +18,34 @@ class pm_View_Status
      * Add info message
      *
      * @param string $message
+     * @param bool $noEscape if true, HTML is allowed in message
      */
-    public static function addInfo($message) { }
+    public static function addInfo($message, $noEscape = false) { }
 
     /**
      * Add warning message
      *
      * @param string $message
+     * @param bool $noEscape if true, HTML is allowed in message
      */
-    public static function addWarning($message) { }
+    public static function addWarning($message, $noEscape = false) { }
 
     /**
      * Add error message
      *
      * @param string $message
+     * @param bool $noEscape if true, HTML is allowed in message
      */
-    public static function addError($message) { }
+    public static function addError($message, $noEscape = false) { }
 
     /**
      * Add message
      *
      * @param string $status
      * @param string $message
+     * @param bool $noEscape if true, HTML is allowed in message
      */
-    public static function addMessage($status, $message) { }
+    public static function addMessage($status, $message, $noEscape = false) { }
 
     /**
      * Check if particular status message is present

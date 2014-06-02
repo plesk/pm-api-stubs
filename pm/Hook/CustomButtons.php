@@ -38,6 +38,7 @@ abstract class pm_Hook_CustomButtons implements pm_Hook_Interface
      *              'link' => pm_Context::getBaseUrl() . 'index.php/index/index',
      *              'newWindow' => false,
      *              'contextParams' => true,
+     *              'visibility' => [$this, 'isExampleButtonVisible'],
      *          ),
      *          ...
      *      )

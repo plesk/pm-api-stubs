@@ -30,6 +30,13 @@ class pm_Domain
     public function getName() { }
 
     /**
+     * Retrieve owner of domain
+     *
+     * @return pm_Client
+     */
+    public function getClient() { }
+
+    /**
      * Retrieve property of domain
      *
      * @param string $name

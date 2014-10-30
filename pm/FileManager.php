@@ -1,7 +1,7 @@
 <?php
 // Copyright 1999-2014. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
- * Manager of hosted files for module.
+ * Manager of hosted files for module (webspace level).
  *
  * @package Plesk_Modules
  */
@@ -46,5 +46,39 @@ class pm_FileManager
      * @return string
      */
     public function fileGetContents($filename) { }
+
+    /**
+     * @param $path
+     * @param $perms
+     * @param bool $recursively
+     */
+    public function mkDir($path, $perms, $recursively = false) { }
+
+    /**
+     * @param $filename
+     */
+    public function touch($filename) { }
+
+    /**
+     * @param string $filename
+     * @param string $mode
+     */
+    public function chmod($filename, $mode) { }
+
+    /**
+     * @param string $source
+     * @param string $destination
+     */
+    public function moveFile($source, $destination) { }
+
+    /**
+     * @param string $filename
+     */
+    public function removeFile($filename) { }
+
+    /**
+     * @param string $dirname
+     */
+    public function removeDirectory($dirname) { }
 
 }

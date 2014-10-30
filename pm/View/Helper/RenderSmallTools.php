@@ -13,6 +13,7 @@ class pm_View_Helper_RenderSmallTools extends Zend_View_Helper_Abstract
      *
      *      array (
      *          array (
+     *              'id' => string,
      *              'title' => string,
      *              'description' => string,
      *              'class' => string,

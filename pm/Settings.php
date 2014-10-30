@@ -23,4 +23,7 @@ class pm_Settings
      */
     public static function set($name, $value) { }
 
+    
+    public static function clean() { }
+
 }

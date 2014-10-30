@@ -25,7 +25,7 @@ class pm_View_Helper_BaseUrl extends Zend_View_Helper_Abstract
      *          'link' => string,
      *      )
      *
-     * @param array $params
+     * @param array|string $params
      * @return string
      */
     public function moduleUrl($params) { }

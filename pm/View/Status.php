@@ -14,6 +14,9 @@ class pm_View_Status
 
     const STATUS_ERROR = 'error';
 
+    
+    public function __construct() { }
+
     /**
      * Add info message
      *

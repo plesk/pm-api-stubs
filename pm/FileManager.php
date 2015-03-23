@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2014. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Manager of hosted files for module (webspace level).
  *
@@ -9,14 +9,14 @@ class pm_FileManager
 {
 
     /**
-     * Create new instance of manager
+     * Creates new instance of manager
      *
      * @param $domainId
      */
     public function __construct($domainId) { }
 
     /**
-     * Return full path on filesystem by relative path inside webspace
+     * Returns full path on filesystem by relative path inside webspace
      *
      * @param string $path
      * @return string
@@ -48,35 +48,47 @@ class pm_FileManager
     public function fileGetContents($filename) { }
 
     /**
-     * @param $path
-     * @param $perms
+     * Creates a directory by path ($perms and $recursively are ignored on Windows)
+     *
+     * @param string $dirname
+     * @param string $perms
      * @param bool $recursively
      */
-    public function mkDir($path, $perms, $recursively = false) { }
+    public function mkdir($dirname, $perms = '0755', $recursively = false) { }
 
     /**
+     * Updates the access date and / or modification date of a file or directory.
+     *
      * @param $filename
      */
     public function touch($filename) { }
 
     /**
+     * Changes the access permissions to file system objects (files and directories)
+     *
      * @param string $filename
      * @param string $mode
      */
     public function chmod($filename, $mode) { }
 
     /**
+     * Moves file from source to destination
+     *
      * @param string $source
      * @param string $destination
      */
     public function moveFile($source, $destination) { }
 
     /**
+     * Removes file by name
+     *
      * @param string $filename
      */
     public function removeFile($filename) { }
 
     /**
+     * Removes directory by name
+     *
      * @param string $dirname
      */
     public function removeDirectory($dirname) { }

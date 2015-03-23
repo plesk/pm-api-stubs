@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2014. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Base list
  *
@@ -115,6 +115,22 @@ class pm_View_List_Simple extends CommonPanel_View_List_Abstract
      * @param array $columns
      */
     public function setColumns($columns) { }
+
+    /**
+     * add search filters from associated array
+     *
+     *      [
+     *          'column-id' =>
+     *          [
+     *              'title' => string,
+     *              'fields' => [string, string],
+     *              'options' => [string => string],
+     *          ]
+     *      ]
+     *
+     * @param array $columns
+     */
+    public function addSearchFilters($filters) { }
 
     /**
      * Set list data from associated array

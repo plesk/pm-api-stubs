@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2014. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Regular task representation.
  *
@@ -10,7 +10,7 @@ class pm_Scheduler_Task
 
     /**
      * Create instance of task for scheduler
-     * @param string $task null for new task
+     * @param Db_Table_Row_ScheduledTask $task null for new task
      */
     public function __construct($task = null) { }
 

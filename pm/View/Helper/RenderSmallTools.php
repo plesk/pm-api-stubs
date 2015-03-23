@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2014. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Helper for rendering small buttons in view
  *
@@ -22,7 +22,7 @@ class pm_View_Helper_RenderSmallTools extends Zend_View_Helper_Abstract
      *              'link' => string,
      *          ),
      *      )
-     * 
+     *
      * @param array $tools
      * @return string
      */

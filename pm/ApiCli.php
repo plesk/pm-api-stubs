@@ -22,10 +22,11 @@ class pm_ApiCli
      * @param string $command
      * @param array $args
      * @param int $result
+     * @param array|null $env
      * @return array|int|string
      * @throws pm_Exception
      */
-    public static function call($command, $args = [], $result = 1) { }
+    public static function call($command, $args = [], $result = 1, $env = null) { }
 
     /**
      * Execute privileged CLI utility
@@ -34,9 +35,10 @@ class pm_ApiCli
      * @param array $args
      * @param int $result
      * @param bool $contextPriority
+     * @param array|null $env
      * @return array|int|string
      * @throws pm_Exception
      */
-    public static function callSbin($command, $args = [], $result = 1, $contextPriority = true) { }
+    public static function callSbin($command, $args = [], $result = 1, $contextPriority = true, $env = null) { }
 
 }

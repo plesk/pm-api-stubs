@@ -93,4 +93,12 @@ class pm_FileManager
      */
     public function removeDirectory($dirname) { }
 
+    /**
+     * Returns file size in bytes
+     *
+     * @param string $filename
+     * @return string
+     */
+    public function fileSize($filename) { }
+
 }

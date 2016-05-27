@@ -35,9 +35,11 @@ class pm_Locale
      * Check if key exists in translations
      *
      * @param string $key
+     * @param bool $findSection
+     *
      * @return bool
      */
-    public static function keyExists($key) { }
+    public static function keyExists($key, $findSection = false) { }
 
     /**
      * Set translation from array
@@ -46,5 +48,13 @@ class pm_Locale
      * @param array $messages
      */
     public static function setTranslation($localeCode, $messages) { }
+
+    /**
+     * Get translated messages by key according to current locale
+     *
+     * @param string $sectionKey
+     * @return string
+     */
+    public static function getSection($sectionKey) { }
 
 }

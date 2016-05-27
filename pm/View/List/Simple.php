@@ -83,16 +83,18 @@ class pm_View_List_Simple extends CommonPanel_View_List_Abstract
     /**
      * Create list
      *
-     *      $options = array (
-     *          'pageable' => boolean,
-     *          'defaultItemsPerPage' => int,
-     *          'defaultSortField' => string,
-     *          'defaultSortDirection' => string,
-     *          'dataUrl' => array|string,
-     *          'columns' => array,
-     *          'data' => array,
-     *          'tools' => array,
-     *      )
+     * ```php
+     * $options = [
+     *     'pageable' => boolean,
+     *     'defaultItemsPerPage' => int,
+     *     'defaultSortField' => string,
+     *     'defaultSortDirection' => string,
+     *     'dataUrl' => array|string,
+     *     'columns' => array,
+     *     'data' => array,
+     *     'tools' => array,
+     * ]
+     * ```
      *
      * @param Zend_View $view
      * @param Zend_Controller_Request_Abstract $request
@@ -103,14 +105,17 @@ class pm_View_List_Simple extends CommonPanel_View_List_Abstract
     /**
      * Set list columns from associated array
      *
-     *      array (
-     *          'first-column-id' => array (
-     *              'title' => string,
-     *              'noEscape' => bool,
-     *              'searchable' => bool,
-     *              'sortable' => bool,
-     *          ),
-     *      )
+     * ```php
+     * [
+     *     'first-column-id' => [
+     *         'title' => string,
+     *         'noEscape' => bool,
+     *         'searchable' => bool,
+     *         'sortable' => bool,
+     *     ],
+     *     ...
+     * ]
+     * ```
      *
      * @param array $columns
      */
@@ -119,27 +124,32 @@ class pm_View_List_Simple extends CommonPanel_View_List_Abstract
     /**
      * add search filters from associated array
      *
-     *      [
-     *          'column-id' =>
-     *          [
-     *              'title' => string,
-     *              'fields' => [string, string],
-     *              'options' => [string => string],
-     *          ]
-     *      ]
+     * ```php
+     * [
+     *     'column-id' =>
+     *     [
+     *         'title' => string,
+     *         'fields' => [string, string],
+     *         'options' => [string => string],
+     *     ]
+     * ]
+     * ```
      *
-     * @param array $columns
+     * @param array $filters
      */
     public function addSearchFilters($filters) { }
 
     /**
      * Set list data from associated array
      *
-     *      array (
-     *          array (
-     *              'first-column-id' => string,
-     *          ),
-     *      )
+     * ```php
+     * [
+     *     [
+     *         'first-column-id' => string,
+     *     ],
+     *     ...
+     * ]
+     * ```
      *
      * @param array $data
      */
@@ -155,11 +165,13 @@ class pm_View_List_Simple extends CommonPanel_View_List_Abstract
     /**
      * Set URL for retrieving list data
      *
-     *      array (
-     *          'controller' => string,
-     *          'action' => string,
-     *          'link' => string,
-     *      )
+     * ```php
+     * [
+     *     'controller' => string,
+     *     'action' => string,
+     *     'link' => string,
+     * ]
+     * ```
      *
      * @param array|string $params
      */
@@ -168,20 +180,22 @@ class pm_View_List_Simple extends CommonPanel_View_List_Abstract
     /**
      * Set list tools from associated array
      *
-     *      array (
-     *          array (
-     *              'title' => string,
-     *              'description' => string,
-     *              'class' => string,
-     *              'controller' => string,
-     *              'action' => string,
-     *              'link' => string,
-     *              'execGroupOperation' => string|array(
-     *                  'url' => string,
-     *                  'submitHandler' => 'function(url, ids) {}'
-     *              ),
-     *          ),
-     *      )
+     * ```php
+     * [
+     *     [
+     *         'title' => string,
+     *         'description' => string,
+     *         'class' => string,
+     *         'controller' => string,
+     *         'action' => string,
+     *         'link' => string,
+     *         'execGroupOperation' => string|[
+     *             'url' => string,
+     *             'submitHandler' => 'function(url, ids) {}'
+     *         ],
+     *     ],
+     * ]
+     * ```
      *
      * @param array $tools
      */

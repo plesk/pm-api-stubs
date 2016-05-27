@@ -1,12 +1,11 @@
 <?php
 // Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
- * Base form
+ * Sub Form
  *
- * @see Zend_Form
  * @package Plesk_Modules
  */
-class pm_Form_Simple extends CommonPanel_Form 
+class pm_Form_SubForm extends CommonPanel_Form_SubForm 
 {
 
     const DECORATOR = 'DECORATOR';
@@ -99,33 +98,6 @@ class pm_Form_Simple extends CommonPanel_Form
     public function getElement($name) { }
 
     /**
-     * Add control buttons: Ok and Cancel
-     *
-     * ```php
-     * [
-     *     'sendTitle' => string,
-     *     'sendHidden' => bool,
-     *     'cancelTitle' => string,
-     *     'cancelLink' => string,
-     *     'cancelHidden' => bool,
-     *     'withSeparator' => bool,
-     *     'hideLegend' => bool,
-     *     'presubmitHandler' => string,
-     * ]
-     * ```
-     *
-     * @param array $params
-     */
-    public function addControlButtons($params = null) { }
-
-    /**
-     * Get element id
-     *
-     * @return string
-     */
-    public function getId() { }
-
-    /**
      * Translate message by key according to current locale
      *
      * @param string $key
@@ -135,28 +107,18 @@ class pm_Form_Simple extends CommonPanel_Form
     public function lmsg($key, $params = []) { }
 
     /**
-     * Add a sub form
+     * Set form legend
      *
-     * @param Zend_Form $form
-     * @param string $name
-     * @param null $order
+     * @param string $value
      * @return Zend_Form
      */
-    public function addSubForm($form, $name, $order = null) { }
+    public function setLegend($value) { }
 
     /**
-     * Retrieve a single sub form
+     * Retrieve form legend
      *
-     * @param string $name
-     * @return null|Zend_Form
+     * @return string
      */
-    public function getSubForm($name) { }
-
-    /**
-     * Retrieve all sub forms
-     *
-     * @return Zend_Form[]
-     */
-    public function getSubForms() { }
+    public function getLegend() { }
 
 }

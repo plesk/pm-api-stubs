@@ -19,11 +19,13 @@ class pm_View_Helper_BaseUrl extends Zend_View_Helper_Abstract
     /**
      * Prepare URL for specified controller/action in context of module
      *
-     *      array (
-     *          'controller' => string,
-     *          'action' => string,
-     *          'link' => string,
-     *      )
+     * ```php
+     * [
+     *     'controller' => string,
+     *     'action' => string,
+     *     'link' => string,
+     * ]
+     * ```
      *
      * @param array|string $params
      * @return string

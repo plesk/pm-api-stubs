@@ -18,20 +18,22 @@ abstract class pm_FileManager_Action implements pm_Hook_Interface
     /**
      * File or directory item
      *
-     *      array (
-     *          'name' => 'hello.txt',
-     *          'modificationTimestamp' => '1380276799',
-     *          'modificationDate' => 'Sep 27, 2013 05:13 PM',
-     *          'size' => '8192',
-     *          'formatedSize' => '8.0 KB',
-     *          'user' => 'user_ifvbjsgcdk',
-     *          'group' => 'psacln',
-     *          'filePerms' => 'rw- r-- r-- ',
-     *          'isDirectory' => false,
-     *          'icon' => '/theme/icons/16/plesk/file-txt.png',
-     *          'isReadonly' => false,
-     *          'currentDir' => '/httpdocs',
-     *      )
+     * ```php
+     * [
+     *     'name' => 'hello.txt',
+     *     'modificationTimestamp' => '1380276799',
+     *     'modificationDate' => 'Sep 27, 2013 05:13 PM',
+     *     'size' => '8192',
+     *     'formatedSize' => '8.0 KB',
+     *     'user' => 'user_ifvbjsgcdk',
+     *     'group' => 'psacln',
+     *     'filePerms' => 'rw- r-- r-- ',
+     *     'isDirectory' => false,
+     *     'icon' => '/theme/icons/16/plesk/file-txt.png',
+     *     'isReadonly' => false,
+     *     'currentDir' => '/httpdocs',
+     * ]
+     * ```
      *
      * @var array
      */

@@ -8,6 +8,9 @@
 class pm_View_Helper_Lmsg extends Zend_View_Helper_Abstract 
 {
 
+    
+    public function init() { }
+
     /**
      * Translate message by key according to current locale
      *
@@ -16,5 +19,14 @@ class pm_View_Helper_Lmsg extends Zend_View_Helper_Abstract
      * @return string
      */
     public function lmsg($key, $params = []) { }
+
+    /**
+     * Get section of messages by key according to current locale
+     *
+     * @param $key
+     *
+     * @return array
+     */
+    public function getSection($key) { }
 
 }

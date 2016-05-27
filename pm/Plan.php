@@ -1,48 +1,33 @@
 <?php
 // Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
- * Domain wrapper
+ * Service Plan wrapper
  *
  * @package Plesk_Modules
  */
-class pm_Domain 
+class pm_Plan 
 {
 
     /**
-     * Create new domain wrapper
+     * Create new plan wrapper
      *
-     * @param int $domainId
+     * @param int $planId
      */
-    public function __construct($domainId) { }
+    public function __construct($planId) { }
 
     /**
-     * Retrieve domain id
+     * Retrieve plan id
      *
      * @return int
      */
     public function getId() { }
 
     /**
-     * Retrieve domain name
+     * Retrieve plan name
      *
      * @return string
      */
     public function getName() { }
-
-    /**
-     * Retrieve owner of domain
-     *
-     * @return pm_Client
-     */
-    public function getClient() { }
-
-    /**
-     * Retrieve property of domain
-     *
-     * @param string $name
-     * @return string
-     */
-    public function getProperty($name) { }
 
     /**
      * Retrieve permission value by name

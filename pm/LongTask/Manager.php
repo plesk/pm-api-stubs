@@ -1,0 +1,44 @@
+<?php
+// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+/**
+ * Manager of long tasks.
+ *
+ * @package Plesk_Modules
+ */
+class pm_LongTask_Manager 
+{
+
+    
+    public function __construct() { }
+
+    /**
+     * Start task execution
+     *
+     * @param pm_LongTask_Task $task Task to start
+     * @param pm_Domain|null $domain Domain context or null for no context
+     * @return pm_LongTask_Task Launched task
+     * @throws pm_Exception
+     */
+    public function start($task, $domain = null) { }
+
+    /**
+     * Get task queue filtered by ID and context
+     *
+     * @param string[] $ids Task IDs
+     * @param pm_Domain[]|null $domains Domain contexts or null for task without any context
+     * @return pm_LongTask_Task[] Task queue
+     */
+    public function getTasks($ids, $domains = null) { }
+
+    /**
+     * Cancel task and delete it
+     * @param pm_LongTask_Task $task Task to be canceled
+     */
+    public function cancel($task) { }
+
+    /**
+     * Cancel all extension tasks and delete them
+     */
+    public function cancelAllTasks() { }
+
+}

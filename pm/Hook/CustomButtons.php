@@ -30,22 +30,68 @@ abstract class pm_Hook_CustomButtons implements pm_Hook_Interface
 
     const PLACE_LIST_ACTIONS = 11;
 
+    const PLACE_ADMIN_NAVIGATION = 12;
+
+    const PLACE_RESELLER_NAVIGATION = 13;
+
+    const SECTION_RESELLER_TOOLS_SERVICES = 'myPleskButtons';
+
+    const SECTION_RESELLER_TOOLS_RESOURCES = 'resourcesButtons';
+
+    const SECTION_RESELLER_TOOLS_PLESK_MANAGEMENT = 'toolsButtons';
+
+    const SECTION_RESELLER_TOOLS_ADDITIONAL_SERVICES = 'customButtons';
+
+    const SECTION_ADMIN_TOOLS_MAIL = 'mailButtons';
+
+    const SECTION_ADMIN_TOOLS_PLESK = 'panelButtons';
+
+    const SECTION_ADMIN_TOOLS_GENERAL = 'generalButtons';
+
+    const SECTION_ADMIN_TOOLS_SECURITY = 'securityButtons';
+
+    const SECTION_ADMIN_TOOLS_APPEARANCE = 'uiButtons';
+
+    const SECTION_ADMIN_TOOLS_STATISTICS = 'statisticsButtons';
+
+    const SECTION_ADMIN_TOOLS_APPS_AND_DBS = 'applicationsAndDatabasesButtons';
+
+    const SECTION_ADMIN_TOOLS_EXTERNAL_SERVICES = 'myPleskButtons';
+
+    const SECTION_ADMIN_TOOLS_SERVER_MANAGEMENT = 'serverManagementButtons';
+
+    const SECTION_ADMIN_TOOLS_ADDITIONAL_SERVICES = 'customButtons';
+
+    const SECTION_ADMIN_TOOLS_TOOLS_AND_RESOURCES = 'toolsAndResourcesButtons';
+
+    const SECTION_NAV_GENERAL = 'general';
+
+    const SECTION_NAV_HOSTING = 'hosting';
+
+    const SECTION_NAV_PROFILE = 'profile';
+
+    const SECTION_NAV_ADDITIONAL = 'custom_buttons';
+
+    const SECTION_NAV_SERVER_MANAGEMENT = 'server_management';
+
     /**
      * Retrieve the list of buttons
      *
-     *      array(
-     *          array(
-     *              'place' => self::PLACE_DOMAIN,
-     *              'title' => 'Example Button',
-     *              'description' => 'Description for example button',
-     *              'icon' => pm_Context::getBaseUrl() . 'images/icon.png',
-     *              'link' => pm_Context::getBaseUrl() . 'index.php/index/index',
-     *              'newWindow' => false,
-     *              'contextParams' => true,
-     *              'visibility' => [$this, 'isExampleButtonVisible'],
-     *          ),
-     *          ...
-     *      )
+     * ```php
+     * [
+     *     [
+     *         'place' => self::PLACE_DOMAIN,
+     *         'title' => 'Example Button',
+     *         'description' => 'Description for example button',
+     *         'icon' => pm_Context::getBaseUrl() . 'images/icon.png',
+     *         'link' => pm_Context::getBaseUrl() . 'index.php/index/index',
+     *         'newWindow' => false,
+     *         'contextParams' => true,
+     *         'visibility' => [$this, 'isExampleButtonVisible'],
+     *     ],
+     *     ...
+     * ]
+     * ```
      *
      * @return array
      */

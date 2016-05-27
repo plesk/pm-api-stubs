@@ -18,12 +18,20 @@ class pm_Settings
 
     /**
      * Set value of setting with given name
+     *
      * @param string $name
      * @param string $value
+     *
+     * @throws Zend_Db_Table_Exception
+     * @throws Zend_Db_Table_Row_Exception
+     * @throws pm_Exception_InvalidArgumentException
      */
     public static function set($name, $value) { }
 
-    
-    public static function clean() { }
+    /**
+     * Remove settings
+     * @param string $prefix settings prefix
+     */
+    public static function clean($prefix = '') { }
 
 }

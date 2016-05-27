@@ -64,7 +64,7 @@ class pm_FileManager
     public function touch($filename) { }
 
     /**
-     * Changes the access permissions to file system objects (files and directories)
+     * Changes the access permissions to file system objects (files and directories) totally are ignored on Windows
      *
      * @param string $filename
      * @param string $mode
@@ -100,5 +100,23 @@ class pm_FileManager
      * @return string
      */
     public function fileSize($filename) { }
+
+    /**
+     * Returns joined path parts
+     *
+     * @param string[] ...$pathParts Parts for joining to path
+     * @return string
+     */
+    public function joinPath($pathParts) { }
+
+    /**
+     * Returns list of files and directories inside the specified path
+     *
+     * @param string $path
+     * @param bool $skipDots
+     * @param bool $showSystemFiles
+     * @return string[] List of file names
+     */
+    public function scanDir($path, $skipDots = false, $showSystemFiles = true) { }
 
 }

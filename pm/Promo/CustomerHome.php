@@ -25,9 +25,8 @@ abstract class pm_Promo_CustomerHome extends Promo_CustomerHideable implements p
     /**
      * Create promo block
      *
-     * @param string $moduleId
      */
-    protected function __construct($moduleId) { }
+    public function __construct() { }
 
     /**
      * Retrieve translated message from locale file

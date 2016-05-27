@@ -18,9 +18,8 @@ abstract class pm_Promo_AdminHome extends Promo_Hideable implements pm_Hook_Inte
     /**
      * Create promo block
      *
-     * @param string $moduleId
      */
-    protected function __construct($moduleId) { }
+    public function __construct() { }
 
     /**
      * Retrieve translated message from locale file

@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Content action for FileManager
  *
  * @package Plesk_Modules
+ * @since 11.5
  */
 abstract class pm_FileManager_Action implements pm_Hook_Interface
 {

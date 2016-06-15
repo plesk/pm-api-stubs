@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Base class for Zend_Navigation_Page pages
  *
  * @package Plesk_Modules
+ * @since 17.0
  */
 class pm_Navigation_Page extends Zend_Navigation_Page_Mvc 
 {

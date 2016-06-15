@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Localization facilities
  *
  * @package Plesk_Modules
+ * @since 11.0
  */
 class pm_Locale 
 {
@@ -19,6 +20,7 @@ class pm_Locale
      * Set current locale code
      *
      * @param string $localeCode
+     * @since 11.5
      */
     public static function setCode($localeCode) { }
 
@@ -28,6 +30,7 @@ class pm_Locale
      * @param string $key
      * @param array $params
      * @return string
+     * @since 12.0 added argument $params
      */
     public static function lmsg($key, $params = []) { }
 
@@ -38,6 +41,7 @@ class pm_Locale
      * @param bool $findSection
      *
      * @return bool
+     * @since 17.0 added argument $findSection
      */
     public static function keyExists($key, $findSection = false) { }
 
@@ -54,6 +58,7 @@ class pm_Locale
      *
      * @param string $sectionKey
      * @return string
+     * @since 17.0
      */
     public static function getSection($sectionKey) { }
 

@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Class for initialization Plesk objects
  *
  * @package Plesk_Modules
+ * @since 11.0
  */
 class pm_Bootstrap 
 {

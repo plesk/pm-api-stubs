@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Representation of panel session
  *
  * @package Plesk_Modules
+ * @since 11.0
  */
 class pm_Session 
 {
@@ -12,6 +13,7 @@ class pm_Session
      * Check if session is initialized or not
      *
      * @return bool
+     * @since 12.0
      */
     public static function isExist() { }
 
@@ -40,7 +42,17 @@ class pm_Session
      * Retrieve domain which context is current
      *
      * @return pm_Domain
+     * @since 11.5
      */
     public static function getCurrentDomain() { }
+
+    /**
+     * Retrieve domains that are in current context of Power User view
+     *
+     * @param bool $mainDomainsOnly [optional] Return only main domains. Default is false.
+     * @return pm_Domain[]
+     * @since 17.0
+     */
+    public static function getCurrentDomains($mainDomainsOnly = false) { }
 
 }

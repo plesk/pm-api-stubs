@@ -1,10 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Helper for rendering active list
  *
  * @package Plesk_Modules
- * @since 17.0.11
+ * @since 17.0
  */
 class pm_View_Helper_ActiveList extends CommonPanel_View_Helper_JswComponent 
 {
@@ -84,6 +84,14 @@ class pm_View_Helper_ActiveList extends CommonPanel_View_Helper_JswComponent
      *                     [
      *                         'title' => string,
      *                         'link' => string,
+     *                     ],
+     *                     ...
+     *                 ],
+     *                 'messages' => [ // optional
+     *                     [
+     *                         'icon' => string, // optional
+     *                         'info' => string,
+     *                         'noEscape' => bool, // optional, default is false
      *                     ],
      *                     ...
      *                 ],

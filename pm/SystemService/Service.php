@@ -1,10 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Service provided by extension
  *
  * @package Plesk_Modules
- * @abstract
+ * @since 17.0
  */
 abstract class pm_SystemService_Service 
 {

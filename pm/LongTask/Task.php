@@ -1,17 +1,17 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Long task object
  *
  * @package Plesk_Modules
- * @abstract
+ * @since 17.0
  */
 abstract class pm_LongTask_Task 
 {
 
     const STATUS_NOT_STARTED = 'not_started';
 
-    const STATUS_QUEUE = 'queue';
+    const STATUS_RUNNING = 'running';
 
     const STATUS_ERROR = 'error';
 
@@ -110,14 +110,14 @@ abstract class pm_LongTask_Task
     /**
      * Get task progress
      *
-     * @return int Current task progress, from 0 to 100
+     * @return int Current task progress (from 0 to 100) or -1 if task progress is not trackable
      */
     public function getProgress() { }
 
     /**
      * Get task status
      *
-     * @return string Current task status, one of STATUS_NOT_STARTED|STATUS_QUEUE|STATUS_ERROR|STATUS_DONE
+     * @return string Current task status, one of STATUS_NOT_STARTED|STATUS_RUNNING|STATUS_ERROR|STATUS_DONE
      */
     public function getStatus() { }
 

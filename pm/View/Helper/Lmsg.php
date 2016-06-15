@@ -1,15 +1,13 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Helper for translating messages
  *
  * @package Plesk_Modules
+ * @since 11.0
  */
 class pm_View_Helper_Lmsg extends Zend_View_Helper_Abstract 
 {
-
-    
-    public function init() { }
 
     /**
      * Translate message by key according to current locale
@@ -26,6 +24,7 @@ class pm_View_Helper_Lmsg extends Zend_View_Helper_Abstract
      * @param $key
      *
      * @return array
+     * @since 17.0
      */
     public function getSection($key) { }
 

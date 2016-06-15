@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Status messages helper
  *
  * @package Plesk_Modules
+ * @since 12.0
  */
 class pm_View_Status 
 {
@@ -57,5 +58,33 @@ class pm_View_Status
      * @return bool
      */
     public static function hasMessage($message) { }
+
+    /**
+     * Get all status messages and delete them if required
+     *
+     * ```php
+     * [
+     *     [
+     *         'status' => STATUS_INFO|STATUS_WARNING|STATUS_ERROR,
+     *         'content' => string,
+     *     ],
+     *     ...
+     * ]
+     * ```
+     *
+     * @param bool $clearMessages [optional] Default is true.
+     * @return array
+     * @since 17.0
+     */
+    public static function getAllMessages($clearMessages = true) { }
+
+    /**
+     * Check if status message with certain type is present
+     *
+     * @param string $type Status message type, one of STATUS_INFO|STATUS_WARNING|STATUS_ERROR
+     * @return bool
+     * @since 17.0
+     */
+    public static function hasMessagesByType($type) { }
 
 }

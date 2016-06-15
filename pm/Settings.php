@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Manager of module settings
  *
  * @package Plesk_Modules
+ * @since 11.0
  */
 class pm_Settings 
 {
@@ -31,6 +32,8 @@ class pm_Settings
     /**
      * Remove settings
      * @param string $prefix settings prefix
+     * @since 12.5
+     * @since 17.0 added argument $prefix
      */
     public static function clean($prefix = '') { }
 

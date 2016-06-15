@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Base list
  *
  * @package Plesk_Modules
+ * @since 11.0
  */
 class pm_View_List_Simple extends CommonPanel_View_List_Abstract 
 {
@@ -136,6 +137,7 @@ class pm_View_List_Simple extends CommonPanel_View_List_Abstract
      * ```
      *
      * @param array $filters
+     * @since 12.5
      */
     public function addSearchFilters($filters) { }
 
@@ -207,6 +209,7 @@ class pm_View_List_Simple extends CommonPanel_View_List_Abstract
      * @param string $key
      * @param array $params
      * @return string
+     * @since 12.0 added argument $params
      */
     public function lmsg($key, $params = []) { }
 

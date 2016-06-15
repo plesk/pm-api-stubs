@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Regular task representation.
  *
  * @package Plesk_Modules
+ * @since 11.0
  */
 class pm_Scheduler_Task 
 {
@@ -35,12 +36,14 @@ class pm_Scheduler_Task
     /**
      * Return arguments of command to be executed
      * @return array
+     * @since 11.5
      */
     public function getArguments() { }
 
     /**
      * Set arguments of command to be executed
      * @param array $arguments
+     * @since 11.5
      */
     public function setArguments($arguments) { }
 

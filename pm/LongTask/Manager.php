@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Manager of long tasks.
  *
  * @package Plesk_Modules
+ * @since 17.0
  */
 class pm_LongTask_Manager 
 {

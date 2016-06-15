@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Promo block for admin home page
  *
  * @package Plesk_Modules
+ * @since 11.0
  */
 abstract class pm_Promo_AdminHome extends Promo_Hideable implements pm_Hook_Interface
 {
@@ -27,6 +28,7 @@ abstract class pm_Promo_AdminHome extends Promo_Hideable implements pm_Hook_Inte
      * @param string $key
      * @param array $params
      * @return string
+     * @since 12.0 added argument $params
      */
     public function lmsg($key, $params = []) { }
 

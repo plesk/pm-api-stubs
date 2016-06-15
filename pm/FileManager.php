@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Manager of hosted files for module (webspace level).
  *
  * @package Plesk_Modules
+ * @since 11.5
  */
 class pm_FileManager 
 {
@@ -53,6 +54,7 @@ class pm_FileManager
      * @param string $dirname
      * @param string $perms
      * @param bool $recursively
+     * @since 12.5
      */
     public function mkdir($dirname, $perms = '0755', $recursively = false) { }
 
@@ -60,6 +62,7 @@ class pm_FileManager
      * Updates the access date and / or modification date of a file or directory.
      *
      * @param $filename
+     * @since 12.5
      */
     public function touch($filename) { }
 
@@ -68,6 +71,7 @@ class pm_FileManager
      *
      * @param string $filename
      * @param string $mode
+     * @since 12.5
      */
     public function chmod($filename, $mode) { }
 
@@ -76,6 +80,7 @@ class pm_FileManager
      *
      * @param string $source
      * @param string $destination
+     * @since 12.5
      */
     public function moveFile($source, $destination) { }
 
@@ -83,6 +88,7 @@ class pm_FileManager
      * Removes file by name
      *
      * @param string $filename
+     * @since 12.5
      */
     public function removeFile($filename) { }
 
@@ -90,6 +96,7 @@ class pm_FileManager
      * Removes directory by name
      *
      * @param string $dirname
+     * @since 12.5
      */
     public function removeDirectory($dirname) { }
 
@@ -98,6 +105,7 @@ class pm_FileManager
      *
      * @param string $filename
      * @return string
+     * @since 12.5
      */
     public function fileSize($filename) { }
 
@@ -106,6 +114,7 @@ class pm_FileManager
      *
      * @param string[] ...$pathParts Parts for joining to path
      * @return string
+     * @since 17.0
      */
     public function joinPath($pathParts) { }
 
@@ -116,7 +125,37 @@ class pm_FileManager
      * @param bool $skipDots
      * @param bool $showSystemFiles
      * @return string[] List of file names
+     * @since 17.0
      */
     public function scanDir($path, $skipDots = false, $showSystemFiles = true) { }
+
+    /**
+     * Returns list of paths inside the specified sources that match the patterns
+     *
+     * @param string[] $patterns List of patterns, which will be searched
+     * @param boolean $recursively [optional] Whether a recursive search should be done. Default is true
+     * @param string $path [optional] Path where search will be performed. Default is /
+     * @return string[] List of paths
+     * @since 17.0
+     */
+    public function find($patterns, $recursively = true, $path = '/') { }
+
+    /**
+     * Checks if path is inside webspace
+     *
+     * @param string $path
+     * @return bool
+     * @since 17.0
+     */
+    public function isSubpath($path) { }
+
+    /**
+     * Returns relative path inside webspace by full path
+     *
+     * @param string $path
+     * @return string
+     * @since 17.0
+     */
+    public function getRelativeFilePath($path) { }
 
 }

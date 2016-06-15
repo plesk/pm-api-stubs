@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Abstract class for injection into active lists
  *
  * @package Plesk_Modules
+ * @since 17.0
  */
 abstract class pm_Hook_ActiveList implements pm_Hook_Interface
 {
@@ -22,6 +23,14 @@ abstract class pm_Hook_ActiveList implements pm_Hook_Interface
      *             [
      *                 'title' => string,
      *                 'link' => string,
+     *             ],
+     *             ...
+     *         ],
+     *         'messages' => [ // optional
+     *             [
+     *                 'icon' => string, // optional
+     *                 'info' => string,
+     *                 'noEscape' => bool, // optional, default is false
      *             ],
      *             ...
      *         ],

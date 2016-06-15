@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Hook for registering events
  *
  * @package Plesk_Modules
+ * @since 17.0
  */
 abstract class pm_Hook_ActionLog implements pm_Hook_Interface
 {

@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Panel license keys management class
  *
  * @package Plesk_Modules
+ * @since 12.5
  */
 class pm_License 
 {

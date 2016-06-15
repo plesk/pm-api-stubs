@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Domain wrapper
  *
  * @package Plesk_Modules
+ * @since 11.5
  */
 class pm_Domain 
 {
@@ -12,8 +13,58 @@ class pm_Domain
      * Create new domain wrapper
      *
      * @param int $domainId
+     * @throws pm_Exception
      */
     public function __construct($domainId) { }
+
+    /**
+     * Retrieve domain by known id
+     *
+     * @param int $domainId
+     * @return pm_Domain
+     * @throws pm_Exception
+     * @since 17.0
+     */
+    public static function getByDomainId($domainId) { }
+
+    /**
+     * Retrieve domain by GUID
+     *
+     * @param string $domainGuid
+     * @return pm_Domain
+     * @throws pm_Exception
+     * @since 17.0
+     */
+    public static function getByGuid($domainGuid) { }
+
+    /**
+     * Retrieve domain by display name
+     *
+     * @param string $domainName
+     * @return pm_Domain
+     * @throws pm_Exception
+     * @since 17.0
+     */
+    public static function getByName($domainName) { }
+
+    /**
+     * Retrieve all domains
+     *
+     * @param bool $mainDomainsOnly [optional] Return only main domains. Default is false.
+     * @return pm_Domain[]
+     * @since 17.0
+     */
+    public static function getAllDomains($mainDomainsOnly = false) { }
+
+    /**
+     * Retrieve all client domains
+     *
+     * @param pm_Client $client Domains owner
+     * @param bool $mainDomainsOnly [optional] Return only main domains. Default is false.
+     * @return pm_Domain[]
+     * @since 17.0
+     */
+    public static function getDomainsByClient($client, $mainDomainsOnly = false) { }
 
     /**
      * Retrieve domain id
@@ -23,16 +74,66 @@ class pm_Domain
     public function getId() { }
 
     /**
-     * Retrieve domain name
+     * Retrieve domain GUID
+     *
+     * @return string
+     * @since 17.0
+     */
+    public function getGuid() { }
+
+    /**
+     * Retrieve domain name in ASCII format
      *
      * @return string
      */
     public function getName() { }
 
     /**
+     * Retrieve domain name to be displayed in UI
+     *
+     * @return string
+     * @since 17.0
+     */
+    public function getDisplayName() { }
+
+    /**
+     * Retrieve domain IP addresses
+     *
+     * @param bool $public Return public IP addresses. For Plesk servers behind NAT private IP addresses are matched to corresponding public ones. Default is true.
+     * @return string[]
+     * @since 17.0
+     */
+    public function getIpAddresses($public = true) { }
+
+    /**
+     * Check if domain is active
+     *
+     * @return bool
+     * @since 17.0
+     */
+    public function isActive() { }
+
+    /**
+     * Check if domain is suspended
+     *
+     * @return bool
+     * @since 17.0
+     */
+    public function isSuspended() { }
+
+    /**
+     * Check if domain is disabled
+     *
+     * @return bool
+     * @since 17.0
+     */
+    public function isDisabled() { }
+
+    /**
      * Retrieve owner of domain
      *
      * @return pm_Client
+     * @since 12.0
      */
     public function getClient() { }
 
@@ -49,13 +150,58 @@ class pm_Domain
      *
      * @param string $name
      * @return mixed
+     * @since 17.0
      */
     public function hasPermission($name) { }
 
     /**
      * @param string $name
      * @return mixed
+     * @since 17.0
      */
     public function getLimit($name) { }
+
+    /**
+     * Check if domain has web hosting configured
+     *
+     * @return bool
+     * @since 17.0
+     */
+    public function hasHosting() { }
+
+    /**
+     * Retrieve domain home path
+     *
+     * @return string
+     * @since 17.0
+     */
+    public function getHomePath() { }
+
+    /**
+     * Retrieve domain system user login
+     *
+     * @return string
+     * @since 17.0
+     */
+    public function getSysUserLogin() { }
+
+    /**
+     * Retrieve domain document root directory. Available for domains with web hosting
+     *
+     * @param bool $relative [optional] Return root directory relative to home path. Default is false.
+     * @return string
+     * @throws pm_Exception
+     * @since 17.0
+     */
+    public function getDocumentRoot($relative = false) { }
+
+    /**
+     * Retrieve domain vhost system directory. Available for domains with web hosting
+     *
+     * @return string
+     * @throws pm_Exception
+     * @since 17.0
+     */
+    public function getVhostSystemPath() { }
 
 }

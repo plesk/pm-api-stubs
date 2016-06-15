@@ -1,10 +1,11 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Base form
  *
  * @see Zend_Form
  * @package Plesk_Modules
+ * @since 11.0
  */
 class pm_Form_Simple extends CommonPanel_Form 
 {
@@ -40,6 +41,8 @@ class pm_Form_Simple extends CommonPanel_Form
 
     /**
      * Process form after submit
+     *
+     * @since 17.0
      */
     public function process() { }
 

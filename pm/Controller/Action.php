@@ -1,10 +1,11 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Abstract class for all extensions controllers
  *
  * @see Zend_Controller_Action
  * @package Plesk_Modules
+ * @since 11.0
  */
 abstract class pm_Controller_Action extends Zend_Controller_Action 
 {
@@ -19,6 +20,7 @@ abstract class pm_Controller_Action extends Zend_Controller_Action
     /**
      * Access level restrictions. Possible values: 'admin', 'reseller', 'client'
      *
+     * @since 12.0
      * @var string|array
      */
     protected $_accessLevel = [];

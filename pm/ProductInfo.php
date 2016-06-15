@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Plesk options / info
  *
  * @package Plesk_Modules
+ * @since 12.0
  */
 class pm_ProductInfo 
 {
@@ -27,6 +28,14 @@ class pm_ProductInfo
     const OS_CLOUDLINUX = 'cloudlinux';
 
     const OS_WINDOWS = 'microsoft windows';
+
+    const VERSION_WINDOWS_2008R2 = '6.1';
+
+    const VERSION_WINDOWS_2012 = '6.2';
+
+    const VERSION_WINDOWS_2012R2 = '6.3';
+
+    const VERSION_WINDOWS_2016 = '10.0';
 
     const VIRT_NONE = 'none';
 
@@ -81,6 +90,7 @@ class pm_ProductInfo
      * Retrieve OS name (in lower case)
      *
      * @return string|null
+     * @since 17.0
      */
     public static function getOsName() { }
 
@@ -88,6 +98,7 @@ class pm_ProductInfo
      * Retrieve OS version
      *
      * @return string|null
+     * @since 17.0
      */
     public static function getOsVersion() { }
 
@@ -95,6 +106,7 @@ class pm_ProductInfo
      * Retrieve OS architecture
      *
      * @return string|null
+     * @since 17.0
      */
     public static function getOsArch() { }
 
@@ -103,6 +115,7 @@ class pm_ProductInfo
      *
      * @param bool $all Set true to get all virtualization types (array)
      * @return array|string
+     * @since 17.0
      */
     public static function getVirtualization($all = false) { }
 

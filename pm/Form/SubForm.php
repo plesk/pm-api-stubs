@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Sub Form
  *
  * @package Plesk_Modules
+ * @since 17.0
  */
 class pm_Form_SubForm extends CommonPanel_Form_SubForm 
 {
@@ -105,6 +106,31 @@ class pm_Form_SubForm extends CommonPanel_Form_SubForm
      * @return string
      */
     public function lmsg($key, $params = []) { }
+
+    /**
+     * Add a sub form
+     *
+     * @param Zend_Form $form
+     * @param string $name
+     * @param null $order
+     * @return Zend_Form
+     */
+    public function addSubForm($form, $name, $order = null) { }
+
+    /**
+     * Retrieve a single sub form
+     *
+     * @param string $name
+     * @return null|Zend_Form
+     */
+    public function getSubForm($name) { }
+
+    /**
+     * Retrieve all sub forms
+     *
+     * @return Zend_Form[]
+     */
+    public function getSubForms() { }
 
     /**
      * Set form legend

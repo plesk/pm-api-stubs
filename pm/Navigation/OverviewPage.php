@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Base class for object's overview pages
  *
  * @package Plesk_Modules
+ * @since 17.0
  */
 abstract class pm_Navigation_OverviewPage extends pm_Navigation_Page 
 {

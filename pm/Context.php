@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Define module constants and setup context
  *
  * @package Plesk_Modules
+ * @since 11.0
  */
 class pm_Context 
 {
@@ -17,6 +18,7 @@ class pm_Context
 
     /**
      * Reset module context
+     * @since 11.5
      */
     public static function reset() { }
 
@@ -24,6 +26,7 @@ class pm_Context
      * Check if module context is initialized or not
      *
      * @return bool
+     * @since 12.0
      */
     public static function isInitialized() { }
 
@@ -68,6 +71,7 @@ class pm_Context
      * @param string $controller
      * @param string $action
      * @return string
+     * @since 12.0
      */
     public static function getActionUrl($controller, $action = 'index') { }
 

@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Manager of regular tasks for module.
  *
  * @package Plesk_Modules
+ * @since 11.0
  */
 class pm_Scheduler 
 {
@@ -42,6 +43,7 @@ class pm_Scheduler
 
     /**
      * Reset the singleton instance
+     * @since 11.5
      */
     public static function resetInstance() { }
 

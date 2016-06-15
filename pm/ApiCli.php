@@ -1,9 +1,10 @@
 <?php
-// Copyright 1999-2015. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Gateway for execution of CLI utilities
  *
  * @package Plesk_Modules
+ * @since 11.0
  */
 class pm_ApiCli 
 {
@@ -16,6 +17,8 @@ class pm_ApiCli
 
     const RESULT_CODE = 4;
 
+    const RESULT_EXCEPTION = 5;
+
     /**
      * Execute CLI utility (from set provided by panel)
      *
@@ -25,8 +28,10 @@ class pm_ApiCli
      * @param array|null $env
      * @return array|int|string
      * @throws pm_Exception
+     * @since 11.0 from CLI only
+     * @since 17.0 from anywhere. RESULT_EXCEPTION is default.
      */
-    public static function call($command, $args = [], $result = 1, $env = null) { }
+    public static function call($command, $args = [], $result = 5, $env = null) { }
 
     /**
      * Execute privileged CLI utility
@@ -38,7 +43,9 @@ class pm_ApiCli
      * @param array|null $env
      * @return array|int|string
      * @throws pm_Exception
+     * @since 12.0 Unix only
+     * @since 17.0 Windows support
      */
-    public static function callSbin($command, $args = [], $result = 1, $contextPriority = true, $env = null) { }
+    public static function callSbin($command, $args = [], $result = 5, $contextPriority = true, $env = null) { }
 
 }

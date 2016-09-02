@@ -39,13 +39,12 @@ class pm_ApiCli
      * @param string $command
      * @param array $args
      * @param int $result
-     * @param bool $contextPriority
      * @param array|null $env
      * @return array|int|string
      * @throws pm_Exception
      * @since 12.0 Unix only
      * @since 17.0 Windows support
      */
-    public static function callSbin($command, $args = [], $result = 5, $contextPriority = true, $env = null) { }
+    public static function callSbin($command, $args = [], $result = 5, $env = null) { }
 
 }

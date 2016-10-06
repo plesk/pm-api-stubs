@@ -1,8 +1,8 @@
 <?php
 // Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
- * Interface pm_Hook_Backup
- * @todo add description
+ * Interface for backup and restore hooks
+ *
  * @package Plesk_Modules
  * @since 17.0
  */

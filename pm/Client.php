@@ -10,14 +10,6 @@ class pm_Client
 {
 
     /**
-     * Create new panel client wrapper
-     *
-     * @param int $clientId
-     * @throws pm_Exception
-     */
-    public function __construct($clientId) { }
-
-    /**
      * Retrieve client by known id
      *
      * @param int $clientId
@@ -64,12 +56,47 @@ class pm_Client
     public function getId() { }
 
     /**
+     * Retrieve login of client
+     *
+     * @return string
+     * @since 17.0
+     */
+    public function getLogin() { }
+
+    /**
      * Retrieve property of client
      *
      * @param string $name
      * @return string
      */
     public function getProperty($name) { }
+
+    /**
+     * Return value of custom client setting by given name
+     *
+     * @param string $name Setting name
+     * @param string $default Default value of setting
+     * @return string|null
+     * @since 17.0
+     */
+    public function getSetting($name, $default = null) { }
+
+    /**
+     * Define value of custom client setting
+     *
+     * @param string $name Setting name
+     * @param string|null $value Setting value or null to delete setting
+     * @since 17.0
+     */
+    public function setSetting($name, $value) { }
+
+    /**
+     * Delete all custom client settings
+     *
+     * @param string $prefix Settings name prefix
+     * @since 17.0
+     */
+    public function deleteSettings($prefix = '') { }
 
     /**
      * Check if client can access to domain with provided identity

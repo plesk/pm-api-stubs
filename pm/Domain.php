@@ -146,20 +146,67 @@ class pm_Domain
     public function getProperty($name) { }
 
     /**
+     * Return value of custom domain setting by given name
+     *
+     * @param string $name Setting name
+     * @param string $default Default value of setting
+     * @return string|null
+     * @since 17.0
+     */
+    public function getSetting($name, $default = null) { }
+
+    /**
+     * Define value of custom domain setting
+     *
+     * @param string $name Setting name
+     * @param string|null $value Setting value or null to delete setting
+     * @since 17.0
+     */
+    public function setSetting($name, $value) { }
+
+    /**
+     * Delete all custom domain settings
+     *
+     * @param string $prefix Settings name prefix
+     * @since 17.0
+     */
+    public function deleteSettings($prefix = '') { }
+
+    /**
      * Retrieve permission value by name
      *
-     * @param string $name
+     * @param string $name Permission name
      * @return mixed
      * @since 17.0
      */
     public function hasPermission($name) { }
 
     /**
-     * @param string $name
+     * Retrieve Plesk core permission value by name
+     *
+     * @param string $name Permission name
+     * @return mixed
+     * @since 17.0
+     */
+    public function hasCorePermission($name) { }
+
+    /**
+     * Retrieve limit value by name
+     *
+     * @param string $name Limit name
      * @return mixed
      * @since 17.0
      */
     public function getLimit($name) { }
+
+    /**
+     * Retrieve Plesk core limit value by name
+     *
+     * @param string $name Limit name
+     * @return mixed
+     * @since 17.0
+     */
+    public function getCoreLimit($name) { }
 
     /**
      * Check if domain has web hosting configured
@@ -203,5 +250,13 @@ class pm_Domain
      * @since 17.0
      */
     public function getVhostSystemPath() { }
+
+    /**
+     * Get included plan items
+     *
+     * @return array
+     * @since 17.0
+     */
+    public function getPlanItems() { }
 
 }

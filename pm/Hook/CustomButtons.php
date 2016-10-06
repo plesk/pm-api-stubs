@@ -35,6 +35,8 @@ abstract class pm_Hook_CustomButtons implements pm_Hook_Interface
 
     const PLACE_RESELLER_NAVIGATION = 13;
 
+    const PLACE_HOSTING_PANEL_TABS = 14;
+
     const SECTION_RESELLER_TOOLS_SERVICES = 'myPleskButtons';
 
     const SECTION_RESELLER_TOOLS_RESOURCES = 'resourcesButtons';

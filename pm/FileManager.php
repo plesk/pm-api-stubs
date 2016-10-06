@@ -76,7 +76,16 @@ class pm_FileManager
     public function chmod($filename, $mode) { }
 
     /**
-     * Moves file from source to destination
+     * Copies file system objects (files and directories) from source to destination
+     *
+     * @param string $source
+     * @param string $destination
+     * @since 17.0
+     */
+    public function copyFile($source, $destination) { }
+
+    /**
+     * Moves file system objects (files and directories) from source to destination
      *
      * @param string $source
      * @param string $destination

@@ -43,6 +43,7 @@ class pm_Session
      *
      * @return pm_Domain
      * @since 11.5
+     * @deprecated use method getCurrentDomains
      */
     public static function getCurrentDomain() { }
 

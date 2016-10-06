@@ -10,18 +10,19 @@ class pm_Settings
 {
 
     /**
-     * Return value of setting with given name
-     * @param string $name
-     * @param mixed $default
+     * Return value of setting by given name
+     *
+     * @param string $name Setting name
+     * @param string $default Default value of setting
      * @return string|null
      */
     public static function get($name, $default = null) { }
 
     /**
-     * Set value of setting with given name
+     * Define value of setting
      *
-     * @param string $name
-     * @param string $value
+     * @param string $name Setting name
+     * @param string|null $value Setting value or null to delete setting
      *
      * @throws Zend_Db_Table_Exception
      * @throws Zend_Db_Table_Row_Exception
@@ -30,8 +31,9 @@ class pm_Settings
     public static function set($name, $value) { }
 
     /**
-     * Remove settings
-     * @param string $prefix settings prefix
+     * Delete all settings
+     *
+     * @param string $prefix Settings name prefix
      * @since 12.5
      * @since 17.0 added argument $prefix
      */

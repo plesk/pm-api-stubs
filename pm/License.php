@@ -18,6 +18,22 @@ class pm_License
     public static function getAdditionalKeysList($productName = null) { }
 
     /**
+     * Checks if an additional license key for extension is present
+     *
+     * @param string $moduleId
+     * @return bool
+     */
+    public static function hasAdditionalKey($moduleId = null) { }
+
+    /**
+     * Retrieves an additional key for extension
+     *
+     * @param string $moduleId
+     * @return null|static
+     */
+    public static function getAdditionalKey($moduleId = null) { }
+
+    /**
      * Main license key id will be used if keyNumber is not specified
      *
      * @param null|string $keyNumber
@@ -39,5 +55,13 @@ class pm_License
      * @return null|string|bool|int
      */
     public function getProperty($propertyName) { }
+
+    /**
+     * Gets license key's specified inner property.
+     *
+     * @param $propertyName
+     * @return null|string|bool|int
+     */
+    public function getBodyProperty($propertyName) { }
 
 }

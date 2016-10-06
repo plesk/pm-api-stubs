@@ -26,6 +26,14 @@ abstract class pm_Hook_WebServer implements pm_Hook_Interface
     public function getDomainNginxConfig($domain) { }
 
     /**
+     * Retrieve string which will be insert to server {...} custom directive
+     *
+     * @param pm_Domain $domain
+     * @return string
+     */
+    public function getDomainNginxProxyConfig($domain) { }
+
+    /**
      * Retrieve xml as string which will be insert to Plesk IIS configurator
      *
      * @param pm_Domain $domain

@@ -33,15 +33,41 @@ class pm_Plan
     /**
      * Retrieve permission value by name
      *
-     * @param string $name
+     * @param string $name Permission name
      * @return mixed
      */
     public function hasPermission($name) { }
 
     /**
-     * @param string $name
+     * Retrieve Plesk core permission value by name
+     *
+     * @param string $name Permission name
+     * @return mixed
+     */
+    public function hasCorePermission($name) { }
+
+    /**
+     * Retrieve limit value by name
+     *
+     * @param string $name Limit name
      * @return mixed
      */
     public function getLimit($name) { }
+
+    /**
+     * Retrieve Plesk core limit value by name
+     *
+     * @param string $name Limit name
+     * @return mixed
+     */
+    public function getCoreLimit($name) { }
+
+    /**
+     * Get included plan items
+     *
+     * @return array
+     * @since 17.0
+     */
+    public function getPlanItems() { }
 
 }

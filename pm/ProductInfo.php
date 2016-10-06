@@ -17,17 +17,19 @@ class pm_ProductInfo
 
     const ARCH_64 = 'x86_64';
 
-    const OS_CENTOS = 'centos';
+    const OS_CENTOS = 'CentOS';
 
-    const OS_DEBIAN = 'debian';
+    const OS_DEBIAN = 'Debian';
 
-    const OS_UBUNTU = 'ubuntu';
+    const OS_UBUNTU = 'Ubuntu';
 
-    const OS_REDHAT = 'redhat';
+    const OS_REDHAT = 'RedHat';
 
-    const OS_CLOUDLINUX = 'cloudlinux';
+    const OS_CLOUDLINUX = 'CloudLinux';
 
-    const OS_WINDOWS = 'microsoft windows';
+    const OS_VZLINUX = 'VZLinux';
+
+    const OS_WINDOWS = 'Microsoft Windows';
 
     const VERSION_WINDOWS_2008R2 = '6.1';
 
@@ -57,6 +59,12 @@ class pm_ProductInfo
 
     const VIRT_DOCKER = 'docker';
 
+    const PACKAGE_TYPE_RPM = 'rpm';
+
+    const PACKAGE_TYPE_DEB = 'deb';
+
+    const PACKAGE_TYPE_WIN = 'win';
+
     /**
      * Retrieve Plesk version
      *
@@ -64,6 +72,13 @@ class pm_ProductInfo
      * @return string
      */
     public static function getVersion() { }
+
+    /**
+     * Retrieve last installed update
+     *
+     * @return string Update number or empty string
+     */
+    public static function getLastInstalledUpdate() { }
 
     /**
      * Retrieve platform name
@@ -101,6 +116,30 @@ class pm_ProductInfo
      * @since 17.0
      */
     public static function getOsVersion() { }
+
+    /**
+     * Retrieve OS short version
+     *
+     * @return string|null
+     * @since 17.0
+     */
+    public static function getOsShortVersion() { }
+
+    /**
+     * Retrieve OS codename
+     *
+     * @return string|null
+     * @since 17.0
+     */
+    public static function getOsCodename() { }
+
+    /**
+     * Retrieve OS package type
+     *
+     * @return string|null
+     * @since 17.0
+     */
+    public static function getOsPackageType() { }
 
     /**
      * Retrieve OS architecture

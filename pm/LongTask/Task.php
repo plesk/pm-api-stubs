@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 17.0
  */
-abstract class pm_LongTask_Task 
+abstract class pm_LongTask_Task
 {
 
     const STATUS_NOT_STARTED = 'not_started';

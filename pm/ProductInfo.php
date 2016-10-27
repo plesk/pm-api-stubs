@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 12.0
  */
-class pm_ProductInfo 
+class pm_ProductInfo
 {
 
     const PLATFORM_UNIX = 'Unix';

@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 17.0
  */
-class pm_View_Helper_ActiveList extends CommonPanel_View_Helper_JswComponent 
+class pm_View_Helper_ActiveList implements Zend_View_Helper_Interface
 {
 
     const LAYOUT_AUTO = 'auto';

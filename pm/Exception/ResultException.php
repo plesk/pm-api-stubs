@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 17.0
  */
-class pm_Exception_ResultException extends pm_Exception 
+class pm_Exception_ResultException extends pm_Exception
 {
 
 }

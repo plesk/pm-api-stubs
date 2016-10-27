@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 11.0
  */
-class pm_Context 
+class pm_Context
 {
 
     /**

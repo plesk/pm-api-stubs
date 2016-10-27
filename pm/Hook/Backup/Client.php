@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 17.0
  */
-abstract class pm_Hook_Backup_Client implements pm_Hook_Backup, pm_Hook_Interface
+abstract class pm_Hook_Backup_Client implements pm_Hook_Backup
 {
 
     /**

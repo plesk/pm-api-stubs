@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 17.0
  */
-abstract class pm_Navigation_OverviewPage extends pm_Navigation_Page 
+abstract class pm_Navigation_OverviewPage extends pm_Navigation_Page
 {
 
     /**

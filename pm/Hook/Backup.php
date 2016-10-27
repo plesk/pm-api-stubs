@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 17.0
  */
-interface pm_Hook_Backup implements pm_Hook_Interface
+interface pm_Hook_Backup extends pm_Hook_Interface
 {
 
 }

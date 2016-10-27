@@ -7,7 +7,7 @@
  * @package Plesk_Modules
  * @since 11.0
  */
-abstract class pm_Controller_Action extends Zend_Controller_Action 
+abstract class pm_Controller_Action extends Zend_Controller_Action implements Zend_Controller_Action_Interface
 {
 
     /**

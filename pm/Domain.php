@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 11.5
  */
-class pm_Domain 
+class pm_Domain
 {
 
     /**

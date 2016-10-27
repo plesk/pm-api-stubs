@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 11.0
  */
-class pm_Locale 
+class pm_Locale
 {
 
     /**

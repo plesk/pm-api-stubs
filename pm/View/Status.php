@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 12.0
  */
-class pm_View_Status 
+class pm_View_Status
 {
 
     const STATUS_INFO = 'info';

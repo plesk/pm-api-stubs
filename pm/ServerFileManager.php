@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 12.5
  */
-class pm_ServerFileManager extends pm_FileManager 
+class pm_ServerFileManager extends pm_FileManager
 {
 
     

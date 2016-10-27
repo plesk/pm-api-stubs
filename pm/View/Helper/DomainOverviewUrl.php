@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 17.0
  */
-class pm_View_Helper_DomainOverviewUrl extends Zend_View_Helper_Abstract 
+class pm_View_Helper_DomainOverviewUrl extends Zend_View_Helper_Abstract implements Zend_View_Helper_Interface
 {
 
     /**

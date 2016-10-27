@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 17.0
  */
-class pm_Navigation_Page extends Zend_Navigation_Page_Mvc 
+class pm_Navigation_Page extends Zend_Navigation_Page_Mvc
 {
 
     /**

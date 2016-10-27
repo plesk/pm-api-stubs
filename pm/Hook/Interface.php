@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 12.0
  */
-interface pm_Hook_Interface 
+interface pm_Hook_Interface
 {
 
 }

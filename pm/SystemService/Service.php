@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 17.0
  */
-abstract class pm_SystemService_Service 
+abstract class pm_SystemService_Service
 {
 
     /**

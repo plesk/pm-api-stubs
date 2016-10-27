@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 17.0
  */
-class pm_Form_SubForm extends CommonPanel_Form_SubForm 
+class pm_Form_SubForm implements Zend_Validate_Interface
 {
 
     const DECORATOR = 'DECORATOR';

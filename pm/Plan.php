@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 17.0
  */
-class pm_Plan 
+class pm_Plan
 {
 
     /**

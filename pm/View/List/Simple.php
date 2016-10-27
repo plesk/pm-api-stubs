@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 11.0
  */
-class pm_View_List_Simple extends CommonPanel_View_List_Abstract 
+class pm_View_List_Simple
 {
 
     const COLUMN_SELECTION = 'Jsw.list.COLUMN_SELECTION';

@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 11.0
  */
-abstract class pm_Promo_AdminHome extends Promo_Hideable implements pm_Hook_Interface
+abstract class pm_Promo_AdminHome implements pm_Hook_Interface
 {
 
     /**

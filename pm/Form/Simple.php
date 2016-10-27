@@ -7,7 +7,7 @@
  * @package Plesk_Modules
  * @since 11.0
  */
-class pm_Form_Simple extends CommonPanel_Form 
+class pm_Form_Simple implements Zend_Validate_Interface
 {
 
     const DECORATOR = 'DECORATOR';

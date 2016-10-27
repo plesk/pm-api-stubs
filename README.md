@@ -8,7 +8,7 @@ Install Via Composer
 
 [Composer](https://getcomposer.org/) is a preferable way to install the library:
 
-`composer require --dev pm-api-stubs`
+`composer require --dev plesk/pm-api-stubs`
 
 composer.json:
 ```php

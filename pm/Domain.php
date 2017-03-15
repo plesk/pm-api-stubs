@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2017. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Domain wrapper
  *
@@ -142,6 +142,7 @@ class pm_Domain
      *
      * @param string $name
      * @return string
+     * @throws pm_Exception
      */
     public function getProperty($name) { }
 

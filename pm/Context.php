@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2017. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Define module constants and setup context
  *
@@ -88,5 +88,13 @@ class pm_Context
      * @return string
      */
     public static function getModulesListUrl() { }
+
+    /**
+     * Retrieve module buy URL
+     *
+     * @return string
+     * @since 17.0
+     */
+    public static function getBuyUrl() { }
 
 }

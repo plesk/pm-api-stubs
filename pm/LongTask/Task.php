@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2017. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Long task object
  *
@@ -30,6 +30,13 @@ abstract class pm_LongTask_Task
      * @var bool
      */
     public $hidden = false;
+
+    /**
+     * Message contains unescaped html
+     *
+     * @return bool
+     */
+    public $hasDangerousMessage = false;
 
     
     public function __construct() { }

@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2017. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Promo block for customer (on Websites&Domains page)
  *

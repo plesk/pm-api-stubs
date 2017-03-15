@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2017. Parallels IP Holdings GmbH. All Rights Reserved.
 /**
  * Panel client wrapper
  *
@@ -116,5 +116,24 @@ class pm_Client
      * @since 17.0
      */
     public function hasPermission($name, $domain) { }
+
+    /**
+     * Check if user has core permission for domain
+     *
+     * @param string $name Permission name
+     * @param pm_Domain $domain Domain to check permission
+     * @return bool
+     * @since 17.5
+     */
+    public function hasCorePermission($name, $domain) { }
+
+    /**
+     * Check if client can access to plan with provided identity
+     *
+     * @param int $planId
+     * @return bool
+     * @since 17.5
+     */
+    public function hasAccessToPlan($planId) { }
 
 }

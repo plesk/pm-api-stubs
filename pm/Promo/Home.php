@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2017. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 /**
  * Promo block for admin home page. This class is deprecated in favor to pm_Promo_AdminHome.
  *

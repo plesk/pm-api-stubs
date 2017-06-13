@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2017. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 /**
  * Hook for registering long tasks
  *

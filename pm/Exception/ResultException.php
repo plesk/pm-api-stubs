@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2017. Parallels IP Holdings GmbH. All Rights Reserved.
+// Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 /**
  * Exception raised in case of non-zero exit code of utilities
  *

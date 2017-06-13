@@ -11,4 +11,7 @@
     <files>
         <directory>pm</directory>
     </files>
+    <transformations>
+        <template name="docs-template"/>
+    </transformations>
 </phpdoc>

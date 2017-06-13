@@ -1,0 +1,69 @@
+{% use 'elements/constant.html.twig' %}
+{% use 'elements/property.html.twig' %}
+{% use 'elements/method.html.twig' %}
+{% use 'elements/namespaces.sidebar.html.twig' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>{% block title %}{{ project.name }}{% endblock %}</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="{{ path('css/bootstrap-combined.no-icons.min.css') }}" rel="stylesheet">
+    <link href="{{ path('css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ path('css/prism.css') }}" rel="stylesheet" media="all"/>
+    <link href="{{ path('css/template.css') }}" rel="stylesheet" media="all"/>
+    {% block stylesheets %}{% endblock %}
+
+    <!--[if lt IE 9]>
+    <script src="{{ path('js/html5.js') }}"></script>
+    <![endif]-->
+    <script src="{{ path('js/jquery-1.11.0.min.js') }}"></script>
+    <script src="{{ path('js/ui/1.10.4/jquery-ui.min.js') }}"></script>
+    <script src="{{ path('js/bootstrap.min.js') }}"></script>
+    <script src="{{ path('js/jquery.smooth-scroll.js') }}"></script>
+    <script src="{{ path('js/prism.min.js') }}"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    {% block javascripts %}{% endblock %}
+
+    <link rel="shortcut icon" href="{{ path('images/favicon.ico') }}"/>
+    <link rel="apple-touch-icon" href="{{ path('images/apple-touch-icon.png') }}"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ path('images/apple-touch-icon-72x72.png') }}"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ path('images/apple-touch-icon-114x114.png') }}"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="{{  path('index.html') }}">{{ project.name }}</a>
+
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+    {% block content %}{% endblock %}
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on {{ "now"|date('F jS, Y \\a\\t H:i') }}.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>

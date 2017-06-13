@@ -1,0 +1,13 @@
+language: php
+php:
+  - '7.0'
+install:
+  - composer install
+script:
+  - composer docs
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master

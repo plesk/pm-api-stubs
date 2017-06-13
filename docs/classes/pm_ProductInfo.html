@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>Extensions API Documentation - Plesk 17.5</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">Extensions API Documentation - Plesk 17.5</a>
+
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-50162509"></a>
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-50162509" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/pm_Hook_Backup.html">pm_Hook_Backup</a></li>
+                                                    <li class="interface"><a href="../classes/pm_Hook_Interface.html">pm_Hook_Interface</a></li>
+                                                                                                    <li class="class"><a href="../classes/pm_ActionLog.html">pm_ActionLog</a></li>
+                                                    <li class="class"><a href="../classes/pm_ApiCli.html">pm_ApiCli</a></li>
+                                                    <li class="class"><a href="../classes/pm_ApiRpc.html">pm_ApiRpc</a></li>
+                                                    <li class="class"><a href="../classes/pm_Application.html">pm_Application</a></li>
+                                                    <li class="class"><a href="../classes/pm_Bootstrap.html">pm_Bootstrap</a></li>
+                                                    <li class="class"><a href="../classes/pm_Client.html">pm_Client</a></li>
+                                                    <li class="class"><a href="../classes/pm_Config.html">pm_Config</a></li>
+                                                    <li class="class"><a href="../classes/pm_Context.html">pm_Context</a></li>
+                                                    <li class="class"><a href="../classes/pm_Controller_Action.html">pm_Controller_Action</a></li>
+                                                    <li class="class"><a href="../classes/pm_Domain.html">pm_Domain</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception.html">pm_Exception</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception_InvalidArgumentException.html">pm_Exception_InvalidArgumentException</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception_ResultException.html">pm_Exception_ResultException</a></li>
+                                                    <li class="class"><a href="../classes/pm_FileManager.html">pm_FileManager</a></li>
+                                                    <li class="class"><a href="../classes/pm_FileManager_Action.html">pm_FileManager_Action</a></li>
+                                                    <li class="class"><a href="../classes/pm_Form_Simple.html">pm_Form_Simple</a></li>
+                                                    <li class="class"><a href="../classes/pm_Form_SubForm.html">pm_Form_SubForm</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ActionLog.html">pm_Hook_ActionLog</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ActiveList.html">pm_Hook_ActiveList</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ApiCli.html">pm_Hook_ApiCli</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ApiRpc.html">pm_Hook_ApiRpc</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Applications.html">pm_Hook_Applications</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Auth.html">pm_Hook_Auth</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Client.html">pm_Hook_Backup_Client</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Domain.html">pm_Hook_Backup_Domain</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Server.html">pm_Hook_Backup_Server</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ConfigDefaults.html">pm_Hook_ConfigDefaults</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ContentInclude.html">pm_Hook_ContentInclude</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_CustomButtons.html">pm_Hook_CustomButtons</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Form.html">pm_Hook_Form</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Limits.html">pm_Hook_Limits</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_LoginContentInclude.html">pm_Hook_LoginContentInclude</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_LongTasks.html">pm_Hook_LongTasks</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Navigation.html">pm_Hook_Navigation</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Notifications.html">pm_Hook_Notifications</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Permissions.html">pm_Hook_Permissions</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_PlanItems.html">pm_Hook_PlanItems</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_SimpleList.html">pm_Hook_SimpleList</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_SystemServices.html">pm_Hook_SystemServices</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_WebServer.html">pm_Hook_WebServer</a></li>
+                                                    <li class="class"><a href="../classes/pm_License.html">pm_License</a></li>
+                                                    <li class="class"><a href="../classes/pm_Loader.html">pm_Loader</a></li>
+                                                    <li class="class"><a href="../classes/pm_Locale.html">pm_Locale</a></li>
+                                                    <li class="class"><a href="../classes/pm_Log.html">pm_Log</a></li>
+                                                    <li class="class"><a href="../classes/pm_LongTask_Manager.html">pm_LongTask_Manager</a></li>
+                                                    <li class="class"><a href="../classes/pm_LongTask_Task.html">pm_LongTask_Task</a></li>
+                                                    <li class="class"><a href="../classes/pm_Navigation_OverviewPage.html">pm_Navigation_OverviewPage</a></li>
+                                                    <li class="class"><a href="../classes/pm_Navigation_Page.html">pm_Navigation_Page</a></li>
+                                                    <li class="class"><a href="../classes/pm_Notification.html">pm_Notification</a></li>
+                                                    <li class="class"><a href="../classes/pm_Plan.html">pm_Plan</a></li>
+                                                    <li class="class"><a href="../classes/pm_ProductInfo.html">pm_ProductInfo</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_AdminHome.html">pm_Promo_AdminHome</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_CustomerHome.html">pm_Promo_CustomerHome</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_Home.html">pm_Promo_Home</a></li>
+                                                    <li class="class"><a href="../classes/pm_Scheduler.html">pm_Scheduler</a></li>
+                                                    <li class="class"><a href="../classes/pm_Scheduler_Task.html">pm_Scheduler_Task</a></li>
+                                                    <li class="class"><a href="../classes/pm_ServerFileManager.html">pm_ServerFileManager</a></li>
+                                                    <li class="class"><a href="../classes/pm_Session.html">pm_Session</a></li>
+                                                    <li class="class"><a href="../classes/pm_Settings.html">pm_Settings</a></li>
+                                                    <li class="class"><a href="../classes/pm_SystemService_Service.html">pm_SystemService_Service</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_ActiveList.html">pm_View_Helper_ActiveList</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_BaseUrl.html">pm_View_Helper_BaseUrl</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_DomainOverviewUrl.html">pm_View_Helper_DomainOverviewUrl</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_Lmsg.html">pm_View_Helper_Lmsg</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderList.html">pm_View_Helper_RenderList</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderSmallTools.html">pm_View_Helper_RenderSmallTools</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderTabs.html">pm_View_Helper_RenderTabs</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderTools.html">pm_View_Helper_RenderTools</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_List_Simple.html">pm_View_List_Simple</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Status.html">pm_View_Status</a></li>
+                                                    <li class="class"><a href="../classes/pm_WebServer.html">pm_WebServer</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <nav>
+                                                <a href="../namespaces/default.html">\</a> <i class="icon-level-up"></i>
+                                            </nav>
+
+                    <h1><small>\</small>pm_ProductInfo</h1>
+                    <p><em>Plesk options / info</em></p>
+                    
+
+                    
+                    <section id="summary">
+                        <h2>Summary</h2>
+                        <section class="row-fluid heading">
+                            <section class="span4">
+                                <a href="#methods">Methods</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#properties">Properties</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#constants">Constants</a>
+                            </section>
+                        </section>
+                        <section class="row-fluid public">
+                            <section class="span4">
+                                                                    <a href="../classes/pm_ProductInfo.html#method_getVersion" class="">getVersion()</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#method_getLastInstalledUpdate" class="">getLastInstalledUpdate()</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#method_getPlatform" class="">getPlatform()</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#method_isUnix" class="">isUnix()</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#method_isWindows" class="">isWindows()</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#method_getOsName" class="">getOsName()</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#method_getOsVersion" class="">getOsVersion()</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#method_getOsShortVersion" class="">getOsShortVersion()</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#method_getOsCodename" class="">getOsCodename()</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#method_getOsPackageType" class="">getOsPackageType()</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#method_getOsArch" class="">getOsArch()</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#method_getVirtualization" class="">getVirtualization()</a><br />
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No public properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_PLATFORM_UNIX" class="">PLATFORM_UNIX</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_PLATFORM_WINDOWS" class="">PLATFORM_WINDOWS</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_ARCH_32" class="">ARCH_32</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_ARCH_64" class="">ARCH_64</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_OS_CENTOS" class="">OS_CENTOS</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_OS_DEBIAN" class="">OS_DEBIAN</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_OS_UBUNTU" class="">OS_UBUNTU</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_OS_REDHAT" class="">OS_REDHAT</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_OS_CLOUDLINUX" class="">OS_CLOUDLINUX</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_OS_VZLINUX" class="">OS_VZLINUX</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_OS_WINDOWS" class="">OS_WINDOWS</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VERSION_WINDOWS_2008R2" class="">VERSION_WINDOWS_2008R2</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VERSION_WINDOWS_2012" class="">VERSION_WINDOWS_2012</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VERSION_WINDOWS_2012R2" class="">VERSION_WINDOWS_2012R2</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VERSION_WINDOWS_2016" class="">VERSION_WINDOWS_2016</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VIRT_NONE" class="">VIRT_NONE</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VIRT_VZ" class="">VIRT_VZ</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VIRT_HYPERV" class="">VIRT_HYPERV</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VIRT_XEN" class="">VIRT_XEN</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VIRT_VMWARE" class="">VIRT_VMWARE</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VIRT_KVM" class="">VIRT_KVM</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VIRT_PARALLELS_SERVER" class="">VIRT_PARALLELS_SERVER</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VIRT_OPENVZ" class="">VIRT_OPENVZ</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VIRT_LXC" class="">VIRT_LXC</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_VIRT_DOCKER" class="">VIRT_DOCKER</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_PACKAGE_TYPE_RPM" class="">PACKAGE_TYPE_RPM</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_PACKAGE_TYPE_DEB" class="">PACKAGE_TYPE_DEB</a><br />
+                                                                    <a href="../classes/pm_ProductInfo.html#constant_PACKAGE_TYPE_WIN" class="">PACKAGE_TYPE_WIN</a><br />
+                                                            </section>
+                        </section>
+                        <section class="row-fluid protected">
+                            <section class="span4">
+                                                                    <em>No protected methods found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No protected properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+                <aside class="span4 detailsbar">
+                                        
+                    
+                    <dl>
+                        <dt>File</dt>
+                            <dd><a href="../files/ProductInfo.html"><div class="path-wrapper">ProductInfo.php</div></a></dd>
+                                                <dt>Package</dt>
+                            <dd><div class="namespace-wrapper">Plesk_Modules</div></dd>
+                                                <dt>Class hierarchy</dt>
+                            <dd class="hierarchy">
+                                                                                                                                                                    <div class="namespace-wrapper">\pm_ProductInfo</div>
+                            </dd>
+
+                        
+                        
+                        
+                        
+                                                                        </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                                            <tr>
+                            <th>
+                                since
+                            </th>
+                            <td>
+                                                                    12.0                                    
+                                                            </td>
+                        </tr>
+                                        </table>
+                </aside>
+            </div>
+
+                                    <a id="constants" name="constants"></a>
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <h2>Constants</h2>
+                </div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLATFORM_UNIX" name="constant_PLATFORM_UNIX" class="anchor"></a>
+            <article id="constant_PLATFORM_UNIX" class="constant">
+                <h3 class="">PLATFORM_UNIX</h3>
+                <pre class="signature">PLATFORM_UNIX</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLATFORM_WINDOWS" name="constant_PLATFORM_WINDOWS" class="anchor"></a>
+            <article id="constant_PLATFORM_WINDOWS" class="constant">
+                <h3 class="">PLATFORM_WINDOWS</h3>
+                <pre class="signature">PLATFORM_WINDOWS</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_ARCH_32" name="constant_ARCH_32" class="anchor"></a>
+            <article id="constant_ARCH_32" class="constant">
+                <h3 class="">ARCH_32</h3>
+                <pre class="signature">ARCH_32</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_ARCH_64" name="constant_ARCH_64" class="anchor"></a>
+            <article id="constant_ARCH_64" class="constant">
+                <h3 class="">ARCH_64</h3>
+                <pre class="signature">ARCH_64</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_OS_CENTOS" name="constant_OS_CENTOS" class="anchor"></a>
+            <article id="constant_OS_CENTOS" class="constant">
+                <h3 class="">OS_CENTOS</h3>
+                <pre class="signature">OS_CENTOS</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_OS_DEBIAN" name="constant_OS_DEBIAN" class="anchor"></a>
+            <article id="constant_OS_DEBIAN" class="constant">
+                <h3 class="">OS_DEBIAN</h3>
+                <pre class="signature">OS_DEBIAN</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_OS_UBUNTU" name="constant_OS_UBUNTU" class="anchor"></a>
+            <article id="constant_OS_UBUNTU" class="constant">
+                <h3 class="">OS_UBUNTU</h3>
+                <pre class="signature">OS_UBUNTU</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_OS_REDHAT" name="constant_OS_REDHAT" class="anchor"></a>
+            <article id="constant_OS_REDHAT" class="constant">
+                <h3 class="">OS_REDHAT</h3>
+                <pre class="signature">OS_REDHAT</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_OS_CLOUDLINUX" name="constant_OS_CLOUDLINUX" class="anchor"></a>
+            <article id="constant_OS_CLOUDLINUX" class="constant">
+                <h3 class="">OS_CLOUDLINUX</h3>
+                <pre class="signature">OS_CLOUDLINUX</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_OS_VZLINUX" name="constant_OS_VZLINUX" class="anchor"></a>
+            <article id="constant_OS_VZLINUX" class="constant">
+                <h3 class="">OS_VZLINUX</h3>
+                <pre class="signature">OS_VZLINUX</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_OS_WINDOWS" name="constant_OS_WINDOWS" class="anchor"></a>
+            <article id="constant_OS_WINDOWS" class="constant">
+                <h3 class="">OS_WINDOWS</h3>
+                <pre class="signature">OS_WINDOWS</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VERSION_WINDOWS_2008R2" name="constant_VERSION_WINDOWS_2008R2" class="anchor"></a>
+            <article id="constant_VERSION_WINDOWS_2008R2" class="constant">
+                <h3 class="">VERSION_WINDOWS_2008R2</h3>
+                <pre class="signature">VERSION_WINDOWS_2008R2</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VERSION_WINDOWS_2012" name="constant_VERSION_WINDOWS_2012" class="anchor"></a>
+            <article id="constant_VERSION_WINDOWS_2012" class="constant">
+                <h3 class="">VERSION_WINDOWS_2012</h3>
+                <pre class="signature">VERSION_WINDOWS_2012</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VERSION_WINDOWS_2012R2" name="constant_VERSION_WINDOWS_2012R2" class="anchor"></a>
+            <article id="constant_VERSION_WINDOWS_2012R2" class="constant">
+                <h3 class="">VERSION_WINDOWS_2012R2</h3>
+                <pre class="signature">VERSION_WINDOWS_2012R2</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VERSION_WINDOWS_2016" name="constant_VERSION_WINDOWS_2016" class="anchor"></a>
+            <article id="constant_VERSION_WINDOWS_2016" class="constant">
+                <h3 class="">VERSION_WINDOWS_2016</h3>
+                <pre class="signature">VERSION_WINDOWS_2016</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VIRT_NONE" name="constant_VIRT_NONE" class="anchor"></a>
+            <article id="constant_VIRT_NONE" class="constant">
+                <h3 class="">VIRT_NONE</h3>
+                <pre class="signature">VIRT_NONE</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VIRT_VZ" name="constant_VIRT_VZ" class="anchor"></a>
+            <article id="constant_VIRT_VZ" class="constant">
+                <h3 class="">VIRT_VZ</h3>
+                <pre class="signature">VIRT_VZ</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VIRT_HYPERV" name="constant_VIRT_HYPERV" class="anchor"></a>
+            <article id="constant_VIRT_HYPERV" class="constant">
+                <h3 class="">VIRT_HYPERV</h3>
+                <pre class="signature">VIRT_HYPERV</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VIRT_XEN" name="constant_VIRT_XEN" class="anchor"></a>
+            <article id="constant_VIRT_XEN" class="constant">
+                <h3 class="">VIRT_XEN</h3>
+                <pre class="signature">VIRT_XEN</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VIRT_VMWARE" name="constant_VIRT_VMWARE" class="anchor"></a>
+            <article id="constant_VIRT_VMWARE" class="constant">
+                <h3 class="">VIRT_VMWARE</h3>
+                <pre class="signature">VIRT_VMWARE</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VIRT_KVM" name="constant_VIRT_KVM" class="anchor"></a>
+            <article id="constant_VIRT_KVM" class="constant">
+                <h3 class="">VIRT_KVM</h3>
+                <pre class="signature">VIRT_KVM</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VIRT_PARALLELS_SERVER" name="constant_VIRT_PARALLELS_SERVER" class="anchor"></a>
+            <article id="constant_VIRT_PARALLELS_SERVER" class="constant">
+                <h3 class="">VIRT_PARALLELS_SERVER</h3>
+                <pre class="signature">VIRT_PARALLELS_SERVER</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VIRT_OPENVZ" name="constant_VIRT_OPENVZ" class="anchor"></a>
+            <article id="constant_VIRT_OPENVZ" class="constant">
+                <h3 class="">VIRT_OPENVZ</h3>
+                <pre class="signature">VIRT_OPENVZ</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VIRT_LXC" name="constant_VIRT_LXC" class="anchor"></a>
+            <article id="constant_VIRT_LXC" class="constant">
+                <h3 class="">VIRT_LXC</h3>
+                <pre class="signature">VIRT_LXC</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_VIRT_DOCKER" name="constant_VIRT_DOCKER" class="anchor"></a>
+            <article id="constant_VIRT_DOCKER" class="constant">
+                <h3 class="">VIRT_DOCKER</h3>
+                <pre class="signature">VIRT_DOCKER</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PACKAGE_TYPE_RPM" name="constant_PACKAGE_TYPE_RPM" class="anchor"></a>
+            <article id="constant_PACKAGE_TYPE_RPM" class="constant">
+                <h3 class="">PACKAGE_TYPE_RPM</h3>
+                <pre class="signature">PACKAGE_TYPE_RPM</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PACKAGE_TYPE_DEB" name="constant_PACKAGE_TYPE_DEB" class="anchor"></a>
+            <article id="constant_PACKAGE_TYPE_DEB" class="constant">
+                <h3 class="">PACKAGE_TYPE_DEB</h3>
+                <pre class="signature">PACKAGE_TYPE_DEB</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PACKAGE_TYPE_WIN" name="constant_PACKAGE_TYPE_WIN" class="anchor"></a>
+            <article id="constant_PACKAGE_TYPE_WIN" class="constant">
+                <h3 class="">PACKAGE_TYPE_WIN</h3>
+                <pre class="signature">PACKAGE_TYPE_WIN</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                            
+                        
+                                    <a id="methods" name="methods"></a>
+            <div class="row-fluid">
+                <div class="span8 content class"><h2>Methods</h2></div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getVersion" name="method_getVersion" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getVersion()</h3>
+                <pre class="signature" style="margin-right: 54px;">getVersion() : string</pre>
+                <p><em>Retrieve Plesk version</em></p>
+                
+
+                
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\pm_Exception</dt>
+                            <dd></dd>
+                                                                    </dl>
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getLastInstalledUpdate" name="method_getLastInstalledUpdate" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getLastInstalledUpdate()</h3>
+                <pre class="signature" style="margin-right: 54px;">getLastInstalledUpdate() : string</pre>
+                <p><em>Retrieve last installed update</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                            &mdash; <p>Update number or empty string</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getPlatform" name="method_getPlatform" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getPlatform()</h3>
+                <pre class="signature" style="margin-right: 54px;">getPlatform() : string</pre>
+                <p><em>Retrieve platform name</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_isUnix" name="method_isUnix" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">isUnix()</h3>
+                <pre class="signature" style="margin-right: 54px;">isUnix() : boolean</pre>
+                <p><em>Check if platform is Unix</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_isWindows" name="method_isWindows" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">isWindows()</h3>
+                <pre class="signature" style="margin-right: 54px;">isWindows() : boolean</pre>
+                <p><em>Check if platform is Windows</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getOsName" name="method_getOsName" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getOsName()</h3>
+                <pre class="signature" style="margin-right: 54px;">getOsName() : string|null</pre>
+                <p><em>Retrieve OS name (in lower case)</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string|null
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getOsVersion" name="method_getOsVersion" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getOsVersion()</h3>
+                <pre class="signature" style="margin-right: 54px;">getOsVersion() : string|null</pre>
+                <p><em>Retrieve OS version</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string|null
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getOsShortVersion" name="method_getOsShortVersion" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getOsShortVersion()</h3>
+                <pre class="signature" style="margin-right: 54px;">getOsShortVersion() : string|null</pre>
+                <p><em>Retrieve OS short version</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string|null
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getOsCodename" name="method_getOsCodename" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getOsCodename()</h3>
+                <pre class="signature" style="margin-right: 54px;">getOsCodename() : string|null</pre>
+                <p><em>Retrieve OS codename</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string|null
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getOsPackageType" name="method_getOsPackageType" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getOsPackageType()</h3>
+                <pre class="signature" style="margin-right: 54px;">getOsPackageType() : string|null</pre>
+                <p><em>Retrieve OS package type</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string|null
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getOsArch" name="method_getOsArch" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getOsArch()</h3>
+                <pre class="signature" style="margin-right: 54px;">getOsArch() : string|null</pre>
+                <p><em>Retrieve OS architecture</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string|null
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getVirtualization" name="method_getVirtualization" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getVirtualization()</h3>
+                <pre class="signature" style="margin-right: 54px;">getVirtualization(boolean  <span class="argument">$all = false</span>) : array|string</pre>
+                <p><em>Retrieve virtualization type(s)</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$all </td>
+                                <td><p>Set true to get all virtualization types (array)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array|string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                                    </div>
+    </section>
+
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on June 13th, 2017 at 08:32.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>

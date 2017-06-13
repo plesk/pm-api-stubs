@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>Extensions API Documentation - Plesk 17.5</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">Extensions API Documentation - Plesk 17.5</a>
+
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-1460017752"></a>
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-1460017752" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/pm_Hook_Backup.html">pm_Hook_Backup</a></li>
+                                                    <li class="interface"><a href="../classes/pm_Hook_Interface.html">pm_Hook_Interface</a></li>
+                                                                                                    <li class="class"><a href="../classes/pm_ActionLog.html">pm_ActionLog</a></li>
+                                                    <li class="class"><a href="../classes/pm_ApiCli.html">pm_ApiCli</a></li>
+                                                    <li class="class"><a href="../classes/pm_ApiRpc.html">pm_ApiRpc</a></li>
+                                                    <li class="class"><a href="../classes/pm_Application.html">pm_Application</a></li>
+                                                    <li class="class"><a href="../classes/pm_Bootstrap.html">pm_Bootstrap</a></li>
+                                                    <li class="class"><a href="../classes/pm_Client.html">pm_Client</a></li>
+                                                    <li class="class"><a href="../classes/pm_Config.html">pm_Config</a></li>
+                                                    <li class="class"><a href="../classes/pm_Context.html">pm_Context</a></li>
+                                                    <li class="class"><a href="../classes/pm_Controller_Action.html">pm_Controller_Action</a></li>
+                                                    <li class="class"><a href="../classes/pm_Domain.html">pm_Domain</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception.html">pm_Exception</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception_InvalidArgumentException.html">pm_Exception_InvalidArgumentException</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception_ResultException.html">pm_Exception_ResultException</a></li>
+                                                    <li class="class"><a href="../classes/pm_FileManager.html">pm_FileManager</a></li>
+                                                    <li class="class"><a href="../classes/pm_FileManager_Action.html">pm_FileManager_Action</a></li>
+                                                    <li class="class"><a href="../classes/pm_Form_Simple.html">pm_Form_Simple</a></li>
+                                                    <li class="class"><a href="../classes/pm_Form_SubForm.html">pm_Form_SubForm</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ActionLog.html">pm_Hook_ActionLog</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ActiveList.html">pm_Hook_ActiveList</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ApiCli.html">pm_Hook_ApiCli</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ApiRpc.html">pm_Hook_ApiRpc</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Applications.html">pm_Hook_Applications</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Auth.html">pm_Hook_Auth</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Client.html">pm_Hook_Backup_Client</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Domain.html">pm_Hook_Backup_Domain</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Server.html">pm_Hook_Backup_Server</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ConfigDefaults.html">pm_Hook_ConfigDefaults</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ContentInclude.html">pm_Hook_ContentInclude</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_CustomButtons.html">pm_Hook_CustomButtons</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Form.html">pm_Hook_Form</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Limits.html">pm_Hook_Limits</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_LoginContentInclude.html">pm_Hook_LoginContentInclude</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_LongTasks.html">pm_Hook_LongTasks</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Navigation.html">pm_Hook_Navigation</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Notifications.html">pm_Hook_Notifications</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Permissions.html">pm_Hook_Permissions</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_PlanItems.html">pm_Hook_PlanItems</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_SimpleList.html">pm_Hook_SimpleList</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_SystemServices.html">pm_Hook_SystemServices</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_WebServer.html">pm_Hook_WebServer</a></li>
+                                                    <li class="class"><a href="../classes/pm_License.html">pm_License</a></li>
+                                                    <li class="class"><a href="../classes/pm_Loader.html">pm_Loader</a></li>
+                                                    <li class="class"><a href="../classes/pm_Locale.html">pm_Locale</a></li>
+                                                    <li class="class"><a href="../classes/pm_Log.html">pm_Log</a></li>
+                                                    <li class="class"><a href="../classes/pm_LongTask_Manager.html">pm_LongTask_Manager</a></li>
+                                                    <li class="class"><a href="../classes/pm_LongTask_Task.html">pm_LongTask_Task</a></li>
+                                                    <li class="class"><a href="../classes/pm_Navigation_OverviewPage.html">pm_Navigation_OverviewPage</a></li>
+                                                    <li class="class"><a href="../classes/pm_Navigation_Page.html">pm_Navigation_Page</a></li>
+                                                    <li class="class"><a href="../classes/pm_Notification.html">pm_Notification</a></li>
+                                                    <li class="class"><a href="../classes/pm_Plan.html">pm_Plan</a></li>
+                                                    <li class="class"><a href="../classes/pm_ProductInfo.html">pm_ProductInfo</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_AdminHome.html">pm_Promo_AdminHome</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_CustomerHome.html">pm_Promo_CustomerHome</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_Home.html">pm_Promo_Home</a></li>
+                                                    <li class="class"><a href="../classes/pm_Scheduler.html">pm_Scheduler</a></li>
+                                                    <li class="class"><a href="../classes/pm_Scheduler_Task.html">pm_Scheduler_Task</a></li>
+                                                    <li class="class"><a href="../classes/pm_ServerFileManager.html">pm_ServerFileManager</a></li>
+                                                    <li class="class"><a href="../classes/pm_Session.html">pm_Session</a></li>
+                                                    <li class="class"><a href="../classes/pm_Settings.html">pm_Settings</a></li>
+                                                    <li class="class"><a href="../classes/pm_SystemService_Service.html">pm_SystemService_Service</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_ActiveList.html">pm_View_Helper_ActiveList</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_BaseUrl.html">pm_View_Helper_BaseUrl</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_DomainOverviewUrl.html">pm_View_Helper_DomainOverviewUrl</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_Lmsg.html">pm_View_Helper_Lmsg</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderList.html">pm_View_Helper_RenderList</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderSmallTools.html">pm_View_Helper_RenderSmallTools</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderTabs.html">pm_View_Helper_RenderTabs</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderTools.html">pm_View_Helper_RenderTools</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_List_Simple.html">pm_View_List_Simple</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Status.html">pm_View_Status</a></li>
+                                                    <li class="class"><a href="../classes/pm_WebServer.html">pm_WebServer</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <nav>
+                                                <a href="../namespaces/default.html">\</a> <i class="icon-level-up"></i>
+                                            </nav>
+
+                    <h1><small>\</small>pm_Hook_CustomButtons</h1>
+                    <p><em>Hook for custom buttons embedding</em></p>
+                    
+
+                    
+                    <section id="summary">
+                        <h2>Summary</h2>
+                        <section class="row-fluid heading">
+                            <section class="span4">
+                                <a href="#methods">Methods</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#properties">Properties</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#constants">Constants</a>
+                            </section>
+                        </section>
+                        <section class="row-fluid public">
+                            <section class="span4">
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#method_getButtons" class="">getButtons()</a><br />
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No public properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_COMMON" class="">PLACE_COMMON</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_ADMIN_HOME" class="">PLACE_ADMIN_HOME</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_RESELLER_HOME" class="">PLACE_RESELLER_HOME</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_CUSTOMER_HOME" class="">PLACE_CUSTOMER_HOME</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_ADMIN_TOOLS_AND_SETTINGS" class="">PLACE_ADMIN_TOOLS_AND_SETTINGS</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_RESELLER_TOOLS_AND_SETTINGS" class="">PLACE_RESELLER_TOOLS_AND_SETTINGS</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_HOSTING_PANEL_NAVIGATION" class="">PLACE_HOSTING_PANEL_NAVIGATION</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_DOMAIN" class="">PLACE_DOMAIN</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_DOMAIN_PROPERTIES" class="">PLACE_DOMAIN_PROPERTIES</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_TOOLBAR" class="">PLACE_TOOLBAR</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_LIST_ACTIONS" class="">PLACE_LIST_ACTIONS</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_ADMIN_NAVIGATION" class="">PLACE_ADMIN_NAVIGATION</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_RESELLER_NAVIGATION" class="">PLACE_RESELLER_NAVIGATION</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_PLACE_HOSTING_PANEL_TABS" class="">PLACE_HOSTING_PANEL_TABS</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_RESELLER_TOOLS_SERVICES" class="">SECTION_RESELLER_TOOLS_SERVICES</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_RESELLER_TOOLS_RESOURCES" class="">SECTION_RESELLER_TOOLS_RESOURCES</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_RESELLER_TOOLS_PLESK_MANAGEMENT" class="">SECTION_RESELLER_TOOLS_PLESK_MANAGEMENT</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_RESELLER_TOOLS_ADDITIONAL_SERVICES" class="">SECTION_RESELLER_TOOLS_ADDITIONAL_SERVICES</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_ADMIN_TOOLS_MAIL" class="">SECTION_ADMIN_TOOLS_MAIL</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_ADMIN_TOOLS_PLESK" class="">SECTION_ADMIN_TOOLS_PLESK</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_ADMIN_TOOLS_GENERAL" class="">SECTION_ADMIN_TOOLS_GENERAL</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_ADMIN_TOOLS_SECURITY" class="">SECTION_ADMIN_TOOLS_SECURITY</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_ADMIN_TOOLS_APPEARANCE" class="">SECTION_ADMIN_TOOLS_APPEARANCE</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_ADMIN_TOOLS_STATISTICS" class="">SECTION_ADMIN_TOOLS_STATISTICS</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_ADMIN_TOOLS_APPS_AND_DBS" class="">SECTION_ADMIN_TOOLS_APPS_AND_DBS</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_ADMIN_TOOLS_EXTERNAL_SERVICES" class="">SECTION_ADMIN_TOOLS_EXTERNAL_SERVICES</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_ADMIN_TOOLS_SERVER_MANAGEMENT" class="">SECTION_ADMIN_TOOLS_SERVER_MANAGEMENT</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_ADMIN_TOOLS_ADDITIONAL_SERVICES" class="">SECTION_ADMIN_TOOLS_ADDITIONAL_SERVICES</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_ADMIN_TOOLS_TOOLS_AND_RESOURCES" class="">SECTION_ADMIN_TOOLS_TOOLS_AND_RESOURCES</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_NAV_GENERAL" class="">SECTION_NAV_GENERAL</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_NAV_HOSTING" class="">SECTION_NAV_HOSTING</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_NAV_PROFILE" class="">SECTION_NAV_PROFILE</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_NAV_ADDITIONAL" class="">SECTION_NAV_ADDITIONAL</a><br />
+                                                                    <a href="../classes/pm_Hook_CustomButtons.html#constant_SECTION_NAV_SERVER_MANAGEMENT" class="">SECTION_NAV_SERVER_MANAGEMENT</a><br />
+                                                            </section>
+                        </section>
+                        <section class="row-fluid protected">
+                            <section class="span4">
+                                                                    <em>No protected methods found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No protected properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+                <aside class="span4 detailsbar">
+                                            <span class="label label-info">abstract</span>
+                                        
+                    
+                    <dl>
+                        <dt>File</dt>
+                            <dd><a href="../files/Hook.CustomButtons.html"><div class="path-wrapper">Hook/CustomButtons.php</div></a></dd>
+                                                <dt>Package</dt>
+                            <dd><div class="namespace-wrapper">Plesk_Modules</div></dd>
+                                                <dt>Class hierarchy</dt>
+                            <dd class="hierarchy">
+                                                                                                                                                                    <div class="namespace-wrapper">\pm_Hook_CustomButtons</div>
+                            </dd>
+
+                                                                            <dt>Implements</dt>
+                                                        <dd><a href="../classes/pm_Hook_Interface.html"><div class="namespace-wrapper">\pm_Hook_Interface</div></a></dd>
+                        
+                        
+                        
+                        
+                                                                        </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                                            <tr>
+                            <th>
+                                since
+                            </th>
+                            <td>
+                                                                    12.0                                    
+                                                            </td>
+                        </tr>
+                                        </table>
+                </aside>
+            </div>
+
+                                    <a id="constants" name="constants"></a>
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <h2>Constants</h2>
+                </div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_COMMON" name="constant_PLACE_COMMON" class="anchor"></a>
+            <article id="constant_PLACE_COMMON" class="constant">
+                <h3 class="">PLACE_COMMON</h3>
+                <pre class="signature">PLACE_COMMON</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_ADMIN_HOME" name="constant_PLACE_ADMIN_HOME" class="anchor"></a>
+            <article id="constant_PLACE_ADMIN_HOME" class="constant">
+                <h3 class="">PLACE_ADMIN_HOME</h3>
+                <pre class="signature">PLACE_ADMIN_HOME</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_RESELLER_HOME" name="constant_PLACE_RESELLER_HOME" class="anchor"></a>
+            <article id="constant_PLACE_RESELLER_HOME" class="constant">
+                <h3 class="">PLACE_RESELLER_HOME</h3>
+                <pre class="signature">PLACE_RESELLER_HOME</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_CUSTOMER_HOME" name="constant_PLACE_CUSTOMER_HOME" class="anchor"></a>
+            <article id="constant_PLACE_CUSTOMER_HOME" class="constant">
+                <h3 class="">PLACE_CUSTOMER_HOME</h3>
+                <pre class="signature">PLACE_CUSTOMER_HOME</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_ADMIN_TOOLS_AND_SETTINGS" name="constant_PLACE_ADMIN_TOOLS_AND_SETTINGS" class="anchor"></a>
+            <article id="constant_PLACE_ADMIN_TOOLS_AND_SETTINGS" class="constant">
+                <h3 class="">PLACE_ADMIN_TOOLS_AND_SETTINGS</h3>
+                <pre class="signature">PLACE_ADMIN_TOOLS_AND_SETTINGS</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_RESELLER_TOOLS_AND_SETTINGS" name="constant_PLACE_RESELLER_TOOLS_AND_SETTINGS" class="anchor"></a>
+            <article id="constant_PLACE_RESELLER_TOOLS_AND_SETTINGS" class="constant">
+                <h3 class="">PLACE_RESELLER_TOOLS_AND_SETTINGS</h3>
+                <pre class="signature">PLACE_RESELLER_TOOLS_AND_SETTINGS</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_HOSTING_PANEL_NAVIGATION" name="constant_PLACE_HOSTING_PANEL_NAVIGATION" class="anchor"></a>
+            <article id="constant_PLACE_HOSTING_PANEL_NAVIGATION" class="constant">
+                <h3 class="">PLACE_HOSTING_PANEL_NAVIGATION</h3>
+                <pre class="signature">PLACE_HOSTING_PANEL_NAVIGATION</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_DOMAIN" name="constant_PLACE_DOMAIN" class="anchor"></a>
+            <article id="constant_PLACE_DOMAIN" class="constant">
+                <h3 class="">PLACE_DOMAIN</h3>
+                <pre class="signature">PLACE_DOMAIN</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_DOMAIN_PROPERTIES" name="constant_PLACE_DOMAIN_PROPERTIES" class="anchor"></a>
+            <article id="constant_PLACE_DOMAIN_PROPERTIES" class="constant">
+                <h3 class="">PLACE_DOMAIN_PROPERTIES</h3>
+                <pre class="signature">PLACE_DOMAIN_PROPERTIES</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_TOOLBAR" name="constant_PLACE_TOOLBAR" class="anchor"></a>
+            <article id="constant_PLACE_TOOLBAR" class="constant">
+                <h3 class="">PLACE_TOOLBAR</h3>
+                <pre class="signature">PLACE_TOOLBAR</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_LIST_ACTIONS" name="constant_PLACE_LIST_ACTIONS" class="anchor"></a>
+            <article id="constant_PLACE_LIST_ACTIONS" class="constant">
+                <h3 class="">PLACE_LIST_ACTIONS</h3>
+                <pre class="signature">PLACE_LIST_ACTIONS</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_ADMIN_NAVIGATION" name="constant_PLACE_ADMIN_NAVIGATION" class="anchor"></a>
+            <article id="constant_PLACE_ADMIN_NAVIGATION" class="constant">
+                <h3 class="">PLACE_ADMIN_NAVIGATION</h3>
+                <pre class="signature">PLACE_ADMIN_NAVIGATION</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_RESELLER_NAVIGATION" name="constant_PLACE_RESELLER_NAVIGATION" class="anchor"></a>
+            <article id="constant_PLACE_RESELLER_NAVIGATION" class="constant">
+                <h3 class="">PLACE_RESELLER_NAVIGATION</h3>
+                <pre class="signature">PLACE_RESELLER_NAVIGATION</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_PLACE_HOSTING_PANEL_TABS" name="constant_PLACE_HOSTING_PANEL_TABS" class="anchor"></a>
+            <article id="constant_PLACE_HOSTING_PANEL_TABS" class="constant">
+                <h3 class="">PLACE_HOSTING_PANEL_TABS</h3>
+                <pre class="signature">PLACE_HOSTING_PANEL_TABS</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_RESELLER_TOOLS_SERVICES" name="constant_SECTION_RESELLER_TOOLS_SERVICES" class="anchor"></a>
+            <article id="constant_SECTION_RESELLER_TOOLS_SERVICES" class="constant">
+                <h3 class="">SECTION_RESELLER_TOOLS_SERVICES</h3>
+                <pre class="signature">SECTION_RESELLER_TOOLS_SERVICES</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_RESELLER_TOOLS_RESOURCES" name="constant_SECTION_RESELLER_TOOLS_RESOURCES" class="anchor"></a>
+            <article id="constant_SECTION_RESELLER_TOOLS_RESOURCES" class="constant">
+                <h3 class="">SECTION_RESELLER_TOOLS_RESOURCES</h3>
+                <pre class="signature">SECTION_RESELLER_TOOLS_RESOURCES</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_RESELLER_TOOLS_PLESK_MANAGEMENT" name="constant_SECTION_RESELLER_TOOLS_PLESK_MANAGEMENT" class="anchor"></a>
+            <article id="constant_SECTION_RESELLER_TOOLS_PLESK_MANAGEMENT" class="constant">
+                <h3 class="">SECTION_RESELLER_TOOLS_PLESK_MANAGEMENT</h3>
+                <pre class="signature">SECTION_RESELLER_TOOLS_PLESK_MANAGEMENT</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_RESELLER_TOOLS_ADDITIONAL_SERVICES" name="constant_SECTION_RESELLER_TOOLS_ADDITIONAL_SERVICES" class="anchor"></a>
+            <article id="constant_SECTION_RESELLER_TOOLS_ADDITIONAL_SERVICES" class="constant">
+                <h3 class="">SECTION_RESELLER_TOOLS_ADDITIONAL_SERVICES</h3>
+                <pre class="signature">SECTION_RESELLER_TOOLS_ADDITIONAL_SERVICES</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_ADMIN_TOOLS_MAIL" name="constant_SECTION_ADMIN_TOOLS_MAIL" class="anchor"></a>
+            <article id="constant_SECTION_ADMIN_TOOLS_MAIL" class="constant">
+                <h3 class="">SECTION_ADMIN_TOOLS_MAIL</h3>
+                <pre class="signature">SECTION_ADMIN_TOOLS_MAIL</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_ADMIN_TOOLS_PLESK" name="constant_SECTION_ADMIN_TOOLS_PLESK" class="anchor"></a>
+            <article id="constant_SECTION_ADMIN_TOOLS_PLESK" class="constant">
+                <h3 class="">SECTION_ADMIN_TOOLS_PLESK</h3>
+                <pre class="signature">SECTION_ADMIN_TOOLS_PLESK</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_ADMIN_TOOLS_GENERAL" name="constant_SECTION_ADMIN_TOOLS_GENERAL" class="anchor"></a>
+            <article id="constant_SECTION_ADMIN_TOOLS_GENERAL" class="constant">
+                <h3 class="">SECTION_ADMIN_TOOLS_GENERAL</h3>
+                <pre class="signature">SECTION_ADMIN_TOOLS_GENERAL</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_ADMIN_TOOLS_SECURITY" name="constant_SECTION_ADMIN_TOOLS_SECURITY" class="anchor"></a>
+            <article id="constant_SECTION_ADMIN_TOOLS_SECURITY" class="constant">
+                <h3 class="">SECTION_ADMIN_TOOLS_SECURITY</h3>
+                <pre class="signature">SECTION_ADMIN_TOOLS_SECURITY</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_ADMIN_TOOLS_APPEARANCE" name="constant_SECTION_ADMIN_TOOLS_APPEARANCE" class="anchor"></a>
+            <article id="constant_SECTION_ADMIN_TOOLS_APPEARANCE" class="constant">
+                <h3 class="">SECTION_ADMIN_TOOLS_APPEARANCE</h3>
+                <pre class="signature">SECTION_ADMIN_TOOLS_APPEARANCE</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_ADMIN_TOOLS_STATISTICS" name="constant_SECTION_ADMIN_TOOLS_STATISTICS" class="anchor"></a>
+            <article id="constant_SECTION_ADMIN_TOOLS_STATISTICS" class="constant">
+                <h3 class="">SECTION_ADMIN_TOOLS_STATISTICS</h3>
+                <pre class="signature">SECTION_ADMIN_TOOLS_STATISTICS</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_ADMIN_TOOLS_APPS_AND_DBS" name="constant_SECTION_ADMIN_TOOLS_APPS_AND_DBS" class="anchor"></a>
+            <article id="constant_SECTION_ADMIN_TOOLS_APPS_AND_DBS" class="constant">
+                <h3 class="">SECTION_ADMIN_TOOLS_APPS_AND_DBS</h3>
+                <pre class="signature">SECTION_ADMIN_TOOLS_APPS_AND_DBS</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_ADMIN_TOOLS_EXTERNAL_SERVICES" name="constant_SECTION_ADMIN_TOOLS_EXTERNAL_SERVICES" class="anchor"></a>
+            <article id="constant_SECTION_ADMIN_TOOLS_EXTERNAL_SERVICES" class="constant">
+                <h3 class="">SECTION_ADMIN_TOOLS_EXTERNAL_SERVICES</h3>
+                <pre class="signature">SECTION_ADMIN_TOOLS_EXTERNAL_SERVICES</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_ADMIN_TOOLS_SERVER_MANAGEMENT" name="constant_SECTION_ADMIN_TOOLS_SERVER_MANAGEMENT" class="anchor"></a>
+            <article id="constant_SECTION_ADMIN_TOOLS_SERVER_MANAGEMENT" class="constant">
+                <h3 class="">SECTION_ADMIN_TOOLS_SERVER_MANAGEMENT</h3>
+                <pre class="signature">SECTION_ADMIN_TOOLS_SERVER_MANAGEMENT</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_ADMIN_TOOLS_ADDITIONAL_SERVICES" name="constant_SECTION_ADMIN_TOOLS_ADDITIONAL_SERVICES" class="anchor"></a>
+            <article id="constant_SECTION_ADMIN_TOOLS_ADDITIONAL_SERVICES" class="constant">
+                <h3 class="">SECTION_ADMIN_TOOLS_ADDITIONAL_SERVICES</h3>
+                <pre class="signature">SECTION_ADMIN_TOOLS_ADDITIONAL_SERVICES</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_ADMIN_TOOLS_TOOLS_AND_RESOURCES" name="constant_SECTION_ADMIN_TOOLS_TOOLS_AND_RESOURCES" class="anchor"></a>
+            <article id="constant_SECTION_ADMIN_TOOLS_TOOLS_AND_RESOURCES" class="constant">
+                <h3 class="">SECTION_ADMIN_TOOLS_TOOLS_AND_RESOURCES</h3>
+                <pre class="signature">SECTION_ADMIN_TOOLS_TOOLS_AND_RESOURCES</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_NAV_GENERAL" name="constant_SECTION_NAV_GENERAL" class="anchor"></a>
+            <article id="constant_SECTION_NAV_GENERAL" class="constant">
+                <h3 class="">SECTION_NAV_GENERAL</h3>
+                <pre class="signature">SECTION_NAV_GENERAL</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_NAV_HOSTING" name="constant_SECTION_NAV_HOSTING" class="anchor"></a>
+            <article id="constant_SECTION_NAV_HOSTING" class="constant">
+                <h3 class="">SECTION_NAV_HOSTING</h3>
+                <pre class="signature">SECTION_NAV_HOSTING</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_NAV_PROFILE" name="constant_SECTION_NAV_PROFILE" class="anchor"></a>
+            <article id="constant_SECTION_NAV_PROFILE" class="constant">
+                <h3 class="">SECTION_NAV_PROFILE</h3>
+                <pre class="signature">SECTION_NAV_PROFILE</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_NAV_ADDITIONAL" name="constant_SECTION_NAV_ADDITIONAL" class="anchor"></a>
+            <article id="constant_SECTION_NAV_ADDITIONAL" class="constant">
+                <h3 class="">SECTION_NAV_ADDITIONAL</h3>
+                <pre class="signature">SECTION_NAV_ADDITIONAL</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_SECTION_NAV_SERVER_MANAGEMENT" name="constant_SECTION_NAV_SERVER_MANAGEMENT" class="anchor"></a>
+            <article id="constant_SECTION_NAV_SERVER_MANAGEMENT" class="constant">
+                <h3 class="">SECTION_NAV_SERVER_MANAGEMENT</h3>
+                <pre class="signature">SECTION_NAV_SERVER_MANAGEMENT</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                            
+                        
+                                    <a id="methods" name="methods"></a>
+            <div class="row-fluid">
+                <div class="span8 content class"><h2>Methods</h2></div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getButtons" name="method_getButtons" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getButtons()</h3>
+                <pre class="signature" style="margin-right: 54px;">getButtons() : array</pre>
+                <p><em>Retrieve the list of buttons</em></p>
+                <pre><code class="language-php">[
+    [
+        'place' =&gt; self::PLACE_DOMAIN,
+        'title' =&gt; 'Example Button',
+        'description' =&gt; 'Description for example button',
+        'icon' =&gt; pm_Context::getBaseUrl() . 'images/icon.png',
+        'link' =&gt; pm_Context::getBaseUrl() . 'index.php/index/index',
+        'newWindow' =&gt; false,
+        'contextParams' =&gt; true,
+        'visibility' =&gt; [$this, 'isExampleButtonVisible'],
+    ],
+    ...
+]</code></pre>
+
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                        <span class="label label-info">abstract</span>
+                                                <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                                    </div>
+    </section>
+
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on June 13th, 2017 at 08:32.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>

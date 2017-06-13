@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>Extensions API Documentation - Plesk 17.5</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">Extensions API Documentation - Plesk 17.5</a>
+
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-1012778727"></a>
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-1012778727" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/pm_Hook_Backup.html">pm_Hook_Backup</a></li>
+                                                    <li class="interface"><a href="../classes/pm_Hook_Interface.html">pm_Hook_Interface</a></li>
+                                                                                                    <li class="class"><a href="../classes/pm_ActionLog.html">pm_ActionLog</a></li>
+                                                    <li class="class"><a href="../classes/pm_ApiCli.html">pm_ApiCli</a></li>
+                                                    <li class="class"><a href="../classes/pm_ApiRpc.html">pm_ApiRpc</a></li>
+                                                    <li class="class"><a href="../classes/pm_Application.html">pm_Application</a></li>
+                                                    <li class="class"><a href="../classes/pm_Bootstrap.html">pm_Bootstrap</a></li>
+                                                    <li class="class"><a href="../classes/pm_Client.html">pm_Client</a></li>
+                                                    <li class="class"><a href="../classes/pm_Config.html">pm_Config</a></li>
+                                                    <li class="class"><a href="../classes/pm_Context.html">pm_Context</a></li>
+                                                    <li class="class"><a href="../classes/pm_Controller_Action.html">pm_Controller_Action</a></li>
+                                                    <li class="class"><a href="../classes/pm_Domain.html">pm_Domain</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception.html">pm_Exception</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception_InvalidArgumentException.html">pm_Exception_InvalidArgumentException</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception_ResultException.html">pm_Exception_ResultException</a></li>
+                                                    <li class="class"><a href="../classes/pm_FileManager.html">pm_FileManager</a></li>
+                                                    <li class="class"><a href="../classes/pm_FileManager_Action.html">pm_FileManager_Action</a></li>
+                                                    <li class="class"><a href="../classes/pm_Form_Simple.html">pm_Form_Simple</a></li>
+                                                    <li class="class"><a href="../classes/pm_Form_SubForm.html">pm_Form_SubForm</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ActionLog.html">pm_Hook_ActionLog</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ActiveList.html">pm_Hook_ActiveList</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ApiCli.html">pm_Hook_ApiCli</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ApiRpc.html">pm_Hook_ApiRpc</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Applications.html">pm_Hook_Applications</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Auth.html">pm_Hook_Auth</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Client.html">pm_Hook_Backup_Client</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Domain.html">pm_Hook_Backup_Domain</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Server.html">pm_Hook_Backup_Server</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ConfigDefaults.html">pm_Hook_ConfigDefaults</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ContentInclude.html">pm_Hook_ContentInclude</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_CustomButtons.html">pm_Hook_CustomButtons</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Form.html">pm_Hook_Form</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Limits.html">pm_Hook_Limits</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_LoginContentInclude.html">pm_Hook_LoginContentInclude</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_LongTasks.html">pm_Hook_LongTasks</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Navigation.html">pm_Hook_Navigation</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Notifications.html">pm_Hook_Notifications</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Permissions.html">pm_Hook_Permissions</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_PlanItems.html">pm_Hook_PlanItems</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_SimpleList.html">pm_Hook_SimpleList</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_SystemServices.html">pm_Hook_SystemServices</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_WebServer.html">pm_Hook_WebServer</a></li>
+                                                    <li class="class"><a href="../classes/pm_License.html">pm_License</a></li>
+                                                    <li class="class"><a href="../classes/pm_Loader.html">pm_Loader</a></li>
+                                                    <li class="class"><a href="../classes/pm_Locale.html">pm_Locale</a></li>
+                                                    <li class="class"><a href="../classes/pm_Log.html">pm_Log</a></li>
+                                                    <li class="class"><a href="../classes/pm_LongTask_Manager.html">pm_LongTask_Manager</a></li>
+                                                    <li class="class"><a href="../classes/pm_LongTask_Task.html">pm_LongTask_Task</a></li>
+                                                    <li class="class"><a href="../classes/pm_Navigation_OverviewPage.html">pm_Navigation_OverviewPage</a></li>
+                                                    <li class="class"><a href="../classes/pm_Navigation_Page.html">pm_Navigation_Page</a></li>
+                                                    <li class="class"><a href="../classes/pm_Notification.html">pm_Notification</a></li>
+                                                    <li class="class"><a href="../classes/pm_Plan.html">pm_Plan</a></li>
+                                                    <li class="class"><a href="../classes/pm_ProductInfo.html">pm_ProductInfo</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_AdminHome.html">pm_Promo_AdminHome</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_CustomerHome.html">pm_Promo_CustomerHome</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_Home.html">pm_Promo_Home</a></li>
+                                                    <li class="class"><a href="../classes/pm_Scheduler.html">pm_Scheduler</a></li>
+                                                    <li class="class"><a href="../classes/pm_Scheduler_Task.html">pm_Scheduler_Task</a></li>
+                                                    <li class="class"><a href="../classes/pm_ServerFileManager.html">pm_ServerFileManager</a></li>
+                                                    <li class="class"><a href="../classes/pm_Session.html">pm_Session</a></li>
+                                                    <li class="class"><a href="../classes/pm_Settings.html">pm_Settings</a></li>
+                                                    <li class="class"><a href="../classes/pm_SystemService_Service.html">pm_SystemService_Service</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_ActiveList.html">pm_View_Helper_ActiveList</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_BaseUrl.html">pm_View_Helper_BaseUrl</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_DomainOverviewUrl.html">pm_View_Helper_DomainOverviewUrl</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_Lmsg.html">pm_View_Helper_Lmsg</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderList.html">pm_View_Helper_RenderList</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderSmallTools.html">pm_View_Helper_RenderSmallTools</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderTabs.html">pm_View_Helper_RenderTabs</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderTools.html">pm_View_Helper_RenderTools</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_List_Simple.html">pm_View_List_Simple</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Status.html">pm_View_Status</a></li>
+                                                    <li class="class"><a href="../classes/pm_WebServer.html">pm_WebServer</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <nav>
+                                                <a href="../namespaces/default.html">\</a> <i class="icon-level-up"></i>
+                                            </nav>
+
+                    <h1><small>\</small>pm_Domain</h1>
+                    <p><em>Domain wrapper</em></p>
+                    
+
+                    
+                    <section id="summary">
+                        <h2>Summary</h2>
+                        <section class="row-fluid heading">
+                            <section class="span4">
+                                <a href="#methods">Methods</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#properties">Properties</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#constants">Constants</a>
+                            </section>
+                        </section>
+                        <section class="row-fluid public">
+                            <section class="span4">
+                                                                    <a href="../classes/pm_Domain.html#method___construct" class="">__construct()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getByDomainId" class="">getByDomainId()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getByGuid" class="">getByGuid()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getByName" class="">getByName()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getAllDomains" class="">getAllDomains()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getDomainsByClient" class="">getDomainsByClient()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getId" class="">getId()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getGuid" class="">getGuid()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getName" class="">getName()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getDisplayName" class="">getDisplayName()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getIpAddresses" class="">getIpAddresses()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_isActive" class="">isActive()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_isSuspended" class="">isSuspended()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_isDisabled" class="">isDisabled()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getClient" class="">getClient()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getProperty" class="">getProperty()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getSetting" class="">getSetting()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_setSetting" class="">setSetting()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_deleteSettings" class="">deleteSettings()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_hasPermission" class="">hasPermission()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_hasCorePermission" class="">hasCorePermission()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getLimit" class="">getLimit()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getCoreLimit" class="">getCoreLimit()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_hasHosting" class="">hasHosting()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getHomePath" class="">getHomePath()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getSysUserLogin" class="">getSysUserLogin()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getDocumentRoot" class="">getDocumentRoot()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getVhostSystemPath" class="">getVhostSystemPath()</a><br />
+                                                                    <a href="../classes/pm_Domain.html#method_getPlanItems" class="">getPlanItems()</a><br />
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No public properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No constants found</em>
+                                                            </section>
+                        </section>
+                        <section class="row-fluid protected">
+                            <section class="span4">
+                                                                    <em>No protected methods found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No protected properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+                <aside class="span4 detailsbar">
+                                        
+                    
+                    <dl>
+                        <dt>File</dt>
+                            <dd><a href="../files/Domain.html"><div class="path-wrapper">Domain.php</div></a></dd>
+                                                <dt>Package</dt>
+                            <dd><div class="namespace-wrapper">Plesk_Modules</div></dd>
+                                                <dt>Class hierarchy</dt>
+                            <dd class="hierarchy">
+                                                                                                                                                                    <div class="namespace-wrapper">\pm_Domain</div>
+                            </dd>
+
+                        
+                        
+                        
+                        
+                                                                        </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                                            <tr>
+                            <th>
+                                since
+                            </th>
+                            <td>
+                                                                    11.5                                    
+                                                            </td>
+                        </tr>
+                                        </table>
+                </aside>
+            </div>
+
+                        
+                        
+                                    <a id="methods" name="methods"></a>
+            <div class="row-fluid">
+                <div class="span8 content class"><h2>Methods</h2></div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method___construct" name="method___construct" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">__construct()</h3>
+                <pre class="signature" style="margin-right: 54px;">__construct(integer  <span class="argument">$domainId</span>) </pre>
+                <p><em>Create new domain wrapper</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$domainId </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\pm_Exception</dt>
+                            <dd></dd>
+                                                                    </dl>
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getByDomainId" name="method_getByDomainId" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getByDomainId()</h3>
+                <pre class="signature" style="margin-right: 54px;">getByDomainId(integer  <span class="argument">$domainId</span>) : \pm_Domain</pre>
+                <p><em>Retrieve domain by known id</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$domainId </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\pm_Exception</dt>
+                            <dd></dd>
+                                                                    </dl>
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/pm_Domain.html">\pm_Domain</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getByGuid" name="method_getByGuid" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getByGuid()</h3>
+                <pre class="signature" style="margin-right: 54px;">getByGuid(string  <span class="argument">$domainGuid</span>) : \pm_Domain</pre>
+                <p><em>Retrieve domain by GUID</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$domainGuid </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\pm_Exception</dt>
+                            <dd></dd>
+                                                                    </dl>
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/pm_Domain.html">\pm_Domain</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getByName" name="method_getByName" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getByName()</h3>
+                <pre class="signature" style="margin-right: 54px;">getByName(string  <span class="argument">$domainName</span>) : \pm_Domain</pre>
+                <p><em>Retrieve domain by display name</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$domainName </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\pm_Exception</dt>
+                            <dd></dd>
+                                                                    </dl>
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/pm_Domain.html">\pm_Domain</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getAllDomains" name="method_getAllDomains" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getAllDomains()</h3>
+                <pre class="signature" style="margin-right: 54px;">getAllDomains(boolean  <span class="argument">$mainDomainsOnly = false</span>) : array&lt;mixed,\pm_Domain&gt;</pre>
+                <p><em>Retrieve all domains</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$mainDomainsOnly </td>
+                                <td><p>[optional] Return only main domains. Default is false.</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array&lt;mixed,<a href="../classes/pm_Domain.html">\pm_Domain</a>&gt;
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getDomainsByClient" name="method_getDomainsByClient" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getDomainsByClient()</h3>
+                <pre class="signature" style="margin-right: 54px;">getDomainsByClient(\pm_Client  <span class="argument">$client</span>, boolean  <span class="argument">$mainDomainsOnly = false</span>) : array&lt;mixed,\pm_Domain&gt;</pre>
+                <p><em>Retrieve all client domains</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td><a href="../classes/pm_Client.html">\pm_Client</a></td>
+                                <td>$client </td>
+                                <td><p>Domains owner</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$mainDomainsOnly </td>
+                                <td><p>[optional] Return only main domains. Default is false.</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array&lt;mixed,<a href="../classes/pm_Domain.html">\pm_Domain</a>&gt;
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                            <span class="label label-info">static</span>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getId" name="method_getId" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getId()</h3>
+                <pre class="signature" style="margin-right: 54px;">getId() : integer</pre>
+                <p><em>Retrieve domain id</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    integer
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getGuid" name="method_getGuid" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getGuid()</h3>
+                <pre class="signature" style="margin-right: 54px;">getGuid() : string</pre>
+                <p><em>Retrieve domain GUID</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getName" name="method_getName" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getName()</h3>
+                <pre class="signature" style="margin-right: 54px;">getName() : string</pre>
+                <p><em>Retrieve domain name in ASCII format</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getDisplayName" name="method_getDisplayName" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getDisplayName()</h3>
+                <pre class="signature" style="margin-right: 54px;">getDisplayName() : string</pre>
+                <p><em>Retrieve domain name to be displayed in UI</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getIpAddresses" name="method_getIpAddresses" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getIpAddresses()</h3>
+                <pre class="signature" style="margin-right: 54px;">getIpAddresses(boolean  <span class="argument">$public = true</span>) : array&lt;mixed,string&gt;</pre>
+                <p><em>Retrieve domain IP addresses</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$public </td>
+                                <td><p>Return public IP addresses. For Plesk servers behind NAT private IP addresses are matched to corresponding public ones. Default is true.</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array&lt;mixed,string&gt;
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_isActive" name="method_isActive" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">isActive()</h3>
+                <pre class="signature" style="margin-right: 54px;">isActive() : boolean</pre>
+                <p><em>Check if domain is active</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_isSuspended" name="method_isSuspended" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">isSuspended()</h3>
+                <pre class="signature" style="margin-right: 54px;">isSuspended() : boolean</pre>
+                <p><em>Check if domain is suspended</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_isDisabled" name="method_isDisabled" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">isDisabled()</h3>
+                <pre class="signature" style="margin-right: 54px;">isDisabled() : boolean</pre>
+                <p><em>Check if domain is disabled</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getClient" name="method_getClient" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getClient()</h3>
+                <pre class="signature" style="margin-right: 54px;">getClient() : \pm_Client</pre>
+                <p><em>Retrieve owner of domain</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/pm_Client.html">\pm_Client</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            12.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getProperty" name="method_getProperty" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getProperty()</h3>
+                <pre class="signature" style="margin-right: 54px;">getProperty(string  <span class="argument">$name</span>) : string</pre>
+                <p><em>Retrieve property of domain</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$name </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\pm_Exception</dt>
+                            <dd></dd>
+                                                                    </dl>
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getSetting" name="method_getSetting" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getSetting()</h3>
+                <pre class="signature" style="margin-right: 54px;">getSetting(string  <span class="argument">$name</span>, string  <span class="argument">$default = null</span>) : string|null</pre>
+                <p><em>Return value of custom domain setting by given name</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$name </td>
+                                <td><p>Setting name</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$default </td>
+                                <td><p>Default value of setting</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string|null
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_setSetting" name="method_setSetting" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">setSetting()</h3>
+                <pre class="signature" style="margin-right: 54px;">setSetting(string  <span class="argument">$name</span>, string|null  <span class="argument">$value</span>) </pre>
+                <p><em>Define value of custom domain setting</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$name </td>
+                                <td><p>Setting name</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string|null</td>
+                                <td>$value </td>
+                                <td><p>Setting value or null to delete setting</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_deleteSettings" name="method_deleteSettings" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">deleteSettings()</h3>
+                <pre class="signature" style="margin-right: 54px;">deleteSettings(string  <span class="argument">$prefix = &#039;&#039;</span>) </pre>
+                <p><em>Delete all custom domain settings</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$prefix </td>
+                                <td><p>Settings name prefix</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_hasPermission" name="method_hasPermission" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">hasPermission()</h3>
+                <pre class="signature" style="margin-right: 54px;">hasPermission(string  <span class="argument">$name</span>) : mixed</pre>
+                <p><em>Retrieve permission value by name</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$name </td>
+                                <td><p>Permission name</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    mixed
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_hasCorePermission" name="method_hasCorePermission" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">hasCorePermission()</h3>
+                <pre class="signature" style="margin-right: 54px;">hasCorePermission(string  <span class="argument">$name</span>) : mixed</pre>
+                <p><em>Retrieve Plesk core permission value by name</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$name </td>
+                                <td><p>Permission name</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    mixed
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getLimit" name="method_getLimit" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getLimit()</h3>
+                <pre class="signature" style="margin-right: 54px;">getLimit(string  <span class="argument">$name</span>) : mixed</pre>
+                <p><em>Retrieve limit value by name</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$name </td>
+                                <td><p>Limit name</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    mixed
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getCoreLimit" name="method_getCoreLimit" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getCoreLimit()</h3>
+                <pre class="signature" style="margin-right: 54px;">getCoreLimit(string  <span class="argument">$name</span>) : mixed</pre>
+                <p><em>Retrieve Plesk core limit value by name</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$name </td>
+                                <td><p>Limit name</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    mixed
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_hasHosting" name="method_hasHosting" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">hasHosting()</h3>
+                <pre class="signature" style="margin-right: 54px;">hasHosting() : boolean</pre>
+                <p><em>Check if domain has web hosting configured</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getHomePath" name="method_getHomePath" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getHomePath()</h3>
+                <pre class="signature" style="margin-right: 54px;">getHomePath() : string</pre>
+                <p><em>Retrieve domain home path</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getSysUserLogin" name="method_getSysUserLogin" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getSysUserLogin()</h3>
+                <pre class="signature" style="margin-right: 54px;">getSysUserLogin() : string</pre>
+                <p><em>Retrieve domain system user login</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getDocumentRoot" name="method_getDocumentRoot" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getDocumentRoot()</h3>
+                <pre class="signature" style="margin-right: 54px;">getDocumentRoot(boolean  <span class="argument">$relative = false</span>) : string</pre>
+                <p><em>Retrieve domain document root directory. Available for domains with web hosting</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$relative </td>
+                                <td><p>[optional] Return root directory relative to home path. Default is false.</p></td>
+                            </tr>
+                                            </table>
+                
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\pm_Exception</dt>
+                            <dd></dd>
+                                                                    </dl>
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getVhostSystemPath" name="method_getVhostSystemPath" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getVhostSystemPath()</h3>
+                <pre class="signature" style="margin-right: 54px;">getVhostSystemPath() : string</pre>
+                <p><em>Retrieve domain vhost system directory. Available for domains with web hosting</em></p>
+                
+
+                
+                                    <h4>Throws</h4>
+                    <dl>
+                                                    <dt>\pm_Exception</dt>
+                            <dd></dd>
+                                                                    </dl>
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getPlanItems" name="method_getPlanItems" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getPlanItems()</h3>
+                <pre class="signature" style="margin-right: 54px;">getPlanItems() : array</pre>
+                <p><em>Get included plan items</em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                                    </div>
+    </section>
+
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on June 13th, 2017 at 08:32.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>

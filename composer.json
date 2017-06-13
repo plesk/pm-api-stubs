@@ -9,6 +9,11 @@
   },
   "require": {
     "zendframework/zendframework1": "^1.12.17"
+  },
+  "require-dev": {
+    "phpdocumentor/phpdocumentor": "^2.9"
+  },
+  "scripts": {
+    "docs": "phpdoc"
   }
 }
-

@@ -10,13 +10,6 @@ abstract class pm_FileManager_Action implements pm_Hook_Interface
 {
 
     /**
-     * Module identity
-     *
-     * @var string
-     */
-    protected $_moduleId;
-
-    /**
      * File or directory item
      *
      * ```php
@@ -39,14 +32,6 @@ abstract class pm_FileManager_Action implements pm_Hook_Interface
      * @var array
      */
     protected $_item = [];
-
-    /**
-     * Create action
-     *
-     * @param string $moduleId
-     * @param array $item
-     */
-    public function __construct($moduleId, $item) { }
 
     /**
      * Retrieve translated message from locale file

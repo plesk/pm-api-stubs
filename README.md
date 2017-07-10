@@ -3,7 +3,7 @@ Plesk Extensions API stubs
 
 Plesk Extensions API PHP files stubs for IDE.
 
-Target version: Plesk 17.5
+Target version: Plesk 17.8
 
 [API reference](https://plesk.github.io/pm-api-stubs/docs/)
 

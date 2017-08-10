@@ -167,4 +167,33 @@ class pm_FileManager
      */
     public function getRelativeFilePath($path) { }
 
+    /**
+     * Zip user files
+     *
+     * @param string $path Path, where you want to put new archive
+     * @param string $archiveName Name for your archive
+     * @param array $files Array of files paths, which will be included to your archive
+     * @since 17.8
+     */
+    public function zip($path, $archiveName, $files) { }
+
+    /**
+     * Unzip user files to certain folder
+     *
+     * @param string $source Path, where packed archive is hosted.
+     * @param string $destination Path, where you want to put files from packed archive
+     * @param boolean $overwrite, optional
+     * @since 17.8
+     */
+    public function unzip($source, $destination, $overwrite = false) { }
+
+    /**
+     * Checks if path is directory or not.
+     *
+     * @param string $path Path to file or directory
+     * @return bool
+     * @since 17.8
+     */
+    public function isDir($path) { }
+
 }

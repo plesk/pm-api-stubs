@@ -158,4 +158,20 @@ class pm_ProductInfo
      */
     public static function getVirtualization($all = false) { }
 
+    /**
+     * Retrieve absolute path to temp directory.
+     *
+     * @return string
+     * @since 17.8
+     */
+    public static function getPrivateTempDir() { }
+
+    /**
+     * Retrieve absolute path to root directory.
+     *
+     * @return string
+     * @since 17.8
+     */
+    public static function getProductRootDir() { }
+
 }

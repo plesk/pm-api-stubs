@@ -28,6 +28,14 @@ class pm_Client
     public static function getByLogin($login) { }
 
     /**
+     * Retrieve all clients
+     *
+     * @return pm_Client[]
+     * @since 17.8.4
+     */
+    public static function getAll() { }
+
+    /**
      * Check if client is administrator
      *
      * @return bool

@@ -50,4 +50,12 @@ abstract class pm_Hook_ContentInclude implements pm_Hook_Interface
      */
     public function getBodyContent() { }
 
+    /**
+     * Retrieve additional HTML content which will be added to sidebar area
+     *
+     * @return string
+     * @since 17.8
+     */
+    public function getSidebarContent() { }
+
 }

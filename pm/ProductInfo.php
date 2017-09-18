@@ -102,7 +102,7 @@ class pm_ProductInfo
     public static function isWindows() { }
 
     /**
-     * Retrieve OS name (in lower case)
+     * Retrieve OS name
      *
      * @return string|null
      * @since 17.0

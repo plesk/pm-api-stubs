@@ -10,7 +10,7 @@ class pm_Settings
 {
 
     /**
-     * Return value of setting by given name
+     * Retrieve value of setting by given name
      *
      * @param string $name Setting name
      * @param string $default Default value of setting
@@ -19,7 +19,7 @@ class pm_Settings
     public static function get($name, $default = null) { }
 
     /**
-     * Define value of setting
+     * Store value of setting
      *
      * @param string $name Setting name
      * @param string|null $value Setting value or null to delete setting
@@ -38,5 +38,24 @@ class pm_Settings
      * @since 17.0 added argument $prefix
      */
     public static function clean($prefix = '') { }
+
+    /**
+     * Retrieve value of setting by given name with decryption (AES-128 CBC)
+     *
+     * @param string $name Setting name
+     * @param string $default Default value of setting
+     * @return string|null
+     * @since 17.8
+     */
+    public static function getDecrypted($name, $default = null) { }
+
+    /**
+     * Store value of setting in encrypted form (AES-128 CBC)
+     *
+     * @param string $name Setting name
+     * @param string|null $value Setting value or null to delete setting
+     * @since 17.8
+     */
+    public static function setEncrypted($name, $value) { }
 
 }

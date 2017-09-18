@@ -78,7 +78,7 @@ class pm_Context
     /**
      * Retrieve information about module from registry
      *
-     * @return Zend_Db_Table_Row
+     * @return Zend_Db_Table_Row|Db_Table_Row_Module
      */
     public static function getModuleInfo() { }
 
@@ -96,5 +96,13 @@ class pm_Context
      * @since 17.0
      */
     public static function getBuyUrl() { }
+
+    /**
+     * Retrieve URL for license upgrade (or buy URL as a fallback)
+     *
+     * @return string
+     * @since 17.8
+     */
+    public static function getUpgradeLicenseUrl() { }
 
 }

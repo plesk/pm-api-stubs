@@ -30,6 +30,13 @@ class pm_Hook_Backup_Transport implements pm_Hook_Backup
     protected $_objectId;
 
     /**
+     * Initializes an object of the class. The method should be called explicitly within an overridden method.
+     * @param string $objectType (server, reseller, customer, subscription)
+     * @param int|null $objectId
+     */
+    public function init($objectType, $objectId) { }
+
+    /**
      * The method returns true if the extension is configured for the object
      * @return bool
      */
@@ -143,5 +150,13 @@ class pm_Hook_Backup_Transport implements pm_Hook_Backup
      * @return pm_Form_SubForm
      */
     public function getSettingsSubForm() { }
+
+    /**
+     * This method is called just before show subform provided by getSettingsSubForm. This method may be used for
+     * OAuth2 authorization.
+     *
+     * @param $controller Zend_Controller_Action
+     */
+    public function authorize($controller) { }
 
 }

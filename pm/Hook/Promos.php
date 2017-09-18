@@ -3,7 +3,7 @@
 /**
  * Hook for getting promo blocks
  *
- * @package pm_Hook_Promos
+ * @package Plesk_Modules
  * @since 17.8
  */
 abstract class pm_Hook_Promos implements pm_Hook_Interface

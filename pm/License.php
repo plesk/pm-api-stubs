@@ -64,4 +64,11 @@ class pm_License
      */
     public function getBodyProperty($propertyName) { }
 
+    /**
+     * Gets extension license information by code.
+     *
+     * @param $code
+     * @return null|array
+     */
+    public function getExtensionLicenseInfo($code) { }
 }

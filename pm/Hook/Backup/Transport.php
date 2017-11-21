@@ -43,8 +43,8 @@ class pm_Hook_Backup_Transport implements pm_Hook_Backup
     public function isConfigured() { }
 
     /**
-     * The method checks and reports potential problems with the storage
-     * @return string[]
+     * The method checks and reports problems with the storage ['errors' => ['message', ...], 'warnings' => ['message', ...]]
+     * @return array
      */
     public function check() { }
 
@@ -99,7 +99,7 @@ class pm_Hook_Backup_Transport implements pm_Hook_Backup
      *
      * @param string $path
      * @param string $offset
-     * @return string Returns file descriptor for appendFile
+     * @return string Returns file descriptor for readFile
      */
     public function openFileRead($path, $offset) { }
 
@@ -158,5 +158,14 @@ class pm_Hook_Backup_Transport implements pm_Hook_Backup
      * @param $controller Zend_Controller_Action
      */
     public function authorize($controller) { }
+
+    /**
+     * This method returns array with information about user disk quota in bytes. If the storage cannot provide
+     * information about quota an empty array should be returned.
+     * Example ['total' => 5368709120, 'free' => 3221225472]
+     *
+     * @return array
+     */
+    public function getQuota() { }
 
 }

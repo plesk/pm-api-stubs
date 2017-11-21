@@ -32,7 +32,7 @@ class pm_Session
     public static function isImpersonated() { }
 
     /**
-     * Retrieve id of client in which admin/reseller is impersonated into
+     * Retrieve id of admin/reseller which impersonated into a client
      *
      * @return int
      */

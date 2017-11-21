@@ -71,4 +71,5 @@ class pm_License
      * @return null|array
      */
     public function getExtensionLicenseInfo($code) { }
+
 }

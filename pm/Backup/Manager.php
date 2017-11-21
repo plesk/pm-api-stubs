@@ -1,7 +1,7 @@
 <?php
 // Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 /**
- *
+ * Manager of backups for extension.
  *
  * @package Plesk_Modules
  * @since 17.8

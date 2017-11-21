@@ -255,7 +255,7 @@ class pm_Domain
     /**
      * Get included plan items
      *
-     * @return array
+     * @return string[]
      * @since 17.0
      */
     public function getPlanItems() { }

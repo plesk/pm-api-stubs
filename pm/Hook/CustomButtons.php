@@ -67,6 +67,8 @@ abstract class pm_Hook_CustomButtons implements pm_Hook_Interface
 
     const SECTION_ADMIN_TOOLS_TOOLS_AND_RESOURCES = 'toolsAndResourcesButtons';
 
+    const SECTION_ADMIN_TOOLS_TROUBLESHOOTING_BUTTONS = 'troubleshootingButtons';
+
     const SECTION_NAV_GENERAL = 'general';
 
     const SECTION_NAV_HOSTING = 'hosting';

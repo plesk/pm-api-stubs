@@ -1,0 +1,21 @@
+<?php
+// Copyright 1999-2017. Plesk International GmbH. All rights reserved.
+/**
+ * Authentication helper methods
+ *
+ * @package Plesk_Modules
+ * @since 17.8
+ */
+class pm_Auth implements pm_Hook_Interface
+{
+
+    /**
+     * Check if credentials are valid or not
+     *
+     * @param string $login
+     * @param string $password
+     * @return bool
+     */
+    public static function isValidCredentials($login, $password) { }
+
+}

@@ -9,6 +9,7 @@
 class pm_View_List_Simple
 {
 
+    /** @since 12.5 */
     const COLUMN_SELECTION = 'Jsw.list.COLUMN_SELECTION';
 
     const SORT_DIR_UP = 'up';

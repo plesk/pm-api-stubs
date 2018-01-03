@@ -6,7 +6,7 @@
  * @package Plesk_Modules
  * @since 17.8
  */
-class pm_Auth implements pm_Hook_Interface
+class pm_Auth
 {
 
     /**

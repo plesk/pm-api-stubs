@@ -62,7 +62,8 @@ class pm_Extension
     /**
      * Install extension by identifier
      *
-     * @param $id string
+     * @param string $id
+     * @return pm_Extension
      * @throws pm_Exception
      */
     public static function installById($id) { }
@@ -70,7 +71,8 @@ class pm_Extension
     /**
      * Install extension by URL
      *
-     * @param $url string
+     * @param string $url
+     * @return pm_Extension
      * @throws pm_Exception
      */
     public static function installByUrl($url) { }
@@ -78,9 +80,9 @@ class pm_Extension
     /**
      * Install extension by file
      *
-     * @param $file string
+     * @param string $file
+     * @return pm_Extension
      * @throws pm_Exception
-     * @return array
      */
     public static function installByFile($file) { }
 

@@ -18,6 +18,13 @@ abstract class pm_LongTask_Task
     const STATUS_DONE = 'done';
 
     /**
+     * Number of tasks that can be executed at the same time, -1 is equal to unlimited pool size
+     *
+     * @var int
+     */
+    public $poolSize = -1;
+
+    /**
      * Is task progress trackable
      *
      * @var bool

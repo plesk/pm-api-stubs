@@ -93,7 +93,7 @@ class pm_Context
      * Retrieve module buy URL
      *
      * @return string
-     * @since 17.0
+     * @since 12.5
      */
     public static function getBuyUrl() { }
 
@@ -101,7 +101,7 @@ class pm_Context
      * Retrieve URL for license upgrade (or buy URL as a fallback)
      *
      * @return string
-     * @since 17.8
+     * @since 17.5
      */
     public static function getUpgradeLicenseUrl() { }
 

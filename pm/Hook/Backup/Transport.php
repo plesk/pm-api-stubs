@@ -37,133 +37,143 @@ class pm_Hook_Backup_Transport implements pm_Hook_Backup
     public function init($objectType, $objectId) { }
 
     /**
-     * The method returns true if the extension is configured for the object
+     * Returns true if the extension is configured for the object.
+     * Override this method in the extension class. Default implementation returns false.
      * @return bool
      */
     public function isConfigured() { }
 
     /**
-     * The method checks and reports problems with the storage ['errors' => ['message', ...], 'warnings' => ['message', ...]]
+     * Checks connection with the storage and reports problems
+     * ['errors' => ['message', ...], 'warnings' => ['message', ...]].
+     * The method may be overridden in extension class. Default implementation returns empty array.
      * @return array
      */
     public function check() { }
 
     /**
-     * The method returns description which is shown in backup manager UI. The description should contains detailed
-     * information about storage (name, internal path etc.)
+     * Describes this extension for backup manager UI. The description should include storage name, internal path, etc.
+     * The method may be overridden in extension class.
+     * Default implementation returns extension's display name.
      * @return string
      */
     public function getDescription() { }
 
     /**
-     * The method returns array ['name' => ..., 'size' => ..., 'isDir' => ...]
+     * Returns array ['name' => ..., 'size' => ..., 'isDir' => ...].
+     * Override this method in the extension class. Default implementation returns null.
      * @param string $path
      * @return null|array
      */
     public function stat($path) { }
 
     /**
-     * The method returns array [['name' => ..., 'size' => ..., 'isDir' => ...], ...]
+     * Returns array [['name' => ..., 'size' => ..., 'isDir' => ...], ...].
+     * Override this method in the extension class. Default implementation returns empty array.
      * @param $path
      * @return array
-     * @throws pm_Exception The exception is thrown if the directory does not exist
      */
     public function listDir($path) { }
 
     /**
-     * The method creates the specified directory
+     * Creates the specified directory.
+     * Override this method in the extension class. Default implementation does nothing.
      * @param string $path
      */
     public function createDir($path) { }
 
     /**
-     * The method removes the specified file
+     * Removes the specified file.
+     * Override this method in the extension class. Default implementation does nothing.
      * @param string $path
      */
     public function deleteFile($path) { }
 
     /**
-     * The method removes the specified directory
+     * Removes the specified directory.
+     * Override this method in the extension class. Default implementation does nothing.
      * @param string $path
      */
     public function deleteDir($path) { }
 
     /**
-     * The method returns size of read buffer preferred for the extension
+     * Returns size of read chunk preferred for the extension. The chunk uses in readFile method.
+     * The method may be overridden in extension class. Default implementation returns 100Mb.
      * @return int
      */
     public function getReadBufferSize() { }
 
     /**
-     * The method opens file for read from the specified offset
-     *
+     * Prepare a file with the specified name on the storage to read from the specified offset.
+     * Override this method in the extension class. Default implementation returns empty string.
      * @param string $path
-     * @param string $offset
-     * @return string Returns file descriptor for readFile
+     * @param int $offset
+     * @return mixed Returns file descriptor for readFile
      */
     public function openFileRead($path, $offset) { }
 
     /**
-     * The method reads file content to the local file
-     *
-     * @param string $fd
+     * Reads file content to the local file.
+     * Override this method in the extension class. Default implementation returns 0.
+     * @param mixed $fd descriptor returned by openFileRead method
      * @param string $localFile
-     * @param null | float $size if the size is null the whole file should be read
-     * @return string Bytes read
+     * @param int|null $size if the size is null the whole file should be read
+     * @return int Bytes read
      */
     public function readFile($fd, $localFile, $size = null) { }
 
     /**
-     * The method returns size of write buffer preferred for the extension
-     *
+     * Returns size of write chunk preferred for the extension. The chunk uses in appendFile method.
+     * The method may be overridden in extension class. Default implementation returns 100Mb.
      * @return int
      */
     public function getWriteBufferSize() { }
 
     /**
-     * The method opens file for read from the specified offset. If the file already exists it should be truncated
-     *
+     * Prepares the storage to write a new file with the specified name.
+     * The method returns handle which should be used in appendFile and closeFile methods.
+     * Override this method in the extension class. Default implementation returns empty string.
      * @param string $path
-     * @return string Returns file descriptor for appendFile
+     * @return mixed File descriptor
      */
     public function openFileWrite($path) { }
 
     /**
-     * The method appends content of the local file to the file in the extenal storage
-     *
-     * @param string $fd
-     * @param string $localFileName
-     * @return string Bytes written
+     * The method appends content of the local file to the file in the external storage.
+     * Override this method in the extension class. Default implementation returns 0.
+     * @param mixed $fd descriptor returned by openFileWrite
+     * @param string $localFile
+     * @return int Bytes written
      */
-    public function appendFile($fd, $localFileName) { }
+    public function appendFile($fd, $localFile) { }
 
     /**
-     * The method closes file
-     *
-     * @param string $fd
+     * Closes file.
+     * Override this method in the extension class. Default implementation does nothing.
+     * @param mixed $fd descriptor returned by openFileWrite or openFileRead
      */
     public function closeFile($fd) { }
 
     /**
-     * The method returns subform with storage settings
-     *
+     * Returns subform with storage settings.
+     * Override this method in the extension class. Default implementation empty an instance of pm_Form_SubForm.
      * @return pm_Form_SubForm
      */
     public function getSettingsSubForm() { }
 
     /**
-     * This method is called just before show subform provided by getSettingsSubForm. This method may be used for
+     * Is called just before show subform provided by getSettingsSubForm. This method may be used for
      * OAuth2 authorization.
-     *
+     * The method may be overridden in extension class. Default implementation does nothing.
      * @param $controller Zend_Controller_Action
      */
     public function authorize($controller) { }
 
     /**
-     * This method returns array with information about user disk quota in bytes. If the storage cannot provide
+     * Returns array with information about user disk quota in bytes. If the storage cannot provide
      * information about quota an empty array should be returned.
      * Example ['total' => 5368709120, 'free' => 3221225472]
-     *
+     * The method may be overridden in extension class. Default implementation returns empty array.
      * @return array
      */
     public function getQuota() { }

@@ -23,6 +23,7 @@ class pm_ApiRpc
      * @param string|SimpleXMLElement|DOMDocument $request
      * @param string $login Panel username on behalf of which the operation will be performed
      * @return SimpleXMLElement
+     * @throws pm_Exception
      * @since 12.0 added argument $login
      */
     public function call($request, $login = null) { }

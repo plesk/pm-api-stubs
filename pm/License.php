@@ -14,6 +14,7 @@ class pm_License
      *
      * @param null|string $productName
      * @return array
+     * @deprecated use `getAdditionalKey` method
      */
     public static function getAdditionalKeysList($productName = null) { }
 

@@ -97,13 +97,6 @@ class pm_Hook_Backup_Transport implements pm_Hook_Backup
     public function deleteDir($path) { }
 
     /**
-     * Returns size of read chunk preferred for the extension. The chunk uses in readFile method.
-     * The method may be overridden in extension class. Default implementation returns 100Mb.
-     * @return int
-     */
-    public function getReadBufferSize() { }
-
-    /**
      * Prepare a file with the specified name on the storage to read from the specified offset.
      * Override this method in the extension class. Default implementation returns empty string.
      * @param string $path
@@ -121,13 +114,6 @@ class pm_Hook_Backup_Transport implements pm_Hook_Backup
      * @return int Bytes read
      */
     public function readFile($fd, $localFile, $size = null) { }
-
-    /**
-     * Returns size of write chunk preferred for the extension. The chunk uses in appendFile method.
-     * The method may be overridden in extension class. Default implementation returns 100Mb.
-     * @return int
-     */
-    public function getWriteBufferSize() { }
 
     /**
      * Prepares the storage to write a new file with the specified name.

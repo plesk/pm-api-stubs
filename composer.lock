@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e11d8e0fab20cf1a47afc322f26a79f6",
+    "content-hash": "2691298a91a2688f47e3f1e758fa5f34",
     "packages": [
         {
-            "name": "zendframework/zendframework1",
-            "version": "1.12.20",
+            "name": "plesk/zf1",
+            "version": "1.12.17-patch",
             "source": {
                 "type": "git",
-                "url": "https://github.com/zendframework/zf1.git",
-                "reference": "737ef159654fbbef37cf9af742b2c8f9690c2ece"
+                "url": "https://github.com/plesk/zf1.git",
+                "reference": "dfb48bf65c4245ff7a85a7d7e215612b9fe9ad2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zf1/zipball/737ef159654fbbef37cf9af742b2c8f9690c2ece",
-                "reference": "737ef159654fbbef37cf9af742b2c8f9690c2ece",
+                "url": "https://api.github.com/repos/plesk/zf1/zipball/dfb48bf65c4245ff7a85a7d7e215612b9fe9ad2f",
+                "reference": "dfb48bf65c4245ff7a85a7d7e215612b9fe9ad2f",
                 "shasum": ""
             },
             "require": {
@@ -45,13 +45,13 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "description": "Zend Framework 1",
+            "description": "Zend Framework 1 (Plesk)",
             "homepage": "http://framework.zend.com/",
             "keywords": [
                 "ZF1",
                 "framework"
             ],
-            "time": "2016-09-08T14:50:34+00:00"
+            "time": "2018-03-28T04:16:53+00:00"
         }
     ],
     "packages-dev": [

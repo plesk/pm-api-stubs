@@ -8,7 +8,7 @@
     ]
   },
   "require": {
-    "zendframework/zendframework1": "^1.12.17"
+    "plesk/zf1": "1.12.17-patch"
   },
   "require-dev": {
     "phpdocumentor/phpdocumentor": "^2.9"

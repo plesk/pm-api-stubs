@@ -260,4 +260,26 @@ class pm_Domain
      */
     public function getPlanItems() { }
 
+    /**
+     * Get URL to screenshot of specified path on domain
+     *
+     * Available screenshot options:
+     * ```php
+     * [
+     *     'type' => string, // Image type, can be either png or jpeg. Default: 'png'.
+     *     'width' => int, // Browser window width, between 16-2048. Default: 1600.
+     *     'height' => int, // Browser window height, between 16-2048. Default: 1200.
+     *     'scale' => float, // Browser scale factor, between 0.01-1. Default: 1.
+     *     'delay' => int, // Time in seconds, to delay the rendering of the snapshot, between 0-45. Default: 0.
+     *     'cache' => int, // Time in seconds, after which the screenshot is considered obsolete and will be generated again. Default: 3600.
+     * ]
+     * ```
+     *
+     * @param string $path
+     * @param array $options
+     * @return string
+     * @since 17.9
+     */
+    public function getScreenshotUrl($path = '/', $options = []) { }
+
 }

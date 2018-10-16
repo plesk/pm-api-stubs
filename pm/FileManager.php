@@ -125,7 +125,7 @@ class pm_FileManager
      * @return string
      * @since 17.0
      */
-    public function joinPath($pathParts) { }
+    public function joinPath(...$pathParts) { }
 
     /**
      * Returns list of files and directories inside the specified path

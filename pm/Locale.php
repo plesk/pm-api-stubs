@@ -57,7 +57,7 @@ class pm_Locale
      * Get translated messages by key according to current locale
      *
      * @param string $sectionKey
-     * @return string
+     * @return array
      * @since 17.0
      */
     public static function getSection($sectionKey) { }

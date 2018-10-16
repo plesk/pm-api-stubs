@@ -25,13 +25,13 @@ class pm_ApiCli
      * @param string $command
      * @param array $args
      * @param int $result
-     * @param array|null $env
+     * @param array $env
      * @return array|int|string
      * @throws pm_Exception
      * @since 11.0 from CLI only
      * @since 17.0 from anywhere. RESULT_EXCEPTION is default.
      */
-    public static function call($command, $args = [], $result = 5, $env = null) { }
+    public static function call($command, $args = [], $result = 5, $env = []) { }
 
     /**
      * Execute privileged CLI utility
@@ -39,12 +39,12 @@ class pm_ApiCli
      * @param string $command
      * @param array $args
      * @param int $result
-     * @param array|null $env
+     * @param array $env
      * @return array|int|string
      * @throws pm_Exception
      * @since 12.0 Unix only
      * @since 17.0 Windows support
      */
-    public static function callSbin($command, $args = [], $result = 5, $env = null) { }
+    public static function callSbin($command, $args = [], $result = 5, $env = []) { }
 
 }

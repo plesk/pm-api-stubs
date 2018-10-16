@@ -19,7 +19,7 @@ class pm_Client
     public static function getByClientId($clientId) { }
 
     /**
-     * Retrieve client by known login
+     * Retrieve client by known login. Throws pm_Exception if client not found.
      *
      * @param string $login
      * @return pm_Client
@@ -116,24 +116,24 @@ class pm_Client
     public function hasAccessToDomain($domainId) { }
 
     /**
-     * Check if user has permission for domain
+     * Check if user has permission
      *
      * @param string $name Permission name
-     * @param pm_Domain $domain Domain to check permission
+     * @param pm_Domain|null $domain Domain to check permission (optional since 17.9)
      * @return bool
      * @since 17.0
      */
-    public function hasPermission($name, $domain) { }
+    public function hasPermission($name, $domain = null) { }
 
     /**
-     * Check if user has core permission for domain
+     * Check if user has core permission
      *
      * @param string $name Permission name
-     * @param pm_Domain $domain Domain to check permission
+     * @param pm_Domain|null $domain Domain to check permission (optional since 17.9)
      * @return bool
      * @since 17.5
      */
-    public function hasCorePermission($name, $domain) { }
+    public function hasCorePermission($name, $domain = null) { }
 
     /**
      * Check if client can access to plan with provided identity

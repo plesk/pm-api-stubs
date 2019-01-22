@@ -31,6 +31,14 @@ class pm_Plan
     public function getName() { }
 
     /**
+     * Whether current plan is reseller plan
+     *
+     * @return bool
+     * @since 17.9
+     */
+    public function isResellerPlan() { }
+
+    /**
      * Retrieve permission value by name
      *
      * @param string $name Permission name

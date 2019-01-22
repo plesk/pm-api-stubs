@@ -30,6 +30,9 @@ abstract class pm_Controller_Action extends Zend_Controller_Action implements Ze
      */
     public function init() { }
 
+    
+    protected function registerModuleVersionToUAT() { }
+
     /**
      * Translate message by key according to current locale
      *

@@ -18,4 +18,28 @@ class pm_WebServer
      */
     public function updateDomainConfiguration($domain) { }
 
+    /**
+     * Return Nginx web server wrapper
+     *
+     * @since 18.0
+     * @return pm_WebServer_Interface
+     */
+    public function nginx() { }
+
+    /**
+     * Return Apache web server wrapper
+     *
+     * @since 18.0
+     * @return pm_WebServer_Interface
+     */
+    public function apache() { }
+
+    /**
+     * Return IIS web server wrapper
+     *
+     * @since 18.0
+     * @return pm_WebServer_Interface
+     */
+    public function iis() { }
+
 }

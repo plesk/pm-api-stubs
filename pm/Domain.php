@@ -278,7 +278,7 @@ class pm_Domain
      * @param string $path
      * @param array $options
      * @return string
-     * @since 17.9
+     * @since 18.0
      */
     public function getScreenshotUrl($path = '/', $options = []) { }
 

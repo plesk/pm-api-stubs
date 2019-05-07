@@ -48,7 +48,7 @@ abstract class pm_Hook_WebServer implements pm_Hook_Interface
      * @param pm_Domain $domain
      * @param string $type webmail type
      * @return string
-     * @since 17.9
+     * @since 18.0
      */
     public function getWebmailApacheConfig($domain, $type) { }
 
@@ -58,7 +58,7 @@ abstract class pm_Hook_WebServer implements pm_Hook_Interface
      * @param pm_Domain $domain
      * @param string $type webmail type
      * @return string
-     * @since 17.9
+     * @since 18.0
      */
     public function getWebmailNginxConfig($domain, $type) { }
 

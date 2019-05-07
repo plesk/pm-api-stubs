@@ -34,7 +34,7 @@ class pm_Plan
      * Whether current plan is reseller plan
      *
      * @return bool
-     * @since 17.9
+     * @since 18.0
      */
     public function isResellerPlan() { }
 

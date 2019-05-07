@@ -2,7 +2,7 @@
 // Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 /**
  * Nginx proxy service interface
- * @since 17.9
+ * @since 18.0
  */
 class pm_WebServer_Nginx extends pm_WebServer_Abstract implements pm_WebServer_Interface
 {

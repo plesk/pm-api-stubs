@@ -64,14 +64,14 @@ class pm_Scheduler
      * Update or add new task to scheduler
      * @param pm_Scheduler_Task $task
      */
-    public function putTask($task) { }
+    public function putTask(pm_Scheduler_Task $task) { }
 
     /**
      * Remove task from scheduler
      * @param pm_Scheduler_Task $task
      * @throws pm_Exception
      */
-    public function removeTask($task) { }
+    public function removeTask(pm_Scheduler_Task $task) { }
 
     /**
      * Remove all tasks of current module
@@ -85,7 +85,7 @@ class pm_Scheduler
      * @throws pm_Exception
      * @since 17.0
      */
-    public function enableTask($task) { }
+    public function enableTask(pm_Scheduler_Task $task) { }
 
     /**
      * Disable task
@@ -94,6 +94,6 @@ class pm_Scheduler
      * @throws pm_Exception
      * @since 17.0
      */
-    public function disableTask($task) { }
+    public function disableTask(pm_Scheduler_Task $task) { }
 
 }

@@ -102,7 +102,7 @@ class pm_View_List_Simple
      * @param Zend_Controller_Request_Abstract $request
      * @param array $options Additional options available in $this->_options property
      */
-    public function __construct($view, $request, $options = []) { }
+    public function __construct(Zend_View $view, Zend_Controller_Request_Abstract $request, $options = []) { }
 
     /**
      * Set list columns from associated array
@@ -121,7 +121,7 @@ class pm_View_List_Simple
      *
      * @param array $columns
      */
-    public function setColumns($columns) { }
+    public function setColumns(array $columns) { }
 
     /**
      * add search filters from associated array
@@ -140,7 +140,7 @@ class pm_View_List_Simple
      * @param array $filters
      * @since 12.5
      */
-    public function addSearchFilters($filters) { }
+    public function addSearchFilters(array $filters) { }
 
     /**
      * Set list data from associated array
@@ -156,7 +156,7 @@ class pm_View_List_Simple
      *
      * @param array $data
      */
-    public function setData($data) { }
+    public function setData(array $data) { }
 
     /**
      * Fetch list data
@@ -202,7 +202,7 @@ class pm_View_List_Simple
      *
      * @param array $tools
      */
-    public function setTools($tools) { }
+    public function setTools(array $tools) { }
 
     /**
      * Translate message by key according to current locale

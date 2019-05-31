@@ -64,7 +64,7 @@ class pm_Domain
      * @return pm_Domain[]
      * @since 17.0
      */
-    public static function getDomainsByClient($client, $mainDomainsOnly = false) { }
+    public static function getDomainsByClient(pm_Client $client, $mainDomainsOnly = false) { }
 
     /**
      * Retrieve domain id
@@ -280,6 +280,6 @@ class pm_Domain
      * @return string
      * @since 18.0
      */
-    public function getScreenshotUrl($path = '/', $options = []) { }
+    public function getScreenshotUrl(string $path = '/', array $options = []) { }
 
 }

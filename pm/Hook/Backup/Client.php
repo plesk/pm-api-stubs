@@ -14,7 +14,7 @@ abstract class pm_Hook_Backup_Client implements pm_Hook_Backup
      *
      * @param pm_Client $client The client that is backuped
      */
-    public function postBackup($client) { }
+    public function postBackup(pm_Client $client) { }
 
     /**
      * Define the content to be stored
@@ -31,7 +31,7 @@ abstract class pm_Hook_Backup_Client implements pm_Hook_Backup
      *
      * @return array
      */
-    public function backup($client) { }
+    public function backup(pm_Client $client) { }
 
     /**
      * Define the logic on restoring a client
@@ -42,6 +42,6 @@ abstract class pm_Hook_Backup_Client implements pm_Hook_Backup
      * @param string $config Stored config related to restoring client
      * @param string $contentDir Directory with content related to restoring client
      */
-    public function restore($client, $pleskVersion, $extVersion, $config, $contentDir) { }
+    public function restore(pm_Client $client, $pleskVersion, $extVersion, $config, $contentDir) { }
 
 }

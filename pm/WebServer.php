@@ -16,7 +16,7 @@ class pm_WebServer
      * @throws Db_Table_Exception
      * @throws PleskDBException
      */
-    public function updateDomainConfiguration($domain) { }
+    public function updateDomainConfiguration(pm_Domain $domain) { }
 
     /**
      * Return Nginx web server wrapper

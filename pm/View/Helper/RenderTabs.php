@@ -30,6 +30,6 @@ class pm_View_Helper_RenderTabs extends Zend_View_Helper_Abstract implements Zen
      * @param array $tabs
      * @return string
      */
-    public function renderTabs($tabs) { }
+    public function renderTabs(array $tabs) { }
 
 }

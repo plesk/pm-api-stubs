@@ -30,6 +30,6 @@ class pm_View_Helper_RenderTools extends Zend_View_Helper_Abstract implements Ze
      * @param array $tools
      * @return string
      */
-    public function renderTools($tools) { }
+    public function renderTools(array $tools) { }
 
 }

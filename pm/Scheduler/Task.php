@@ -45,7 +45,7 @@ class pm_Scheduler_Task
      * @param array $arguments
      * @since 11.5
      */
-    public function setArguments($arguments) { }
+    public function setArguments(array $arguments) { }
 
     /**
      * Return schedule of task in associated array format
@@ -68,7 +68,7 @@ class pm_Scheduler_Task
      *
      * @param array $schedule Associated array with keys minute, hour, dom, month, dow
      */
-    public function setSchedule($schedule) { }
+    public function setSchedule(array $schedule) { }
 
     /**
      * Return module identity of task

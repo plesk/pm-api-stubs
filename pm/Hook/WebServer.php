@@ -15,7 +15,7 @@ abstract class pm_Hook_WebServer implements pm_Hook_Interface
      * @param pm_Domain $domain
      * @return string
      */
-    public function getDomainApacheConfig($domain) { }
+    public function getDomainApacheConfig(pm_Domain $domain) { }
 
     /**
      * Retrieve string which will be inserted into server {...} directive in vhost config
@@ -23,7 +23,7 @@ abstract class pm_Hook_WebServer implements pm_Hook_Interface
      * @param pm_Domain $domain
      * @return string
      */
-    public function getDomainNginxConfig($domain) { }
+    public function getDomainNginxConfig(pm_Domain $domain) { }
 
     /**
      * Retrieve string which will be inserted into server {...} directive in vhost config
@@ -32,7 +32,7 @@ abstract class pm_Hook_WebServer implements pm_Hook_Interface
      * @param pm_Domain $domain
      * @return string
      */
-    public function getDomainNginxProxyConfig($domain) { }
+    public function getDomainNginxProxyConfig(pm_Domain $domain) { }
 
     /**
      * Retrieve xml as string which will be inserted to Plesk IIS configurator
@@ -40,7 +40,7 @@ abstract class pm_Hook_WebServer implements pm_Hook_Interface
      * @param pm_Domain $domain
      * @return string
      */
-    public function getDomainIisConfig($domain) { }
+    public function getDomainIisConfig(pm_Domain $domain) { }
 
     /**
      * Retrieve string which will be inserted into <VirtualHost></VirtualHost> directive in webmail config
@@ -50,7 +50,7 @@ abstract class pm_Hook_WebServer implements pm_Hook_Interface
      * @return string
      * @since 18.0
      */
-    public function getWebmailApacheConfig($domain, $type) { }
+    public function getWebmailApacheConfig(pm_Domain $domain, string $type) { }
 
     /**
      * Retrieve string which will be inserted into server {...} directive in webmail config
@@ -60,6 +60,6 @@ abstract class pm_Hook_WebServer implements pm_Hook_Interface
      * @return string
      * @since 18.0
      */
-    public function getWebmailNginxConfig($domain, $type) { }
+    public function getWebmailNginxConfig(pm_Domain $domain, string $type) { }
 
 }

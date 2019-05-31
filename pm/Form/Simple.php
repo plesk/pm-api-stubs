@@ -119,7 +119,7 @@ class pm_Form_Simple extends Zend_Form implements Zend_Validate_Interface
      *
      * @param array $params
      */
-    public function addControlButtons($params = null) { }
+    public function addControlButtons(array $params = null) { }
 
     /**
      * Get element id
@@ -145,7 +145,7 @@ class pm_Form_Simple extends Zend_Form implements Zend_Validate_Interface
      * @param null $order
      * @return Zend_Form
      */
-    public function addSubForm($form, $name, $order = null) { }
+    public function addSubForm(Zend_Form $form, $name, $order = null) { }
 
     /**
      * Retrieve a single sub form

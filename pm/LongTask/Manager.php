@@ -20,7 +20,7 @@ class pm_LongTask_Manager
      * @return pm_LongTask_Task Launched task
      * @throws pm_Exception
      */
-    public function start($task, $domain = null) { }
+    public function start(pm_LongTask_Task $task, pm_Domain $domain = null) { }
 
     /**
      * Get task queue filtered by ID and context
@@ -29,13 +29,13 @@ class pm_LongTask_Manager
      * @param pm_Domain[]|null $domains Domain contexts or null for task without any context
      * @return pm_LongTask_Task[] Task queue
      */
-    public function getTasks($ids, $domains = null) { }
+    public function getTasks(array $ids, $domains = null) { }
 
     /**
      * Cancel task and delete it
      * @param pm_LongTask_Task $task Task to be canceled
      */
-    public function cancel($task) { }
+    public function cancel(pm_LongTask_Task $task) { }
 
     /**
      * Cancel all extension tasks and delete them

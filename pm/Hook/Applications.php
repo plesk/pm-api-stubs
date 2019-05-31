@@ -13,7 +13,7 @@ abstract class pm_Hook_Applications implements pm_Hook_Interface
      * Handle application scan event
      * @param pm_Domain $domain
      */
-    public function scan($domain) { }
+    public function scan(pm_Domain $domain) { }
 
     /**
      * Filter application to handle it by using a specific non-APS resources
@@ -22,6 +22,6 @@ abstract class pm_Hook_Applications implements pm_Hook_Interface
      * @param string $path
      * @return bool
      */
-    public function isFiltered($domain, $path) { }
+    public function isFiltered(pm_Domain $domain, $path) { }
 
 }

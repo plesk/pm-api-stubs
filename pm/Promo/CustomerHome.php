@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2017. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2019. Plesk International GmbH. All rights reserved.
 /**
  * Promo block for customer (on Websites&Domains page)
  *

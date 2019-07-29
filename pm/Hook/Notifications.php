@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2017. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2019. Plesk International GmbH. All rights reserved.
 /**
  * Hook for Notifications
  *
@@ -14,21 +14,13 @@ abstract class pm_Hook_Notifications implements pm_Hook_Interface
      *
      * ```php
      * [
-     *     'unique_notification_id' => [
-     *          'title' => ''                   // notification's title which admin sees in UI
-     *          'notifyAdmin' => true,          // by default notify admin
-     *          'notifyResellers' => false,     // by default notify resellers
-     *          'notifyClients' => false,       // by default notify clients
-     *          'notifyCustomEmail' => false,   // by default send notification to a custom email
-     *          'customEmail' => ''             // custom email address to notify
-     *          'subject' => '',                // subject of email (placeholders allowed)
-     *          'message' => ''                 // email's body (placeholders allowed)
-     *      ]
+     *     'unique_email_notification_id' => \pm_Notifications_EmailNotification,
+     *     'unique_panel_notification_id' => \pm_Notifications_PanelNotification,
      *     ...
      * ]
      * ```
      *
-     * @return array
+     * @return array of \pm_Notifications_EmailNotification or \pm_Notifications_PanelNotification
      */
     abstract public function getNotifications();
 

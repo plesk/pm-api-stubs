@@ -20,6 +20,9 @@ class pm_Settings
 
     /**
      * Store value of setting
+     * Value length is limited to
+     * - 5000 characters (since Plesk 17.8)
+     * - 2000 characters (prior to Plesk 17.8)
      *
      * @param string $name Setting name
      * @param string|null $value Setting value or null to delete setting

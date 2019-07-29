@@ -34,7 +34,7 @@ class pm_View_Helper_ActiveList extends Zend_View_Helper_Abstract implements Zen
      *
      * @return $this
      */
-    public function activeList($options = []) { }
+    public function activeList(array $options = []) { }
 
     /**
      * Set data
@@ -116,7 +116,7 @@ class pm_View_Helper_ActiveList extends Zend_View_Helper_Abstract implements Zen
      *
      * @return $this
      */
-    public function setData($data) { }
+    public function setData(array $data) { }
 
     /**
      * Set the layout for items. Layout may be specified as either as a String or as an Object:
@@ -168,6 +168,6 @@ class pm_View_Helper_ActiveList extends Zend_View_Helper_Abstract implements Zen
      *
      * @return $this
      */
-    public function setLocale($locale = []) { }
+    public function setLocale(array $locale = []) { }
 
 }

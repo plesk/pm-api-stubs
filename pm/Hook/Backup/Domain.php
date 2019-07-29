@@ -14,7 +14,7 @@ class pm_Hook_Backup_Domain implements pm_Hook_Backup
      *
      * @param pm_Domain $domain The domain that is backuped
      */
-    public function postBackup($domain) { }
+    public function postBackup(pm_Domain $domain) { }
 
     /**
      * Define the content to be stored
@@ -34,7 +34,7 @@ class pm_Hook_Backup_Domain implements pm_Hook_Backup
      *
      * @return array
      */
-    public function backup($domain) { }
+    public function backup(pm_Domain $domain) { }
 
     /**
      * Define logic on restore domain
@@ -45,6 +45,6 @@ class pm_Hook_Backup_Domain implements pm_Hook_Backup
      * @param string $config Stored config related to restoring domain
      * @param string $contentDir Directory with content related to restoring domain
      */
-    public function restore($domain, $pleskVersion, $extVersion, $config, $contentDir) { }
+    public function restore(pm_Domain $domain, $pleskVersion, $extVersion, $config, $contentDir) { }
 
 }

@@ -9,16 +9,16 @@
 class pm_Backup_Manager
 {
 
-    /** @since 17.9 */
+    /** @since 18.0 */
     const OBJECT_TYPE_SERVER = 'server';
 
-    /** @since 17.9 */
+    /** @since 18.0 */
     const OBJECT_TYPE_RESELLER = 'reseller';
 
-    /** @since 17.9 */
+    /** @since 18.0 */
     const OBJECT_TYPE_CLIENT = 'client';
 
-    /** @since 17.9 */
+    /** @since 18.0 */
     const OBJECT_TYPE_DOMAIN = 'domain';
 
     /**
@@ -51,7 +51,7 @@ class pm_Backup_Manager
      * @param string $objectType
      * @param $objectId
      * @throws \pm_Exception
-     * @since 17.9
+     * @since 18.0
      */
     public static function activateStorage($objectType, $objectId = null) { }
 

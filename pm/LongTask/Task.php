@@ -76,7 +76,7 @@ abstract class pm_LongTask_Task
      *
      * @param Exception $e Exception that was thrown on task execution
      */
-    public function onError($e) { }
+    public function onError(Exception $e) { }
 
     /**
      * Define on task done logic
@@ -97,7 +97,7 @@ abstract class pm_LongTask_Task
      *
      * @param array $params Task parameters specified in format [$paramName => $paramValue]
      */
-    public function setParams($params) { }
+    public function setParams(array $params) { }
 
     /**
      * Get task parameter

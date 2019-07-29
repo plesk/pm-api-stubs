@@ -119,21 +119,21 @@ class pm_Client
      * Check if user has permission
      *
      * @param string $name Permission name
-     * @param pm_Domain|null $domain Domain to check permission (optional since 17.9)
+     * @param pm_Domain|null $domain Domain to check permission (optional since 18.0)
      * @return bool
      * @since 17.0
      */
-    public function hasPermission($name, $domain = null) { }
+    public function hasPermission($name, pm_Domain $domain = null) { }
 
     /**
      * Check if user has core permission
      *
      * @param string $name Permission name
-     * @param pm_Domain|null $domain Domain to check permission (optional since 17.9)
+     * @param pm_Domain|null $domain Domain to check permission (optional since 18.0)
      * @return bool
      * @since 17.5
      */
-    public function hasCorePermission($name, $domain = null) { }
+    public function hasCorePermission($name, pm_Domain $domain = null) { }
 
     /**
      * Check if client can access to plan with provided identity

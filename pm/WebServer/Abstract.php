@@ -2,15 +2,10 @@
 // Copyright 1999-2017. Plesk International GmbH. All rights reserved.
 /**
  * Web server service base implementation
- * @since 17.9
+ * @since 18.0
  */
 abstract class pm_WebServer_Abstract implements pm_WebServer_Interface
 {
-
-    /**
-     * @var Service_Capability_Web_Interface
-     */
-    protected $web;
 
     /**
      * Check whether the server is installed

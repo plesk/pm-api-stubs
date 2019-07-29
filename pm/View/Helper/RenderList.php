@@ -15,6 +15,6 @@ class pm_View_Helper_RenderList extends Zend_View_Helper_Abstract implements Zen
      * @param pm_View_List_Simple $list
      * @return string
      */
-    public function renderList($list) { }
+    public function renderList(pm_View_List_Simple $list) { }
 
 }

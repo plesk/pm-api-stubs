@@ -115,7 +115,7 @@ class pm_Form_SubForm extends Zend_Form implements Zend_Validate_Interface
      * @param null $order
      * @return Zend_Form
      */
-    public function addSubForm($form, $name, $order = null) { }
+    public function addSubForm(Zend_Form $form, $name, $order = null) { }
 
     /**
      * Retrieve a single sub form

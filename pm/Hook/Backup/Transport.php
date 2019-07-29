@@ -153,7 +153,7 @@ class pm_Hook_Backup_Transport implements pm_Hook_Backup
      * The method may be overridden in extension class. Default implementation does nothing.
      * @param $controller Zend_Controller_Action
      */
-    public function authorize($controller) { }
+    public function authorize(Zend_Controller_Action $controller) { }
 
     /**
      * Returns array with information about user disk quota in bytes. If the storage cannot provide

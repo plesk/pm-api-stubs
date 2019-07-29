@@ -15,6 +15,6 @@ class pm_View_Helper_DomainOverviewUrl extends Zend_View_Helper_Abstract impleme
      * @param pm_Domain $domain
      * @return string
      */
-    public function domainOverviewUrl($domain) { }
+    public function domainOverviewUrl(pm_Domain $domain) { }
 
 }

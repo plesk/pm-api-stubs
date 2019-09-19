@@ -54,6 +54,9 @@ abstract class pm_Hook_CustomButtons implements pm_Hook_Interface
     /** @since 17.8 */
     const PLACE_HEADER_NAVIGATION = 15;
 
+    /** @since 18.0 */
+    const PLACE_DOMAIN_PROPERTIES_DYNAMIC = 16;
+
     /** @since 17.0 */
     const SECTION_RESELLER_TOOLS_SERVICES = 'myPleskButtons';
 
@@ -117,13 +120,29 @@ abstract class pm_Hook_CustomButtons implements pm_Hook_Interface
     /** @since 17.0 */
     const SECTION_NAV_SERVER_MANAGEMENT = 'server_management';
 
+    /** @since 18.0 */
+    const SECTION_DOMAIN_PROPS_DYNAMIC_FILES_AND_DATABASES = 'filesAndDatabases';
+
+    /** @since 18.0 */
+    const SECTION_DOMAIN_PROPS_DYNAMIC_DEV_TOOLS = 'devTools';
+
+    /** @since 18.0 */
+    const SECTION_DOMAIN_PROPS_DYNAMIC_SECURITY = 'security';
+
+    /** @since 18.0 */
+    const SECTION_DOMAIN_PROPS_DYNAMIC_MAIL = 'mail';
+
+    /** @since 18.0 */
+    const SECTION_DOMAIN_PROPS_DYNAMIC_HOSTING = 'hosting';
+
     /**
      * Retrieve the list of buttons
      *
      * ```php
      * [
      *     [
-     *         'place' => self::PLACE_DOMAIN,
+     *         'place' => self::PLACE_DOMAIN_PROPERTIES_DYNAMIC,
+     *         'section' => self::SECTION_DOMAIN_PROPS_DYNAMIC_DEV_TOOLS,
      *         'title' => 'Example Button',
      *         'description' => 'Description for example button',
      *         'icon' => pm_Context::getBaseUrl() . 'images/icon.png',

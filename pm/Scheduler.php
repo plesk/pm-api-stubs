@@ -63,6 +63,8 @@ class pm_Scheduler
     /**
      * Update or add new task to scheduler
      * @param pm_Scheduler_Task $task
+     *
+     * @throws pm_Exception When task with the same parameters, but no ID assigned already exists in the database
      */
     public function putTask(pm_Scheduler_Task $task) { }
 

@@ -9,7 +9,12 @@
 class pm_ServerFileManager extends pm_FileManager
 {
 
-    
-    public function __construct() { }
+    /**
+     * @param bool $privilegedUser Initialize file manager with root permissions
+     *
+     * @since 12.5
+     * @since 17.8 Has $privilegedUser parameter to be used with a non-privileged user
+     */
+    public function __construct(bool $privilegedUser = true) { }
 
 }

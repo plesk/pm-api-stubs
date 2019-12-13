@@ -9,6 +9,8 @@
 class pm_Locale
 {
 
+    const FALLBACK_LOCALE = 'en-US';
+
     /**
      * Return current locale code
      *

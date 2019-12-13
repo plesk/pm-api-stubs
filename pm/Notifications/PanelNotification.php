@@ -67,6 +67,13 @@ abstract class pm_Notifications_PanelNotification
     public function getActionUrl() { }
 
     /**
+     * Does notification button should open url in new tab
+     *
+     * @return bool
+     */
+    public function openActionInNewTab() { }
+
+    /**
      * Retrieve category of notification, which conveys how important is it
      *
      * @return string one of predefined category constants
@@ -93,5 +100,13 @@ abstract class pm_Notifications_PanelNotification
      * @return string
      */
     public function getContextIcon() { }
+
+    /**
+     * Convert send parameters to template parameters
+     *
+     * @param array $params
+     * @return array
+     */
+    public function prepareRenderParams(array $params) { }
 
 }

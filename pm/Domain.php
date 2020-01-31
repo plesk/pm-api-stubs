@@ -282,4 +282,22 @@ class pm_Domain
      */
     public function getScreenshotUrl(string $path = '/', array $options = []) { }
 
+    /**
+     * Check if domain has SSL support for web hosting
+     *
+     * @return bool
+     * @throws pm_Exception
+     * @since 18.0.24
+     */
+    public function hasSsl() { }
+
+    /**
+     * Check if domain has redirect from HTTP to HTTPS
+     *
+     * @return bool
+     * @throws pm_Exception
+     * @since 18.0.24
+     */
+    public function hasSslRedirect() { }
+
 }

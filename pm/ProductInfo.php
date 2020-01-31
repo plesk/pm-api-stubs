@@ -104,6 +104,14 @@ class pm_ProductInfo
     public static function isWindows() { }
 
     /**
+     * Get product HWID
+     *
+     * @return string
+     * @since 18.0.23
+     */
+    public static function getHWID() { }
+
+    /**
      * Retrieve OS name
      *
      * @return string|null

@@ -8,7 +8,9 @@
     ]
   },
   "require": {
-    "plesk/zf1": "1.12.17-patch"
+    "plesk/zf1": "1.12.17-patch",
+    "psr/log": "^1.1",
+    "psr/container": "^1.0"
   },
   "require-dev": {
     "phpdocumentor/phpdocumentor": "^2.9"

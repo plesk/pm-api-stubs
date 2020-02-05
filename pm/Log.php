@@ -3,8 +3,10 @@
 /**
  * Class pm_Log
  * Intended to log various data.
+ *
  * @package Plesk_Modules
  * @since 12.5
+ * @deprecated use pm_Bootstrap::getContainer()->get(Psr\Log\LoggerInterface::class)
  */
 class pm_Log
 {

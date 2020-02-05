@@ -21,4 +21,14 @@ class pm_Bootstrap
      */
     public static function getDbAdapter() { }
 
+    /**
+     * Get dependency injection container
+     *
+     * @return Psr\Container\ContainerInterface
+     * @see https://www.php-fig.org/psr/psr-11/
+     * @since 18.0.24
+     * @since 18.0.24 added Psr\Logger\LoggerInterface::class to the container
+     */
+    public static function getContainer() { }
+
 }

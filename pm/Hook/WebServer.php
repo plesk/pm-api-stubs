@@ -62,4 +62,31 @@ abstract class pm_Hook_WebServer implements pm_Hook_Interface
      */
     public function getWebmailNginxConfig(pm_Domain $domain, string $type) { }
 
+    /**
+     * Retrieve string which will be inserted into <VirtualHost></VirtualHost> directive in vhost config of the forwarding domain
+     *
+     * @param pm_Domain $domain
+     * @return string
+     * @since 18.0.26
+     */
+    public function getForwardingDomainApacheConfig(pm_Domain $domain) { }
+
+    /**
+     * Retrieve string which will be inserted into server {...} directive in vhost config of the forwarding domain
+     *
+     * @param pm_Domain $domain
+     * @return string
+     * @since 18.0.26
+     */
+    public function getForwardingDomainNginxConfig(pm_Domain $domain) { }
+
+    /**
+     * Retrieve xml as string which will be inserted to Plesk IIS configurator for the forwarding domain
+     *
+     * @param pm_Domain $domain
+     * @return string
+     * @since 18.0.26
+     */
+    public function getForwardingDomainIisConfig(pm_Domain $domain) { }
+
 }

@@ -4,28 +4,28 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30665abd2fb0c6596aae806ea3321e8a",
+    "content-hash": "c6de5153ca8d25922913f67c8de98e88",
     "packages": [
         {
             "name": "plesk/zf1",
-            "version": "1.12.17-patch",
+            "version": "1.12.17-patch4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/plesk/zf1.git",
-                "reference": "dfb48bf65c4245ff7a85a7d7e215612b9fe9ad2f"
+                "reference": "c9e09b1fbc0e18e302211bd90f72408d01dbb24a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/plesk/zf1/zipball/dfb48bf65c4245ff7a85a7d7e215612b9fe9ad2f",
-                "reference": "dfb48bf65c4245ff7a85a7d7e215612b9fe9ad2f",
+                "url": "https://api.github.com/repos/plesk/zf1/zipball/c9e09b1fbc0e18e302211bd90f72408d01dbb24a",
+                "reference": "c9e09b1fbc0e18e302211bd90f72408d01dbb24a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2.11"
+                "php": ">=5.6"
             },
             "require-dev": {
-                "phpunit/dbunit": "1.3.*",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/dbunit": "*",
+                "phpunit/phpunit": "^4"
             },
             "type": "library",
             "extra": {
@@ -51,7 +51,7 @@
                 "ZF1",
                 "framework"
             ],
-            "time": "2018-03-28T04:16:53+00:00"
+            "time": "2019-03-28T08:53:54+00:00"
         },
         {
             "name": "psr/container",

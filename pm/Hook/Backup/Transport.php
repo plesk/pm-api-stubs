@@ -164,4 +164,18 @@ class pm_Hook_Backup_Transport implements pm_Hook_Backup
      */
     public function getQuota() { }
 
+    /**
+     * Returns an array with information about hash values that the extension returns for files. If the extension
+     * is not configured to return hash values or cannot provide them an empty array should be returned.
+     * Example ['type' => 'md5', 'blockSize' => 0]
+     * If the extension defines the hash it should return it via stat() method or may return it via listDir() method.
+     * Hash values should be returned via 'hash' key and should be scalar if  blockSize = 0 or array if blockSize != 0.
+     * Hash values are used for verify content of backup files right after creation.
+     * Supported hash types: md5, sha1, quickXor
+     * The method may be overridden in extension class. Default implementation returns an empty array.
+     * @return array
+     * @since 18.0.28
+     */
+    public function getHash() { }
+
 }

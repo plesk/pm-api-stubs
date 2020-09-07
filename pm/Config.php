@@ -10,7 +10,7 @@ class pm_Config
 {
 
     /**
-     * Retrieve config parameter value by name
+     * Retrieve extension's config parameter value by name
      *
      * @param string $name
      * @param mixed $default
@@ -19,10 +19,18 @@ class pm_Config
     public static function get($name, $default = null) { }
 
     /**
-     * Retrieve all configuration settings
+     * Retrieve all extension's configuration settings
      *
      * @return array
      */
     public static function getAll() { }
+
+    /**
+     * Retrieve all configuration settings
+     *
+     * @return array
+     * @since 18.0.29
+     */
+    public static function getCore() { }
 
 }

@@ -196,4 +196,14 @@ class pm_FileManager
      */
     public function isDir($path) { }
 
+    /**
+     * Upload file specified by source to destination ($perms are ignored on Windows)
+     *
+     * @param string $source Path where file is located
+     * @param string $destination Path where file is to be uploaded
+     * @param string $perms [optional] Permissions of the uploaded file. Ignored on Windows. Default is 0644
+     * @since 18.0.30
+     */
+    public function upload(string $source, string $destination, string $perms = '0644') { }
+
 }

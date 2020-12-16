@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2019. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2020. Plesk International GmbH. All rights reserved.
 /**
  * Domain wrapper
  *
@@ -307,5 +307,22 @@ class pm_Domain
      * @since 18.0.24
      */
     public function hasSslRedirect() { }
+
+    /**
+     * Check if domain is resolved to assigned IP
+     *
+     * @return bool
+     * @since 18.0.32
+     */
+    public function isResolved() { }
+
+    /**
+     * Return DNS zone of domain
+     *
+     * @return pm_Dns_Zone
+     *
+     * @since 18.0.33
+     */
+    public function getDnsZone() { }
 
 }

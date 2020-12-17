@@ -10,48 +10,6 @@ class pm_Dns_SoaRecord
 {
 
     /**
-     * TTL value for SOA settings.
-     *
-     * @var int
-     */
-    protected $ttl;
-
-    /**
-     * Refresh value for SOA settings.
-     *
-     * @var int
-     */
-    protected $refresh;
-
-    /**
-     * Retry value for SOA settings.
-     *
-     * @var int
-     */
-    protected $retry;
-
-    /**
-     * Expire value for SOA settings.
-     *
-     * @var int
-     */
-    protected $expire;
-
-    /**
-     * Minimum value for SOA settings.
-     *
-     * @var int
-     */
-    protected $minimum;
-
-    /**
-     * Dns zone.
-     *
-     * @var pm_Dns_Zone
-     */
-    protected $zone;
-
-    /**
      * Return ttl value of SOA record.
      *
      * @return int|null

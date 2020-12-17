@@ -45,18 +45,4 @@ class pm_Dns_Template_Record extends pm_Dns_Record
      */
     public function remove() { }
 
-    /**
-     * Add template of DNS record.
-     *
-     * @throws pm_Exception
-     */
-    protected function create() { }
-
-    /**
-     * Update template of DNS record.
-     *
-     * @throws pm_Exception
-     */
-    protected function update() { }
-
 }

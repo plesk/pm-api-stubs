@@ -9,47 +9,6 @@
 class pm_Dns_Zone
 {
 
-    const STATUS_ENABLED = 'enabled';
-
-    const STATUS_DISABLED = 'disabled';
-
-    const TYPE_MASTER = 'master';
-
-    /**
-     * Unique number of Dns zone.
-     *
-     * @var int
-     */
-    protected $id;
-
-    /**
-     * Host name.
-     *
-     * @var string
-     */
-    protected $name;
-
-    /**
-     * Type DNS Zone.
-     *
-     * @var string
-     */
-    protected $type;
-
-    /**
-     * Status DNS Zone, enabled or disabled.
-     *
-     * @var string
-     */
-    protected $status;
-
-    /**
-     * SOA record of DNS zone.
-     *
-     * @var pm_Dns_SoaRecord
-     */
-    protected $soaRecord;
-
     /**
      * Enable DNS zone.
      */

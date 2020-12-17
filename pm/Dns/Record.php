@@ -31,62 +31,6 @@ class pm_Dns_Record
 
     const TYPE_CAA = 'CAA';
 
-    /**
-     * Unique number, used by Plesk to identify dns record.
-     *
-     * @var int
-     */
-    protected $id;
-
-    /**
-     * Type of DNS record.
-     *
-     * @var string
-     */
-    protected $type;
-
-    /**
-     * Host name.
-     *
-     * @var string
-     */
-    protected $host;
-
-    /**
-     * Host display name.
-     *
-     * @var string
-     */
-    protected $displayHost;
-
-    /**
-     * Value of the DNS record.
-     *
-     * @var string|null
-     */
-    protected $value;
-
-    /**
-     * Option of the DNS record.
-     *
-     * @var string|null
-     */
-    protected $option;
-
-    /**
-     * Ttl value of the DNS record.
-     *
-     * @var int|null
-     */
-    protected $ttl;
-
-    /**
-     * DNS zone of record.
-     *
-     * @var pm_Dns_Zone
-     */
-    protected $zone;
-
     
     public function __construct($recordId = null) { }
 
@@ -213,15 +157,5 @@ class pm_Dns_Record
      * Remove DNS record.
      */
     public function remove() { }
-
-    /**
-     * Create DNS record.
-     */
-    protected function create() { }
-
-    /**
-     * Update DNS record.
-     */
-    protected function update() { }
 
 }

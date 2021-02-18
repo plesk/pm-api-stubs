@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2019. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
 /**
  * Base class for Zend_Navigation_Page pages
  *

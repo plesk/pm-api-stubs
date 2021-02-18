@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2019. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
 /**
  * Hook for injection into search results.
  * Full-text search index is used.

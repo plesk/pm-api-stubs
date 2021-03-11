@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2019. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
 /**
  * Helper for rendering tabs in view
  *
@@ -25,7 +25,7 @@ class pm_View_Helper_RenderTabs extends Zend_View_Helper_Abstract implements Zen
      *     ...
      * ]
      * ```
-     * 
+     *
      *
      * @param array $tabs
      * @return string

@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2019. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
 /**
  * Panel notification class
  *
@@ -108,5 +108,12 @@ abstract class pm_Notifications_PanelNotification
      * @return array
      */
     public function prepareRenderParams(array $params) { }
+
+    /**
+     * Retrieve message key of notification (optional)
+     * 
+     * @return string|null
+     */
+    public function getMessageKey() { }
 
 }

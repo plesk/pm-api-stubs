@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2019. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
 /**
  * Gateway for execution of CLI utilities
  *
@@ -46,5 +46,20 @@ class pm_ApiCli
      * @since 17.0 Windows support
      */
     public static function callSbin($command, $args = [], $result = 5, $env = []) { }
+
+    /**
+     * Execute specified command as domain user
+     *
+     * @param pm_Domain $domain
+     * @param string $workingDir
+     * @param string $command
+     * @param array $args
+     * @param int $result
+     * @param array $env
+     * @return array|int|string
+     * @throws pm_Exception
+     * @since 18.0.34
+     */
+    public static function callDomain(pm_Domain $domain, string $workingDir, string $command, array $args = [], int $result = 5, array $env = []) { }
 
 }

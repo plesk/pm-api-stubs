@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2019. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
 /**
  * Web server service interface
  * @since 18.0
@@ -12,20 +12,20 @@ interface pm_WebServer_Interface
      *
      * @return bool
      */
-    abstract public function isInstalled();
+    public function isInstalled();
 
     /**
      * Check whether the server is enabled
      *
      * @return bool
      */
-    abstract public function isEnabled();
+    public function isEnabled();
 
     /**
      * Check whether the server is running
      *
      * @return bool
      */
-    abstract public function isRunning();
+    public function isRunning();
 
 }

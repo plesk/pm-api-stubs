@@ -162,6 +162,12 @@ abstract class pm_LongTask_Task
     public function getSteps() { }
 
     /**
+     * @since 18.0.35
+     * @return string Human-readable description of the longtask
+     */
+    public function getDescription() { }
+
+    /**
      * Array representation of task
      *
      * @return array

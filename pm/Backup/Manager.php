@@ -55,4 +55,20 @@ class pm_Backup_Manager
      */
     public static function activateStorage($objectType, $objectId = null) { }
 
+    /**
+     * Returns an absolute path to the local backups directory.
+     *
+     * @return string
+     * @since 18.0.35
+     */
+    public static function getDumpsDir() { }
+
+    /**
+     * Returns an absolute path to the logs directory.
+     *
+     * @return string
+     * @since 18.0.35
+     */
+    public static function getLogsDir() { }
+
 }

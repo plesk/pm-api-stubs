@@ -33,10 +33,4 @@ class pm_WebServer_IIS extends pm_WebServer_Abstract implements pm_WebServer_Int
      */
     public function setWebConfig(pm_Domain $domain, string $relativePath, string $configContent) { }
 
-    /**
-     * Get folder web.config file contents for specified folder
-     *
-     * @since 18.0.32
-     */
-    public function getWebConfig(pm_Domain $domain, string $relativePath) { }
 }

@@ -29,6 +29,8 @@ class pm_ProductInfo
 
     const OS_VZLINUX = 'VZLinux';
 
+    const OS_ALMALINUX = 'AlmaLinux';
+
     const OS_WINDOWS = 'Microsoft Windows';
 
     const VERSION_WINDOWS_2008R2 = '6.1';

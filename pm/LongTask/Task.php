@@ -21,6 +21,7 @@ abstract class pm_LongTask_Task
      * Number of tasks that can be executed at the same time, -1 is equal to unlimited pool size
      *
      * @var int
+     * @deprecated use `getConcurrencyRules` method
      */
     public $poolSize = -1;
 
@@ -162,10 +163,24 @@ abstract class pm_LongTask_Task
     public function getSteps() { }
 
     /**
+     * Human-readable description of the task
+     *
      * @since 18.0.35
-     * @return string Human-readable description of the longtask
+     * @return string
      */
     public function getDescription() { }
+
+    /**
+     * List of tags for concurrency limitation
+     * Each tag limits the number of concurrent tasks that can be executed at the same time.
+     * Limits per tag are configured in Task Manager configuration.
+     * Tags without limit configuration default to a limit of 1 (no concurrent execution).
+     * Empty tags list results in no additional limits.
+     *
+     * @since 18.0.36
+     * @return string[]
+     */
+    public function getConcurrencyRules() { }
 
     /**
      * Array representation of task

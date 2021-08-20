@@ -18,6 +18,16 @@ abstract class pm_Hook_Form implements pm_Hook_Interface
     const FORM_CREATE_CUSTOMER = 'adminpanel-form-final-customer';
 
     /**
+     * @since 18.0.38
+     */
+    const FORM_DOMAIN_APPLICATION_WIZARD = 'form-domain-application-wizard';
+
+    /**
+     * @since 18.0.37
+     */
+    const FORM_DOMAIN_CONNECTION_INFO = 'smb-form-final-web-connectioninfo';
+
+    /**
      * Append sub forms in any existing form
      *
      * @param string $controller

@@ -55,6 +55,14 @@ class pm_Dns_Zone
     public function getName() { }
 
     /**
+     * Return host display name of DNS Zone.
+     *
+     * @return string|null
+     * @since 18.0.36
+     */
+    public function getDisplayName() { }
+
+    /**
      * Return dns records of dns zone.
      *
      * @return []pm_Dns_Record

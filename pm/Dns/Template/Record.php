@@ -32,6 +32,11 @@ class pm_Dns_Template_Record extends pm_Dns_Record
     const TYPE_CAA = 'CAA';
 
     /**
+     * Construct DNS template record in '<domain>' zone
+     */
+    public function __construct() { }
+
+    /**
      * Return template of DNS record by ID.
      *
      * @throws pm_Exception

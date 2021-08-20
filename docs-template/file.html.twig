@@ -1,0 +1,127 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <section class="row-fluid">
+        <div class="span2 sidebar">
+            {% set namespace = project.namespace %}
+            {{ block('sidebarNamespaces') }}
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content file">
+                    <nav>
+                        {#<a href="" class="pull-left">&laquo; NamespaceAssembler</a>#}
+                        {#<a href="" class="pull-right">ClassAssembler &raquo;</a>#}
+                    </nav>
+
+                    <h1><small>{{ node.path|split('/')|slice(0,-1)|join('/') }}</small>{{ node.name }}</h1>
+                    <p><em>{{ node.summary }}</em></p>
+                    {{ node.description|markdown|raw }}
+
+                    {% if node.traits|length > 0 %}
+                    <h2>Traits</h2>
+                    <table class="table table-hover">
+                        {% for trait in node.traits %}
+                            <tr>
+                                <td>{{ trait|route('class:short')|raw }}</td>
+                                <td><em>{{ trait.summary }}</em></td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                    {% endif %}
+
+                    {% if node.interfaces|length > 0 %}
+                    <h2>Interfaces</h2>
+                    <table class="table table-hover">
+                        {% for interface in node.interfaces %}
+                            <tr>
+                                <td>{{ interface|route('class:short')|raw }}</td>
+                                <td><em>{{ interface.summary }}</em></td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                    {% endif %}
+
+                    {% if node.classes|length > 0 %}
+                    <h2>Classes</h2>
+                    <table class="table table-hover">
+                    {% for class in node.classes %}
+                        <tr>
+                            <td>{{ class|route('class:short')|raw }}</td>
+                            <td><em>{{ class.summary }}</em></td>
+                        </tr>
+                    {% endfor %}
+                    </table>
+                    {% endif %}
+                </div>
+
+                <aside class="span4 detailsbar">
+                    <dl>
+                        {% if node.package is not empty and node.package != '\\' %}
+                            <dt>Package</dt>
+                            <dd><div class="namespace-wrapper">{{ node.subpackage ? (node.package ~ '\\' ~ node.subpackage) : node.package }}</div></dd>
+                        {% endif %}
+
+                        {% for tagName,tags in node.tags if tagName in ['link', 'see'] %}
+                            {% if loop.first %}
+                                <dt>See also</dt>
+                            {% endif %}
+                            {% for tag in tags %}
+                                <dd><a href="{{ tag.link }}"><div class="namespace-wrapper">{{ tag.description }}</div></a></dd>
+                            {% endfor %}
+                        {% endfor %}
+
+                    </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                        {% for tagName,tags in node.tags if tagName not in ['link', 'see', 'package', 'subpackage'] %}
+                            <tr>
+                                <th>
+                                    {{ tagName }}
+                                </th>
+                                <td>
+                                    {% for tag in tags %}
+                                        {{ tag.description|markdown|raw }}
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                        {% else %}
+                            <tr><td colspan="2"><em>None found</em></td></tr>
+                        {% endfor %}
+                    </table>
+
+                </aside>
+            </div>
+
+            {% if node.constants|length > 0 %}
+            <div class="row-fluid">
+                <section class="span8 content file">
+                    <h2>Constants</h2>
+                </section>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                {% for constant in node.constants %}
+                    {{ block('constant') }}
+                {% endfor %}
+            {% endif %}
+
+            {% if node.functions|length > 0 %}
+            <div class="row-fluid">
+                <section class="span8 content file">
+                    <h2>Functions</h2>
+                </section>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                {% for method in node.functions %}
+                    {{ block('method') }}
+                {% endfor %}
+            {% endif %}
+
+        </div>
+    </section>
+
+{% endblock %}

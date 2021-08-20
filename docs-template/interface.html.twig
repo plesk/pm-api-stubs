@@ -1,0 +1,162 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <section class="row-fluid">
+        <div class="span2 sidebar">
+            {% set namespace = project.namespace %}
+            {{ block('sidebarNamespaces') }}
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <nav>
+                        {#<a href="" class="pull-left">&laquo; NamespaceAssembler</a>#}
+                        {{ node.namespace|route|raw }}
+                        {#<a href="" class="pull-right">ClassAssembler &raquo;</a>#}
+                    </nav>
+
+                    <h1><small>{{ node.namespace }}</small>{{ node.name }}</h1>
+                    <p><em>{{ node.summary }}</em></p>
+                    {{ node.description|markdown|raw }}
+
+                    <section id="summary">
+                        <h2>Summary</h2>
+                        <section class="row-fluid heading">
+                            <section class="span6">
+                                <a href="#methods">Methods</a>
+                            </section>
+                            <section class="span6">
+                                <a href="#constants">Constants</a>
+                            </section>
+                        </section>
+                        <section class="row-fluid public">
+                            <section class="span6">
+                                {% for method in node.inheritedMethods.merge(node.methods) if method.visibility == 'public' %}
+                                    <a href="{{ method|route('url')}}">{{ method.name }}()</a><br />
+                                {% else %}
+                                    <em>No public methods found</em>
+                                {% endfor %}
+                            </section>
+                            <section class="span6">
+                                {% for constant in node.inheritedConstants.merge(node.constants) %}
+                                    <a href="{{ constant|route('url')}}">{{ constant.name }}</a><br />
+                                {% else %}
+                                    <em>No constants found</em>
+                                {% endfor %}
+                            </section>
+                        </section>
+                        <section class="row-fluid protected">
+                            <section class="span6">
+                                {% for method in node.inheritedMethods.merge(node.methods) if method.visibility == 'protected' %}
+                                    <a href="{{ method|route('url')}}">{{ method.name }}()</a><br />
+                                {% else %}
+                                    <em>No protected methods found</em>
+                                {% endfor %}
+                            </section>
+                            <section class="span6">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                        <section class="row-fluid private">
+                            <section class="span6">
+                                {% for method in node.inheritedMethods.merge(node.methods) if method.visibility == 'private' %}
+                                    <a href="{{ method|route('url')}}">{{ method.name }}()</a><br />
+                                {% else %}
+                                    <em>No private methods found</em>
+                                {% endfor %}
+                            </section>
+                            <section class="span6">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+                <aside class="span4 detailsbar">
+                    {% if method.deprecated %}
+                        <aside class="alert alert-block alert-error">
+                            <h4>Deprecated</h4>
+                            {{ method.tags.deprecated[0].description }}
+                        </aside>
+                    {% endif %}
+                    <dl>
+                        <dt>File</dt>
+                            <dd>
+                                <a href="{{ node.file|route('url') }}"><div class="path-wrapper">{{ node.path }}</div></a>
+                            </dd>
+                        {% if node.package is not empty and node.package != '\\' %}
+                        <dt>Package</dt>
+                            <dd><div class="namespace-wrapper">{{ node.subpackage ? (node.package ~ '\\' ~ node.subpackage) : node.package }}</div></dd>
+                        {% endif %}
+                        {% for parent in node.parent %}
+                            {% if loop.first %}
+                        <dt>Parents</dt>
+                            {% endif %}
+                            <dd><a href="{{ parent|route('url') }}"><div class="namespace-wrapper">{{ parent.fullyQualifiedStructuralElementName }}</div></a></dd>
+                        {% endfor %}
+
+                        {% for tagName,tags in node.tags if tagName in ['link', 'see'] %}
+                            {% if loop.first %}
+                        <dt>See also</dt>
+                            {% endif %}
+                            {% for tag in tags %}
+                            <dd><a href="{{ tag.link }}"><div class="namespace-wrapper">{{ tag.description }}</div></a></dd>
+                            {% endfor %}
+                        {% endfor %}
+                    </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                    {% for tagName,tags in node.tags if tagName not in ['link', 'see', 'abstract', 'method', 'package', 'subpackage'] %}
+                        <tr>
+                            <th>{{ tagName }}</th>
+                            <td>
+                                {% for tag in tags %}
+                                    {% if tag.version %}{{ tag.version }}{% endif %}
+                                    {{ tag.description|markdown|raw }}
+                                {% endfor %}
+                            </td>
+                        </tr>
+                    {% else %}
+                        <tr><td colspan="2"><em>None found</em></td></tr>
+                    {% endfor %}
+                    </table>
+                </aside>
+            </div>
+
+            {% if node.constants|length > 0 %}
+                <a id="constants" name="constants"></a>
+                <div class="row-fluid">
+                <div class="span8 content class">
+                    <h2>Constants</h2>
+                </div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+            {% for constant in node.inheritedConstants.merge(node.constants) %}
+                {{ block('constant') }}
+                {% endfor %}
+            {% endif %}
+
+            {% if node.inheritedMethods.merge(node.methods)|length > 0 %}
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <h2>Methods</h2>
+                </div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                {% for method in node.inheritedMethods.merge(node.methods) if method.visibility == 'public' %}
+                {{ block('method') }}
+                {% endfor %}
+                {% for method in node.inheritedMethods.merge(node.methods) if method.visibility == 'protected' %}
+                {{ block('method') }}
+                {% endfor %}
+                {% for method in node.inheritedMethods.merge(node.methods) if method.visibility == 'private' %}
+                {{ block('method') }}
+                {% endfor %}
+            {% endif %}
+        </div>
+    </section>
+
+{% endblock %}

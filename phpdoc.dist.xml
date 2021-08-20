@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 1999-2017. Plesk International GmbH. All rights reserved. -->
+<phpdoc>
+    <title>Extensions API Documentation - Plesk 18.0</title>title>
+    <parser>
+        <target>docs</target>
+    </parser>
+    <transformer>
+        <target>docs</target>
+    </transformer>
+    <files>
+        <directory>pm</directory>
+    </files>
+    <transformations>
+        <template name="docs-template"/>
+    </transformations>
+</phpdoc>

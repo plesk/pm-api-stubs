@@ -1,0 +1,21 @@
+{
+  "name": "plesk/pm-api-stubs",
+  "description": "Plesk Extensions API PHP files stubs for IDE.",
+  "license": "Apache-2.0",
+  "autoload": {
+    "classmap": [
+      "pm"
+    ]
+  },
+  "require": {
+    "plesk/zf1": "1.12.17-patch4",
+    "psr/log": "^1.1",
+    "psr/container": "^1.0"
+  },
+  "require-dev": {
+    "phpdocumentor/phpdocumentor": "^2.9"
+  },
+  "scripts": {
+    "docs": "phpdoc"
+  }
+}

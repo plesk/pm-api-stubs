@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>Extensions API Documentation - Plesk 18.0</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">Extensions API Documentation - Plesk 18.0</a>
+
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-296689788"></a>
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-296689788" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/pm_Hook_Backup.html">pm_Hook_Backup</a></li>
+                                                    <li class="interface"><a href="../classes/pm_Hook_Interface.html">pm_Hook_Interface</a></li>
+                                                    <li class="interface"><a href="../classes/pm_WebServer_Interface.html">pm_WebServer_Interface</a></li>
+                                                                                                    <li class="class"><a href="../classes/pm_ActionLog.html">pm_ActionLog</a></li>
+                                                    <li class="class"><a href="../classes/pm_ApiCli.html">pm_ApiCli</a></li>
+                                                    <li class="class"><a href="../classes/pm_ApiRpc.html">pm_ApiRpc</a></li>
+                                                    <li class="class"><a href="../classes/pm_Application.html">pm_Application</a></li>
+                                                    <li class="class"><a href="../classes/pm_Auth.html">pm_Auth</a></li>
+                                                    <li class="class"><a href="../classes/pm_Backup_Manager.html">pm_Backup_Manager</a></li>
+                                                    <li class="class"><a href="../classes/pm_Bootstrap.html">pm_Bootstrap</a></li>
+                                                    <li class="class"><a href="../classes/pm_Client.html">pm_Client</a></li>
+                                                    <li class="class"><a href="../classes/pm_Config.html">pm_Config</a></li>
+                                                    <li class="class"><a href="../classes/pm_Context.html">pm_Context</a></li>
+                                                    <li class="class"><a href="../classes/pm_Controller_Action.html">pm_Controller_Action</a></li>
+                                                    <li class="class"><a href="../classes/pm_Crypt.html">pm_Crypt</a></li>
+                                                    <li class="class"><a href="../classes/pm_Dns_Record.html">pm_Dns_Record</a></li>
+                                                    <li class="class"><a href="../classes/pm_Dns_SoaRecord.html">pm_Dns_SoaRecord</a></li>
+                                                    <li class="class"><a href="../classes/pm_Dns_Template.html">pm_Dns_Template</a></li>
+                                                    <li class="class"><a href="../classes/pm_Dns_Template_Record.html">pm_Dns_Template_Record</a></li>
+                                                    <li class="class"><a href="../classes/pm_Dns_Template_SoaRecord.html">pm_Dns_Template_SoaRecord</a></li>
+                                                    <li class="class"><a href="../classes/pm_Dns_Zone.html">pm_Dns_Zone</a></li>
+                                                    <li class="class"><a href="../classes/pm_Domain.html">pm_Domain</a></li>
+                                                    <li class="class"><a href="../classes/pm_DomainAlias.html">pm_DomainAlias</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception.html">pm_Exception</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception_InvalidArgumentException.html">pm_Exception_InvalidArgumentException</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception_ResultException.html">pm_Exception_ResultException</a></li>
+                                                    <li class="class"><a href="../classes/pm_Extension.html">pm_Extension</a></li>
+                                                    <li class="class"><a href="../classes/pm_FileManager.html">pm_FileManager</a></li>
+                                                    <li class="class"><a href="../classes/pm_FileManager_Action.html">pm_FileManager_Action</a></li>
+                                                    <li class="class"><a href="../classes/pm_Form_Simple.html">pm_Form_Simple</a></li>
+                                                    <li class="class"><a href="../classes/pm_Form_SubForm.html">pm_Form_SubForm</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ActionLog.html">pm_Hook_ActionLog</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ActiveList.html">pm_Hook_ActiveList</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ApiCli.html">pm_Hook_ApiCli</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ApiRpc.html">pm_Hook_ApiRpc</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Applications.html">pm_Hook_Applications</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Auth.html">pm_Hook_Auth</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Client.html">pm_Hook_Backup_Client</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Domain.html">pm_Hook_Backup_Domain</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Server.html">pm_Hook_Backup_Server</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Transport.html">pm_Hook_Backup_Transport</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ConfigDefaults.html">pm_Hook_ConfigDefaults</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ContentInclude.html">pm_Hook_ContentInclude</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_CustomButtons.html">pm_Hook_CustomButtons</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_DynamicList.html">pm_Hook_DynamicList</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Form.html">pm_Hook_Form</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Limits.html">pm_Hook_Limits</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_LoginContentInclude.html">pm_Hook_LoginContentInclude</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_LongTasks.html">pm_Hook_LongTasks</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Navigation.html">pm_Hook_Navigation</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Notifications.html">pm_Hook_Notifications</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Permissions.html">pm_Hook_Permissions</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_PlanItems.html">pm_Hook_PlanItems</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Promos.html">pm_Hook_Promos</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Search.html">pm_Hook_Search</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_SimpleList.html">pm_Hook_SimpleList</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_SystemServices.html">pm_Hook_SystemServices</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_WebServer.html">pm_Hook_WebServer</a></li>
+                                                    <li class="class"><a href="../classes/pm_License.html">pm_License</a></li>
+                                                    <li class="class"><a href="../classes/pm_Loader.html">pm_Loader</a></li>
+                                                    <li class="class"><a href="../classes/pm_Locale.html">pm_Locale</a></li>
+                                                    <li class="class"><a href="../classes/pm_Log.html">pm_Log</a></li>
+                                                    <li class="class"><a href="../classes/pm_LongTask_Manager.html">pm_LongTask_Manager</a></li>
+                                                    <li class="class"><a href="../classes/pm_LongTask_Task.html">pm_LongTask_Task</a></li>
+                                                    <li class="class"><a href="../classes/pm_Navigation_OverviewPage.html">pm_Navigation_OverviewPage</a></li>
+                                                    <li class="class"><a href="../classes/pm_Navigation_Page.html">pm_Navigation_Page</a></li>
+                                                    <li class="class"><a href="../classes/pm_Notification.html">pm_Notification</a></li>
+                                                    <li class="class"><a href="../classes/pm_Notifications_EmailNotification.html">pm_Notifications_EmailNotification</a></li>
+                                                    <li class="class"><a href="../classes/pm_Notifications_PanelNotification.html">pm_Notifications_PanelNotification</a></li>
+                                                    <li class="class"><a href="../classes/pm_Plan.html">pm_Plan</a></li>
+                                                    <li class="class"><a href="../classes/pm_ProductInfo.html">pm_ProductInfo</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_AdminHome.html">pm_Promo_AdminHome</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_CustomerHome.html">pm_Promo_CustomerHome</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_Home.html">pm_Promo_Home</a></li>
+                                                    <li class="class"><a href="../classes/pm_Scheduler.html">pm_Scheduler</a></li>
+                                                    <li class="class"><a href="../classes/pm_Scheduler_Task.html">pm_Scheduler_Task</a></li>
+                                                    <li class="class"><a href="../classes/pm_SearchIndex.html">pm_SearchIndex</a></li>
+                                                    <li class="class"><a href="../classes/pm_ServerFileManager.html">pm_ServerFileManager</a></li>
+                                                    <li class="class"><a href="../classes/pm_Session.html">pm_Session</a></li>
+                                                    <li class="class"><a href="../classes/pm_Settings.html">pm_Settings</a></li>
+                                                    <li class="class"><a href="../classes/pm_SystemService_Service.html">pm_SystemService_Service</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_ActiveList.html">pm_View_Helper_ActiveList</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_BaseUrl.html">pm_View_Helper_BaseUrl</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_DomainOverviewUrl.html">pm_View_Helper_DomainOverviewUrl</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_Lmsg.html">pm_View_Helper_Lmsg</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderList.html">pm_View_Helper_RenderList</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderSmallTools.html">pm_View_Helper_RenderSmallTools</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderTabs.html">pm_View_Helper_RenderTabs</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderTools.html">pm_View_Helper_RenderTools</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_List_Simple.html">pm_View_List_Simple</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Status.html">pm_View_Status</a></li>
+                                                    <li class="class"><a href="../classes/pm_WebServer.html">pm_WebServer</a></li>
+                                                    <li class="class"><a href="../classes/pm_WebServer_Abstract.html">pm_WebServer_Abstract</a></li>
+                                                    <li class="class"><a href="../classes/pm_WebServer_Apache.html">pm_WebServer_Apache</a></li>
+                                                    <li class="class"><a href="../classes/pm_WebServer_IIS.html">pm_WebServer_IIS</a></li>
+                                                    <li class="class"><a href="../classes/pm_WebServer_Nginx.html">pm_WebServer_Nginx</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content namespace">
+                    <nav>
+                                                
+                                            </nav>
+                    <h1><small></small>\</h1>
+
+                    
+                    
+                                        <h2>Interfaces</h2>
+                    <table class="table table-hover">
+                                                    <tr>
+                                <td><a href="../classes/pm_Hook_Backup.html">pm_Hook_Backup</a></td>
+                                <td><em>Interface for backup and restore hooks</em></td>
+                            </tr>
+                                                    <tr>
+                                <td><a href="../classes/pm_Hook_Interface.html">pm_Hook_Interface</a></td>
+                                <td><em>Generic interface for hooks</em></td>
+                            </tr>
+                                                    <tr>
+                                <td><a href="../classes/pm_WebServer_Interface.html">pm_WebServer_Interface</a></td>
+                                <td><em>Web server service interface</em></td>
+                            </tr>
+                                            </table>
+                    
+                                        <h2>Classes</h2>
+                    <table class="table table-hover">
+                                            <tr>
+                            <td><a href="../classes/pm_ActionLog.html">pm_ActionLog</a></td>
+                            <td><em>Wrapper for ActionLog.</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_ApiCli.html">pm_ApiCli</a></td>
+                            <td><em>Gateway for execution of CLI utilities</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_ApiRpc.html">pm_ApiRpc</a></td>
+                            <td><em>Wrapper to simplify execution of API-RPC calls inside modules</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Application.html">pm_Application</a></td>
+                            <td><em>Class for initialization Plesk renderers</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Auth.html">pm_Auth</a></td>
+                            <td><em>Authentication helper methods</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Backup_Manager.html">pm_Backup_Manager</a></td>
+                            <td><em>Manager of backups for extension.</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Bootstrap.html">pm_Bootstrap</a></td>
+                            <td><em>Class for initialization Plesk objects</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Client.html">pm_Client</a></td>
+                            <td><em>Panel client wrapper</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Config.html">pm_Config</a></td>
+                            <td><em>Configuration settings reader (panel.ini settings)</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Context.html">pm_Context</a></td>
+                            <td><em>Define module constants and setup context</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Controller_Action.html">pm_Controller_Action</a></td>
+                            <td><em>Abstract class for all extensions controllers</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Crypt.html">pm_Crypt</a></td>
+                            <td><em>Class for data encryption/decryption using AES-128 CBC (symmetric encryption algorithm)</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Dns_Record.html">pm_Dns_Record</a></td>
+                            <td><em>Panel dns wrapper</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Dns_SoaRecord.html">pm_Dns_SoaRecord</a></td>
+                            <td><em>Panel dns wrapper</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Dns_Template.html">pm_Dns_Template</a></td>
+                            <td><em>Panel dns wrapper</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Dns_Template_Record.html">pm_Dns_Template_Record</a></td>
+                            <td><em>Panel dns wrapper</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Dns_Template_SoaRecord.html">pm_Dns_Template_SoaRecord</a></td>
+                            <td><em>Panel dns wrapper</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Dns_Zone.html">pm_Dns_Zone</a></td>
+                            <td><em>Panel dns wrapper</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Domain.html">pm_Domain</a></td>
+                            <td><em>Domain wrapper</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_DomainAlias.html">pm_DomainAlias</a></td>
+                            <td><em>Domain alias wrapper</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Exception.html">pm_Exception</a></td>
+                            <td><em>Exception raised in case of modules API problems</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Exception_InvalidArgumentException.html">pm_Exception_InvalidArgumentException</a></td>
+                            <td><em>Exception raised in case of invalid arguments passed in SDK methods</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Exception_ResultException.html">pm_Exception_ResultException</a></td>
+                            <td><em>Exception raised in case of non-zero exit code of utilities</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Extension.html">pm_Extension</a></td>
+                            <td><em>Extension wrapper</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_FileManager.html">pm_FileManager</a></td>
+                            <td><em>Manager of hosted files for module (webspace level).</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_FileManager_Action.html">pm_FileManager_Action</a></td>
+                            <td><em>Content action for FileManager</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Form_Simple.html">pm_Form_Simple</a></td>
+                            <td><em>Base form</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Form_SubForm.html">pm_Form_SubForm</a></td>
+                            <td><em>Sub Form</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_ActionLog.html">pm_Hook_ActionLog</a></td>
+                            <td><em>Hook for registering events</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_ActiveList.html">pm_Hook_ActiveList</a></td>
+                            <td><em>Abstract class for injection into active lists</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_ApiCli.html">pm_Hook_ApiCli</a></td>
+                            <td><em>Hook for processing remote API-CLI requests</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_ApiRpc.html">pm_Hook_ApiRpc</a></td>
+                            <td><em>Hook for processing remote API-RPC requests</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_Applications.html">pm_Hook_Applications</a></td>
+                            <td><em>Hook for applications</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_Auth.html">pm_Hook_Auth</a></td>
+                            <td><em>Custom authentication mechanism</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_Backup_Client.html">pm_Hook_Backup_Client</a></td>
+                            <td><em>Hook for backing up and restoring clients</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_Backup_Domain.html">pm_Hook_Backup_Domain</a></td>
+                            <td><em>Hook for backing up and restoring domains</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_Backup_Server.html">pm_Hook_Backup_Server</a></td>
+                            <td><em>Hook for backing up and restoring the server configuration</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_Backup_Transport.html">pm_Hook_Backup_Transport</a></td>
+                            <td><em>Hook for backup transport, e.g. backup to cloud</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_ConfigDefaults.html">pm_Hook_ConfigDefaults</a></td>
+                            <td><em>Hook for extension config defaults (panel.ini settings)</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_ContentInclude.html">pm_Hook_ContentInclude</a></td>
+                            <td><em>Abstract class for content injection into Plesk pages</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_CustomButtons.html">pm_Hook_CustomButtons</a></td>
+                            <td><em>Hook for custom buttons embedding</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_DynamicList.html">pm_Hook_DynamicList</a></td>
+                            <td><em>Abstract class for adding custom content to domain card in dynamic view</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_Form.html">pm_Hook_Form</a></td>
+                            <td><em>Abstract class for injection into form</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_Limits.html">pm_Hook_Limits</a></td>
+                            <td><em>Hook for registering limits</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_LoginContentInclude.html">pm_Hook_LoginContentInclude</a></td>
+                            <td><em>Abstract class for content injection into login page</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_LongTasks.html">pm_Hook_LongTasks</a></td>
+                            <td><em>Hook for registering long tasks</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_Navigation.html">pm_Hook_Navigation</a></td>
+                            <td><em>Hook for navigation embedding</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_Notifications.html">pm_Hook_Notifications</a></td>
+                            <td><em>Hook for Notifications</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_Permissions.html">pm_Hook_Permissions</a></td>
+                            <td><em>Hook for registering permissions</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_PlanItems.html">pm_Hook_PlanItems</a></td>
+                            <td><em>Hook for additional plan items</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_Promos.html">pm_Hook_Promos</a></td>
+                            <td><em>Hook for getting promo blocks</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_Search.html">pm_Hook_Search</a></td>
+                            <td><em>Hook for injection into search results.</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_SimpleList.html">pm_Hook_SimpleList</a></td>
+                            <td><em>Abstract class for injection into list</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_SystemServices.html">pm_Hook_SystemServices</a></td>
+                            <td><em>Hook for registering services provided by extension</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Hook_WebServer.html">pm_Hook_WebServer</a></td>
+                            <td><em>Hook for injecting into web server configuration files</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_License.html">pm_License</a></td>
+                            <td><em>Panel license keys management class</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Loader.html">pm_Loader</a></td>
+                            <td><em>Code classes autoloader</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Locale.html">pm_Locale</a></td>
+                            <td><em>Localization facilities</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Log.html">pm_Log</a></td>
+                            <td><em>Class pm_Log
+Intended to log various data.</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_LongTask_Manager.html">pm_LongTask_Manager</a></td>
+                            <td><em>Manager of long tasks.</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_LongTask_Task.html">pm_LongTask_Task</a></td>
+                            <td><em>Long task object</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Navigation_OverviewPage.html">pm_Navigation_OverviewPage</a></td>
+                            <td><em>Base class for object&#039;s overview pages</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Navigation_Page.html">pm_Navigation_Page</a></td>
+                            <td><em>Base class for Zend_Navigation_Page pages</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Notification.html">pm_Notification</a></td>
+                            <td><em>Notification manager</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Notifications_EmailNotification.html">pm_Notifications_EmailNotification</a></td>
+                            <td><em>Email notification class</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Notifications_PanelNotification.html">pm_Notifications_PanelNotification</a></td>
+                            <td><em>Panel notification class</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Plan.html">pm_Plan</a></td>
+                            <td><em>Service Plan wrapper</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_ProductInfo.html">pm_ProductInfo</a></td>
+                            <td><em>Plesk options / info</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Promo_AdminHome.html">pm_Promo_AdminHome</a></td>
+                            <td><em>Promo block for admin home page</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Promo_CustomerHome.html">pm_Promo_CustomerHome</a></td>
+                            <td><em>Promo block for customer (on Websites&amp;Domains page)</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Promo_Home.html">pm_Promo_Home</a></td>
+                            <td><em>Promo block for admin home page. This class is deprecated in favor to pm_Promo_AdminHome.</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Scheduler.html">pm_Scheduler</a></td>
+                            <td><em>Manager of regular tasks for module.</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Scheduler_Task.html">pm_Scheduler_Task</a></td>
+                            <td><em>Regular task representation.</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_SearchIndex.html">pm_SearchIndex</a></td>
+                            <td><em>Global search index and presentation</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_ServerFileManager.html">pm_ServerFileManager</a></td>
+                            <td><em>Manager of files on server level.</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Session.html">pm_Session</a></td>
+                            <td><em>Representation of panel session</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_Settings.html">pm_Settings</a></td>
+                            <td><em>Manager of module settings</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_SystemService_Service.html">pm_SystemService_Service</a></td>
+                            <td><em>Service provided by extension</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_View_Helper_ActiveList.html">pm_View_Helper_ActiveList</a></td>
+                            <td><em>Helper for rendering active list</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_View_Helper_BaseUrl.html">pm_View_Helper_BaseUrl</a></td>
+                            <td><em>Helper for prepending URL with base URL</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_View_Helper_DomainOverviewUrl.html">pm_View_Helper_DomainOverviewUrl</a></td>
+                            <td><em>Helper for building URL to Domain Overview page</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_View_Helper_Lmsg.html">pm_View_Helper_Lmsg</a></td>
+                            <td><em>Helper for translating messages</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_View_Helper_RenderList.html">pm_View_Helper_RenderList</a></td>
+                            <td><em>Helper for rendering list in view</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_View_Helper_RenderSmallTools.html">pm_View_Helper_RenderSmallTools</a></td>
+                            <td><em>Helper for rendering small buttons in view</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_View_Helper_RenderTabs.html">pm_View_Helper_RenderTabs</a></td>
+                            <td><em>Helper for rendering tabs in view</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_View_Helper_RenderTools.html">pm_View_Helper_RenderTools</a></td>
+                            <td><em>Helper for rendering big buttons in view</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_View_List_Simple.html">pm_View_List_Simple</a></td>
+                            <td><em>Base list</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_View_Status.html">pm_View_Status</a></td>
+                            <td><em>Status messages helper</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_WebServer.html">pm_WebServer</a></td>
+                            <td><em>Web server manager</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_WebServer_Abstract.html">pm_WebServer_Abstract</a></td>
+                            <td><em>Web server service base implementation</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_WebServer_Apache.html">pm_WebServer_Apache</a></td>
+                            <td><em>Apache web server service interface</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_WebServer_IIS.html">pm_WebServer_IIS</a></td>
+                            <td><em>IIS service interface</em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/pm_WebServer_Nginx.html">pm_WebServer_Nginx</a></td>
+                            <td><em>Nginx proxy service interface</em></td>
+                        </tr>
+                                        </table>
+                                    </div>
+
+                <aside class="span4 detailsbar">
+                    <dl>
+                        <dt>Namespace hierarchy</dt>
+                        <dd class="hierarchy">
+                                                                                                                                                <div class="namespace-wrapper">\</div>
+                        </dd>
+                    </dl>
+                </aside>
+            </div>
+
+            
+            
+        </div>
+    </section>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on August 20th, 2021 at 15:14.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>

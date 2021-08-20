@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>Extensions API Documentation - Plesk 18.0</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">Extensions API Documentation - Plesk 18.0</a>
+
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-2088696340"></a>
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-2088696340" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                    <li class="interface"><a href="../classes/pm_Hook_Backup.html">pm_Hook_Backup</a></li>
+                                                    <li class="interface"><a href="../classes/pm_Hook_Interface.html">pm_Hook_Interface</a></li>
+                                                    <li class="interface"><a href="../classes/pm_WebServer_Interface.html">pm_WebServer_Interface</a></li>
+                                                                                                    <li class="class"><a href="../classes/pm_ActionLog.html">pm_ActionLog</a></li>
+                                                    <li class="class"><a href="../classes/pm_ApiCli.html">pm_ApiCli</a></li>
+                                                    <li class="class"><a href="../classes/pm_ApiRpc.html">pm_ApiRpc</a></li>
+                                                    <li class="class"><a href="../classes/pm_Application.html">pm_Application</a></li>
+                                                    <li class="class"><a href="../classes/pm_Auth.html">pm_Auth</a></li>
+                                                    <li class="class"><a href="../classes/pm_Backup_Manager.html">pm_Backup_Manager</a></li>
+                                                    <li class="class"><a href="../classes/pm_Bootstrap.html">pm_Bootstrap</a></li>
+                                                    <li class="class"><a href="../classes/pm_Client.html">pm_Client</a></li>
+                                                    <li class="class"><a href="../classes/pm_Config.html">pm_Config</a></li>
+                                                    <li class="class"><a href="../classes/pm_Context.html">pm_Context</a></li>
+                                                    <li class="class"><a href="../classes/pm_Controller_Action.html">pm_Controller_Action</a></li>
+                                                    <li class="class"><a href="../classes/pm_Crypt.html">pm_Crypt</a></li>
+                                                    <li class="class"><a href="../classes/pm_Dns_Record.html">pm_Dns_Record</a></li>
+                                                    <li class="class"><a href="../classes/pm_Dns_SoaRecord.html">pm_Dns_SoaRecord</a></li>
+                                                    <li class="class"><a href="../classes/pm_Dns_Template.html">pm_Dns_Template</a></li>
+                                                    <li class="class"><a href="../classes/pm_Dns_Template_Record.html">pm_Dns_Template_Record</a></li>
+                                                    <li class="class"><a href="../classes/pm_Dns_Template_SoaRecord.html">pm_Dns_Template_SoaRecord</a></li>
+                                                    <li class="class"><a href="../classes/pm_Dns_Zone.html">pm_Dns_Zone</a></li>
+                                                    <li class="class"><a href="../classes/pm_Domain.html">pm_Domain</a></li>
+                                                    <li class="class"><a href="../classes/pm_DomainAlias.html">pm_DomainAlias</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception.html">pm_Exception</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception_InvalidArgumentException.html">pm_Exception_InvalidArgumentException</a></li>
+                                                    <li class="class"><a href="../classes/pm_Exception_ResultException.html">pm_Exception_ResultException</a></li>
+                                                    <li class="class"><a href="../classes/pm_Extension.html">pm_Extension</a></li>
+                                                    <li class="class"><a href="../classes/pm_FileManager.html">pm_FileManager</a></li>
+                                                    <li class="class"><a href="../classes/pm_FileManager_Action.html">pm_FileManager_Action</a></li>
+                                                    <li class="class"><a href="../classes/pm_Form_Simple.html">pm_Form_Simple</a></li>
+                                                    <li class="class"><a href="../classes/pm_Form_SubForm.html">pm_Form_SubForm</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ActionLog.html">pm_Hook_ActionLog</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ActiveList.html">pm_Hook_ActiveList</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ApiCli.html">pm_Hook_ApiCli</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ApiRpc.html">pm_Hook_ApiRpc</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Applications.html">pm_Hook_Applications</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Auth.html">pm_Hook_Auth</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Client.html">pm_Hook_Backup_Client</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Domain.html">pm_Hook_Backup_Domain</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Server.html">pm_Hook_Backup_Server</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Backup_Transport.html">pm_Hook_Backup_Transport</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ConfigDefaults.html">pm_Hook_ConfigDefaults</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_ContentInclude.html">pm_Hook_ContentInclude</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_CustomButtons.html">pm_Hook_CustomButtons</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_DynamicList.html">pm_Hook_DynamicList</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Form.html">pm_Hook_Form</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Limits.html">pm_Hook_Limits</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_LoginContentInclude.html">pm_Hook_LoginContentInclude</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_LongTasks.html">pm_Hook_LongTasks</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Navigation.html">pm_Hook_Navigation</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Notifications.html">pm_Hook_Notifications</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Permissions.html">pm_Hook_Permissions</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_PlanItems.html">pm_Hook_PlanItems</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Promos.html">pm_Hook_Promos</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_Search.html">pm_Hook_Search</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_SimpleList.html">pm_Hook_SimpleList</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_SystemServices.html">pm_Hook_SystemServices</a></li>
+                                                    <li class="class"><a href="../classes/pm_Hook_WebServer.html">pm_Hook_WebServer</a></li>
+                                                    <li class="class"><a href="../classes/pm_License.html">pm_License</a></li>
+                                                    <li class="class"><a href="../classes/pm_Loader.html">pm_Loader</a></li>
+                                                    <li class="class"><a href="../classes/pm_Locale.html">pm_Locale</a></li>
+                                                    <li class="class"><a href="../classes/pm_Log.html">pm_Log</a></li>
+                                                    <li class="class"><a href="../classes/pm_LongTask_Manager.html">pm_LongTask_Manager</a></li>
+                                                    <li class="class"><a href="../classes/pm_LongTask_Task.html">pm_LongTask_Task</a></li>
+                                                    <li class="class"><a href="../classes/pm_Navigation_OverviewPage.html">pm_Navigation_OverviewPage</a></li>
+                                                    <li class="class"><a href="../classes/pm_Navigation_Page.html">pm_Navigation_Page</a></li>
+                                                    <li class="class"><a href="../classes/pm_Notification.html">pm_Notification</a></li>
+                                                    <li class="class"><a href="../classes/pm_Notifications_EmailNotification.html">pm_Notifications_EmailNotification</a></li>
+                                                    <li class="class"><a href="../classes/pm_Notifications_PanelNotification.html">pm_Notifications_PanelNotification</a></li>
+                                                    <li class="class"><a href="../classes/pm_Plan.html">pm_Plan</a></li>
+                                                    <li class="class"><a href="../classes/pm_ProductInfo.html">pm_ProductInfo</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_AdminHome.html">pm_Promo_AdminHome</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_CustomerHome.html">pm_Promo_CustomerHome</a></li>
+                                                    <li class="class"><a href="../classes/pm_Promo_Home.html">pm_Promo_Home</a></li>
+                                                    <li class="class"><a href="../classes/pm_Scheduler.html">pm_Scheduler</a></li>
+                                                    <li class="class"><a href="../classes/pm_Scheduler_Task.html">pm_Scheduler_Task</a></li>
+                                                    <li class="class"><a href="../classes/pm_SearchIndex.html">pm_SearchIndex</a></li>
+                                                    <li class="class"><a href="../classes/pm_ServerFileManager.html">pm_ServerFileManager</a></li>
+                                                    <li class="class"><a href="../classes/pm_Session.html">pm_Session</a></li>
+                                                    <li class="class"><a href="../classes/pm_Settings.html">pm_Settings</a></li>
+                                                    <li class="class"><a href="../classes/pm_SystemService_Service.html">pm_SystemService_Service</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_ActiveList.html">pm_View_Helper_ActiveList</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_BaseUrl.html">pm_View_Helper_BaseUrl</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_DomainOverviewUrl.html">pm_View_Helper_DomainOverviewUrl</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_Lmsg.html">pm_View_Helper_Lmsg</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderList.html">pm_View_Helper_RenderList</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderSmallTools.html">pm_View_Helper_RenderSmallTools</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderTabs.html">pm_View_Helper_RenderTabs</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Helper_RenderTools.html">pm_View_Helper_RenderTools</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_List_Simple.html">pm_View_List_Simple</a></li>
+                                                    <li class="class"><a href="../classes/pm_View_Status.html">pm_View_Status</a></li>
+                                                    <li class="class"><a href="../classes/pm_WebServer.html">pm_WebServer</a></li>
+                                                    <li class="class"><a href="../classes/pm_WebServer_Abstract.html">pm_WebServer_Abstract</a></li>
+                                                    <li class="class"><a href="../classes/pm_WebServer_Apache.html">pm_WebServer_Apache</a></li>
+                                                    <li class="class"><a href="../classes/pm_WebServer_IIS.html">pm_WebServer_IIS</a></li>
+                                                    <li class="class"><a href="../classes/pm_WebServer_Nginx.html">pm_WebServer_Nginx</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <nav>
+                                                <a href="../namespaces/default.html">\</a> <i class="icon-level-up"></i>
+                                            </nav>
+
+                    <h1><small>\</small>pm_ServerFileManager</h1>
+                    <p><em>Manager of files on server level.</em></p>
+                    
+
+                    
+                    <section id="summary">
+                        <h2>Summary</h2>
+                        <section class="row-fluid heading">
+                            <section class="span4">
+                                <a href="#methods">Methods</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#properties">Properties</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#constants">Constants</a>
+                            </section>
+                        </section>
+                        <section class="row-fluid public">
+                            <section class="span4">
+                                                                    <a href="../classes/pm_ServerFileManager.html#method___construct" class="">__construct()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_getFilePath" class="">getFilePath()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_fileExists" class="">fileExists()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_filePutContents" class="">filePutContents()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_fileGetContents" class="">fileGetContents()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_mkdir" class="">mkdir()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_touch" class="">touch()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_chmod" class="">chmod()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_copyFile" class="">copyFile()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_moveFile" class="">moveFile()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_removeFile" class="">removeFile()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_removeDirectory" class="">removeDirectory()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_fileSize" class="">fileSize()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_joinPath" class="">joinPath()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_scanDir" class="">scanDir()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_find" class="">find()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_isSubpath" class="">isSubpath()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_getRelativeFilePath" class="">getRelativeFilePath()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_zip" class="">zip()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_unzip" class="">unzip()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_isDir" class="">isDir()</a><br />
+                                                                    <a href="../classes/pm_FileManager.html#method_upload" class="">upload()</a><br />
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No public properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No constants found</em>
+                                                            </section>
+                        </section>
+                        <section class="row-fluid protected">
+                            <section class="span4">
+                                                                    <em>No protected methods found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No protected properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+                <aside class="span4 detailsbar">
+                                        
+                    
+                    <dl>
+                        <dt>File</dt>
+                            <dd><a href="../files/ServerFileManager.html"><div class="path-wrapper">ServerFileManager.php</div></a></dd>
+                                                <dt>Package</dt>
+                            <dd><div class="namespace-wrapper">Plesk_Modules</div></dd>
+                                                <dt>Class hierarchy</dt>
+                            <dd class="hierarchy">
+                                                                                                                                                                                                                                                                                                
+                                        <div class="namespace-wrapper"><a href="../classes/pm_FileManager.html">\pm_FileManager</a></div>
+                                                                                                    <div class="namespace-wrapper">\pm_ServerFileManager</div>
+                            </dd>
+
+                        
+                        
+                        
+                        
+                                                                        </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                                            <tr>
+                            <th>
+                                since
+                            </th>
+                            <td>
+                                                                    12.5                                    
+                                                            </td>
+                        </tr>
+                                        </table>
+                </aside>
+            </div>
+
+                        
+                        
+                                    <a id="methods" name="methods"></a>
+            <div class="row-fluid">
+                <div class="span8 content class"><h2>Methods</h2></div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method___construct" name="method___construct" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">__construct()</h3>
+                <pre class="signature" style="margin-right: 54px;">__construct(boolean  <span class="argument">$privilegedUser = true</span>) </pre>
+                <p><em>Creates new instance of manager</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$privilegedUser </td>
+                                <td><p>Initialize file manager with root permissions</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            12.5                                
+                                                            17.8                                <p>Has $privilegedUser parameter to be used with a non-privileged user</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getFilePath" name="method_getFilePath" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getFilePath()</h3>
+                <pre class="signature" style="margin-right: 54px;">getFilePath(string  <span class="argument">$path</span>) : string</pre>
+                <p><em>Returns full path on filesystem by relative path inside webspace</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$path </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_fileExists" name="method_fileExists" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">fileExists()</h3>
+                <pre class="signature" style="margin-right: 54px;">fileExists(string  <span class="argument">$filename</span>) : boolean</pre>
+                <p><em>Checks whether a file or directory exists.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$filename </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_filePutContents" name="method_filePutContents" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">filePutContents()</h3>
+                <pre class="signature" style="margin-right: 54px;">filePutContents(string  <span class="argument">$filename</span>, string  <span class="argument">$data</span>) </pre>
+                <p><em>Writes a string data to a file</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$filename </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$data </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_fileGetContents" name="method_fileGetContents" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">fileGetContents()</h3>
+                <pre class="signature" style="margin-right: 54px;">fileGetContents(string  <span class="argument">$filename</span>) : string</pre>
+                <p><em>Reads entire file into a string</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$filename </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_mkdir" name="method_mkdir" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">mkdir()</h3>
+                <pre class="signature" style="margin-right: 54px;">mkdir(string  <span class="argument">$dirname</span>, string  <span class="argument">$perms = &#039;0755&#039;</span>, boolean  <span class="argument">$recursively = false</span>) </pre>
+                <p><em>Creates a directory by path ($perms and $recursively are ignored on Windows)</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$dirname </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$perms </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$recursively </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            12.5                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_touch" name="method_touch" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">touch()</h3>
+                <pre class="signature" style="margin-right: 54px;">touch(  <span class="argument">$filename</span>) </pre>
+                <p><em>Updates the access date and / or modification date of a file or directory.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$filename </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            12.5                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_chmod" name="method_chmod" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">chmod()</h3>
+                <pre class="signature" style="margin-right: 54px;">chmod(string  <span class="argument">$filename</span>, string  <span class="argument">$mode</span>) </pre>
+                <p><em>Changes the access permissions to file system objects (files and directories) totally are ignored on Windows</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$filename </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$mode </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            12.5                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_copyFile" name="method_copyFile" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">copyFile()</h3>
+                <pre class="signature" style="margin-right: 54px;">copyFile(string  <span class="argument">$source</span>, string  <span class="argument">$destination</span>) </pre>
+                <p><em>Copies file system objects (files and directories) from source to destination</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$source </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$destination </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_moveFile" name="method_moveFile" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">moveFile()</h3>
+                <pre class="signature" style="margin-right: 54px;">moveFile(string  <span class="argument">$source</span>, string  <span class="argument">$destination</span>) </pre>
+                <p><em>Moves file system objects (files and directories) from source to destination</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$source </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$destination </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            12.5                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_removeFile" name="method_removeFile" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">removeFile()</h3>
+                <pre class="signature" style="margin-right: 54px;">removeFile(string  <span class="argument">$filename</span>) </pre>
+                <p><em>Removes file by name</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$filename </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            12.5                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_removeDirectory" name="method_removeDirectory" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">removeDirectory()</h3>
+                <pre class="signature" style="margin-right: 54px;">removeDirectory(string  <span class="argument">$dirname</span>) </pre>
+                <p><em>Removes directory by name</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$dirname </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            12.5                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_fileSize" name="method_fileSize" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">fileSize()</h3>
+                <pre class="signature" style="margin-right: 54px;">fileSize(string  <span class="argument">$filename</span>) : string</pre>
+                <p><em>Returns file size in bytes</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$filename </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            12.5                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_joinPath" name="method_joinPath" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">joinPath()</h3>
+                <pre class="signature" style="margin-right: 54px;">joinPath(array&lt;mixed,string&gt;  <span class="argument">$pathParts</span>) : string</pre>
+                <p><em>Returns joined path parts</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>array&lt;mixed,string&gt;</td>
+                                <td>$pathParts </td>
+                                <td><p>Parts for joining to path</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_scanDir" name="method_scanDir" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">scanDir()</h3>
+                <pre class="signature" style="margin-right: 54px;">scanDir(string  <span class="argument">$path</span>, boolean  <span class="argument">$skipDots = false</span>, boolean  <span class="argument">$showSystemFiles = true</span>) : array&lt;mixed,string&gt;</pre>
+                <p><em>Returns list of files and directories inside the specified path</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$path </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$skipDots </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$showSystemFiles </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array&lt;mixed,string&gt;
+                                            &mdash; <p>List of file names</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_find" name="method_find" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">find()</h3>
+                <pre class="signature" style="margin-right: 54px;">find(array&lt;mixed,string&gt;  <span class="argument">$patterns</span>, boolean  <span class="argument">$recursively = true</span>, string  <span class="argument">$path = &#039;/&#039;</span>) : array&lt;mixed,string&gt;</pre>
+                <p><em>Returns list of paths inside the specified sources that match the patterns</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>array&lt;mixed,string&gt;</td>
+                                <td>$patterns </td>
+                                <td><p>List of patterns, which will be searched</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>boolean</td>
+                                <td>$recursively </td>
+                                <td><p>[optional] Whether a recursive search should be done. Default is true</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$path </td>
+                                <td><p>[optional] Path where search will be performed. Default is /</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array&lt;mixed,string&gt;
+                                            &mdash; <p>List of paths</p>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_isSubpath" name="method_isSubpath" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">isSubpath()</h3>
+                <pre class="signature" style="margin-right: 54px;">isSubpath(string  <span class="argument">$path</span>) : boolean</pre>
+                <p><em>Checks if path is inside webspace</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$path </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getRelativeFilePath" name="method_getRelativeFilePath" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getRelativeFilePath()</h3>
+                <pre class="signature" style="margin-right: 54px;">getRelativeFilePath(string  <span class="argument">$path</span>) : string</pre>
+                <p><em>Returns relative path inside webspace by full path</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$path </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.0                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_zip" name="method_zip" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">zip()</h3>
+                <pre class="signature" style="margin-right: 54px;">zip(string  <span class="argument">$path</span>, string  <span class="argument">$archiveName</span>, array  <span class="argument">$files</span>) </pre>
+                <p><em>Zip user files</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$path </td>
+                                <td><p>Path, where you want to put new archive</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$archiveName </td>
+                                <td><p>Name for your archive</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>array</td>
+                                <td>$files </td>
+                                <td><p>Array of files paths, which will be included to your archive</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.8                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_unzip" name="method_unzip" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">unzip()</h3>
+                <pre class="signature" style="margin-right: 54px;">unzip(string  <span class="argument">$source</span>, string  <span class="argument">$destination</span>,   <span class="argument">$overwrite = false</span>) </pre>
+                <p><em>Unzip user files to certain folder</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$source </td>
+                                <td><p>Path, where packed archive is hosted.</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$destination </td>
+                                <td><p>Path, where you want to put files from packed archive</p></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$overwrite </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.8                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_isDir" name="method_isDir" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">isDir()</h3>
+                <pre class="signature" style="margin-right: 54px;">isDir(string  <span class="argument">$path</span>) : boolean</pre>
+                <p><em>Checks if path is directory or not.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$path </td>
+                                <td><p>Path to file or directory</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    boolean
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            17.8                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_upload" name="method_upload" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">upload()</h3>
+                <pre class="signature" style="margin-right: 54px;">upload(string  <span class="argument">$source</span>, string  <span class="argument">$destination</span>, string  <span class="argument">$perms = &#039;0644&#039;</span>) </pre>
+                <p><em>Upload file specified by source to destination ($perms are ignored on Windows)</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$source </td>
+                                <td><p>Path where file is located</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$destination </td>
+                                <td><p>Path where file is to be uploaded</p></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$perms </td>
+                                <td><p>[optional] Permissions of the uploaded file. Ignored on Windows. Default is 0644</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/pm_FileManager.html"><div class="path-wrapper">\pm_FileManager</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            since
+                        </th>
+                        <td>
+                                                            18.0.30                                
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                                    </div>
+    </section>
+
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on August 20th, 2021 at 15:15.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -68,7 +68,6 @@ abstract class pm_Hook_SimpleList implements pm_Hook_Interface
     /**
      * Get additional columns
      *
-     *
      * ```php
      * [
      *     'new-column-id' => [

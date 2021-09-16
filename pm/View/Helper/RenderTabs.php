@@ -26,7 +26,6 @@ class pm_View_Helper_RenderTabs extends Zend_View_Helper_Abstract implements Zen
      * ]
      * ```
      *
-     *
      * @param array $tabs
      * @return string
      */

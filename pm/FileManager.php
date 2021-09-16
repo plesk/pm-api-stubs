@@ -33,6 +33,16 @@ class pm_FileManager
     public function fileExists($filename) { }
 
     /**
+     * Appends a string data to a file
+     *
+     * @param string $filename
+     * @param string $data
+     *
+     * @since 18.0.39
+     */
+    public function fileAppendContents($filename, $data) { }
+
+    /**
      * Writes a string data to a file
      *
      * @param string $filename

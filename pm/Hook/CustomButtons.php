@@ -57,6 +57,9 @@ abstract class pm_Hook_CustomButtons implements pm_Hook_Interface
     /** @since 18.0 */
     const PLACE_DOMAIN_PROPERTIES_DYNAMIC = 16;
 
+    /** @since 18.0.41 */
+    const PLACE_DOMAIN_HEADER_DYNAMIC = 17;
+
     /** @since 17.0 */
     const SECTION_RESELLER_TOOLS_SERVICES = 'myPleskButtons';
 

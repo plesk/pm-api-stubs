@@ -1,3 +1,4 @@
 vendor
 phpdoc.xml
-docs/phpdoc-cache-*
+docs-cache
+tools

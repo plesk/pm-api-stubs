@@ -23,7 +23,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - uses: szepeviktor/phive@v1.0.0
+      - uses: szepeviktor/phive@v1
 
       - name: Install PhpDocumentator
         run: phive --no-progress install --trust-gpg-keys 0x67F861C3D889C656

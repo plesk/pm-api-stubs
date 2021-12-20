@@ -25,11 +25,13 @@ jobs:
 
       - uses: szepeviktor/phive@v1
 
-      - name: Install PhpDocumentator
-        run: phive --no-progress install --trust-gpg-keys 0x67F861C3D889C656
+      - name: "Install PHP tools with PHIVE"
+        uses: "szepeviktor/phive-install@v1"
+        with:
+          trustGpgKeys: "0x67F861C3D889C656"
 
       - name: Run PhpDocumentator
-        run: php  "-derror_reporting=E_ERROR|E_WARNING|E_PARSE" tools/phpdocumentor
+        run: php "-derror_reporting=E_ERROR|E_WARNING|E_PARSE" tools/phpdocumentor
 
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v3

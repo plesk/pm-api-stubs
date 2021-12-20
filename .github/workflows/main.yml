@@ -33,6 +33,10 @@ jobs:
       - name: Run PhpDocumentator
         run: php "-derror_reporting=E_ERROR|E_WARNING|E_PARSE" tools/phpdocumentor
 
+      - name: Add backward compatibility links
+        working-directory: docs/classes
+        run: ls *-*.html | xargs -I{} bash -c 'ln -s {} $(echo {} | tr - _)'
+
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v3
         with:

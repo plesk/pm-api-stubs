@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Panel dns wrapper
  *
@@ -14,7 +14,7 @@ class pm_Dns_SoaRecord
      *
      * @return int|null
      */
-    public function getTtl() { }
+    public function getTtl(): ?int { }
 
     /**
      * Specifies ttl value of SOA record.
@@ -23,14 +23,14 @@ class pm_Dns_SoaRecord
      *
      * @return pm_Dns_SoaRecord
      */
-    public function setTtl(int $ttl) { }
+    public function setTtl(int $ttl): pm_Dns_SoaRecord { }
 
     /**
      * Return refresh value of SOA record.
      *
      * @return int|null
      */
-    public function getRefresh() { }
+    public function getRefresh(): ?int { }
 
     /**
      * Set refresh value of SOA record.
@@ -39,14 +39,14 @@ class pm_Dns_SoaRecord
      *
      * @return pm_Dns_SoaRecord
      */
-    public function setRefresh(int $refresh) { }
+    public function setRefresh(int $refresh): pm_Dns_SoaRecord { }
 
     /**
      * Return retry value of SOA record.
      *
      * @return int|null
      */
-    public function getRetry() { }
+    public function getRetry(): ?int { }
 
     /**
      * Set retry value of SOA record.
@@ -55,14 +55,14 @@ class pm_Dns_SoaRecord
      *
      * @return pm_Dns_SoaRecord
      */
-    public function setRetry(int $retry) { }
+    public function setRetry(int $retry): pm_Dns_SoaRecord { }
 
     /**
      * Return expire value of SOA record.
      *
      * @return int|null
      */
-    public function getExpire() { }
+    public function getExpire(): ?int { }
 
     /**
      * Set expire value of SOA record.
@@ -71,14 +71,14 @@ class pm_Dns_SoaRecord
      *
      * @return pm_Dns_SoaRecord
      */
-    public function setExpire(int $expire) { }
+    public function setExpire(int $expire): pm_Dns_SoaRecord { }
 
     /**
      * Return minimum value of SOA record.
      *
      * @return int|null
      */
-    public function getMinimum() { }
+    public function getMinimum(): ?int { }
 
     /**
      * Set minimum value of SOA record.
@@ -87,18 +87,18 @@ class pm_Dns_SoaRecord
      *
      * @return pm_Dns_SoaRecord
      */
-    public function setMinimum(int $minimum) { }
+    public function setMinimum(int $minimum): pm_Dns_SoaRecord { }
 
     /**
      * Return DNS zone of SOA record.
      *
      * @return pm_Dns_SoaRecord
      */
-    public function getZone() { }
+    public function getZone(): pm_Dns_Zone { }
 
     /**
      * Save SOA record;
      */
-    public function save() { }
+    public function save(): void { }
 
 }

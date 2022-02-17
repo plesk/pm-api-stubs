@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Helper for rendering active list
  *
@@ -9,9 +9,9 @@
 class pm_View_Helper_ActiveList extends Zend_View_Helper_Abstract implements Zend_View_Helper_Interface
 {
 
-    const LAYOUT_AUTO = 'auto';
+    public const LAYOUT_AUTO = 'auto';
 
-    const LAYOUT_RESPONSIVECOLUMN = 'responsivecolumn';
+    public const LAYOUT_RESPONSIVECOLUMN = 'responsivecolumn';
 
     
     protected $_componentType = 'Jsw.ActiveList';

@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Localization facilities
  *
@@ -9,7 +9,7 @@
 class pm_Locale
 {
 
-    const FALLBACK_LOCALE = 'en-US';
+    public const FALLBACK_LOCALE = 'en-US';
 
     /**
      * Return current locale code

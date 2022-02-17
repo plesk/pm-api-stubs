@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Hook for backup transport, e.g. backup to cloud
  *
@@ -9,13 +9,13 @@
 class pm_Hook_Backup_Transport implements pm_Hook_Backup
 {
 
-    const TYPE_SUBSCRIPTION = 'subscription';
+    public const TYPE_SUBSCRIPTION = 'subscription';
 
-    const TYPE_CUSTOMER = 'customer';
+    public const TYPE_CUSTOMER = 'customer';
 
-    const TYPE_RESELLER = 'reseller';
+    public const TYPE_RESELLER = 'reseller';
 
-    const TYPE_SERVER = 'server';
+    public const TYPE_SERVER = 'server';
 
     /**
      * One of the constants TYPE_*
@@ -162,7 +162,7 @@ class pm_Hook_Backup_Transport implements pm_Hook_Backup
      * The method may be overridden in extension class. Default implementation returns empty array.
      * @return array
      */
-    public function getQuota() { }
+    public function getQuota(): array { }
 
     /**
      * Returns an array with information about hash values that the extension returns for files. If the extension
@@ -176,6 +176,6 @@ class pm_Hook_Backup_Transport implements pm_Hook_Backup
      * @return array
      * @since 18.0.28
      */
-    public function getHash() { }
+    public function getHash(): array { }
 
 }

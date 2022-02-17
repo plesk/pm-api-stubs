@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Panel license keys management class
  *
@@ -72,9 +72,8 @@ class pm_License
      * @return null|array
      * @since 17.8
      */
-    public function getExtensionLicenseInfo($code) { }
+    public function getExtensionLicenseInfo($code): ?array { }
 
-    
-    public function getMachineIdInfo() { }
+    public function getMachineIdInfo(): array { }
 
 }

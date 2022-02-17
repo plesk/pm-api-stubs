@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Long task object
  *
@@ -9,13 +9,13 @@
 abstract class pm_LongTask_Task
 {
 
-    const STATUS_NOT_STARTED = 'not_started';
+    public const STATUS_NOT_STARTED = 'not_started';
 
-    const STATUS_RUNNING = 'running';
+    public const STATUS_RUNNING = 'running';
 
-    const STATUS_ERROR = 'error';
+    public const STATUS_ERROR = 'error';
 
-    const STATUS_DONE = 'done';
+    public const STATUS_DONE = 'done';
 
     /**
      * Number of tasks that can be executed at the same time, -1 is equal to unlimited pool size
@@ -46,7 +46,6 @@ abstract class pm_LongTask_Task
      */
     public $hasDangerousMessage = false;
 
-    
     public function __construct() { }
 
     /**
@@ -168,7 +167,7 @@ abstract class pm_LongTask_Task
      * @since 18.0.35
      * @return string
      */
-    public function getDescription() { }
+    public function getDescription(): string { }
 
     /**
      * List of tags for concurrency limitation
@@ -180,7 +179,7 @@ abstract class pm_LongTask_Task
      * @since 18.0.36
      * @return string[]
      */
-    public function getConcurrencyRules() { }
+    public function getConcurrencyRules(): array { }
 
     /**
      * Array representation of task

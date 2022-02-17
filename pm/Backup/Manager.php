@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Manager of backups for extension.
  *
@@ -10,16 +10,16 @@ class pm_Backup_Manager
 {
 
     /** @since 18.0 */
-    const OBJECT_TYPE_SERVER = 'server';
+    public const OBJECT_TYPE_SERVER = 'server';
 
     /** @since 18.0 */
-    const OBJECT_TYPE_RESELLER = 'reseller';
+    public const OBJECT_TYPE_RESELLER = 'reseller';
 
     /** @since 18.0 */
-    const OBJECT_TYPE_CLIENT = 'client';
+    public const OBJECT_TYPE_CLIENT = 'client';
 
     /** @since 18.0 */
-    const OBJECT_TYPE_DOMAIN = 'domain';
+    public const OBJECT_TYPE_DOMAIN = 'domain';
 
     /**
      * Retrieve backup form URL
@@ -61,7 +61,7 @@ class pm_Backup_Manager
      * @return string
      * @since 18.0.35
      */
-    public static function getDumpsDir() { }
+    public static function getDumpsDir(): string { }
 
     /**
      * Returns an absolute path to the logs directory.
@@ -69,6 +69,6 @@ class pm_Backup_Manager
      * @return string
      * @since 18.0.35
      */
-    public static function getLogsDir() { }
+    public static function getLogsDir(): string { }
 
 }

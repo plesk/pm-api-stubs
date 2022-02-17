@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Class for initialization Plesk objects
  *
@@ -29,6 +29,6 @@ class pm_Bootstrap
      * @since 18.0.24
      * @since 18.0.24 added Psr\Logger\LoggerInterface::class to the container
      */
-    public static function getContainer() { }
+    public static function getContainer(): Psr\Container\ContainerInterface { }
 
 }

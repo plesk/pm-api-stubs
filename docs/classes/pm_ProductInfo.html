@@ -153,6 +153,48 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/pm-ProductInfo.html#constant_HYPERSCALER_ALIBABA">HYPERSCALER_ALIBABA</a>
+    <span>
+        &nbsp;= &#039;Alibaba&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/pm-ProductInfo.html#constant_HYPERSCALER_AMAZON">HYPERSCALER_AMAZON</a>
+    <span>
+        &nbsp;= &#039;AWS/Lightsail&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/pm-ProductInfo.html#constant_HYPERSCALER_AZURE">HYPERSCALER_AZURE</a>
+    <span>
+        &nbsp;= &#039;Azure&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/pm-ProductInfo.html#constant_HYPERSCALER_DIGITALOCEAN">HYPERSCALER_DIGITALOCEAN</a>
+    <span>
+        &nbsp;= &#039;DigitalOcean&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/pm-ProductInfo.html#constant_HYPERSCALER_GOOGLE">HYPERSCALER_GOOGLE</a>
+    <span>
+        &nbsp;= &#039;GoogleCloud&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/pm-ProductInfo.html#constant_HYPERSCALER_VULTR">HYPERSCALER_VULTR</a>
+    <span>
+        &nbsp;= &#039;Vultr&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/pm-ProductInfo.html#constant_OS_ALMALINUX">OS_ALMALINUX</a>
     <span>
         &nbsp;= &#039;AlmaLinux&#039;                    </span>
@@ -184,6 +226,13 @@
     <a href="classes/pm-ProductInfo.html#constant_OS_REDHAT">OS_REDHAT</a>
     <span>
         &nbsp;= &#039;RedHat&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/pm-ProductInfo.html#constant_OS_ROCKY">OS_ROCKY</a>
+    <span>
+        &nbsp;= &#039;Rocky&#039;                    </span>
 </dt>
 <dd></dd>
 
@@ -356,6 +405,20 @@
 <dd>Get product HWID</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/pm-ProductInfo.html#method_getHyperscalerIpMapping">getHyperscalerIpMapping()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Returns mapping of private IP addresses to public IP addresses as stated in instance metadata</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/pm-ProductInfo.html#method_getHyperscalerName">getHyperscalerName()</a>
+    <span>
+                        &nbsp;: string|null    </span>
+</dt>
+<dd>Returns the name of the hyperscaler ths instance is running on, or null if none was detected</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/pm-ProductInfo.html#method_getLastInstalledUpdate">getLastInstalledUpdate()</a>
     <span>
                         &nbsp;: string    </span>
@@ -440,6 +503,13 @@
 <dd>Retrieve virtualization type(s)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/pm-ProductInfo.html#method_hasHyperscalerIpMapping">hasHyperscalerIpMapping()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Returns whether this is an instance of a hyperscaler that uses NAT with public/private addresses mapping</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/pm-ProductInfo.html#method_isUnix">isUnix()</a>
     <span>
                         &nbsp;: bool    </span>
@@ -511,6 +581,180 @@
     <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">ARCH_64</span>
     = <span class="phpdocumentor-signature__default-value">&#039;x86_64&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_HYPERSCALER_ALIBABA">
+        HYPERSCALER_ALIBABA
+        <a href="classes/pm-ProductInfo.html#constant_HYPERSCALER_ALIBABA" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">74</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">HYPERSCALER_ALIBABA</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Alibaba&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_HYPERSCALER_AMAZON">
+        HYPERSCALER_AMAZON
+        <a href="classes/pm-ProductInfo.html#constant_HYPERSCALER_AMAZON" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">76</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">HYPERSCALER_AMAZON</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;AWS/Lightsail&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_HYPERSCALER_AZURE">
+        HYPERSCALER_AZURE
+        <a href="classes/pm-ProductInfo.html#constant_HYPERSCALER_AZURE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">78</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">HYPERSCALER_AZURE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Azure&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_HYPERSCALER_DIGITALOCEAN">
+        HYPERSCALER_DIGITALOCEAN
+        <a href="classes/pm-ProductInfo.html#constant_HYPERSCALER_DIGITALOCEAN" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">HYPERSCALER_DIGITALOCEAN</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;DigitalOcean&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_HYPERSCALER_GOOGLE">
+        HYPERSCALER_GOOGLE
+        <a href="classes/pm-ProductInfo.html#constant_HYPERSCALER_GOOGLE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">82</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">HYPERSCALER_GOOGLE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;GoogleCloud&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_HYPERSCALER_VULTR">
+        HYPERSCALER_VULTR
+        <a href="classes/pm-ProductInfo.html#constant_HYPERSCALER_VULTR" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">HYPERSCALER_VULTR</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Vultr&#039;</span>
 </code>
 
 
@@ -667,6 +911,35 @@
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_OS_ROCKY">
+        OS_ROCKY
+        <a href="classes/pm-ProductInfo.html#constant_OS_ROCKY" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">OS_ROCKY</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Rocky&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_OS_UBUNTU">
         OS_UBUNTU
         <a href="classes/pm-ProductInfo.html#constant_OS_UBUNTU" class="headerlink"><i class="fas fa-link"></i></a>
@@ -733,7 +1006,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -762,7 +1035,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -791,7 +1064,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -820,7 +1093,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -907,7 +1180,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -936,7 +1209,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -965,7 +1238,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -994,7 +1267,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -1023,7 +1296,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -1052,7 +1325,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -1081,7 +1354,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -1110,7 +1383,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -1139,7 +1412,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -1168,7 +1441,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -1197,7 +1470,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -1226,7 +1499,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -1255,7 +1528,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -1284,7 +1557,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -1313,7 +1586,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -1355,7 +1628,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -1395,6 +1668,100 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getHyperscalerIpMapping">
+        getHyperscalerIpMapping()
+        <a href="classes/pm-ProductInfo.html#method_getHyperscalerIpMapping" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">220</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns mapping of private IP addresses to public IP addresses as stated in instance metadata</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getHyperscalerIpMapping</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">18.0.39</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getHyperscalerName">
+        getHyperscalerName()
+        <a href="classes/pm-ProductInfo.html#method_getHyperscalerName" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">208</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the name of the hyperscaler ths instance is running on, or null if none was detected</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getHyperscalerName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">18.0.39</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_getLastInstalledUpdate">
         getLastInstalledUpdate()
         <a href="classes/pm-ProductInfo.html#method_getLastInstalledUpdate" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1402,7 +1769,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -1437,7 +1804,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -1484,7 +1851,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -1531,7 +1898,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -1578,7 +1945,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -1625,7 +1992,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -1682,7 +2049,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -1729,7 +2096,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -1762,7 +2129,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">194</span>
 
     </aside>
 
@@ -1809,7 +2176,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 
@@ -1856,7 +2223,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -1903,7 +2270,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -1955,6 +2322,53 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_hasHyperscalerIpMapping">
+        hasHyperscalerIpMapping()
+        <a href="classes/pm-ProductInfo.html#method_hasHyperscalerIpMapping" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">214</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns whether this is an instance of a hyperscaler that uses NAT with public/private addresses mapping</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">hasHyperscalerIpMapping</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">18.0.39</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_isUnix">
         isUnix()
         <a href="classes/pm-ProductInfo.html#method_isUnix" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1962,7 +2376,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -1995,7 +2409,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/ProductInfo.php"><a href="files/pm-productinfo.html"><abbr title="pm/ProductInfo.php">ProductInfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 

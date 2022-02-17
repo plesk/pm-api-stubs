@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Base list
  *
@@ -10,13 +10,13 @@ class pm_View_List_Simple
 {
 
     /** @since 12.5 */
-    const COLUMN_SELECTION = 'Jsw.list.COLUMN_SELECTION';
+    public const COLUMN_SELECTION = 'Jsw.list.COLUMN_SELECTION';
 
-    const SORT_DIR_UP = 'up';
+    public const SORT_DIR_UP = 'up';
 
-    const SORT_DIR_DOWN = 'down';
+    public const SORT_DIR_DOWN = 'down';
 
-    const ITEMS_UNLIMITED = 100000;
+    public const ITEMS_UNLIMITED = 100000;
 
     /**
      * List columns

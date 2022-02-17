@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Plesk options / info
  *
@@ -9,65 +9,79 @@
 class pm_ProductInfo
 {
 
-    const PLATFORM_UNIX = 'Unix';
+    public const PLATFORM_UNIX = 'Unix';
 
-    const PLATFORM_WINDOWS = 'Windows';
+    public const PLATFORM_WINDOWS = 'Windows';
 
-    const ARCH_32 = 'i386';
+    public const ARCH_32 = 'i386';
 
-    const ARCH_64 = 'x86_64';
+    public const ARCH_64 = 'x86_64';
 
-    const OS_CENTOS = 'CentOS';
+    public const OS_CENTOS = 'CentOS';
 
-    const OS_DEBIAN = 'Debian';
+    public const OS_DEBIAN = 'Debian';
 
-    const OS_UBUNTU = 'Ubuntu';
+    public const OS_UBUNTU = 'Ubuntu';
 
-    const OS_REDHAT = 'RedHat';
+    public const OS_REDHAT = 'RedHat';
 
-    const OS_CLOUDLINUX = 'CloudLinux';
+    public const OS_CLOUDLINUX = 'CloudLinux';
 
-    const OS_VZLINUX = 'VZLinux';
+    public const OS_VZLINUX = 'VZLinux';
 
-    const OS_ALMALINUX = 'AlmaLinux';
+    public const OS_ALMALINUX = 'AlmaLinux';
 
-    const OS_WINDOWS = 'Microsoft Windows';
+    public const OS_ROCKY = 'Rocky';
 
-    const VERSION_WINDOWS_2008R2 = '6.1';
+    public const OS_WINDOWS = 'Microsoft Windows';
 
-    const VERSION_WINDOWS_2012 = '6.2';
+    public const VERSION_WINDOWS_2008R2 = '6.1';
 
-    const VERSION_WINDOWS_2012R2 = '6.3';
+    public const VERSION_WINDOWS_2012 = '6.2';
 
-    const VERSION_WINDOWS_2016 = '10.0';
+    public const VERSION_WINDOWS_2012R2 = '6.3';
 
-    const VERSION_WINDOWS_2019 = '10.0.1809';
+    public const VERSION_WINDOWS_2016 = '10.0';
 
-    const VIRT_NONE = 'none';
+    public const VERSION_WINDOWS_2019 = '10.0.1809';
 
-    const VIRT_VZ = 'vz';
+    public const VIRT_NONE = 'none';
 
-    const VIRT_HYPERV = 'hyperv';
+    public const VIRT_VZ = 'vz';
 
-    const VIRT_XEN = 'xen';
+    public const VIRT_HYPERV = 'hyperv';
 
-    const VIRT_VMWARE = 'vmware';
+    public const VIRT_XEN = 'xen';
 
-    const VIRT_KVM = 'kvm';
+    public const VIRT_VMWARE = 'vmware';
 
-    const VIRT_PARALLELS_SERVER = 'parallels-server';
+    public const VIRT_KVM = 'kvm';
 
-    const VIRT_OPENVZ = 'openvz';
+    public const VIRT_PARALLELS_SERVER = 'parallels-server';
 
-    const VIRT_LXC = 'lxc';
+    public const VIRT_OPENVZ = 'openvz';
 
-    const VIRT_DOCKER = 'docker';
+    public const VIRT_LXC = 'lxc';
 
-    const PACKAGE_TYPE_RPM = 'rpm';
+    public const VIRT_DOCKER = 'docker';
 
-    const PACKAGE_TYPE_DEB = 'deb';
+    public const PACKAGE_TYPE_RPM = 'rpm';
 
-    const PACKAGE_TYPE_WIN = 'win';
+    public const PACKAGE_TYPE_DEB = 'deb';
+
+    public const PACKAGE_TYPE_WIN = 'win';
+
+    public const HYPERSCALER_ALIBABA = 'Alibaba';
+
+    public const HYPERSCALER_AMAZON = 'AWS/Lightsail';
+
+    public const HYPERSCALER_AZURE = 'Azure';
+
+    public const HYPERSCALER_DIGITALOCEAN = 'DigitalOcean';
+
+    public const HYPERSCALER_GOOGLE = 'GoogleCloud';
+
+    public const HYPERSCALER_VULTR = 'Vultr';
 
     /**
      * Retrieve Plesk version
@@ -111,7 +125,7 @@ class pm_ProductInfo
      * @return string
      * @since 18.0.23
      */
-    public static function getHWID() { }
+    public static function getHWID(): string { }
 
     /**
      * Retrieve OS name
@@ -186,5 +200,23 @@ class pm_ProductInfo
      * @since 17.8
      */
     public static function getProductRootDir() { }
+
+    /**
+     * Returns the name of the hyperscaler ths instance is running on, or null if none was detected
+     * @since 18.0.39
+     */
+    public static function getHyperscalerName(): ?string { }
+
+    /**
+     * Returns whether this is an instance of a hyperscaler that uses NAT with public/private addresses mapping
+     * @since 18.0.39
+     */
+    public static function hasHyperscalerIpMapping(): bool { }
+
+    /**
+     * Returns mapping of private IP addresses to public IP addresses as stated in instance metadata
+     * @since 18.0.39
+     */
+    public static function getHyperscalerIpMapping(): array { }
 
 }

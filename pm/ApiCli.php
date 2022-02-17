@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Gateway for execution of CLI utilities
  *
@@ -9,15 +9,15 @@
 class pm_ApiCli
 {
 
-    const RESULT_FULL = 1;
+    public const RESULT_FULL = 1;
 
-    const RESULT_STDOUT = 2;
+    public const RESULT_STDOUT = 2;
 
-    const RESULT_STDERR = 3;
+    public const RESULT_STDERR = 3;
 
-    const RESULT_CODE = 4;
+    public const RESULT_CODE = 4;
 
-    const RESULT_EXCEPTION = 5;
+    public const RESULT_EXCEPTION = 5;
 
     /**
      * Execute CLI utility (from set provided by panel)

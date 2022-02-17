@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Domain wrapper
  *
@@ -288,7 +288,7 @@ class pm_Domain
      * @return string
      * @since 18.0
      */
-    public function getScreenshotUrl(string $path = '/', array $options = []) { }
+    public function getScreenshotUrl(string $path = '/', array $options = []): string { }
 
     /**
      * Check if domain has SSL support for web hosting
@@ -297,7 +297,7 @@ class pm_Domain
      * @throws pm_Exception
      * @since 18.0.24
      */
-    public function hasSsl() { }
+    public function hasSsl(): bool { }
 
     /**
      * Check if domain has redirect from HTTP to HTTPS
@@ -306,7 +306,7 @@ class pm_Domain
      * @throws pm_Exception
      * @since 18.0.24
      */
-    public function hasSslRedirect() { }
+    public function hasSslRedirect(): bool { }
 
     /**
      * Check if domain is resolved to assigned IP
@@ -314,7 +314,7 @@ class pm_Domain
      * @return bool
      * @since 18.0.32
      */
-    public function isResolved() { }
+    public function isResolved(): bool { }
 
     /**
      * Return DNS zone of domain
@@ -323,6 +323,6 @@ class pm_Domain
      *
      * @since 18.0.33
      */
-    public function getDnsZone() { }
+    public function getDnsZone(): pm_Dns_Zone { }
 
 }

@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Hook for registering permissions
  *
@@ -9,42 +9,42 @@
 abstract class pm_Hook_Permissions implements pm_Hook_Interface
 {
 
-    const PLACE_MAIN = 'main';
+    public const PLACE_MAIN = 'main';
 
-    const PLACE_ADDITIONAL = 'additional';
-
-    /** @since 18.0.22 */
-    const PLACE_ADMIN = 'admin';
+    public const PLACE_ADDITIONAL = 'additional';
 
     /** @since 18.0.22 */
-    const SECTION_ADMIN_TOOLS = 'admin-tools';
+    public const PLACE_ADMIN = 'admin';
 
     /** @since 18.0.22 */
-    const SECTION_ADMIN_APPS = 'admin-apps';
+    public const SECTION_ADMIN_TOOLS = 'admin-tools';
 
     /** @since 18.0.22 */
-    const SECTION_ADMIN_PANEL = 'admin-panel';
+    public const SECTION_ADMIN_APPS = 'admin-apps';
 
     /** @since 18.0.22 */
-    const SECTION_ADMIN_APPEARANCE = 'admin-appearance';
+    public const SECTION_ADMIN_PANEL = 'admin-panel';
 
     /** @since 18.0.22 */
-    const SECTION_ADMIN_STATISTICS = 'admin-statistics';
+    public const SECTION_ADMIN_APPEARANCE = 'admin-appearance';
 
     /** @since 18.0.22 */
-    const SECTION_ADMIN_GENERAL = 'admin-general';
+    public const SECTION_ADMIN_STATISTICS = 'admin-statistics';
 
     /** @since 18.0.22 */
-    const SECTION_ADMIN_MAIL = 'admin-mail';
+    public const SECTION_ADMIN_GENERAL = 'admin-general';
 
     /** @since 18.0.22 */
-    const SECTION_ADMIN_SERVER = 'admin-server';
+    public const SECTION_ADMIN_MAIL = 'admin-mail';
 
     /** @since 18.0.22 */
-    const SECTION_ADMIN_SERVICES = 'admin-services';
+    public const SECTION_ADMIN_SERVER = 'admin-server';
 
     /** @since 18.0.22 */
-    const SECTION_ADMIN_MODULES = 'admin-modules';
+    public const SECTION_ADMIN_SERVICES = 'admin-services';
+
+    /** @since 18.0.22 */
+    public const SECTION_ADMIN_MODULES = 'admin-modules';
 
     /**
      * Retrieve the list of permissions

@@ -966,10 +966,45 @@ Search.appendIndex(
             "summary": "Create\u0020new\u0020domain\u0020alias\u0020wrapper",
             "url": "classes/pm-DomainAlias.html#method___construct"
         },                {
+            "fqsen": "\\pm_DomainAlias\u003A\u003AgetByDomain\u0028\u0029",
+            "name": "getByDomain",
+            "summary": "Retrieve\u0020domain\u0020aliases\u0020for\u0020the\u0020specified\u0020domain",
+            "url": "classes/pm-DomainAlias.html#method_getByDomain"
+        },                {
             "fqsen": "\\pm_DomainAlias\u003A\u003AgetId\u0028\u0029",
             "name": "getId",
             "summary": "Retrieve\u0020domain\u0020alias\u0020ID.",
             "url": "classes/pm-DomainAlias.html#method_getId"
+        },                {
+            "fqsen": "\\pm_DomainAlias\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "Retrieves\u0020domain\u0020alias\u0020name\u0020in\u0020ASCII\u0020format",
+            "url": "classes/pm-DomainAlias.html#method_getName"
+        },                {
+            "fqsen": "\\pm_DomainAlias\u003A\u003AgetDisplayName\u0028\u0029",
+            "name": "getDisplayName",
+            "summary": "Retrieves\u0020domain\u0020name\u0020as\u0020it\u0020is\u0020displayed\u0020in\u0020UI",
+            "url": "classes/pm-DomainAlias.html#method_getDisplayName"
+        },                {
+            "fqsen": "\\pm_DomainAlias\u003A\u003AhasServiceWeb\u0028\u0029",
+            "name": "hasServiceWeb",
+            "summary": "Shows\u0020whether\u0020web\u0020hosting\u0020is\u0020enabled\u0020on\u0020the\u0020domain\u0020alias",
+            "url": "classes/pm-DomainAlias.html#method_hasServiceWeb"
+        },                {
+            "fqsen": "\\pm_DomainAlias\u003A\u003AhasServiceDns\u0028\u0029",
+            "name": "hasServiceDns",
+            "summary": "Shows\u0020whether\u0020DNS\u0020service\u0020is\u0020enabled\u0020on\u0020the\u0020domain\u0020alias",
+            "url": "classes/pm-DomainAlias.html#method_hasServiceDns"
+        },                {
+            "fqsen": "\\pm_DomainAlias\u003A\u003AhasServiceMail\u0028\u0029",
+            "name": "hasServiceMail",
+            "summary": "Shows\u0020whether\u0020mail\u0020service\u0020is\u0020enabled\u0020on\u0020the\u0020domain\u0020alias",
+            "url": "classes/pm-DomainAlias.html#method_hasServiceMail"
+        },                {
+            "fqsen": "\\pm_DomainAlias\u003A\u003AhasSeoRedirect\u0028\u0029",
+            "name": "hasSeoRedirect",
+            "summary": "Shows\u0020whether\u0020301\u0020redirect\u0020to\u0020HTTPS\u0020is\u0020enabled\u0020on\u0020the\u0020domain\u0020alias",
+            "url": "classes/pm-DomainAlias.html#method_hasSeoRedirect"
         },                {
             "fqsen": "\\pm_DomainAlias\u003A\u003AgetByDomainAliasId\u0028\u0029",
             "name": "getByDomainAliasId",
@@ -1651,6 +1686,16 @@ Search.appendIndex(
             "summary": "Define\u0020the\u0020list\u0020of\u0020module\u0020settings\u0020that\u0020will\u0020not\u0020be\u0020stored\u0020in\u0020the\u0020backup",
             "url": "classes/pm-Hook-Backup-Server.html#method_getExcludedSettings"
         },                {
+            "fqsen": "\\pm_Hook_Backup_Task",
+            "name": "pm_Hook_Backup_Task",
+            "summary": "Abstract\u0020class\u0020for\u0020injection\u0020into\u0020backup\/restore\u0020status\u0020message",
+            "url": "classes/pm-Hook-Backup-Task.html"
+        },                {
+            "fqsen": "\\pm_Hook_Backup_Task\u003A\u003AgetStatus\u0028\u0029",
+            "name": "getStatus",
+            "summary": "Updates\u0020status\u0020data",
+            "url": "classes/pm-Hook-Backup-Task.html#method_getStatus"
+        },                {
             "fqsen": "\\pm_Hook_Backup_Transport",
             "name": "pm_Hook_Backup_Transport",
             "summary": "Hook\u0020for\u0020backup\u0020transport,\u0020e.g.\u0020backup\u0020to\u0020cloud",
@@ -2105,6 +2150,11 @@ Search.appendIndex(
             "name": "FORM_DOMAIN_CONNECTION_INFO",
             "summary": "",
             "url": "classes/pm-Hook-Form.html#constant_FORM_DOMAIN_CONNECTION_INFO"
+        },                {
+            "fqsen": "\\pm_Hook_Form\u003A\u003AFORM_EMAIL_ADDRESS_SETTINGS",
+            "name": "FORM_EMAIL_ADDRESS_SETTINGS",
+            "summary": "",
+            "url": "classes/pm-Hook-Form.html#constant_FORM_EMAIL_ADDRESS_SETTINGS"
         },                {
             "fqsen": "\\pm_Hook_Interface",
             "name": "pm_Hook_Interface",
@@ -3036,6 +3086,21 @@ Search.appendIndex(
             "summary": "Retrieve\u0020absolute\u0020path\u0020to\u0020root\u0020directory.",
             "url": "classes/pm-ProductInfo.html#method_getProductRootDir"
         },                {
+            "fqsen": "\\pm_ProductInfo\u003A\u003AgetHyperscalerName\u0028\u0029",
+            "name": "getHyperscalerName",
+            "summary": "Returns\u0020the\u0020name\u0020of\u0020the\u0020hyperscaler\u0020ths\u0020instance\u0020is\u0020running\u0020on,\u0020or\u0020null\u0020if\u0020none\u0020was\u0020detected",
+            "url": "classes/pm-ProductInfo.html#method_getHyperscalerName"
+        },                {
+            "fqsen": "\\pm_ProductInfo\u003A\u003AhasHyperscalerIpMapping\u0028\u0029",
+            "name": "hasHyperscalerIpMapping",
+            "summary": "Returns\u0020whether\u0020this\u0020is\u0020an\u0020instance\u0020of\u0020a\u0020hyperscaler\u0020that\u0020uses\u0020NAT\u0020with\u0020public\/private\u0020addresses\u0020mapping",
+            "url": "classes/pm-ProductInfo.html#method_hasHyperscalerIpMapping"
+        },                {
+            "fqsen": "\\pm_ProductInfo\u003A\u003AgetHyperscalerIpMapping\u0028\u0029",
+            "name": "getHyperscalerIpMapping",
+            "summary": "Returns\u0020mapping\u0020of\u0020private\u0020IP\u0020addresses\u0020to\u0020public\u0020IP\u0020addresses\u0020as\u0020stated\u0020in\u0020instance\u0020metadata",
+            "url": "classes/pm-ProductInfo.html#method_getHyperscalerIpMapping"
+        },                {
             "fqsen": "\\pm_ProductInfo\u003A\u003APLATFORM_UNIX",
             "name": "PLATFORM_UNIX",
             "summary": "",
@@ -3090,6 +3155,11 @@ Search.appendIndex(
             "name": "OS_ALMALINUX",
             "summary": "",
             "url": "classes/pm-ProductInfo.html#constant_OS_ALMALINUX"
+        },                {
+            "fqsen": "\\pm_ProductInfo\u003A\u003AOS_ROCKY",
+            "name": "OS_ROCKY",
+            "summary": "",
+            "url": "classes/pm-ProductInfo.html#constant_OS_ROCKY"
         },                {
             "fqsen": "\\pm_ProductInfo\u003A\u003AOS_WINDOWS",
             "name": "OS_WINDOWS",
@@ -3185,6 +3255,36 @@ Search.appendIndex(
             "name": "PACKAGE_TYPE_WIN",
             "summary": "",
             "url": "classes/pm-ProductInfo.html#constant_PACKAGE_TYPE_WIN"
+        },                {
+            "fqsen": "\\pm_ProductInfo\u003A\u003AHYPERSCALER_ALIBABA",
+            "name": "HYPERSCALER_ALIBABA",
+            "summary": "",
+            "url": "classes/pm-ProductInfo.html#constant_HYPERSCALER_ALIBABA"
+        },                {
+            "fqsen": "\\pm_ProductInfo\u003A\u003AHYPERSCALER_AMAZON",
+            "name": "HYPERSCALER_AMAZON",
+            "summary": "",
+            "url": "classes/pm-ProductInfo.html#constant_HYPERSCALER_AMAZON"
+        },                {
+            "fqsen": "\\pm_ProductInfo\u003A\u003AHYPERSCALER_AZURE",
+            "name": "HYPERSCALER_AZURE",
+            "summary": "",
+            "url": "classes/pm-ProductInfo.html#constant_HYPERSCALER_AZURE"
+        },                {
+            "fqsen": "\\pm_ProductInfo\u003A\u003AHYPERSCALER_DIGITALOCEAN",
+            "name": "HYPERSCALER_DIGITALOCEAN",
+            "summary": "",
+            "url": "classes/pm-ProductInfo.html#constant_HYPERSCALER_DIGITALOCEAN"
+        },                {
+            "fqsen": "\\pm_ProductInfo\u003A\u003AHYPERSCALER_GOOGLE",
+            "name": "HYPERSCALER_GOOGLE",
+            "summary": "",
+            "url": "classes/pm-ProductInfo.html#constant_HYPERSCALER_GOOGLE"
+        },                {
+            "fqsen": "\\pm_ProductInfo\u003A\u003AHYPERSCALER_VULTR",
+            "name": "HYPERSCALER_VULTR",
+            "summary": "",
+            "url": "classes/pm-ProductInfo.html#constant_HYPERSCALER_VULTR"
         },                {
             "fqsen": "\\pm_Promo_AdminHome",
             "name": "pm_Promo_AdminHome",

@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Panel dns wrapper
  *
@@ -9,27 +9,27 @@
 class pm_Dns_Template_Record extends pm_Dns_Record
 {
 
-    const TYPE_NS = 'NS';
+    public const TYPE_NS = 'NS';
 
-    const TYPE_A = 'A';
+    public const TYPE_A = 'A';
 
-    const TYPE_AAAA = 'AAAA';
+    public const TYPE_AAAA = 'AAAA';
 
-    const TYPE_CNAME = 'CNAME';
+    public const TYPE_CNAME = 'CNAME';
 
-    const TYPE_MX = 'MX';
+    public const TYPE_MX = 'MX';
 
-    const TYPE_PTR = 'PTR';
+    public const TYPE_PTR = 'PTR';
 
-    const TYPE_TXT = 'TXT';
+    public const TYPE_TXT = 'TXT';
 
-    const TYPE_SRV = 'SRV';
+    public const TYPE_SRV = 'SRV';
 
-    const TYPE_AXFR = 'AXFR';
+    public const TYPE_AXFR = 'AXFR';
 
-    const TYPE_DS = 'DS';
+    public const TYPE_DS = 'DS';
 
-    const TYPE_CAA = 'CAA';
+    public const TYPE_CAA = 'CAA';
 
     /**
      * Construct DNS template record in '<domain>' zone
@@ -43,11 +43,11 @@ class pm_Dns_Template_Record extends pm_Dns_Record
      *
      * @return pm_Dns_Template_Record
      */
-    public static function getById(int $id) { }
+    public static function getById(int $id): pm_Dns_Record { }
 
     /**
      * Remove template of DNS record.
      */
-    public function remove() { }
+    public function remove(): void { }
 
 }

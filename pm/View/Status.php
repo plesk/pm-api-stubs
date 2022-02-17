@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Status messages helper
  *
@@ -9,13 +9,12 @@
 class pm_View_Status
 {
 
-    const STATUS_INFO = 'info';
+    public const STATUS_INFO = 'info';
 
-    const STATUS_WARNING = 'warning';
+    public const STATUS_WARNING = 'warning';
 
-    const STATUS_ERROR = 'error';
+    public const STATUS_ERROR = 'error';
 
-    
     public function __construct() { }
 
     /**

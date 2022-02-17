@@ -5,12 +5,15 @@
   "autoload": {
     "classmap": [
       "pm"
-    ]
+    ],
+    "psr-4": { "Plesk\\SDK\\": "SDK/" }
   },
   "require": {
     "plesk/zf1": "1.12.17-patch4",
     "psr/log": "^1.1",
-    "psr/container": "^1.0"
+    "psr/container": "^1.0",
+    "psr/http-server-middleware": "^1.0",
+    "psr/http-factory": "^1.0"
   },
   "scripts": {
     "docs": "phpdoc"

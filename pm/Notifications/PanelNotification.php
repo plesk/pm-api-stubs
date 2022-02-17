@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Panel notification class
  *
@@ -9,27 +9,27 @@
 abstract class pm_Notifications_PanelNotification
 {
 
-    const CATEGORY_INFORMATION = 'Information';
+    public const CATEGORY_INFORMATION = 'Information';
 
-    const CATEGORY_WARNING = 'Warning';
+    public const CATEGORY_WARNING = 'Warning';
 
-    const CATEGORY_ALERT = 'Alert';
+    public const CATEGORY_ALERT = 'Alert';
 
-    const CATEGORY_PROMOTION = 'Promotion';
+    public const CATEGORY_PROMOTION = 'Promotion';
 
-    const CATEGORY_FEEDBACK = 'Feedback';
+    public const CATEGORY_FEEDBACK = 'Feedback';
 
-    const AREA_WEBSITES = 'Websites';
+    public const AREA_WEBSITES = 'Websites';
 
-    const AREA_ACCOUNTS = 'Accounts';
+    public const AREA_ACCOUNTS = 'Accounts';
 
-    const AREA_SECURITY = 'Security';
+    public const AREA_SECURITY = 'Security';
 
-    const AREA_PERFORMANCE = 'Performance';
+    public const AREA_PERFORMANCE = 'Performance';
 
-    const AREA_MAINTENANCE = 'Maintenance';
+    public const AREA_MAINTENANCE = 'Maintenance';
 
-    const AREA_PRODUCT = 'Product';
+    public const AREA_PRODUCT = 'Product';
 
     /**
      * Retrieve title of notification, which will be shown at settings page
@@ -114,6 +114,6 @@ abstract class pm_Notifications_PanelNotification
      * 
      * @return string|null
      */
-    public function getMessageKey() { }
+    public function getMessageKey(): ?string { }
 
 }

@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Wrapper to simplify execution of API-RPC calls inside modules
  *

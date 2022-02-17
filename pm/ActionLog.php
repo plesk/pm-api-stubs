@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Wrapper for ActionLog.
  *
@@ -9,9 +9,9 @@
 class pm_ActionLog
 {
 
-    const OLD_VALUE = 'old';
+    public const OLD_VALUE = 'old';
 
-    const NEW_VALUE = 'new';
+    public const NEW_VALUE = 'new';
 
     /**
      * @param $actionId

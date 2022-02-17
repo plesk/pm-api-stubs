@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Base form
  *
@@ -10,21 +10,21 @@
 class pm_Form_Simple extends Zend_Form implements Zend_Validate_Interface
 {
 
-    const DECORATOR = 'DECORATOR';
+    public const DECORATOR = 'DECORATOR';
 
-    const ELEMENT = 'ELEMENT';
+    public const ELEMENT = 'ELEMENT';
 
-    const METHOD_DELETE = 'delete';
+    public const METHOD_DELETE = 'delete';
 
-    const METHOD_GET = 'get';
+    public const METHOD_GET = 'get';
 
-    const METHOD_POST = 'post';
+    public const METHOD_POST = 'post';
 
-    const METHOD_PUT = 'put';
+    public const METHOD_PUT = 'put';
 
-    const ENCTYPE_URLENCODED = 'application/x-www-form-urlencoded';
+    public const ENCTYPE_URLENCODED = 'application/x-www-form-urlencoded';
 
-    const ENCTYPE_MULTIPART = 'multipart/form-data';
+    public const ENCTYPE_MULTIPART = 'multipart/form-data';
 
     /**
      * Create a new form

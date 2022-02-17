@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Panel dns wrapper
  *
@@ -9,29 +9,28 @@
 class pm_Dns_Record
 {
 
-    const TYPE_NS = 'NS';
+    public const TYPE_NS = 'NS';
 
-    const TYPE_A = 'A';
+    public const TYPE_A = 'A';
 
-    const TYPE_AAAA = 'AAAA';
+    public const TYPE_AAAA = 'AAAA';
 
-    const TYPE_CNAME = 'CNAME';
+    public const TYPE_CNAME = 'CNAME';
 
-    const TYPE_MX = 'MX';
+    public const TYPE_MX = 'MX';
 
-    const TYPE_PTR = 'PTR';
+    public const TYPE_PTR = 'PTR';
 
-    const TYPE_TXT = 'TXT';
+    public const TYPE_TXT = 'TXT';
 
-    const TYPE_SRV = 'SRV';
+    public const TYPE_SRV = 'SRV';
 
-    const TYPE_AXFR = 'AXFR';
+    public const TYPE_AXFR = 'AXFR';
 
-    const TYPE_DS = 'DS';
+    public const TYPE_DS = 'DS';
 
-    const TYPE_CAA = 'CAA';
+    public const TYPE_CAA = 'CAA';
 
-    
     public function __construct($recordId = null) { }
 
     /**
@@ -39,42 +38,42 @@ class pm_Dns_Record
      *
      * @return int|null
      */
-    public function getId() { }
+    public function getId(): ?int { }
 
     /**
      * Return type of DNS record.
      *
      * @return string|null
      */
-    public function getType() { }
+    public function getType(): ?string { }
 
     /**
      * Return host name of DNS record.
      *
      * @return string|null
      */
-    public function getHost() { }
+    public function getHost(): ?string { }
 
     /**
      * Return value of DNS record.
      *
      * @return string|null
      */
-    public function getValue() { }
+    public function getValue(): ?string { }
 
     /**
      * Return option of DNS record.
      *
      * @return string|null
      */
-    public function getOption() { }
+    public function getOption(): ?string { }
 
     /**
      * Return TTL of DNS record.
      *
      * @return int|null
      */
-    public function getTtl() { }
+    public function getTtl(): ?int { }
 
     /**
      * Set type of DNS record.
@@ -83,7 +82,7 @@ class pm_Dns_Record
      *
      * @return pm_Dns_Record
      */
-    public function setType(string $type) { }
+    public function setType(string $type): pm_Dns_Record { }
 
     /**
      * Set name host of DNS record.
@@ -92,7 +91,7 @@ class pm_Dns_Record
      *
      * @return pm_Dns_Record
      */
-    public function setHost(string $host) { }
+    public function setHost(string $host): pm_Dns_Record { }
 
     /**
      * Set value of DNS record.
@@ -101,7 +100,7 @@ class pm_Dns_Record
      *
      * @return pm_Dns_Record
      */
-    public function setValue(string $value) { }
+    public function setValue(string $value): pm_Dns_Record { }
 
     /**
      * Set option of DNS record.
@@ -110,7 +109,7 @@ class pm_Dns_Record
      *
      * @return pm_Dns_Record
      */
-    public function setOption(string $option) { }
+    public function setOption(string $option): pm_Dns_Record { }
 
     /**
      * Set TTL of DNS record.
@@ -119,7 +118,7 @@ class pm_Dns_Record
      *
      * @return pm_Dns_Record
      */
-    public function setTtl(int $ttl) { }
+    public function setTtl(int $ttl): pm_Dns_Record { }
 
     /**
      * Set DNS zone of Dns Record.
@@ -130,14 +129,14 @@ class pm_Dns_Record
      *
      * @return $this
      */
-    public function setZone(pm_Dns_Zone $zone) { }
+    public function setZone(pm_Dns_Zone $zone): pm_Dns_Record { }
 
     /**
      * Return DNS zone of DNS record.
      *
      * @return pm_Dns_Zone
      */
-    public function getZone() { }
+    public function getZone(): pm_Dns_Zone { }
 
     /**
      * Return DNS record by ID.
@@ -146,16 +145,16 @@ class pm_Dns_Record
      *
      * @return pm_Dns_Record
      */
-    public static function getById(int $recordId) { }
+    public static function getById(int $recordId): pm_Dns_Record { }
 
     /**
      * Save DNS record.
      */
-    public function save() { }
+    public function save(): void { }
 
     /**
      * Remove DNS record.
      */
-    public function remove() { }
+    public function remove(): void { }
 
 }

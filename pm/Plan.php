@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Service Plan wrapper
  *
@@ -36,7 +36,7 @@ class pm_Plan
      * @return bool
      * @since 18.0
      */
-    public function isResellerPlan() { }
+    public function isResellerPlan(): bool { }
 
     /**
      * Retrieve permission value by name

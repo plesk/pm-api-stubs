@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Panel dns wrapper
  *
@@ -14,13 +14,13 @@ class pm_Dns_Template
      *
      * @return pm_Dns_Template_Record[]
      */
-    public static function getRecords() { }
+    public static function getRecords(): array { }
 
     /**
      * Return template of SAO record.
      *
      * @return pm_Dns_Template_SoaRecord
      */
-    public static function getSoaRecord() { }
+    public static function getSoaRecord(): pm_Dns_Template_SoaRecord { }
 
 }

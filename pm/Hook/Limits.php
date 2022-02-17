@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Hook for registering limits
  *
@@ -9,9 +9,9 @@
 abstract class pm_Hook_Limits implements pm_Hook_Interface
 {
 
-    const PLACE_MAIN = 'main';
+    public const PLACE_MAIN = 'main';
 
-    const PLACE_ADDITIONAL = 'additional';
+    public const PLACE_ADDITIONAL = 'additional';
 
     /**
      * Retrieve the list of limits

@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2021. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
 /**
  * Panel dns wrapper
  *
@@ -12,6 +12,6 @@ class pm_Dns_Template_SoaRecord extends pm_Dns_SoaRecord
     /**
      * Save template of SOA record.
      */
-    public function save() { }
+    public function save(): void { }
 
 }

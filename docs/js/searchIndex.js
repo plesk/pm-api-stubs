@@ -1101,6 +1101,11 @@ Search.appendIndex(
             "summary": "Disable\u0020the\u0020extension",
             "url": "classes/pm-Extension.html#method_disable"
         },                {
+            "fqsen": "\\pm_Extension\u003A\u003AcallHook\u0028\u0029",
+            "name": "callHook",
+            "summary": "Call\u0020specified\u0020hook\u0020for\u0020the\u0020extension",
+            "url": "classes/pm-Extension.html#method_callHook"
+        },                {
             "fqsen": "\\pm_FileManager_Action",
             "name": "pm_FileManager_Action",
             "summary": "Content\u0020action\u0020for\u0020FileManager",
@@ -1570,6 +1575,16 @@ Search.appendIndex(
             "name": "exitCode",
             "summary": "Exit\u0020the\u0020utility\u0020with\u0020provided\u0020exit\u0020code",
             "url": "classes/pm-Hook-ApiCli.html#method_exitCode"
+        },                {
+            "fqsen": "\\pm_Hook_ApiRest",
+            "name": "pm_Hook_ApiRest",
+            "summary": "Hook\u0020for\u0020getting\u0020REST\u0020API\u0020metadata",
+            "url": "classes/pm-Hook-ApiRest.html"
+        },                {
+            "fqsen": "\\pm_Hook_ApiRest\u003A\u003AgetSchema\u0028\u0029",
+            "name": "getSchema",
+            "summary": "Retrieve\u0020REST\u0020API\u0020schema\u0020information",
+            "url": "classes/pm-Hook-ApiRest.html#method_getSchema"
         },                {
             "fqsen": "\\pm_Hook_ApiRpc",
             "name": "pm_Hook_ApiRpc",

@@ -107,4 +107,14 @@ class pm_Extension
      */
     public function disable() { }
 
+    /**
+     * Call specified hook for the extension
+     *
+     * @param string $hook
+     * @param callable $callback
+     * @return mixed
+     * @since 18.0.44
+     */
+    public function callHook(string $hook, callable $callback) { }
+
 }

@@ -3,6 +3,7 @@
 /**
  * Hook for getting REST API metadata
  *
+ * @package Plesk_Modules
  * @since 18.0.44
  */
 abstract class pm_Hook_ApiRest implements pm_Hook_Interface

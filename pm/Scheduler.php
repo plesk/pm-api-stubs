@@ -9,31 +9,35 @@
 class pm_Scheduler
 {
 
-    
+
     public static $EVERY_MIN = ['*', '*', '*', '*', '*'];
 
-    
+
     public static $EVERY_5_MIN = ['0,4,9,14,19,24,29,34,39,44,49,54,59', '*', '*', '*', '*'];
 
-    
+
     public static $EVERY_10_MIN = ['0,9,19,29,39,49,59', '*', '*', '*', '*'];
 
-    
+
     public static $EVERY_HOUR = ['0', '*', '*', '*', '*'];
 
-    
+
     public static $EVERY_DAY = ['0', '0', '*', '*', '*'];
 
-    
+
     public static $EVERY_WEEK = ['0', '0', '*', '*', '0'];
 
-    
+
     public static $EVERY_MONTH = ['0', '0', '1', '*', '*'];
 
     /**
      * Create new manager of regular tasks
+     *
+     * @param ?string $sysUserLogin
+     * @throws \pm_Exception
+     * @since 18.0.45 added argument $sysUserLogin
      */
-    public function __construct() { }
+    public function __construct(?string $sysUserLogin = null) { }
 
     /**
      * Get instance of pm_Scheduler

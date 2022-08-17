@@ -313,6 +313,7 @@ class pm_Domain
      *
      * @return bool
      * @since 18.0.32
+     * @since 18.0.46 Returns false by default if there is no an explicit value
      */
     public function isResolved(): bool { }
 

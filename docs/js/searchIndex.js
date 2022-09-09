@@ -4176,6 +4176,66 @@ Search.appendIndex(
             "summary": "Return\u0020IIS\u0020web\u0020server\u0020wrapper",
             "url": "classes/pm-WebServer.html#method_iis"
         },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\ExternalDns",
+            "name": "ExternalDns",
+            "summary": "Hook\u0020for\u0020external\u0020DNS\u0020integration",
+            "url": "classes/Plesk-SDK-Hook-ExternalDns.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\ExternalDns\u003A\u003AgetForOwner\u0028\u0029",
+            "name": "getForOwner",
+            "summary": "Creates\u0020hook\u0027s\u0020instance\u0020with\u0020specified\u0020owner",
+            "url": "classes/Plesk-SDK-Hook-ExternalDns.html#method_getForOwner"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\ExternalDns\u003A\u003AisConfigured\u0028\u0029",
+            "name": "isConfigured",
+            "summary": "Is\u0020hook\u0020configured\u0020for\u0020current\u0020owner",
+            "url": "classes/Plesk-SDK-Hook-ExternalDns.html#method_isConfigured"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\ExternalDns\u003A\u003AgetSettingsSubForm\u0028\u0029",
+            "name": "getSettingsSubForm",
+            "summary": "Returns\u0020settings\u0020subform\u0020for\u0020current\u0020owner",
+            "url": "classes/Plesk-SDK-Hook-ExternalDns.html#method_getSettingsSubForm"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\ExternalDns\u003A\u003Afinalize\u0028\u0029",
+            "name": "finalize",
+            "summary": "Called\u0020after\u0020all\u0020\u0022onDnsZone\u002A\u0022\u0020handlers\u0020\u002D\u0020in\u0020the\u0020end",
+            "url": "classes/Plesk-SDK-Hook-ExternalDns.html#method_finalize"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\ExternalDns\u003A\u003AonDnsZoneCreate\u0028\u0029",
+            "name": "onDnsZoneCreate",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Hook-ExternalDns.html#method_onDnsZoneCreate"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\ExternalDns\u003A\u003AonDnsZoneUpdate\u0028\u0029",
+            "name": "onDnsZoneUpdate",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Hook-ExternalDns.html#method_onDnsZoneUpdate"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\ExternalDns\u003A\u003AonDnsZoneDelete\u0028\u0029",
+            "name": "onDnsZoneDelete",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Hook-ExternalDns.html#method_onDnsZoneDelete"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\ExternalDns\u003A\u003A\u0024owner",
+            "name": "owner",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Hook-ExternalDns.html#property_owner"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\HookInterface",
+            "name": "HookInterface",
+            "summary": "Generic\u0020interface\u0020for\u0020hooks",
+            "url": "classes/Plesk-SDK-Hook-HookInterface.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Webmail",
+            "name": "Webmail",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Hook-Webmail.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Webmail\u003A\u003AgetWebmails\u0028\u0029",
+            "name": "getWebmails",
+            "summary": "Integrate\u0020a\u0020list\u0020of\u0020webmails\u0020into\u0020the\u0020UI\u0020and\u0020CLI.",
+            "url": "classes/Plesk-SDK-Hook-Webmail.html#method_getWebmails"
+        },                {
             "fqsen": "\\Plesk\\SDK\\Middleware\\Access\\Client",
             "name": "Client",
             "summary": "Validates\u0020that\u0020access\u0020was\u0020performed\u0020by\u0020specified\u0020user\u0020or\u0020any\u0020user\u0020that\u0020can\u0020impersonate\u0020as\u0020this\u0020user.",
@@ -4436,10 +4496,55 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Plesk-SDK-Middleware-Server-Initialized.html#method_process"
         },                {
+            "fqsen": "\\Plesk\\SDK\\Webmail",
+            "name": "Webmail",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Webmail.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Webmail\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Webmail.html#method___construct"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Webmail\u003A\u003AsetLoginLinkTemplate\u0028\u0029",
+            "name": "setLoginLinkTemplate",
+            "summary": "Mustache\u0020template\u0020that\u0020will\u0020generate\u0020the\u0020login\u0020link\u0020to\u0020the\u0020webmail\u0020in\u0020Plesk\u0020UI.",
+            "url": "classes/Plesk-SDK-Webmail.html#method_setLoginLinkTemplate"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Webmail\u003A\u003AsetIsVisibleForDomainCallback\u0028\u0029",
+            "name": "setIsVisibleForDomainCallback",
+            "summary": "A\u0020callback\u0020function\u0020that\u0020decides\u0020whether\u0020webmail\u0020should\u0020be\u0020visible\u0020for\u0020a\u0020domain\u0020or\u0020not.",
+            "url": "classes/Plesk-SDK-Webmail.html#method_setIsVisibleForDomainCallback"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Webmail\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Webmail.html#property_name"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Webmail\u003A\u003A\u0024displayName",
+            "name": "displayName",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Webmail.html#property_displayName"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Webmail\u003A\u003A\u0024loginLinkTemplate",
+            "name": "loginLinkTemplate",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Webmail.html#property_loginLinkTemplate"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Webmail\u003A\u003A\u0024isVisibleCallback",
+            "name": "isVisibleCallback",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Webmail.html#property_isVisibleCallback"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook",
+            "name": "Hook",
+            "summary": "",
+            "url": "namespaces/plesk-sdk-hook.html"
         },                {
             "fqsen": "\\Plesk\\SDK\\Middleware\\Access",
             "name": "Access",
@@ -4456,6 +4561,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/plesk-sdk-middleware.html"
         },                {
+            "fqsen": "\\Plesk\\SDK\\Middleware\\Server",
+            "name": "Server",
+            "summary": "",
+            "url": "namespaces/plesk-sdk-middleware-server.html"
+        },                {
             "fqsen": "\\Plesk\\SDK",
             "name": "SDK",
             "summary": "",
@@ -4465,10 +4575,5 @@ Search.appendIndex(
             "name": "Plesk",
             "summary": "",
             "url": "namespaces/plesk.html"
-        },                {
-            "fqsen": "\\Plesk\\SDK\\Middleware\\Server",
-            "name": "Server",
-            "summary": "",
-            "url": "namespaces/plesk-sdk-middleware-server.html"
         }            ]
 );

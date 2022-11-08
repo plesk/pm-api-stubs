@@ -123,7 +123,7 @@ class pm_Dns_Record
     /**
      * Set DNS zone of Dns Record.
      *
-     * @param pm_Dns_Record $zone
+     * @param pm_Dns_Zone $zone
      *          
      * @throws pm_Exception
      *

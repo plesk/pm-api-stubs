@@ -2916,6 +2916,11 @@ Search.appendIndex(
             "summary": "Retrieve\u0020message\u0020key\u0020of\u0020notification\u0020\u0028optional\u0029",
             "url": "classes/pm-Notifications-PanelNotification.html#method_getMessageKey"
         },                {
+            "fqsen": "\\pm_Notifications_PanelNotification\u003A\u003AisPromotion\u0028\u0029",
+            "name": "isPromotion",
+            "summary": "Flag\u0020to\u0020show\u0020Promotion\u0020or\u0020Feedback\u0020message\u0020as\u0020toast",
+            "url": "classes/pm-Notifications-PanelNotification.html#method_isPromotion"
+        },                {
             "fqsen": "\\pm_Notifications_PanelNotification\u003A\u003ACATEGORY_INFORMATION",
             "name": "CATEGORY_INFORMATION",
             "summary": "",
@@ -4066,6 +4071,11 @@ Search.appendIndex(
             "summary": "Check\u0020whether\u0020the\u0020server\u0020is\u0020running",
             "url": "classes/pm-WebServer-Abstract.html#method_isRunning"
         },                {
+            "fqsen": "\\pm_WebServer_Abstract\u003A\u003AgetParameter\u0028\u0029",
+            "name": "getParameter",
+            "summary": "Get\u0020web\u0020server\u0020parameter",
+            "url": "classes/pm-WebServer-Abstract.html#method_getParameter"
+        },                {
             "fqsen": "\\pm_WebServer_Apache",
             "name": "pm_WebServer_Apache",
             "summary": "Apache\u0020web\u0020server\u0020service\u0020interface",
@@ -4085,6 +4095,26 @@ Search.appendIndex(
             "name": "isRunning",
             "summary": "Check\u0020whether\u0020the\u0020server\u0020is\u0020running",
             "url": "classes/pm-WebServer-Apache.html#method_isRunning"
+        },                {
+            "fqsen": "\\pm_WebServer_Apache\u003A\u003AgetParameter\u0028\u0029",
+            "name": "getParameter",
+            "summary": "Get\u0020web\u0020server\u0020parameter",
+            "url": "classes/pm-WebServer-Apache.html#method_getParameter"
+        },                {
+            "fqsen": "\\pm_WebServer_Apache\u003A\u003APARAMETER_CONF_DIR",
+            "name": "PARAMETER_CONF_DIR",
+            "summary": "",
+            "url": "classes/pm-WebServer-Apache.html#constant_PARAMETER_CONF_DIR"
+        },                {
+            "fqsen": "\\pm_WebServer_Apache\u003A\u003APARAMETER_PHP_CGI_BIN",
+            "name": "PARAMETER_PHP_CGI_BIN",
+            "summary": "",
+            "url": "classes/pm-WebServer-Apache.html#constant_PARAMETER_PHP_CGI_BIN"
+        },                {
+            "fqsen": "\\pm_WebServer_Apache\u003A\u003APARAMETER_USE_REQUIRE_OPTION",
+            "name": "PARAMETER_USE_REQUIRE_OPTION",
+            "summary": "",
+            "url": "classes/pm-WebServer-Apache.html#constant_PARAMETER_USE_REQUIRE_OPTION"
         },                {
             "fqsen": "\\pm_WebServer_IIS",
             "name": "pm_WebServer_IIS",
@@ -4141,6 +4171,11 @@ Search.appendIndex(
             "summary": "Check\u0020whether\u0020the\u0020server\u0020is\u0020running",
             "url": "classes/pm-WebServer-Interface.html#method_isRunning"
         },                {
+            "fqsen": "\\pm_WebServer_Interface\u003A\u003AgetParameter\u0028\u0029",
+            "name": "getParameter",
+            "summary": "Get\u0020web\u0020server\u0020parameter",
+            "url": "classes/pm-WebServer-Interface.html#method_getParameter"
+        },                {
             "fqsen": "\\pm_WebServer_Nginx",
             "name": "pm_WebServer_Nginx",
             "summary": "Nginx\u0020proxy\u0020service\u0020interface",
@@ -4178,7 +4213,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Plesk\\SDK\\Hook\\ExternalDns",
             "name": "ExternalDns",
-            "summary": "Hook\u0020for\u0020external\u0020DNS\u0020integration",
+            "summary": "",
             "url": "classes/Plesk-SDK-Hook-ExternalDns.html"
         },                {
             "fqsen": "\\Plesk\\SDK\\Hook\\ExternalDns\u003A\u003AgetForOwner\u0028\u0029",
@@ -4220,11 +4255,6 @@ Search.appendIndex(
             "name": "owner",
             "summary": "",
             "url": "classes/Plesk-SDK-Hook-ExternalDns.html#property_owner"
-        },                {
-            "fqsen": "\\Plesk\\SDK\\Hook\\HookInterface",
-            "name": "HookInterface",
-            "summary": "Generic\u0020interface\u0020for\u0020hooks",
-            "url": "classes/Plesk-SDK-Hook-HookInterface.html"
         },                {
             "fqsen": "\\Plesk\\SDK\\Hook\\Webmail",
             "name": "Webmail",
@@ -4515,26 +4545,6 @@ Search.appendIndex(
             "name": "setIsVisibleForDomainCallback",
             "summary": "A\u0020callback\u0020function\u0020that\u0020decides\u0020whether\u0020webmail\u0020should\u0020be\u0020visible\u0020for\u0020a\u0020domain\u0020or\u0020not.",
             "url": "classes/Plesk-SDK-Webmail.html#method_setIsVisibleForDomainCallback"
-        },                {
-            "fqsen": "\\Plesk\\SDK\\Webmail\u003A\u003A\u0024name",
-            "name": "name",
-            "summary": "",
-            "url": "classes/Plesk-SDK-Webmail.html#property_name"
-        },                {
-            "fqsen": "\\Plesk\\SDK\\Webmail\u003A\u003A\u0024displayName",
-            "name": "displayName",
-            "summary": "",
-            "url": "classes/Plesk-SDK-Webmail.html#property_displayName"
-        },                {
-            "fqsen": "\\Plesk\\SDK\\Webmail\u003A\u003A\u0024loginLinkTemplate",
-            "name": "loginLinkTemplate",
-            "summary": "",
-            "url": "classes/Plesk-SDK-Webmail.html#property_loginLinkTemplate"
-        },                {
-            "fqsen": "\\Plesk\\SDK\\Webmail\u003A\u003A\u0024isVisibleCallback",
-            "name": "isVisibleCallback",
-            "summary": "",
-            "url": "classes/Plesk-SDK-Webmail.html#property_isVisibleCallback"
         },                {
             "fqsen": "\\",
             "name": "\\",

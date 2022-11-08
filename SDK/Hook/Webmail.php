@@ -1,13 +1,10 @@
 <?php
 // Copyright 1999-2022. Plesk International GmbH. All rights reserved.
-
 namespace Plesk\SDK\Hook;
 
-/**
- * @since 18.0.47
- */
-abstract class Webmail implements HookInterface
+abstract class Webmail implements \Plesk\SDK\Hook\HookInterface
 {
+
     /**
      * Integrate a list of webmails into the UI and CLI.
      * Webmails must have a unique name within the module to be properly displayed.
@@ -18,4 +15,5 @@ abstract class Webmail implements HookInterface
      * @return \Plesk\SDK\Webmail[]
      */
     abstract public function getWebmails(): array;
+
 }

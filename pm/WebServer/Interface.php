@@ -28,4 +28,12 @@ interface pm_WebServer_Interface
      */
     public function isRunning(): bool;
 
+    /**
+     * Get web server parameter
+     *
+     * @param string $name Parameter name (see constants)
+     * @return string|null
+     */
+    public function getParameter(string $name): ?string;
+
 }

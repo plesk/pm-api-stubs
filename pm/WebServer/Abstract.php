@@ -28,4 +28,16 @@ abstract class pm_WebServer_Abstract implements pm_WebServer_Interface
      */
     public function isRunning(): bool { }
 
+    /**
+     * Get web server parameter
+     *
+     * @param string $name Parameter name (see constants)
+     * @return string|null
+     *
+     * @throws \pm_Exception If requested parameter is not known
+     *
+     * @since 18.0.47
+     */
+    public function getParameter(string $name): ?string { }
+
 }

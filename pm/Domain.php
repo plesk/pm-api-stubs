@@ -322,6 +322,7 @@ class pm_Domain
      *
      * @return pm_Dns_Zone
      *
+     * @throws pm_Exception
      * @since 18.0.33
      */
     public function getDnsZone(): pm_Dns_Zone { }

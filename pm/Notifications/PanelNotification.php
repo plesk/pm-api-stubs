@@ -111,9 +111,16 @@ abstract class pm_Notifications_PanelNotification
 
     /**
      * Retrieve message key of notification (optional)
-     * 
+     *
      * @return string|null
      */
     public function getMessageKey(): ?string { }
+
+    /**
+     * Flag to show Promotion or Feedback message as toast
+     *
+     * @return bool
+     */
+    public function isPromotion(): bool { }
 
 }

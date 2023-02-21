@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2023. Plesk International GmbH. All rights reserved.
 /**
  * Panel dns wrapper
  *
@@ -30,6 +30,10 @@ class pm_Dns_Record
     public const TYPE_DS = 'DS';
 
     public const TYPE_CAA = 'CAA';
+
+    private const OWNER_TYPE_DOMAIN = 'domain';
+
+    private const OWNER_TYPE_DOMAIN_ALIAS = 'domainAlias';
 
     public function __construct($recordId = null) { }
 

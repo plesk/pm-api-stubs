@@ -541,6 +541,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/pm-Dns-Record.html#constant_TYPE_CAA"
         },                {
+            "fqsen": "\\pm_Dns_Record\u003A\u003AOWNER_TYPE_DOMAIN",
+            "name": "OWNER_TYPE_DOMAIN",
+            "summary": "",
+            "url": "classes/pm-Dns-Record.html#constant_OWNER_TYPE_DOMAIN"
+        },                {
+            "fqsen": "\\pm_Dns_Record\u003A\u003AOWNER_TYPE_DOMAIN_ALIAS",
+            "name": "OWNER_TYPE_DOMAIN_ALIAS",
+            "summary": "",
+            "url": "classes/pm-Dns-Record.html#constant_OWNER_TYPE_DOMAIN_ALIAS"
+        },                {
             "fqsen": "\\pm_Dns_SoaRecord",
             "name": "pm_Dns_SoaRecord",
             "summary": "Panel\u0020dns\u0020wrapper",
@@ -1985,6 +1995,11 @@ Search.appendIndex(
             "name": "PLACE_DOMAIN_HEADER_DYNAMIC",
             "summary": "",
             "url": "classes/pm-Hook-CustomButtons.html#constant_PLACE_DOMAIN_HEADER_DYNAMIC"
+        },                {
+            "fqsen": "\\pm_Hook_CustomButtons\u003A\u003APLACE_INSTALL_APPLICATION_DRAWER",
+            "name": "PLACE_INSTALL_APPLICATION_DRAWER",
+            "summary": "",
+            "url": "classes/pm-Hook-CustomButtons.html#constant_PLACE_INSTALL_APPLICATION_DRAWER"
         },                {
             "fqsen": "\\pm_Hook_CustomButtons\u003A\u003ASECTION_RESELLER_TOOLS_SERVICES",
             "name": "SECTION_RESELLER_TOOLS_SERVICES",

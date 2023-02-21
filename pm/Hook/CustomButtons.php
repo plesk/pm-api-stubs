@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2023. Plesk International GmbH. All rights reserved.
 /**
  * Hook for custom buttons embedding
  *
@@ -59,6 +59,9 @@ abstract class pm_Hook_CustomButtons implements pm_Hook_Interface
 
     /** @since 18.0.41 */
     public const PLACE_DOMAIN_HEADER_DYNAMIC = 17;
+
+    /** @since 18.0.51 */
+    public const PLACE_INSTALL_APPLICATION_DRAWER = 18;
 
     /** @since 17.0 */
     public const SECTION_RESELLER_TOOLS_SERVICES = 'myPleskButtons';

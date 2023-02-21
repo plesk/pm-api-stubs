@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2022. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2023. Plesk International GmbH. All rights reserved.
 /**
  * Web server service interface
  * @since 18.0

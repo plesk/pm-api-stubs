@@ -18,11 +18,6 @@ abstract class pm_Hook_Form implements pm_Hook_Interface
     public const FORM_CREATE_CUSTOMER = 'adminpanel-form-final-customer';
 
     /**
-     * @since 18.0.38
-     */
-    public const FORM_DOMAIN_APPLICATION_WIZARD = 'form-domain-application-wizard';
-
-    /**
      * @since 18.0.37
      */
     public const FORM_DOMAIN_CONNECTION_INFO = 'smb-form-final-web-connectioninfo';

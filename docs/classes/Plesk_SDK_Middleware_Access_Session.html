@@ -119,12 +119,14 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SDK/Middleware/Access/Session.php"><a href="files/sdk-middleware-access-session.html"><abbr title="SDK/Middleware/Access/Session.php">Session.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">8</span>
+    <span class="phpdocumentor-element-found-in__line">9</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">Returns HTTP 401 if no session is defined by other means like BasicAuth, or KeyHeaderAuth.</p>
 
+    <section class="phpdocumentor-description"><p>Returns HTTP 400 if user cannot be properly authorized by this middleware.</p>
+</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -164,6 +166,13 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Plesk-SDK-Middleware-Access-Session.html#constant_SESSION_USER_LOGIN_ATTRIBUTE">SESSION_USER_LOGIN_ATTRIBUTE</a>
+    <span>
+        &nbsp;= &#039;api_session_user_login&#039;                    </span>
+</dt>
+<dd></dd>
+
                     <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Plesk-SDK-Middleware-Access-Session.html#method___construct">__construct()</a>
     <span>
@@ -178,11 +187,53 @@
 </dt>
 <dd></dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Plesk-SDK-Middleware-Access-Session.html#method_setExternalSessionAllowed">setExternalSessionAllowed()</a>
+    <span>
+                        &nbsp;: $this    </span>
+</dt>
+<dd>Switches behavior in regard to the session origin.</dd>
+
         </dl>
 
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Plesk-SDK-Middleware-Access-Session.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SESSION_USER_LOGIN_ATTRIBUTE">
+        SESSION_USER_LOGIN_ATTRIBUTE
+        <a href="classes/Plesk-SDK-Middleware-Access-Session.html#constant_SESSION_USER_LOGIN_ATTRIBUTE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="SDK/Middleware/Access/Session.php"><a href="files/sdk-middleware-access-session.html"><abbr title="SDK/Middleware/Access/Session.php">Session.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">12</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SESSION_USER_LOGIN_ATTRIBUTE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;api_session_user_login&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
 
         
 
@@ -204,7 +255,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SDK/Middleware/Access/Session.php"><a href="files/sdk-middleware-access-session.html"><abbr title="SDK/Middleware/Access/Session.php">Session.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -248,7 +299,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="SDK/Middleware/Access/Session.php"><a href="files/sdk-middleware-access-session.html"><abbr title="SDK/Middleware/Access/Session.php">Session.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -283,6 +334,66 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setExternalSessionAllowed">
+        setExternalSessionAllowed()
+        <a href="classes/Plesk-SDK-Middleware-Access-Session.html#method_setExternalSessionAllowed" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="SDK/Middleware/Access/Session.php"><a href="files/sdk-middleware-access-session.html"><abbr title="SDK/Middleware/Access/Session.php">Session.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Switches behavior in regard to the session origin.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setExternalSessionAllowed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isAllowed</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+        <section class="phpdocumentor-description"><p>Set to <code class="prettyprint">false</code> to require session to originate from the handled request.
+Set to <code class="prettyprint">true</code> to accept sessions that were started within a different request (e.g. by navigating to Plesk and logging in there).</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$isAllowed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">18.0.50</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">$this</span>
             &mdash;
         
     

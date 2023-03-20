@@ -2171,11 +2171,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/pm-Hook-Form.html#constant_FORM_CREATE_CUSTOMER"
         },                {
-            "fqsen": "\\pm_Hook_Form\u003A\u003AFORM_DOMAIN_APPLICATION_WIZARD",
-            "name": "FORM_DOMAIN_APPLICATION_WIZARD",
-            "summary": "",
-            "url": "classes/pm-Hook-Form.html#constant_FORM_DOMAIN_APPLICATION_WIZARD"
-        },                {
             "fqsen": "\\pm_Hook_Form\u003A\u003AFORM_DOMAIN_CONNECTION_INFO",
             "name": "FORM_DOMAIN_CONNECTION_INFO",
             "summary": "",
@@ -4271,6 +4266,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Plesk-SDK-Hook-ExternalDns.html#property_owner"
         },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\HookInterface",
+            "name": "HookInterface",
+            "summary": "Generic\u0020interface\u0020for\u0020hooks",
+            "url": "classes/Plesk-SDK-Hook-HookInterface.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Repair\\Mail",
+            "name": "Mail",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Hook-Repair-Mail.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Repair\\Mail\u003A\u003ArepairAll\u0028\u0029",
+            "name": "repairAll",
+            "summary": "Repairs\u0020mail\u0020configuration\u0020provided\u0020by\u0020the\u0020extension.",
+            "url": "classes/Plesk-SDK-Hook-Repair-Mail.html#method_repairAll"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Repair\\Mail\u003A\u003ArepairDomains\u0028\u0029",
+            "name": "repairDomains",
+            "summary": "Repairs\u0020mail\u0020configuration\u0020of\u0020selected\u0020domains\u0020provided\u0020by\u0020the\u0020extension.",
+            "url": "classes/Plesk-SDK-Hook-Repair-Mail.html#method_repairDomains"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Repair\\Mail\u003A\u003ArepairMailnames\u0028\u0029",
+            "name": "repairMailnames",
+            "summary": "Repairs\u0020mail\u0020configuration\u0020of\u0020selected\u0020mailnames\u0020provided\u0020by\u0020the\u0020extension.",
+            "url": "classes/Plesk-SDK-Hook-Repair-Mail.html#method_repairMailnames"
+        },                {
             "fqsen": "\\Plesk\\SDK\\Hook\\Webmail",
             "name": "Webmail",
             "summary": "",
@@ -4395,6 +4415,16 @@ Search.appendIndex(
             "name": "process",
             "summary": "",
             "url": "classes/Plesk-SDK-Middleware-Access-Session.html#method_process"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Middleware\\Access\\Session\u003A\u003AsetExternalSessionAllowed\u0028\u0029",
+            "name": "setExternalSessionAllowed",
+            "summary": "Switches\u0020behavior\u0020in\u0020regard\u0020to\u0020the\u0020session\u0020origin.",
+            "url": "classes/Plesk-SDK-Middleware-Access-Session.html#method_setExternalSessionAllowed"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Middleware\\Access\\Session\u003A\u003ASESSION_USER_LOGIN_ATTRIBUTE",
+            "name": "SESSION_USER_LOGIN_ATTRIBUTE",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Middleware-Access-Session.html#constant_SESSION_USER_LOGIN_ATTRIBUTE"
         },                {
             "fqsen": "\\Plesk\\SDK\\Middleware\\Access\\UserRole",
             "name": "UserRole",
@@ -4541,6 +4571,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Plesk-SDK-Middleware-Server-Initialized.html#method_process"
         },                {
+            "fqsen": "\\Plesk\\SDK\\Repair\\Context",
+            "name": "Context",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Repair-Context.html"
+        },                {
             "fqsen": "\\Plesk\\SDK\\Webmail",
             "name": "Webmail",
             "summary": "",
@@ -4571,6 +4606,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/plesk-sdk-hook.html"
         },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Repair",
+            "name": "Repair",
+            "summary": "",
+            "url": "namespaces/plesk-sdk-hook-repair.html"
+        },                {
             "fqsen": "\\Plesk\\SDK\\Middleware\\Access",
             "name": "Access",
             "summary": "",
@@ -4590,6 +4630,11 @@ Search.appendIndex(
             "name": "Server",
             "summary": "",
             "url": "namespaces/plesk-sdk-middleware-server.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Repair",
+            "name": "Repair",
+            "summary": "",
+            "url": "namespaces/plesk-sdk-repair.html"
         },                {
             "fqsen": "\\Plesk\\SDK",
             "name": "SDK",

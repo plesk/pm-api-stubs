@@ -1,8 +1,8 @@
 <?php
 // Copyright 1999-2023. Plesk International GmbH. All rights reserved.
-namespace Plesk\SDK\Hook;
+namespace Plesk\SDK\Repair;
 
-interface HookInterface extends \pm_Hook_Interface
+class Context
 {
 
 }

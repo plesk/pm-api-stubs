@@ -52,6 +52,7 @@ class pm_Locale
      *
      * @param string $localeCode
      * @param array $messages
+     * @return void
      */
     public static function setTranslation($localeCode, $messages) { }
 

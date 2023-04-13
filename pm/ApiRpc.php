@@ -12,7 +12,7 @@ class pm_ApiRpc
     /**
      * Get wrapper for API-RPC calls for desired protocol (latest by default)
      *
-     * @param string $protocolVersion
+     * @param string|null $protocolVersion
      * @return pm_ApiRpc
      */
     public static function getService($protocolVersion = null) { }
@@ -21,7 +21,7 @@ class pm_ApiRpc
      * Perform API-RPC call
      *
      * @param string|SimpleXMLElement|DOMDocument $request
-     * @param string $login Panel username on behalf of which the operation will be performed
+     * @param string|null $login Panel username on behalf of which the operation will be performed
      * @return SimpleXMLElement
      * @throws pm_Exception
      * @since 12.0 added argument $login

@@ -11,7 +11,7 @@ class pm_Scheduler_Task
 
     /**
      * Create instance of task for scheduler
-     * @param Db_Table_Row_ScheduledTask $task null for new task
+     * @param Db_Table_Row_ScheduledTask|null $task null for new task
      */
     public function __construct($task = null) { }
 
@@ -30,6 +30,7 @@ class pm_Scheduler_Task
     /**
      * Set command to be executed
      * @param string $cmd
+     * @return void
      */
     public function setCmd($cmd) { }
 
@@ -43,6 +44,8 @@ class pm_Scheduler_Task
     /**
      * Set arguments of command to be executed
      * @param array $arguments
+     * @return void
+     *
      * @since 11.5
      */
     public function setArguments(array $arguments) { }
@@ -67,6 +70,7 @@ class pm_Scheduler_Task
      * ```
      *
      * @param array $schedule Associated array with keys minute, hour, dom, month, dow
+     * @return void
      */
     public function setSchedule(array $schedule) { }
 
@@ -75,5 +79,12 @@ class pm_Scheduler_Task
      * @return string
      */
     public function getModuleId() { }
+
+    /**
+     * Return task status
+     * @return bool
+     * @since 18.0.52
+     */
+    public function isActive(): bool { }
 
 }

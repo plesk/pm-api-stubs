@@ -13,7 +13,7 @@ class pm_Settings
      * Retrieve value of setting by given name
      *
      * @param string $name Setting name
-     * @param string $default Default value of setting
+     * @param string|null $default Default value of setting
      * @return string|null
      */
     public static function get($name, $default = null) { }
@@ -26,6 +26,7 @@ class pm_Settings
      *
      * @param string $name Setting name
      * @param string|null $value Setting value or null to delete setting
+     * @return void
      *
      * @throws Zend_Db_Table_Exception
      * @throws Zend_Db_Table_Row_Exception
@@ -37,6 +38,7 @@ class pm_Settings
      * Delete all settings
      *
      * @param string $prefix Settings name prefix
+     * @return void
      * @since 12.5
      * @since 17.0 added argument $prefix
      */
@@ -46,7 +48,7 @@ class pm_Settings
      * Retrieve value of setting by given name with decryption (AES-128 CBC)
      *
      * @param string $name Setting name
-     * @param string $default Default value of setting
+     * @param string|null $default Default value of setting
      * @return string|null
      * @since 17.8
      */
@@ -57,6 +59,7 @@ class pm_Settings
      *
      * @param string $name Setting name
      * @param string|null $value Setting value or null to delete setting
+     * @return void
      * @since 17.8
      */
     public static function setEncrypted($name, $value) { }

@@ -35,6 +35,10 @@ class pm_Dns_Record
 
     private const OWNER_TYPE_DOMAIN_ALIAS = 'domainAlias';
 
+    /**
+     * @param int|null $recordId
+     * @throws pm_Exception
+     */
     public function __construct($recordId = null) { }
 
     /**

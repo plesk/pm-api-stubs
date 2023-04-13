@@ -120,6 +120,7 @@ class pm_View_List_Simple
      * ```
      *
      * @param array $columns
+     * @return void
      */
     public function setColumns(array $columns) { }
 
@@ -138,6 +139,7 @@ class pm_View_List_Simple
      * ```
      *
      * @param array $filters
+     * @return void
      * @since 12.5
      */
     public function addSearchFilters(array $filters) { }
@@ -155,6 +157,7 @@ class pm_View_List_Simple
      * ```
      *
      * @param array $data
+     * @return void
      */
     public function setData(array $data) { }
 
@@ -177,6 +180,7 @@ class pm_View_List_Simple
      * ```
      *
      * @param array|string $params
+     * @return void
      */
     public function setDataUrl($params) { }
 
@@ -201,6 +205,7 @@ class pm_View_List_Simple
      * ```
      *
      * @param array $tools
+     * @return void
      */
     public function setTools(array $tools) { }
 

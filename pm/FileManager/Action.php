@@ -37,7 +37,7 @@ abstract class pm_FileManager_Action implements pm_Hook_Interface
      * Retrieve translated message from locale file
      *
      * @param string $key
-     * @params array $params
+     * @param array $params
      * @return string
      */
     public function lmsg($key, $params = []) { }

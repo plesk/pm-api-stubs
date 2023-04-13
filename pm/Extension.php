@@ -89,6 +89,7 @@ class pm_Extension
     /**
      * Uninstall the extension
      *
+     * @return void
      * @throws pm_Exception
      */
     public function uninstall() { }
@@ -96,6 +97,7 @@ class pm_Extension
     /**
      * Enable the extension
      *
+     * @return void
      * @throws pm_Exception
      */
     public function enable() { }
@@ -103,6 +105,7 @@ class pm_Extension
     /**
      * Disable the extension
      *
+     * @return void
      * @throws pm_Exception
      */
     public function disable() { }

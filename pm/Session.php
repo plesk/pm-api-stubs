@@ -34,7 +34,7 @@ class pm_Session
     /**
      * Retrieve id of admin/reseller which impersonated into a client
      *
-     * @return int
+     * @return null|int
      */
     public static function getImpersonatedClientId() { }
 

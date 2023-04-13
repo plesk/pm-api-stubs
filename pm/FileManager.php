@@ -12,7 +12,7 @@ class pm_FileManager
     /**
      * Creates new instance of manager
      *
-     * @param $domainId
+     * @param int $domainId
      */
     public function __construct($domainId) { }
 
@@ -37,6 +37,7 @@ class pm_FileManager
      *
      * @param string $filename
      * @param string $data
+     * @return void
      *
      * @since 18.0.39
      */
@@ -47,6 +48,7 @@ class pm_FileManager
      *
      * @param string $filename
      * @param string $data
+     * @return void
      */
     public function filePutContents($filename, $data) { }
 
@@ -64,6 +66,7 @@ class pm_FileManager
      * @param string $dirname
      * @param string $perms
      * @param bool $recursively
+     * @return void
      * @since 12.5
      */
     public function mkdir($dirname, $perms = '0755', $recursively = false) { }
@@ -71,7 +74,8 @@ class pm_FileManager
     /**
      * Updates the access date and / or modification date of a file or directory.
      *
-     * @param $filename
+     * @param string $filename
+     * @return void
      * @since 12.5
      */
     public function touch($filename) { }
@@ -81,6 +85,7 @@ class pm_FileManager
      *
      * @param string $filename
      * @param string $mode
+     * @return void
      * @since 12.5
      */
     public function chmod($filename, $mode) { }
@@ -90,6 +95,7 @@ class pm_FileManager
      *
      * @param string $source
      * @param string $destination
+     * @return void
      * @since 17.0
      */
     public function copyFile($source, $destination) { }
@@ -99,6 +105,7 @@ class pm_FileManager
      *
      * @param string $source
      * @param string $destination
+     * @return void
      * @since 12.5
      */
     public function moveFile($source, $destination) { }
@@ -107,6 +114,7 @@ class pm_FileManager
      * Removes file by name
      *
      * @param string $filename
+     * @return void
      * @since 12.5
      */
     public function removeFile($filename) { }
@@ -115,6 +123,7 @@ class pm_FileManager
      * Removes directory by name
      *
      * @param string $dirname
+     * @return void
      * @since 12.5
      */
     public function removeDirectory($dirname) { }
@@ -131,7 +140,7 @@ class pm_FileManager
     /**
      * Returns joined path parts
      *
-     * @param string[] ...$pathParts Parts for joining to path
+     * @param string|string[] ...$pathParts Parts for joining to path
      * @return string
      * @since 17.0
      */
@@ -183,6 +192,7 @@ class pm_FileManager
      * @param string $path Path, where you want to put new archive
      * @param string $archiveName Name for your archive
      * @param array $files Array of files paths, which will be included to your archive
+     * @return void
      * @since 17.8
      */
     public function zip($path, $archiveName, $files) { }
@@ -193,6 +203,7 @@ class pm_FileManager
      * @param string $source Path, where packed archive is hosted.
      * @param string $destination Path, where you want to put files from packed archive
      * @param boolean $overwrite, optional
+     * @return void
      * @since 17.8
      */
     public function unzip($source, $destination, $overwrite = false) { }
@@ -212,6 +223,7 @@ class pm_FileManager
      * @param string $source Path where file is located
      * @param string $destination Path where file is to be uploaded
      * @param string $perms [optional] Permissions of the uploaded file. Ignored on Windows. Default is 0644
+     * @return void
      * @since 18.0.30
      */
     public function upload(string $source, string $destination, string $perms = '0644') { }

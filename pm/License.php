@@ -13,7 +13,7 @@ class pm_License
      * Gets list of additional keys data.
      *
      * @param null|string $productName
-     * @return array
+     * @return array|string
      * @deprecated use `getAdditionalKey` method
      */
     public static function getAdditionalKeysList($productName = null) { }
@@ -21,7 +21,7 @@ class pm_License
     /**
      * Checks if an additional license key for extension is present
      *
-     * @param string $moduleId
+     * @param string|null $moduleId
      * @return bool
      */
     public static function hasAdditionalKey($moduleId = null) { }
@@ -29,7 +29,7 @@ class pm_License
     /**
      * Retrieves an additional key for extension
      *
-     * @param string $moduleId
+     * @param string|null $moduleId
      * @return null|static
      */
     public static function getAdditionalKey($moduleId = null) { }

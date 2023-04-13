@@ -2001,6 +2001,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/pm-Hook-CustomButtons.html#constant_PLACE_INSTALL_APPLICATION_DRAWER"
         },                {
+            "fqsen": "\\pm_Hook_CustomButtons\u003A\u003APLACE_ADD_DOMAIN_DRAWER",
+            "name": "PLACE_ADD_DOMAIN_DRAWER",
+            "summary": "",
+            "url": "classes/pm-Hook-CustomButtons.html#constant_PLACE_ADD_DOMAIN_DRAWER"
+        },                {
             "fqsen": "\\pm_Hook_CustomButtons\u003A\u003ASECTION_RESELLER_TOOLS_SERVICES",
             "name": "SECTION_RESELLER_TOOLS_SERVICES",
             "summary": "",
@@ -2440,6 +2445,11 @@ Search.appendIndex(
             "name": "getForwardingDomainIisConfig",
             "summary": "Retrieve\u0020xml\u0020as\u0020string\u0020which\u0020will\u0020be\u0020inserted\u0020to\u0020Plesk\u0020IIS\u0020configurator\u0020for\u0020the\u0020forwarding\u0020domain",
             "url": "classes/pm-Hook-WebServer.html#method_getForwardingDomainIisConfig"
+        },                {
+            "fqsen": "\\pm_Hook_WebServer\u003A\u003AprocessTemplate\u0028\u0029",
+            "name": "processTemplate",
+            "summary": "Process\u0020the\u0020web\u0020server\u0027s\u0020template\u0020file\u0020and\u0020returns\u0020a\u0020new\u0020one\u0020if\u0020necessary",
+            "url": "classes/pm-Hook-WebServer.html#method_processTemplate"
         },                {
             "fqsen": "\\pm_License",
             "name": "pm_License",
@@ -3495,6 +3505,11 @@ Search.appendIndex(
             "name": "getModuleId",
             "summary": "Return\u0020module\u0020identity\u0020of\u0020task",
             "url": "classes/pm-Scheduler-Task.html#method_getModuleId"
+        },                {
+            "fqsen": "\\pm_Scheduler_Task\u003A\u003AisActive\u0028\u0029",
+            "name": "isActive",
+            "summary": "Return\u0020task\u0020status",
+            "url": "classes/pm-Scheduler-Task.html#method_isActive"
         },                {
             "fqsen": "\\pm_Scheduler",
             "name": "pm_Scheduler",

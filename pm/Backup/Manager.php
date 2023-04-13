@@ -33,8 +33,8 @@ class pm_Backup_Manager
     /**
      * Retrieve backups list URL
      *
-     * @param $domainId
-     * @param $marker
+     * @param int $domainId
+     * @param string $marker
      * @return string
      */
     public static function getListUrl($domainId, $marker) { }
@@ -49,7 +49,9 @@ class pm_Backup_Manager
      * - pm_Backup_Manager::OBJECT_TYPE_DOMAIN
      *
      * @param string $objectType
-     * @param $objectId
+     * @param int|null $objectId
+     * @return void
+     *
      * @throws \pm_Exception
      * @since 18.0
      */

@@ -150,7 +150,7 @@ class pm_Domain
      * Return value of custom domain setting by given name
      *
      * @param string $name Setting name
-     * @param string $default Default value of setting
+     * @param string|null $default Default value of setting
      * @return string|null
      * @since 17.0
      */
@@ -161,6 +161,7 @@ class pm_Domain
      *
      * @param string $name Setting name
      * @param string|null $value Setting value or null to delete setting
+     * @return void
      * @since 17.0
      */
     public function setSetting($name, $value) { }
@@ -169,6 +170,7 @@ class pm_Domain
      * Delete all custom domain settings
      *
      * @param string $prefix Settings name prefix
+     * @return void
      * @since 17.0
      */
     public function deleteSettings($prefix = '') { }

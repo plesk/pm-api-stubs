@@ -36,11 +36,13 @@ class pm_Form_Simple extends Zend_Form implements Zend_Validate_Interface
 
     /**
      * Initialize form
+     * @return void
      */
     public function init() { }
 
     /**
      * Process form after submit
+     * @return void
      *
      * @since 17.0
      */
@@ -117,7 +119,7 @@ class pm_Form_Simple extends Zend_Form implements Zend_Validate_Interface
      * ]
      * ```
      *
-     * @param array $params
+     * @param array|null $params
      */
     public function addControlButtons(array $params = null) { }
 

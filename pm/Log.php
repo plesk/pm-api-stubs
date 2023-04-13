@@ -15,6 +15,7 @@ class pm_Log
      * Error: error conditions
      *
      * @param string|Exception $message
+     * @return void
      */
     public static function err($message) { }
 
@@ -22,6 +23,7 @@ class pm_Log
      * Warning: warning conditions
      *
      * @param string|Exception $message
+     * @return void
      */
     public static function warn($message) { }
 
@@ -29,6 +31,7 @@ class pm_Log
      * Informational: informational messages
      *
      * @param string|Exception $message
+     * @return void
      */
     public static function info($message) { }
 
@@ -39,6 +42,7 @@ class pm_Log
      *
      * @static
      * @param string|Exception $message
+     * @return void
      */
     public static function debug($message) { }
 
@@ -46,6 +50,7 @@ class pm_Log
      * Debug: debug messages with backtrace
      *
      * @param string $message
+     * @return void
      */
     public static function backtrace($message) { }
 
@@ -54,6 +59,7 @@ class pm_Log
      *
      * @param mixed $var
      * @param string $message
+     * @return void
      */
     public static function vardump($var, $message = '') { }
 
@@ -61,6 +67,7 @@ class pm_Log
      * @static
      * @param int $priority
      * @param string|Exception $message
+     * @return void
      */
     public static function log($priority, $message) { }
 

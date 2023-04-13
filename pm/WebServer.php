@@ -21,24 +21,24 @@ class pm_WebServer
     /**
      * Return Nginx web server wrapper
      *
-     * @since 18.0
      * @return pm_WebServer_Interface
+     * @since 18.0
      */
     public function nginx() { }
 
     /**
      * Return Apache web server wrapper
      *
-     * @since 18.0
      * @return pm_WebServer_Interface
+     * @since 18.0
      */
     public function apache() { }
 
     /**
      * Return IIS web server wrapper
      *
-     * @since 18.0
      * @return pm_WebServer_Interface
+     * @since 18.0
      */
     public function iis() { }
 

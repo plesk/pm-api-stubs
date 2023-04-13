@@ -83,8 +83,8 @@ class pm_Client
      * Return value of custom client setting by given name
      *
      * @param string $name Setting name
-     * @param string $default Default value of setting
-     * @return string|null
+     * @param mixed $default Default value of setting
+     * @return mixed
      * @since 17.0
      */
     public function getSetting($name, $default = null) { }
@@ -93,7 +93,9 @@ class pm_Client
      * Define value of custom client setting
      *
      * @param string $name Setting name
-     * @param string|null $value Setting value or null to delete setting
+     * @param mixed $value Setting value or null to delete setting
+     * @return void
+     *
      * @since 17.0
      */
     public function setSetting($name, $value) { }
@@ -102,6 +104,8 @@ class pm_Client
      * Delete all custom client settings
      *
      * @param string $prefix Settings name prefix
+     * @return void
+     *
      * @since 17.0
      */
     public function deleteSettings($prefix = '') { }
@@ -131,6 +135,7 @@ class pm_Client
      * @param string $name Permission name
      * @param pm_Domain|null $domain Domain to check permission (optional since 18.0)
      * @return bool
+     *
      * @since 17.5
      */
     public function hasCorePermission($name, pm_Domain $domain = null) { }
@@ -140,6 +145,7 @@ class pm_Client
      *
      * @param int $planId
      * @return bool
+     *
      * @since 17.5
      */
     public function hasAccessToPlan($planId) { }

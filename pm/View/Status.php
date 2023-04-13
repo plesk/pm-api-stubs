@@ -22,6 +22,7 @@ class pm_View_Status
      *
      * @param string $message
      * @param bool $noEscape if true, HTML is allowed in message
+     * @return void
      */
     public static function addInfo($message, $noEscape = false) { }
 
@@ -30,6 +31,7 @@ class pm_View_Status
      *
      * @param string $message
      * @param bool $noEscape if true, HTML is allowed in message
+     * @return void
      */
     public static function addWarning($message, $noEscape = false) { }
 
@@ -38,6 +40,7 @@ class pm_View_Status
      *
      * @param string $message
      * @param bool $noEscape if true, HTML is allowed in message
+     * @return void
      */
     public static function addError($message, $noEscape = false) { }
 
@@ -47,6 +50,7 @@ class pm_View_Status
      * @param string $status
      * @param string $message
      * @param bool $noEscape if true, HTML is allowed in message
+     * @return void
      */
     public static function addMessage($status, $message, $noEscape = false) { }
 

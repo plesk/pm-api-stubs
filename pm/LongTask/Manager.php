@@ -38,6 +38,7 @@ class pm_LongTask_Manager
 
     /**
      * Cancel all extension tasks and delete them
+     * @return void
      */
     public function cancelAllTasks() { }
 

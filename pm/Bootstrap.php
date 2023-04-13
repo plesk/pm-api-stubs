@@ -11,6 +11,8 @@ class pm_Bootstrap
 
     /**
      * Init configuration, error handling, logging, database adapter
+     *
+     * @return void
      */
     public static function init() { }
 

@@ -63,6 +63,9 @@ abstract class pm_Hook_CustomButtons implements pm_Hook_Interface
     /** @since 18.0.51 */
     public const PLACE_INSTALL_APPLICATION_DRAWER = 18;
 
+    /** @since 18.0.52 */
+    public const PLACE_ADD_DOMAIN_DRAWER = 19;
+
     /** @since 17.0 */
     public const SECTION_RESELLER_TOOLS_SERVICES = 'myPleskButtons';
 

@@ -35,11 +35,13 @@ class pm_Form_SubForm extends Zend_Form implements Zend_Validate_Interface
 
     /**
      * Initialize form
+     * @return void
      */
     public function init() { }
 
     /**
      * Process form after submit
+     * @return void
      */
     public function process() { }
 

@@ -14,15 +14,15 @@ class pm_ActionLog
     public const NEW_VALUE = 'new';
 
     /**
-     * @param $actionId
+     * @param string $actionId
      *
-     * @param int $objectId ID of the object mentioned in the event. 0 if not applicable (singleton object like 'admin').
+     * @param int|null $objectId ID of the object mentioned in the event. 0 if not applicable (singleton object like 'admin').
      *
-     * @param array $oldValues
-     * @example array('contact_name' => 'John Smith', 'email' => 'user@old.example.com', 'login_name' => 'user1')
-     *
-     * @param array $newValues
+     * @param array|null $oldValues
      * @example array('contact_name' => 'John Smith', 'email' => 'user@new.example.com', 'login_name' => 'user1')
+     * @param array|null $newValues
+     * @example array('contact_name' => 'John Smith', 'email' => 'user@old.example.com', 'login_name' => 'user1')
+     * @return void
      *
      * @throws Exception
      */

@@ -89,4 +89,16 @@ abstract class pm_Hook_WebServer implements pm_Hook_Interface
      */
     public function getForwardingDomainIisConfig(pm_Domain $domain) { }
 
+    /**
+     * Process the web server's template file and returns a new one if necessary
+     *
+     * @param string $templateFile
+     * @param string $content
+     * @param pm_Domain|null $domain
+     * @return string
+     *
+     * @since 18.0.52
+     */
+    public function processTemplate(string $templateFile, string $content, pm_Domain $domain) { }
+
 }

@@ -21,7 +21,7 @@ class pm_View_Helper_Lmsg extends Zend_View_Helper_Abstract implements Zend_View
     /**
      * Get section of messages by key according to current locale
      *
-     * @param $key
+     * @param string $key
      *
      * @return array
      * @since 17.0

@@ -13,11 +13,14 @@ class pm_Context
      * Initialize module context
      *
      * @param string $moduleId
+     * @return void
      */
     public static function init($moduleId) { }
 
     /**
      * Reset module context
+     *
+     * @return void
      * @since 11.5
      */
     public static function reset() { }

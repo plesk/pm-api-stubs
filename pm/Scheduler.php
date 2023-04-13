@@ -43,6 +43,8 @@ class pm_Scheduler
 
     /**
      * Reset the singleton instance
+     *
+     * @return void
      * @since 11.5
      */
     public static function resetInstance() { }
@@ -62,7 +64,9 @@ class pm_Scheduler
 
     /**
      * Update or add new task to scheduler
+     *
      * @param pm_Scheduler_Task $task
+     * @return void
      *
      * @throws pm_Exception When task with the same parameters, but no ID assigned already exists in the database
      */
@@ -70,13 +74,17 @@ class pm_Scheduler
 
     /**
      * Remove task from scheduler
+     *
      * @param pm_Scheduler_Task $task
+     * @return void
      * @throws pm_Exception
      */
     public function removeTask(pm_Scheduler_Task $task) { }
 
     /**
      * Remove all tasks of current module
+     *
+     * @return void
      */
     public function removeAllTasks() { }
 
@@ -84,6 +92,7 @@ class pm_Scheduler
      * Enable task
      *
      * @param pm_Scheduler_Task $task
+     * @return void
      * @throws pm_Exception
      * @since 17.0
      */
@@ -93,6 +102,7 @@ class pm_Scheduler
      * Disable task
      *
      * @param pm_Scheduler_Task $task
+     * @return void
      * @throws pm_Exception
      * @since 17.0
      */

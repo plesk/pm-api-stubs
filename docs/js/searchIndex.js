@@ -2186,6 +2186,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/pm-Hook-Form.html#constant_FORM_EMAIL_ADDRESS_SETTINGS"
         },                {
+            "fqsen": "\\pm_Hook_Form\u003A\u003AFORM_EMAIL_ADDRESS_CONNECTION_INFO",
+            "name": "FORM_EMAIL_ADDRESS_CONNECTION_INFO",
+            "summary": "",
+            "url": "classes/pm-Hook-Form.html#constant_FORM_EMAIL_ADDRESS_CONNECTION_INFO"
+        },                {
             "fqsen": "\\pm_Hook_Interface",
             "name": "pm_Hook_Interface",
             "summary": "Generic\u0020interface\u0020for\u0020hooks",
@@ -4316,6 +4321,36 @@ Search.appendIndex(
             "summary": "Integrate\u0020a\u0020list\u0020of\u0020webmails\u0020into\u0020the\u0020UI\u0020and\u0020CLI.",
             "url": "classes/Plesk-SDK-Hook-Webmail.html#method_getWebmails"
         },                {
+            "fqsen": "\\Plesk\\SDK\\Mailname",
+            "name": "Mailname",
+            "summary": "Mailname\u0020wrapper",
+            "url": "classes/Plesk-SDK-Mailname.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Mailname\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Create\u0020new\u0020mailname\u0020wrapper",
+            "url": "classes/Plesk-SDK-Mailname.html#method___construct"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Mailname\u003A\u003AgetById\u0028\u0029",
+            "name": "getById",
+            "summary": "Retrieve\u0020mailname\u0020by\u0020known\u0020id",
+            "url": "classes/Plesk-SDK-Mailname.html#method_getById"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Mailname\u003A\u003AgetId\u0028\u0029",
+            "name": "getId",
+            "summary": "Retrieve\u0020mailname\u0020id",
+            "url": "classes/Plesk-SDK-Mailname.html#method_getId"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Mailname\u003A\u003AgetEmailAddress\u0028\u0029",
+            "name": "getEmailAddress",
+            "summary": "Retrieve\u0020email\u0020address",
+            "url": "classes/Plesk-SDK-Mailname.html#method_getEmailAddress"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Mailname\u003A\u003AgetDomain\u0028\u0029",
+            "name": "getDomain",
+            "summary": "Retrieve\u0020mailname\u0020domain",
+            "url": "classes/Plesk-SDK-Mailname.html#method_getDomain"
+        },                {
             "fqsen": "\\Plesk\\SDK\\Middleware\\Access\\Client",
             "name": "Client",
             "summary": "Validates\u0020that\u0020access\u0020was\u0020performed\u0020by\u0020specified\u0020user\u0020or\u0020any\u0020user\u0020that\u0020can\u0020impersonate\u0020as\u0020this\u0020user.",
@@ -4591,6 +4626,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Plesk-SDK-Repair-Context.html"
         },                {
+            "fqsen": "\\Plesk\\SDK\\Server\\Components",
+            "name": "Components",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Server-Components.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Server\\Components\u003A\u003Arefresh\u0028\u0029",
+            "name": "refresh",
+            "summary": "Synchronize\u0020server\u0020components\u0020cache\u0020in\u0020Plesk\u0020database\u0020with\u0020the\u0020actual\u0020component\u0020list",
+            "url": "classes/Plesk-SDK-Server-Components.html#method_refresh"
+        },                {
             "fqsen": "\\Plesk\\SDK\\Webmail",
             "name": "Webmail",
             "summary": "",
@@ -4626,6 +4671,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/plesk-sdk-hook-repair.html"
         },                {
+            "fqsen": "\\Plesk\\SDK",
+            "name": "SDK",
+            "summary": "",
+            "url": "namespaces/plesk-sdk.html"
+        },                {
+            "fqsen": "\\Plesk",
+            "name": "Plesk",
+            "summary": "",
+            "url": "namespaces/plesk.html"
+        },                {
             "fqsen": "\\Plesk\\SDK\\Middleware\\Access",
             "name": "Access",
             "summary": "",
@@ -4651,14 +4706,9 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/plesk-sdk-repair.html"
         },                {
-            "fqsen": "\\Plesk\\SDK",
-            "name": "SDK",
+            "fqsen": "\\Plesk\\SDK\\Server",
+            "name": "Server",
             "summary": "",
-            "url": "namespaces/plesk-sdk.html"
-        },                {
-            "fqsen": "\\Plesk",
-            "name": "Plesk",
-            "summary": "",
-            "url": "namespaces/plesk.html"
+            "url": "namespaces/plesk-sdk-server.html"
         }            ]
 );

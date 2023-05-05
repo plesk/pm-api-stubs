@@ -28,6 +28,11 @@ abstract class pm_Hook_Form implements pm_Hook_Interface
     public const FORM_EMAIL_ADDRESS_SETTINGS = 'smb-form-final-emailaddress';
 
     /**
+     * @since 18.0.53
+     */
+    public const FORM_EMAIL_ADDRESS_CONNECTION_INFO = 'smb-form-final-emailaddress-connectioninfo';
+
+    /**
      * Append sub forms in any existing form
      *
      * @param string $controller

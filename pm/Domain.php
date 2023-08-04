@@ -329,4 +329,31 @@ class pm_Domain
      */
     public function getDnsZone(): pm_Dns_Zone { }
 
+    /**
+     * Returns an SSL/TLS certificate of the domain
+     *
+     * @return Certificate|null
+     * @throws pm_Exception
+     * @since 18.0.55
+     */
+    public function getHostingCertificate(): ?Plesk\SDK\Certificate { }
+
+    /**
+     * Returns an SSL/TLS certificate of webmail
+     *
+     * @return Certificate|null
+     * @throws pm_Exception
+     * @since 18.0.55
+     */
+    public function getWebmailCertificate(): ?Plesk\SDK\Certificate { }
+
+    /**
+     * Returns an SSL/TLS certificate of mail
+     *
+     * @return Certificate|null
+     * @throws pm_Exception
+     * @since 18.0.55
+     */
+    public function getMailCertificate(): ?Plesk\SDK\Certificate { }
+
 }

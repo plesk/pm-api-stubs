@@ -221,6 +221,13 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/pm-Dns-Template-Record.html#constant_TYPE_TLSA">TYPE_TLSA</a>
+    <span>
+        &nbsp;= &#039;TLSA&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/pm-Dns-Template-Record.html#constant_TYPE_TXT">TYPE_TXT</a>
     <span>
         &nbsp;= &#039;TXT&#039;                    </span>
@@ -247,6 +254,13 @@
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Construct DNS template record in &#039;&lt;domain&gt;&#039; zone</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/pm-Dns-Record.html#method_availableTypes">availableTypes()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Return the list of available DNS record types</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/pm-Dns-Template-Record.html#method_getById">getById()</a>
@@ -303,6 +317,13 @@
                         &nbsp;: <a href="classes/pm-Dns-Zone.html"><abbr title="\pm_Dns_Zone">pm_Dns_Zone</abbr></a>    </span>
 </dt>
 <dd>Return DNS zone of DNS record.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/pm-Dns-Record.html#method_isTypeAvailable">isTypeAvailable()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Return whether the DNS record type is available</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/pm-Dns-Template-Record.html#method_remove">remove()</a>
@@ -661,6 +682,35 @@
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TYPE_TLSA">
+        TYPE_TLSA
+        <a href="classes/pm-Dns-Template-Record.html#constant_TYPE_TLSA" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Template/Record.php"><a href="files/pm-dns-template-record.html"><abbr title="pm/Dns/Template/Record.php">Record.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">TYPE_TLSA</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;TLSA&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_TYPE_TXT">
         TYPE_TXT
         <a href="classes/pm-Dns-Template-Record.html#constant_TYPE_TXT" class="headerlink"><i class="fas fa-link"></i></a>
@@ -698,7 +748,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -727,7 +777,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -769,7 +819,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Template/Record.php"><a href="files/pm-dns-template-record.html"><abbr title="pm/Dns/Template/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -795,6 +845,53 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_availableTypes">
+        availableTypes()
+        <a href="classes/pm-Dns-Record.html#method_availableTypes" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">175</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return the list of available DNS record types</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">availableTypes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">18.0.55</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_getById">
         getById()
         <a href="classes/pm-Dns-Template-Record.html#method_getById" class="headerlink"><i class="fas fa-link"></i></a>
@@ -802,7 +899,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Template/Record.php"><a href="files/pm-dns-template-record.html"><abbr title="pm/Dns/Template/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -860,7 +957,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -893,7 +990,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -926,7 +1023,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -959,7 +1056,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -992,7 +1089,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -1025,7 +1122,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -1058,7 +1155,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">149</span>
 
     </aside>
 
@@ -1082,6 +1179,64 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isTypeAvailable">
+        isTypeAvailable()
+        <a href="classes/pm-Dns-Record.html#method_isTypeAvailable" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">182</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return whether the DNS record type is available</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">isTypeAvailable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">18.0.55</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_remove">
@@ -1091,7 +1246,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Template/Record.php"><a href="files/pm-dns-template-record.html"><abbr title="pm/Dns/Template/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -1124,7 +1279,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -1157,7 +1312,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -1200,7 +1355,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -1243,7 +1398,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -1286,7 +1441,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -1329,7 +1484,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -1372,7 +1527,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Dns/Record.php"><a href="files/pm-dns-record.html"><abbr title="pm/Dns/Record.php">Record.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 

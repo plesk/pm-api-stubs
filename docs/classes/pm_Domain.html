@@ -246,6 +246,13 @@
 <dd>Retrieve domain home path</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/pm-Domain.html#method_getHostingCertificate">getHostingCertificate()</a>
+    <span>
+                        &nbsp;: <abbr title="\Certificate">Certificate</abbr>|null    </span>
+</dt>
+<dd>Returns an SSL/TLS certificate of the domain</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/pm-Domain.html#method_getId">getId()</a>
     <span>
                         &nbsp;: int    </span>
@@ -265,6 +272,13 @@
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Retrieve limit value by name</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/pm-Domain.html#method_getMailCertificate">getMailCertificate()</a>
+    <span>
+                        &nbsp;: <abbr title="\Certificate">Certificate</abbr>|null    </span>
+</dt>
+<dd>Returns an SSL/TLS certificate of mail</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/pm-Domain.html#method_getName">getName()</a>
@@ -314,6 +328,13 @@
                         &nbsp;: string    </span>
 </dt>
 <dd>Retrieve domain vhost system directory. Available for domains with web hosting</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/pm-Domain.html#method_getWebmailCertificate">getWebmailCertificate()</a>
+    <span>
+                        &nbsp;: <abbr title="\Certificate">Certificate</abbr>|null    </span>
+</dt>
+<dd>Returns an SSL/TLS certificate of webmail</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/pm-Domain.html#method_hasCorePermission">hasCorePermission()</a>
@@ -1218,6 +1239,61 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getHostingCertificate">
+        getHostingCertificate()
+        <a href="classes/pm-Domain.html#method_getHostingCertificate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/Domain.php"><a href="files/pm-domain.html"><abbr title="pm/Domain.php">Domain.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">339</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns an SSL/TLS certificate of the domain</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getHostingCertificate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Certificate">Certificate</abbr>|null</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/pm-Exception.html"><abbr title="\pm_Exception">pm_Exception</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">18.0.55</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Certificate">Certificate</abbr>|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getId">
         getId()
         <a href="classes/pm-Domain.html#method_getId" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1359,6 +1435,61 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMailCertificate">
+        getMailCertificate()
+        <a href="classes/pm-Domain.html#method_getMailCertificate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/Domain.php"><a href="files/pm-domain.html"><abbr title="pm/Domain.php">Domain.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">357</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns an SSL/TLS certificate of mail</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getMailCertificate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Certificate">Certificate</abbr>|null</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/pm-Exception.html"><abbr title="\pm_Exception">pm_Exception</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">18.0.55</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Certificate">Certificate</abbr>|null</span>
             &mdash;
         
     
@@ -1741,6 +1872,61 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getWebmailCertificate">
+        getWebmailCertificate()
+        <a href="classes/pm-Domain.html#method_getWebmailCertificate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="pm/Domain.php"><a href="files/pm-domain.html"><abbr title="pm/Domain.php">Domain.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">348</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns an SSL/TLS certificate of webmail</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getWebmailCertificate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Certificate">Certificate</abbr>|null</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/pm-Exception.html"><abbr title="\pm_Exception">pm_Exception</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">18.0.55</span>
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Certificate">Certificate</abbr>|null</span>
             &mdash;
         
     

@@ -159,7 +159,7 @@ class pm_View_List_Simple
      * @param array $data
      * @return void
      */
-    public function setData(array $data) { }
+    public function setData(array $data): void { }
 
     /**
      * Fetch list data

@@ -486,6 +486,16 @@ Search.appendIndex(
             "summary": "Remove\u0020DNS\u0020record.",
             "url": "classes/pm-Dns-Record.html#method_remove"
         },                {
+            "fqsen": "\\pm_Dns_Record\u003A\u003AavailableTypes\u0028\u0029",
+            "name": "availableTypes",
+            "summary": "Return\u0020the\u0020list\u0020of\u0020available\u0020DNS\u0020record\u0020types",
+            "url": "classes/pm-Dns-Record.html#method_availableTypes"
+        },                {
+            "fqsen": "\\pm_Dns_Record\u003A\u003AisTypeAvailable\u0028\u0029",
+            "name": "isTypeAvailable",
+            "summary": "Return\u0020whether\u0020the\u0020DNS\u0020record\u0020type\u0020is\u0020available",
+            "url": "classes/pm-Dns-Record.html#method_isTypeAvailable"
+        },                {
             "fqsen": "\\pm_Dns_Record\u003A\u003ATYPE_NS",
             "name": "TYPE_NS",
             "summary": "",
@@ -540,6 +550,11 @@ Search.appendIndex(
             "name": "TYPE_CAA",
             "summary": "",
             "url": "classes/pm-Dns-Record.html#constant_TYPE_CAA"
+        },                {
+            "fqsen": "\\pm_Dns_Record\u003A\u003ATYPE_TLSA",
+            "name": "TYPE_TLSA",
+            "summary": "",
+            "url": "classes/pm-Dns-Record.html#constant_TYPE_TLSA"
         },                {
             "fqsen": "\\pm_Dns_Record\u003A\u003AOWNER_TYPE_DOMAIN",
             "name": "OWNER_TYPE_DOMAIN",
@@ -690,6 +705,11 @@ Search.appendIndex(
             "name": "TYPE_CAA",
             "summary": "",
             "url": "classes/pm-Dns-Template-Record.html#constant_TYPE_CAA"
+        },                {
+            "fqsen": "\\pm_Dns_Template_Record\u003A\u003ATYPE_TLSA",
+            "name": "TYPE_TLSA",
+            "summary": "",
+            "url": "classes/pm-Dns-Template-Record.html#constant_TYPE_TLSA"
         },                {
             "fqsen": "\\pm_Dns_Template_SoaRecord",
             "name": "pm_Dns_Template_SoaRecord",
@@ -965,6 +985,21 @@ Search.appendIndex(
             "name": "getDnsZone",
             "summary": "Return\u0020DNS\u0020zone\u0020of\u0020domain",
             "url": "classes/pm-Domain.html#method_getDnsZone"
+        },                {
+            "fqsen": "\\pm_Domain\u003A\u003AgetHostingCertificate\u0028\u0029",
+            "name": "getHostingCertificate",
+            "summary": "Returns\u0020an\u0020SSL\/TLS\u0020certificate\u0020of\u0020the\u0020domain",
+            "url": "classes/pm-Domain.html#method_getHostingCertificate"
+        },                {
+            "fqsen": "\\pm_Domain\u003A\u003AgetWebmailCertificate\u0028\u0029",
+            "name": "getWebmailCertificate",
+            "summary": "Returns\u0020an\u0020SSL\/TLS\u0020certificate\u0020of\u0020webmail",
+            "url": "classes/pm-Domain.html#method_getWebmailCertificate"
+        },                {
+            "fqsen": "\\pm_Domain\u003A\u003AgetMailCertificate\u0028\u0029",
+            "name": "getMailCertificate",
+            "summary": "Returns\u0020an\u0020SSL\/TLS\u0020certificate\u0020of\u0020mail",
+            "url": "classes/pm-Domain.html#method_getMailCertificate"
         },                {
             "fqsen": "\\pm_DomainAlias",
             "name": "pm_DomainAlias",
@@ -4241,6 +4276,66 @@ Search.appendIndex(
             "summary": "Return\u0020IIS\u0020web\u0020server\u0020wrapper",
             "url": "classes/pm-WebServer.html#method_iis"
         },                {
+            "fqsen": "\\Plesk\\SDK\\Certificate",
+            "name": "Certificate",
+            "summary": "Certificate\u0020wrapper",
+            "url": "classes/Plesk-SDK-Certificate.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Certificate\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Certificate.html#method___construct"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Certificate\u003A\u003AgetId\u0028\u0029",
+            "name": "getId",
+            "summary": "Returns\u0020the\u0020certificate\u0020ID",
+            "url": "classes/Plesk-SDK-Certificate.html#method_getId"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Certificate\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "Returns\u0020the\u0020name\u0020of\u0020the\u0020certificate",
+            "url": "classes/Plesk-SDK-Certificate.html#method_getName"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Certificate\u003A\u003AgetCsr\u0028\u0029",
+            "name": "getCsr",
+            "summary": "Returns\u0020the\u0020certificate\u0020signing\u0020request\u0020\u0028CSR\u0029",
+            "url": "classes/Plesk-SDK-Certificate.html#method_getCsr"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Certificate\u003A\u003AgetPvtKey\u0028\u0029",
+            "name": "getPvtKey",
+            "summary": "Returns\u0020the\u0020certificate\u0027s\u0020private\u0020key",
+            "url": "classes/Plesk-SDK-Certificate.html#method_getPvtKey"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Certificate\u003A\u003AgetCert\u0028\u0029",
+            "name": "getCert",
+            "summary": "Returns\u0020the\u0020content\u0020of\u0020the\u0020certificate",
+            "url": "classes/Plesk-SDK-Certificate.html#method_getCert"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Certificate\u003A\u003AgetCertFile\u0028\u0029",
+            "name": "getCertFile",
+            "summary": "Returns\u0020the\u0020file\u0020name\u0020of\u0020the\u0020certificate",
+            "url": "classes/Plesk-SDK-Certificate.html#method_getCertFile"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Certificate\u003A\u003AgetCaCert\u0028\u0029",
+            "name": "getCaCert",
+            "summary": "Returns\u0020the\u0020content\u0020of\u0020the\u0020CA\u0020certificate",
+            "url": "classes/Plesk-SDK-Certificate.html#method_getCaCert"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Certificate\u003A\u003AgetCaFile\u0028\u0029",
+            "name": "getCaFile",
+            "summary": "Returns\u0020the\u0020file\u0020name\u0020of\u0020the\u0020CA\u0020certificate",
+            "url": "classes/Plesk-SDK-Certificate.html#method_getCaFile"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Dns\\Dnssec",
+            "name": "Dnssec",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Hook-Dns-Dnssec.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Dns\\Dnssec\u003A\u003AgetZoneMsDnsConfig\u0028\u0029",
+            "name": "getZoneMsDnsConfig",
+            "summary": "Returns\u0020XML\u0020as\u0020string\u0020which\u0020will\u0020be\u0020used\u0020for\u0020DNSSEC\u0020configuration\u0020of\u0020given\u0020DNS\u0020zone",
+            "url": "classes/Plesk-SDK-Hook-Dns-Dnssec.html#method_getZoneMsDnsConfig"
+        },                {
             "fqsen": "\\Plesk\\SDK\\Hook\\ExternalDns",
             "name": "ExternalDns",
             "summary": "",
@@ -4661,16 +4756,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/default.html"
         },                {
-            "fqsen": "\\Plesk\\SDK\\Hook",
-            "name": "Hook",
-            "summary": "",
-            "url": "namespaces/plesk-sdk-hook.html"
-        },                {
-            "fqsen": "\\Plesk\\SDK\\Hook\\Repair",
-            "name": "Repair",
-            "summary": "",
-            "url": "namespaces/plesk-sdk-hook-repair.html"
-        },                {
             "fqsen": "\\Plesk\\SDK",
             "name": "SDK",
             "summary": "",
@@ -4680,6 +4765,21 @@ Search.appendIndex(
             "name": "Plesk",
             "summary": "",
             "url": "namespaces/plesk.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Dns",
+            "name": "Dns",
+            "summary": "",
+            "url": "namespaces/plesk-sdk-hook-dns.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook",
+            "name": "Hook",
+            "summary": "",
+            "url": "namespaces/plesk-sdk-hook.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Repair",
+            "name": "Repair",
+            "summary": "",
+            "url": "namespaces/plesk-sdk-hook-repair.html"
         },                {
             "fqsen": "\\Plesk\\SDK\\Middleware\\Access",
             "name": "Access",

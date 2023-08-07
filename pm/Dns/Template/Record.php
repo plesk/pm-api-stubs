@@ -31,6 +31,8 @@ class pm_Dns_Template_Record extends pm_Dns_Record
 
     public const TYPE_CAA = 'CAA';
 
+    public const TYPE_TLSA = 'TLSA';
+
     /**
      * Construct DNS template record in '<domain>' zone
      */

@@ -196,6 +196,11 @@ Search.appendIndex(
             "summary": "Retrieve\u0020client\u0020by\u0020known\u0020login.\u0020Throws\u0020pm_Exception\u0020if\u0020client\u0020not\u0020found.",
             "url": "classes/pm-Client.html#method_getByLogin"
         },                {
+            "fqsen": "\\pm_Client\u003A\u003AgetAdmin\u0028\u0029",
+            "name": "getAdmin",
+            "summary": "Retrieve\u0020admin\u0020client.",
+            "url": "classes/pm-Client.html#method_getAdmin"
+        },                {
             "fqsen": "\\pm_Client\u003A\u003AgetAll\u0028\u0029",
             "name": "getAll",
             "summary": "Retrieve\u0020all\u0020clients",
@@ -2180,6 +2185,36 @@ Search.appendIndex(
             "name": "getTabs",
             "summary": "Retrieve\u0020the\u0020list\u0020of\u0020domain\u0020card\u0020tabs",
             "url": "classes/pm-Hook-DynamicList.html#method_getTabs"
+        },                {
+            "fqsen": "\\pm_Hook_DynamicList\u003A\u003AgetSidebar\u0028\u0029",
+            "name": "getSidebar",
+            "summary": "Retrieve\u0020the\u0020left\u0020sidebar\u0020of\u0020domain\u0020card",
+            "url": "classes/pm-Hook-DynamicList.html#method_getSidebar"
+        },                {
+            "fqsen": "\\pm_Hook_DynamicList\u003A\u003AgetColumns\u0028\u0029",
+            "name": "getColumns",
+            "summary": "Retrieve\u0020the\u0020list\u0020of\u0020columns",
+            "url": "classes/pm-Hook-DynamicList.html#method_getColumns"
+        },                {
+            "fqsen": "\\pm_Hook_DynamicList\u003A\u003AgetData\u0028\u0029",
+            "name": "getData",
+            "summary": "Retrieve\u0020data\u0020of\u0020visible\u0020list\u0020items",
+            "url": "classes/pm-Hook-DynamicList.html#method_getData"
+        },                {
+            "fqsen": "\\pm_Hook_DynamicList\u003A\u003AgetDataProvider\u0028\u0029",
+            "name": "getDataProvider",
+            "summary": "Retrieve\u0020all\u0020list\u0020data",
+            "url": "classes/pm-Hook-DynamicList.html#method_getDataProvider"
+        },                {
+            "fqsen": "\\pm_Hook_DynamicList\u003A\u003AgetInitContent\u0028\u0029",
+            "name": "getInitContent",
+            "summary": "",
+            "url": "classes/pm-Hook-DynamicList.html#method_getInitContent"
+        },                {
+            "fqsen": "\\pm_Hook_DynamicList\u003A\u003AgetAdditionalTitleContent\u0028\u0029",
+            "name": "getAdditionalTitleContent",
+            "summary": "",
+            "url": "classes/pm-Hook-DynamicList.html#method_getAdditionalTitleContent"
         },                {
             "fqsen": "\\pm_Hook_Form",
             "name": "pm_Hook_Form",

@@ -33,4 +33,12 @@ class pm_Config
      */
     public static function getCore() { }
 
+    /**
+     * Retrieve extension's default configuration settings
+     *
+     * @return array
+     * @since 18.0.59
+     * */
+    public static function getDefaults() { }
+
 }

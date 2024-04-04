@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2024. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
 namespace Plesk\SDK\Middleware\Access;
 /**
  * Returns HTTP 401 if no session is defined by other means like BasicAuth, or KeyHeaderAuth.

@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2024. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
 /**
  * Configuration settings reader (panel.ini settings)
  *
@@ -32,5 +32,13 @@ class pm_Config
      * @since 18.0.29
      */
     public static function getCore() { }
+
+    /**
+     * Retrieve extension's default configuration settings
+     *
+     * @return array
+     * @since 18.0.59
+     * */
+    public static function getDefaults() { }
 
 }

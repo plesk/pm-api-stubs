@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2024. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
 /**
  * Domain wrapper
  *
@@ -147,7 +147,7 @@ class pm_Domain
     public function getProperty($name) { }
 
     /**
-     * Return value of custom domain setting by given name
+     * Return value of domain custom setting by given name
      *
      * @param string $name Setting name
      * @param string|null $default Default value of setting
@@ -157,7 +157,7 @@ class pm_Domain
     public function getSetting($name, $default = null) { }
 
     /**
-     * Define value of custom domain setting
+     * Define value of domain custom setting
      *
      * @param string $name Setting name
      * @param string|null $value Setting value or null to delete setting
@@ -167,7 +167,7 @@ class pm_Domain
     public function setSetting($name, $value) { }
 
     /**
-     * Delete all custom domain settings
+     * Delete all domain custom settings
      *
      * @param string $prefix Settings name prefix
      * @return void

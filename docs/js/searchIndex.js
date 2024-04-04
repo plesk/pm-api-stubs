@@ -238,17 +238,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\pm_Client\u003A\u003AgetSetting\u0028\u0029",
             "name": "getSetting",
-            "summary": "Return\u0020value\u0020of\u0020custom\u0020client\u0020setting\u0020by\u0020given\u0020name",
+            "summary": "Return\u0020value\u0020of\u0020client\u0020custom\u0020setting\u0020by\u0020given\u0020name",
             "url": "classes/pm-Client.html#method_getSetting"
         },                {
             "fqsen": "\\pm_Client\u003A\u003AsetSetting\u0028\u0029",
             "name": "setSetting",
-            "summary": "Define\u0020value\u0020of\u0020custom\u0020client\u0020setting",
+            "summary": "Define\u0020value\u0020of\u0020client\u0020custom\u0020setting",
             "url": "classes/pm-Client.html#method_setSetting"
         },                {
             "fqsen": "\\pm_Client\u003A\u003AdeleteSettings\u0028\u0029",
             "name": "deleteSettings",
-            "summary": "Delete\u0020all\u0020custom\u0020client\u0020settings",
+            "summary": "Delete\u0020all\u0020client\u0020custom\u0020settings",
             "url": "classes/pm-Client.html#method_deleteSettings"
         },                {
             "fqsen": "\\pm_Client\u003A\u003AhasAccessToDomain\u0028\u0029",
@@ -290,6 +290,11 @@ Search.appendIndex(
             "name": "getCore",
             "summary": "Retrieve\u0020all\u0020configuration\u0020settings",
             "url": "classes/pm-Config.html#method_getCore"
+        },                {
+            "fqsen": "\\pm_Config\u003A\u003AgetDefaults\u0028\u0029",
+            "name": "getDefaults",
+            "summary": "Retrieve\u0020extension\u0027s\u0020default\u0020configuration\u0020settings",
+            "url": "classes/pm-Config.html#method_getDefaults"
         },                {
             "fqsen": "\\pm_Context",
             "name": "pm_Context",
@@ -898,17 +903,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\pm_Domain\u003A\u003AgetSetting\u0028\u0029",
             "name": "getSetting",
-            "summary": "Return\u0020value\u0020of\u0020custom\u0020domain\u0020setting\u0020by\u0020given\u0020name",
+            "summary": "Return\u0020value\u0020of\u0020domain\u0020custom\u0020setting\u0020by\u0020given\u0020name",
             "url": "classes/pm-Domain.html#method_getSetting"
         },                {
             "fqsen": "\\pm_Domain\u003A\u003AsetSetting\u0028\u0029",
             "name": "setSetting",
-            "summary": "Define\u0020value\u0020of\u0020custom\u0020domain\u0020setting",
+            "summary": "Define\u0020value\u0020of\u0020domain\u0020custom\u0020setting",
             "url": "classes/pm-Domain.html#method_setSetting"
         },                {
             "fqsen": "\\pm_Domain\u003A\u003AdeleteSettings\u0028\u0029",
             "name": "deleteSettings",
-            "summary": "Delete\u0020all\u0020custom\u0020domain\u0020settings",
+            "summary": "Delete\u0020all\u0020domain\u0020custom\u0020settings",
             "url": "classes/pm-Domain.html#method_deleteSettings"
         },                {
             "fqsen": "\\pm_Domain\u003A\u003AhasPermission\u0028\u0029",
@@ -1056,10 +1061,40 @@ Search.appendIndex(
             "summary": "Shows\u0020whether\u0020301\u0020redirect\u0020to\u0020HTTPS\u0020is\u0020enabled\u0020on\u0020the\u0020domain\u0020alias",
             "url": "classes/pm-DomainAlias.html#method_hasSeoRedirect"
         },                {
+            "fqsen": "\\pm_DomainAlias\u003A\u003AgetDomain\u0028\u0029",
+            "name": "getDomain",
+            "summary": "Retrieve\u0020primary\u0020domain\u0020of\u0020domain\u0020alias",
+            "url": "classes/pm-DomainAlias.html#method_getDomain"
+        },                {
+            "fqsen": "\\pm_DomainAlias\u003A\u003AgetProperty\u0028\u0029",
+            "name": "getProperty",
+            "summary": "Retrieve\u0020property\u0020of\u0020domain\u0020alias",
+            "url": "classes/pm-DomainAlias.html#method_getProperty"
+        },                {
+            "fqsen": "\\pm_DomainAlias\u003A\u003AgetSetting\u0028\u0029",
+            "name": "getSetting",
+            "summary": "Return\u0020value\u0020of\u0020domain\u0020alias\u0020custom\u0020setting\u0020by\u0020given\u0020name",
+            "url": "classes/pm-DomainAlias.html#method_getSetting"
+        },                {
+            "fqsen": "\\pm_DomainAlias\u003A\u003AsetSetting\u0028\u0029",
+            "name": "setSetting",
+            "summary": "Define\u0020value\u0020of\u0020domain\u0020alias\u0020custom\u0020setting",
+            "url": "classes/pm-DomainAlias.html#method_setSetting"
+        },                {
+            "fqsen": "\\pm_DomainAlias\u003A\u003AdeleteSettings\u0028\u0029",
+            "name": "deleteSettings",
+            "summary": "Delete\u0020all\u0020domain\u0020alias\u0020custom\u0020settings",
+            "url": "classes/pm-DomainAlias.html#method_deleteSettings"
+        },                {
             "fqsen": "\\pm_DomainAlias\u003A\u003AgetByDomainAliasId\u0028\u0029",
             "name": "getByDomainAliasId",
             "summary": "Retrieve\u0020domain\u0020alias\u0020by\u0020known\u0020id",
             "url": "classes/pm-DomainAlias.html#method_getByDomainAliasId"
+        },                {
+            "fqsen": "\\pm_DomainAlias\u003A\u003AgetByName\u0028\u0029",
+            "name": "getByName",
+            "summary": "Retrieve\u0020domain\u0020alias\u0020by\u0020display\u0020name",
+            "url": "classes/pm-DomainAlias.html#method_getByName"
         },                {
             "fqsen": "\\pm_DomainAlias\u003A\u003AgetDnsZone\u0028\u0029",
             "name": "getDnsZone",
@@ -4416,6 +4451,96 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Plesk-SDK-Hook-ExternalDns.html#property_owner"
         },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block",
+            "name": "Block",
+            "summary": "Custom\u0020block\u0020to\u0020be\u0020embedded\u0020into\u0020administrator\u0027s\u0020Home\u0020page\u0020in\u0020SPV",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AgetId\u0028\u0029",
+            "name": "getId",
+            "summary": "Define\u0020block\u0020unique\u0020ID",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_getId"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "Define\u0020block\u0020title",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_getTitle"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AgetContent\u0028\u0029",
+            "name": "getContent",
+            "summary": "Define\u0020block\u0020content",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_getContent"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AgetColumn\u0028\u0029",
+            "name": "getColumn",
+            "summary": "Define\u0020column\u0020the\u0020block\u0020should\u0020be\u0020placed\u0020to",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_getColumn"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AgetOrder\u0028\u0029",
+            "name": "getOrder",
+            "summary": "Define\u0020order\u0020within\u0020the\u0020column\u0020the\u0020block\u0020should\u0020be\u0020placed\u0020to",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_getOrder"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AisAsyncLoaded\u0028\u0029",
+            "name": "isAsyncLoaded",
+            "summary": "Define\u0020if\u0020the\u0020block\u0020content\u0020should\u0020be\u0020loaded\u0020asynchronously",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_isAsyncLoaded"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AgetSkeletonSize\u0028\u0029",
+            "name": "getSkeletonSize",
+            "summary": "Define\u0020size\u0020of\u0020the\u0020skeleton\u0020\u0028content\u0020placeholder\u0029\u0020to\u0020be\u0020shown\u0020while\u0020content\u0020is\u0020loaded",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_getSkeletonSize"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AisEnabled\u0028\u0029",
+            "name": "isEnabled",
+            "summary": "Define\u0020if\u0020the\u0020block\u0020is\u0020enabled\u0020by\u0020default",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_isEnabled"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AgetSection\u0028\u0029",
+            "name": "getSection",
+            "summary": "Define\u0020section\u0020the\u0020block\u0020belongs\u0020to",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_getSection"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AgetSectionOrder\u0028\u0029",
+            "name": "getSectionOrder",
+            "summary": "Define\u0020order\u0020within\u0020the\u0020section\u0020the\u0020block\u0020should\u0020be\u0020placed\u0020to",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_getSectionOrder"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "Define\u0020block\u0020name",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_getName"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AgetIcon\u0028\u0029",
+            "name": "getIcon",
+            "summary": "Define\u0020block\u0020icon",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_getIcon"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003ASECTION_PLESK",
+            "name": "SECTION_PLESK",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#constant_SECTION_PLESK"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003ASECTION_SERVER",
+            "name": "SECTION_SERVER",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#constant_SECTION_SERVER"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003ASECTION_SECURITY",
+            "name": "SECTION_SECURITY",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#constant_SECTION_SECURITY"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home",
+            "name": "Home",
+            "summary": "Hook\u0020for\u0020embedding\u0020custom\u0020blocks\u0020into\u0020administrator\u0027s\u0020Home\u0020page\u0020in\u0020SPV",
+            "url": "classes/Plesk-SDK-Hook-Home.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\u003A\u003AgetBlocks\u0028\u0029",
+            "name": "getBlocks",
+            "summary": "Retrieve\u0020blocks\u0020for\u0020Home\u0020page\u0020in\u0020SPV",
+            "url": "classes/Plesk-SDK-Hook-Home.html#method_getBlocks"
+        },                {
             "fqsen": "\\Plesk\\SDK\\Hook\\HookInterface",
             "name": "HookInterface",
             "summary": "Generic\u0020interface\u0020for\u0020hooks",
@@ -4810,6 +4935,11 @@ Search.appendIndex(
             "name": "Hook",
             "summary": "",
             "url": "namespaces/plesk-sdk-hook.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home",
+            "name": "Home",
+            "summary": "",
+            "url": "namespaces/plesk-sdk-hook-home.html"
         },                {
             "fqsen": "\\Plesk\\SDK\\Hook\\Repair",
             "name": "Repair",

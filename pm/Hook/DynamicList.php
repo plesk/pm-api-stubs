@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2024. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
 /**
  * Abstract class for adding custom content to domain card in dynamic view
  *
@@ -18,6 +18,7 @@ abstract class pm_Hook_DynamicList implements pm_Hook_Interface
      *          'title' => 'My Awesome Tab',
      *          'content' => '<span>My awesome tab content</span>',
      *          'order' => 3,
+     *          'default' => false,
      *      ]
      * ]
      * ```

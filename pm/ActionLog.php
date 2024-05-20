@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2023. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
 /**
  * Wrapper for ActionLog.
  *
@@ -18,14 +18,14 @@ class pm_ActionLog
      *
      * @param int|null $objectId ID of the object mentioned in the event. 0 if not applicable (singleton object like 'admin').
      *
-     * @param array|null $oldValues
+     * @param string[] $oldValues
      * @example array('contact_name' => 'John Smith', 'email' => 'user@new.example.com', 'login_name' => 'user1')
-     * @param array|null $newValues
+     * @param string[] $newValues
      * @example array('contact_name' => 'John Smith', 'email' => 'user@old.example.com', 'login_name' => 'user1')
      * @return void
      *
      * @throws Exception
      */
-    public static function submit($actionId, $objectId = null, $oldValues = null, $newValues = null) { }
+    public static function submit($actionId, $objectId = null, $oldValues = [], $newValues = []) { }
 
 }

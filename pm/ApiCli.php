@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2023. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
 /**
  * Gateway for execution of CLI utilities
  *
@@ -26,12 +26,14 @@ class pm_ApiCli
      * @param array $args
      * @param int $result
      * @param array $env
+     * @param string $stdin
      * @return array|int|string
      * @throws pm_Exception
      * @since 11.0 from CLI only
      * @since 17.0 from anywhere. RESULT_EXCEPTION is default.
+     * @since 18.0.55 added argument $stdin
      */
-    public static function call($command, $args = [], $result = 5, $env = []) { }
+    public static function call($command, $args = [], $result = 5, $env = [], $stdin = '') { }
 
     /**
      * Execute privileged CLI utility
@@ -40,12 +42,14 @@ class pm_ApiCli
      * @param array $args
      * @param int $result
      * @param array $env
+     * @param string $stdin
      * @return array|int|string
      * @throws pm_Exception
      * @since 12.0 Unix only
      * @since 17.0 Windows support
+     * @since 18.0.55 added argument $stdin
      */
-    public static function callSbin($command, $args = [], $result = 5, $env = []) { }
+    public static function callSbin($command, $args = [], $result = 5, $env = [], $stdin = '') { }
 
     /**
      * Execute specified command as domain user
@@ -56,10 +60,12 @@ class pm_ApiCli
      * @param array $args
      * @param int $result
      * @param array $env
+     * @param string $stdin
      * @return array|int|string
      * @throws pm_Exception
      * @since 18.0.34
+     * @since 18.0.55 added argument $stdin
      */
-    public static function callDomain(pm_Domain $domain, string $workingDir, string $command, array $args = [], int $result = 5, array $env = []) { }
+    public static function callDomain(pm_Domain $domain, string $workingDir, string $command, array $args = [], int $result = 5, array $env = [], string $stdin = '') { }
 
 }

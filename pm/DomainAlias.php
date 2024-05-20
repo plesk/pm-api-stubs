@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2023. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
 /**
  * Domain alias wrapper
  *
@@ -84,6 +84,54 @@ class pm_DomainAlias
     public function hasSeoRedirect(): bool { }
 
     /**
+     * Retrieve primary domain of domain alias
+     *
+     * @return pm_Domain
+     * @throws pm_Exception
+     * @since 18.0.60
+     */
+    public function getDomain(): pm_Domain { }
+
+    /**
+     * Retrieve property of domain alias
+     *
+     * @param string $name
+     * @return mixed
+     * @throws pm_Exception
+     * @since 18.0.60
+     */
+    public function getProperty(string $name): ?mixed { }
+
+    /**
+     * Return value of domain alias custom setting by given name
+     *
+     * @param string $name Setting name
+     * @param string|null $default Default value of setting
+     * @return string|null
+     * @since 18.0.60
+     */
+    public function getSetting(string $name, string $default = null): ?string { }
+
+    /**
+     * Define value of domain alias custom setting
+     *
+     * @param string $name Setting name
+     * @param string|null $value Setting value or null to delete setting
+     * @return void
+     * @since 18.0.60
+     */
+    public function setSetting(string $name, string $value): void { }
+
+    /**
+     * Delete all domain alias custom settings
+     *
+     * @param string $prefix Settings name prefix
+     * @return void
+     * @since 18.0.60
+     */
+    public function deleteSettings(string $prefix = ''): void { }
+
+    /**
      * Retrieve domain alias by known id
      *
      * @param int $domainAliasId
@@ -92,6 +140,16 @@ class pm_DomainAlias
      * @return pm_DomainAlias
      */
     public static function getByDomainAliasId(int $domainAliasId): pm_DomainAlias { }
+
+    /**
+     * Retrieve domain alias by display name
+     *
+     * @param string $domainAliasName
+     * @return pm_DomainAlias
+     * @throws pm_Exception
+     * @since 18.0.60
+     */
+    public static function getByName(string $domainAliasName): pm_DomainAlias { }
 
     /**
      * Return DNS zone of domain alias

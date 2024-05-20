@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2023. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
 namespace Plesk\SDK\Middleware\Access;
 /**
  * Adds cross-origin resource sharing headers as configured server-wide.

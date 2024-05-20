@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2023. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
 /**
  * Panel client wrapper
  *
@@ -26,6 +26,14 @@ class pm_Client
      * @throws pm_Exception
      */
     public static function getByLogin($login) { }
+
+    /**
+     * Retrieve admin client.
+     *
+     * @return pm_Client
+     * @since 18.0.56
+     */
+    public static function getAdmin() { }
 
     /**
      * Retrieve all clients
@@ -80,7 +88,7 @@ class pm_Client
     public function getProperty($name) { }
 
     /**
-     * Return value of custom client setting by given name
+     * Return value of client custom setting by given name
      *
      * @param string $name Setting name
      * @param mixed $default Default value of setting
@@ -90,7 +98,7 @@ class pm_Client
     public function getSetting($name, $default = null) { }
 
     /**
-     * Define value of custom client setting
+     * Define value of client custom setting
      *
      * @param string $name Setting name
      * @param mixed $value Setting value or null to delete setting
@@ -101,7 +109,7 @@ class pm_Client
     public function setSetting($name, $value) { }
 
     /**
-     * Delete all custom client settings
+     * Delete all client custom settings
      *
      * @param string $prefix Settings name prefix
      * @return void

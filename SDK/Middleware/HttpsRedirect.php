@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2023. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
 namespace Plesk\SDK\Middleware;
 /**
  * Returns 301/308 in case the request was made to plain HTTP.

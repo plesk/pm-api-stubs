@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2023. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
 /**
  * Panel dns wrapper
  *
@@ -30,6 +30,8 @@ class pm_Dns_Record
     public const TYPE_DS = 'DS';
 
     public const TYPE_CAA = 'CAA';
+
+    public const TYPE_TLSA = 'TLSA';
 
     private const OWNER_TYPE_DOMAIN = 'domain';
 
@@ -164,5 +166,19 @@ class pm_Dns_Record
      * Remove DNS record.
      */
     public function remove(): void { }
+
+    /**
+     * Return the list of available DNS record types
+     * @return array
+     * @since 18.0.55
+     */
+    public static function availableTypes(): array { }
+
+    /**
+     * Return whether the DNS record type is available
+     * @return bool
+     * @since 18.0.55
+     */
+    public static function isTypeAvailable(string $type): bool { }
 
 }

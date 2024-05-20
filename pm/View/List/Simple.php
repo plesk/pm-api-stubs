@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2023. Plesk International GmbH. All rights reserved.
+// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
 /**
  * Base list
  *
@@ -159,7 +159,7 @@ class pm_View_List_Simple
      * @param array $data
      * @return void
      */
-    public function setData(array $data) { }
+    public function setData(array $data): void { }
 
     /**
      * Fetch list data

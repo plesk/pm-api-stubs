@@ -43,6 +43,15 @@ abstract class Block
     public function getContent(): string { }
 
     /**
+     * Define block footer
+     *
+     * Attention: unescaped HTML. Empty by default.
+     *
+     * @return string
+     */
+    public function getFooter(): string { }
+
+    /**
      * Define column the block should be placed to
      *
      * Possible values: 0, 1, 2. Last column by default.

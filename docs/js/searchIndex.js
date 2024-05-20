@@ -4471,6 +4471,11 @@ Search.appendIndex(
             "summary": "Define\u0020block\u0020content",
             "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_getContent"
         },                {
+            "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AgetFooter\u0028\u0029",
+            "name": "getFooter",
+            "summary": "Define\u0020block\u0020footer",
+            "url": "classes/Plesk-SDK-Hook-Home-Block.html#method_getFooter"
+        },                {
             "fqsen": "\\Plesk\\SDK\\Hook\\Home\\Block\u003A\u003AgetColumn\u0028\u0029",
             "name": "getColumn",
             "summary": "Define\u0020column\u0020the\u0020block\u0020should\u0020be\u0020placed\u0020to",

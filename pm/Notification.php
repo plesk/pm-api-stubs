@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
 /**
  * Notification manager
  *
@@ -23,6 +23,6 @@ class pm_Notification
      * @return array                    list of recipients
      * @throws pm_Exception
      */
-    public function send($id, array $params = [], pm_Client $client = null) { }
+    public function send($id, array $params = [], ?pm_Client $client = null) { }
 
 }

@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
 /**
  * Hook for injecting into web server configuration files
  *
@@ -99,6 +99,6 @@ abstract class pm_Hook_WebServer implements pm_Hook_Interface
      *
      * @since 18.0.52
      */
-    public function processTemplate(string $templateFile, string $content, pm_Domain $domain) { }
+    public function processTemplate(string $templateFile, string $content, ?pm_Domain $domain) { }
 
 }

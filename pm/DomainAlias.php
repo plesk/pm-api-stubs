@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
 /**
  * Domain alias wrapper
  *
@@ -100,7 +100,7 @@ class pm_DomainAlias
      * @throws pm_Exception
      * @since 18.0.60
      */
-    public function getProperty(string $name): ?mixed { }
+    public function getProperty(string $name): mixed { }
 
     /**
      * Return value of domain alias custom setting by given name
@@ -110,7 +110,7 @@ class pm_DomainAlias
      * @return string|null
      * @since 18.0.60
      */
-    public function getSetting(string $name, string $default = null): ?string { }
+    public function getSetting(string $name, ?string $default = null): ?string { }
 
     /**
      * Define value of domain alias custom setting
@@ -120,7 +120,7 @@ class pm_DomainAlias
      * @return void
      * @since 18.0.60
      */
-    public function setSetting(string $name, string $value): void { }
+    public function setSetting(string $name, ?string $value): void { }
 
     /**
      * Delete all domain alias custom settings

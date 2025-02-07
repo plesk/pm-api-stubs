@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
 /**
  * Abstract class for all extensions controllers
  *
@@ -30,6 +30,8 @@ abstract class pm_Controller_Action extends Zend_Controller_Action implements Ze
      * @return void
      */
     public function init() { }
+
+    public function preDispatch() { }
 
     /**
      * Translate message by key according to current locale

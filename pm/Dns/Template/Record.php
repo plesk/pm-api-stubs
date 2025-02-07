@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
 /**
  * Panel dns wrapper
  *
@@ -32,6 +32,8 @@ class pm_Dns_Template_Record extends pm_Dns_Record
     public const TYPE_CAA = 'CAA';
 
     public const TYPE_TLSA = 'TLSA';
+
+    public const TYPE_HTTPS = 'HTTPS';
 
     /**
      * Construct DNS template record in '<domain>' zone

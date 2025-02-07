@@ -31,6 +31,8 @@ abstract class pm_Controller_Action extends Zend_Controller_Action implements Ze
      */
     public function init() { }
 
+    public function preDispatch() { }
+
     /**
      * Translate message by key according to current locale
      *

@@ -19,7 +19,7 @@ class pm_LongTask_Manager
      * @return pm_LongTask_Task Launched task
      * @throws pm_Exception
      */
-    public function start(pm_LongTask_Task $task, pm_Domain $domain = null) { }
+    public function start(pm_LongTask_Task $task, ?pm_Domain $domain = null) { }
 
     /**
      * Get task queue filtered by ID and context

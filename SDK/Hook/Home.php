@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
 namespace Plesk\SDK\Hook;
 /**
  * Hook for embedding custom blocks into administrator's Home page in SPV

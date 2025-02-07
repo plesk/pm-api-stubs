@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2024. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
 /**
  * Panel client wrapper
  *
@@ -128,6 +128,15 @@ class pm_Client
     public function hasAccessToDomain($domainId) { }
 
     /**
+     * Check if client can access to client with provided identity
+     *
+     * @param int $clientId
+     * @return bool
+     * @since 18.0.62
+     */
+    public function hasAccessToClient(int $clientId): bool { }
+
+    /**
      * Check if user has permission
      *
      * @param string $name Permission name
@@ -135,7 +144,7 @@ class pm_Client
      * @return bool
      * @since 17.0
      */
-    public function hasPermission($name, pm_Domain $domain = null) { }
+    public function hasPermission($name, ?pm_Domain $domain = null) { }
 
     /**
      * Check if user has core permission
@@ -146,7 +155,7 @@ class pm_Client
      *
      * @since 17.5
      */
-    public function hasCorePermission($name, pm_Domain $domain = null) { }
+    public function hasCorePermission($name, ?pm_Domain $domain = null) { }
 
     /**
      * Check if client can access to plan with provided identity

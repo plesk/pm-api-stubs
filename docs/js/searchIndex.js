@@ -256,6 +256,11 @@ Search.appendIndex(
             "summary": "Check\u0020if\u0020client\u0020can\u0020access\u0020to\u0020domain\u0020with\u0020provided\u0020identity",
             "url": "classes/pm-Client.html#method_hasAccessToDomain"
         },                {
+            "fqsen": "\\pm_Client\u003A\u003AhasAccessToClient\u0028\u0029",
+            "name": "hasAccessToClient",
+            "summary": "Check\u0020if\u0020client\u0020can\u0020access\u0020to\u0020client\u0020with\u0020provided\u0020identity",
+            "url": "classes/pm-Client.html#method_hasAccessToClient"
+        },                {
             "fqsen": "\\pm_Client\u003A\u003AhasPermission\u0028\u0029",
             "name": "hasPermission",
             "summary": "Check\u0020if\u0020user\u0020has\u0020permission",
@@ -375,6 +380,11 @@ Search.appendIndex(
             "name": "init",
             "summary": "Initialize\u0020controller",
             "url": "classes/pm-Controller-Action.html#method_init"
+        },                {
+            "fqsen": "\\pm_Controller_Action\u003A\u003ApreDispatch\u0028\u0029",
+            "name": "preDispatch",
+            "summary": "",
+            "url": "classes/pm-Controller-Action.html#method_preDispatch"
         },                {
             "fqsen": "\\pm_Controller_Action\u003A\u003Almsg\u0028\u0029",
             "name": "lmsg",
@@ -566,6 +576,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/pm-Dns-Record.html#constant_TYPE_TLSA"
         },                {
+            "fqsen": "\\pm_Dns_Record\u003A\u003ATYPE_HTTPS",
+            "name": "TYPE_HTTPS",
+            "summary": "",
+            "url": "classes/pm-Dns-Record.html#constant_TYPE_HTTPS"
+        },                {
             "fqsen": "\\pm_Dns_Record\u003A\u003AOWNER_TYPE_DOMAIN",
             "name": "OWNER_TYPE_DOMAIN",
             "summary": "",
@@ -720,6 +735,11 @@ Search.appendIndex(
             "name": "TYPE_TLSA",
             "summary": "",
             "url": "classes/pm-Dns-Template-Record.html#constant_TYPE_TLSA"
+        },                {
+            "fqsen": "\\pm_Dns_Template_Record\u003A\u003ATYPE_HTTPS",
+            "name": "TYPE_HTTPS",
+            "summary": "",
+            "url": "classes/pm-Dns-Template-Record.html#constant_TYPE_HTTPS"
         },                {
             "fqsen": "\\pm_Dns_Template_SoaRecord",
             "name": "pm_Dns_Template_SoaRecord",
@@ -2070,11 +2090,6 @@ Search.appendIndex(
             "name": "PLACE_DOMAIN_HEADER_DYNAMIC",
             "summary": "",
             "url": "classes/pm-Hook-CustomButtons.html#constant_PLACE_DOMAIN_HEADER_DYNAMIC"
-        },                {
-            "fqsen": "\\pm_Hook_CustomButtons\u003A\u003APLACE_INSTALL_APPLICATION_DRAWER",
-            "name": "PLACE_INSTALL_APPLICATION_DRAWER",
-            "summary": "",
-            "url": "classes/pm-Hook-CustomButtons.html#constant_PLACE_INSTALL_APPLICATION_DRAWER"
         },                {
             "fqsen": "\\pm_Hook_CustomButtons\u003A\u003APLACE_ADD_DOMAIN_DRAWER",
             "name": "PLACE_ADD_DOMAIN_DRAWER",

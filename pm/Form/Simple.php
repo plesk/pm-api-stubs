@@ -121,7 +121,7 @@ class pm_Form_Simple extends Zend_Form implements Zend_Validate_Interface
      *
      * @param array|null $params
      */
-    public function addControlButtons(array $params = null) { }
+    public function addControlButtons(?array $params = null) { }
 
     /**
      * Get element id

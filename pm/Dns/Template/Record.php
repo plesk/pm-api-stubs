@@ -33,6 +33,8 @@ class pm_Dns_Template_Record extends pm_Dns_Record
 
     public const TYPE_TLSA = 'TLSA';
 
+    public const TYPE_HTTPS = 'HTTPS';
+
     /**
      * Construct DNS template record in '<domain>' zone
      */

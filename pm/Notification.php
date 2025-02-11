@@ -23,6 +23,6 @@ class pm_Notification
      * @return array                    list of recipients
      * @throws pm_Exception
      */
-    public function send($id, array $params = [], pm_Client $client = null) { }
+    public function send($id, array $params = [], ?pm_Client $client = null) { }
 
 }

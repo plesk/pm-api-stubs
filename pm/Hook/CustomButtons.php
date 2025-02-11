@@ -60,9 +60,6 @@ abstract class pm_Hook_CustomButtons implements pm_Hook_Interface
     /** @since 18.0.41 */
     public const PLACE_DOMAIN_HEADER_DYNAMIC = 17;
 
-    /** @since 18.0.51 */
-    public const PLACE_INSTALL_APPLICATION_DRAWER = 18;
-
     /** @since 18.0.52 */
     public const PLACE_ADD_DOMAIN_DRAWER = 19;
 

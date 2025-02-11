@@ -33,6 +33,8 @@ class pm_Dns_Record
 
     public const TYPE_TLSA = 'TLSA';
 
+    public const TYPE_HTTPS = 'HTTPS';
+
     private const OWNER_TYPE_DOMAIN = 'domain';
 
     private const OWNER_TYPE_DOMAIN_ALIAS = 'domainAlias';
@@ -119,7 +121,7 @@ class pm_Dns_Record
      *
      * @return pm_Dns_Record
      */
-    public function setOption(string $option): pm_Dns_Record { }
+    public function setOption(?string $option): pm_Dns_Record { }
 
     /**
      * Set TTL of DNS record.
@@ -128,7 +130,7 @@ class pm_Dns_Record
      *
      * @return pm_Dns_Record
      */
-    public function setTtl(int $ttl): pm_Dns_Record { }
+    public function setTtl(?int $ttl): pm_Dns_Record { }
 
     /**
      * Set DNS zone of Dns Record.

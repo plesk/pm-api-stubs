@@ -13,7 +13,7 @@ class pm_License
      * Gets list of additional keys data.
      *
      * @param null|string $productName
-     * @return array|string
+     * @return array
      * @deprecated use `getAdditionalKey` method
      */
     public static function getAdditionalKeysList($productName = null) { }

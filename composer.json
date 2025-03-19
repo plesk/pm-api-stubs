@@ -9,7 +9,7 @@
     "psr-4": { "Plesk\\SDK\\": "SDK/" }
   },
   "require": {
-    "plesk/zf1": "1.12.17-patch21",
+    "plesk/zf1": "1.12.17-patch22",
     "psr/container": "^1.0",
     "psr/http-server-middleware": "^1.0",
     "psr/http-factory": "^1.0"

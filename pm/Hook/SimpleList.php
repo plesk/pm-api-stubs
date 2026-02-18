@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2026. WebPros International GmbH. All rights reserved.
 /**
  * Abstract class for injection into list
  *
@@ -14,7 +14,7 @@ abstract class pm_Hook_SimpleList implements pm_Hook_Interface
      *
      * @param string $controller
      * @param string $action
-     * @param boolean $activeList
+     * @param boolean $activeList [deprecated] Always false
      * @return bool
      */
     public function isEnabled($controller, $action, $activeList) { }
@@ -24,7 +24,7 @@ abstract class pm_Hook_SimpleList implements pm_Hook_Interface
      *
      * @param string $controller
      * @param string $action
-     * @param boolean $activeList
+     * @param boolean $activeList [deprecated] Always false
      * @param array|Zend_Db_Select $data Original data provider
      * @return array|Zend_Db_Select
      */
@@ -35,7 +35,7 @@ abstract class pm_Hook_SimpleList implements pm_Hook_Interface
      *
      * @param string $controller
      * @param string $action
-     * @param boolean $activeList
+     * @param boolean $activeList [deprecated] Always false
      * @param array $data Original data
      * @return array
      */
@@ -58,7 +58,7 @@ abstract class pm_Hook_SimpleList implements pm_Hook_Interface
      *
      * @param string $controller
      * @param string $action
-     * @param boolean $activeList
+     * @param boolean $activeList [deprecated] Always false
      * @return array
      *
      * @see pm_View_List_Simple::setColumns()
@@ -68,6 +68,7 @@ abstract class pm_Hook_SimpleList implements pm_Hook_Interface
     /**
      * Get additional columns
      *
+
      * ```php
      * [
      *     'new-column-id' => [
@@ -82,7 +83,7 @@ abstract class pm_Hook_SimpleList implements pm_Hook_Interface
      *
      * @param string $controller
      * @param string $action
-     * @param boolean $activeList
+     * @param boolean $activeList [deprecated] Always false
      * @return array
      *
      * @see pm_View_List_Simple::setColumns()

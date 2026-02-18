@@ -2446,6 +2446,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/pm-Hook-Permissions.html#constant_SECTION_ADMIN_MODULES"
         },                {
+            "fqsen": "\\pm_Hook_Permissions\u003A\u003ASECTION_ADMIN_TROUBLESHOOTING",
+            "name": "SECTION_ADMIN_TROUBLESHOOTING",
+            "summary": "",
+            "url": "classes/pm-Hook-Permissions.html#constant_SECTION_ADMIN_TROUBLESHOOTING"
+        },                {
             "fqsen": "\\pm_Hook_PlanItems",
             "name": "pm_Hook_PlanItems",
             "summary": "Hook\u0020for\u0020additional\u0020plan\u0020items",
@@ -3285,6 +3290,11 @@ Search.appendIndex(
             "name": "ARCH_64",
             "summary": "",
             "url": "classes/pm-ProductInfo.html#constant_ARCH_64"
+        },                {
+            "fqsen": "\\pm_ProductInfo\u003A\u003AARCH_ARM64",
+            "name": "ARCH_ARM64",
+            "summary": "",
+            "url": "classes/pm-ProductInfo.html#constant_ARCH_ARM64"
         },                {
             "fqsen": "\\pm_ProductInfo\u003A\u003AOS_CENTOS",
             "name": "OS_CENTOS",
@@ -4411,6 +4421,11 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020file\u0020name\u0020of\u0020the\u0020CA\u0020certificate",
             "url": "classes/Plesk-SDK-Certificate.html#method_getCaFile"
         },                {
+            "fqsen": "\\Plesk\\SDK\\Exception\\UserException",
+            "name": "UserException",
+            "summary": "Exception\u0020raised\u0020in\u0020case\u0020of\u0020invalid\u0020user\u0020input\u0020or\u0020other\u0020user\u002Drelated\u0020issues.",
+            "url": "classes/Plesk-SDK-Exception-UserException.html"
+        },                {
             "fqsen": "\\Plesk\\SDK\\Hook\\Dns\\Dnssec",
             "name": "Dnssec",
             "summary": "",
@@ -4751,6 +4766,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Plesk-SDK-Middleware-Access-Session.html#constant_SESSION_USER_LOGIN_ATTRIBUTE"
         },                {
+            "fqsen": "\\Plesk\\SDK\\Middleware\\Access\\Session\u003A\u003ARATE_LIMIT_REACHED",
+            "name": "RATE_LIMIT_REACHED",
+            "summary": "",
+            "url": "classes/Plesk-SDK-Middleware-Access-Session.html#constant_RATE_LIMIT_REACHED"
+        },                {
             "fqsen": "\\Plesk\\SDK\\Middleware\\Access\\UserRole",
             "name": "UserRole",
             "summary": "Validates\u0020that\u0020access\u0020was\u0020performed\u0020by\u0020user\u0020with\u0020the\u0020specified\u0020role.",
@@ -4945,6 +4965,11 @@ Search.appendIndex(
             "name": "Plesk",
             "summary": "",
             "url": "namespaces/plesk.html"
+        },                {
+            "fqsen": "\\Plesk\\SDK\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "namespaces/plesk-sdk-exception.html"
         },                {
             "fqsen": "\\Plesk\\SDK\\Hook\\Dns",
             "name": "Dns",

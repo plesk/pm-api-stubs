@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2026. WebPros International GmbH. All rights reserved.
 /**
  * Plesk options / info
  *
@@ -16,6 +16,11 @@ class pm_ProductInfo
     public const ARCH_32 = 'i386';
 
     public const ARCH_64 = 'x86_64';
+
+    /**
+     * @since 18.0.74
+     */
+    public const ARCH_ARM64 = 'aarch64';
 
     public const OS_CENTOS = 'CentOS';
 

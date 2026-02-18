@@ -92,12 +92,18 @@
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/plesk.html">Plesk</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/plesk-sdk.html">SDK</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/plesk-sdk-exception.html">Exception</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    pm_Hook_ActiveList
+    UserException
 
+        <span class="phpdocumentor-element__extends">
+        extends <a href="classes/pm-Exception.html"><abbr title="\pm_Exception">pm_Exception</abbr></a>
+    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -107,21 +113,20 @@
                             </ul>
         </div>
     
-            <span class="phpdocumentor-element__implements">
-            implements
-                            <a href="classes/pm-Hook-Interface.html"><abbr title="\pm_Hook_Interface">pm_Hook_Interface</abbr></a>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="pm/Hook/ActiveList.php"><a href="files/pm-hook-activelist.html"><abbr title="pm/Hook/ActiveList.php">ActiveList.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="SDK/Exception/UserException.php"><a href="files/sdk-exception-userexception.html"><abbr title="SDK/Exception/UserException.php">UserException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">11</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Abstract class for injection into active lists</p>
+            <p class="phpdocumentor-summary">Exception raised in case of invalid user input or other user-related issues.</p>
 
+    <section class="phpdocumentor-description"><p>This exception is not reported to Errors Tracker.</p>
+</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -130,19 +135,10 @@
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">deprecated</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>use pm_Hook_SimpleList</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">since</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                            <span class="phpdocumentor-tag-link">17.0</span>
+                                            <span class="phpdocumentor-tag-link">18.0.72</span>
                                                                                 
                                              
                                     </dd>
@@ -151,33 +147,8 @@
 
 
 
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes and Traits
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/pm-Hook-Interface.html"><abbr title="\pm_Hook_Interface">pm_Hook_Interface</abbr></a></dt>
-        <dd>Generic interface for hooks</dd>
-    
-    
-    </dl>
 
 
-<h3 id="toc">
-    Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/pm-Hook-ActiveList.html#method_getItemServices">getItemServices()</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Retrieve the list of services for specific item</dd>
-
-        </dl>
 
 
 
@@ -185,95 +156,7 @@
 
         
 
-            <section class="phpdocumentor-methods">
-        <h3 class="phpdocumentor-elements__header" id="methods">
-            Methods
-            <a href="classes/pm-Hook-ActiveList.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getItemServices">
-        getItemServices()
-        <a href="classes/pm-Hook-ActiveList.html#method_getItemServices" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="pm/Hook/ActiveList.php"><a href="files/pm-hook-activelist.html"><abbr title="pm/Hook/ActiveList.php">ActiveList.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">47</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Retrieve the list of services for specific item</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getItemServices</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$controller</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$itemId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-        <section class="phpdocumentor-description"><pre class="prettyprint"><code class="language-php">[
-    [
-        'title' =&gt; string,
-        'icon' =&gt; string,
-        'link' =&gt; string,
-        'description' =&gt; string,
-        'toolbar' =&gt; [ // optional
-            [
-                'title' =&gt; string,
-                'link' =&gt; string,
-            ],
-            ...
-        ],
-        'messages' =&gt; [ // optional
-            [
-                'icon' =&gt; string, // optional
-                'info' =&gt; string,
-                'noEscape' =&gt; bool, // optional, default is false
-            ],
-            ...
-        ],
-    ],
-]
-</code></pre>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$controller</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$action</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$itemId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
         
-    
-</article>
-            </section>
-
         
     <script type="text/javascript">
         function loadExternalCodeSnippets(line) {
@@ -350,7 +233,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/pm-Hook-ActiveList.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Plesk-SDK-Exception-UserException.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

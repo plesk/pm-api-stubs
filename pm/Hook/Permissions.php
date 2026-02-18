@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2026. WebPros International GmbH. All rights reserved.
 /**
  * Hook for registering permissions
  *
@@ -45,6 +45,9 @@ abstract class pm_Hook_Permissions implements pm_Hook_Interface
 
     /** @since 18.0.22 */
     public const SECTION_ADMIN_MODULES = 'admin-modules';
+
+    /** @since 18.0.71 */
+    public const SECTION_ADMIN_TROUBLESHOOTING = 'admin-troubleshooting';
 
     /**
      * Retrieve the list of permissions

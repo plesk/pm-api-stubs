@@ -272,7 +272,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="pm/Hook/Limits.php"><a href="files/pm-hook-limits.html"><abbr title="pm/Hook/Limits.php">Limits.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -292,6 +292,10 @@
     ...
 ]
 </code></pre>
+<p>Note: use only 0 or -1 as default values for numeric limits. Otherwise, the default limit for both reseller
+plan and subscription will be the same. If a reseller has more than one subscription, it will be impossible to
+synchronize plan changes with not allowed overselling, because the default value multiplied by the number of
+subscriptions may exceed the reseller's default limit, which can be confusing for users.</p>
 </section>
 
     

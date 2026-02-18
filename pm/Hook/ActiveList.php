@@ -1,8 +1,9 @@
 <?php
-// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2026. WebPros International GmbH. All rights reserved.
 /**
  * Abstract class for injection into active lists
  *
+ * @deprecated use pm_Hook_SimpleList
  * @package Plesk_Modules
  * @since 17.0
  */

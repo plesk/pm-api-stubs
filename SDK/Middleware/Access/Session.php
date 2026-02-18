@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2026. WebPros International GmbH. All rights reserved.
 namespace Plesk\SDK\Middleware\Access;
 /**
  * Returns HTTP 401 if no session is defined by other means like BasicAuth, or KeyHeaderAuth.
@@ -10,6 +10,8 @@ class Session implements \Psr\Http\Server\MiddlewareInterface
 {
 
     public const SESSION_USER_LOGIN_ATTRIBUTE = 'api_session_user_login';
+
+    public const RATE_LIMIT_REACHED = 'rate_limit_reached';
 
     public function __construct(\Psr\Http\Message\ResponseFactoryInterface $factory) { }
 

@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-2025. WebPros International GmbH. All rights reserved.
+// Copyright 1999-2026. WebPros International GmbH. All rights reserved.
 /**
  * Panel dns wrapper
  *
@@ -91,7 +91,7 @@ class pm_Dns_Zone
 
     /**
      * Return domain of DNS zone.
-     * 
+     *
      * @throws pm_Exception
      * @return pm_Domain|null
      */

@@ -8,6 +8,19 @@
  */
 class pm_Scheduler_Task
 {
+    /** @since 18.0.83 */
+    const TYPE_EXEC = 'exec';
+    /** @since 18.0.83 */
+    const TYPE_HTTP = 'http';
+    /** @since 18.0.83 */
+    const TYPE_PHP = 'php';
+
+    /** @since 18.0.83 */
+    const NOTIFY_IGNORE = 'ignore';
+    /** @since 18.0.83 */
+    const NOTIFY_ERRORS = 'errors';
+    /** @since 18.0.83 */
+    const NOTIFY_ALWAYS = 'always';
 
     /**
      * Create instance of task for scheduler
@@ -86,5 +99,40 @@ class pm_Scheduler_Task
      * @since 18.0.52
      */
     public function isActive(): bool { }
+
+    /**
+     * Return task type
+     * @return string
+     * @since 18.0.83
+     */
+    public function getType(): string { }
+
+    /**
+     * Return PHP handler id, applicable only when type is "php"
+     * @return string
+     * @since 18.0.83
+     */
+    public function getPhpHandlerId(): string { }
+
+    /**
+     * Return task description
+     * @return string
+     * @since 18.0.83
+     */
+    public function getDescription(): string { }
+
+    /**
+     * Return notification mode
+     * @return string
+     * @since 18.0.83
+     */
+    public function getNotify(): string { }
+
+    /**
+     * Return notification email address
+     * @return string
+     * @since 18.0.83
+     */
+    public function getEmail(): string { }
 
 }

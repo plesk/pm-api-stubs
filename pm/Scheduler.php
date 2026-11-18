@@ -108,4 +108,15 @@ class pm_Scheduler
      */
     public function disableTask(pm_Scheduler_Task $task) { }
 
+    /**
+     * Run task immediately, regardless of its schedule and active state, and wait for it to finish
+     *
+     * @param pm_Scheduler_Task $task
+     * @param string $output Combined stdout and stderr of the task
+     * @return bool Whether the task finished successfully
+     * @throws pm_Exception If the task does not exist
+     * @since 18.0.83
+     */
+    public function runTask(pm_Scheduler_Task $task, &$output = null) { }
+
 }
